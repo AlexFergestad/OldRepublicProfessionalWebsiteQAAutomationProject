@@ -1,0 +1,22 @@
+{
+  "name": "oldrepublicprofessionalwebsiteqaautomationproject",
+  "version": "1.0.0",
+  "description": "I'm creating a project that will test the Old Republic Professional's main website in different ways by creating test cases and automation scripts in an organized and ordered way.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexFergestad/OldRepublicProfessionalWebsiteQAAutomationProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexFergestad/OldRepublicProfessionalWebsiteQAAutomationProject/issues"
+  },
+  "homepage": "https://github.com/AlexFergestad/OldRepublicProfessionalWebsiteQAAutomationProject#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
