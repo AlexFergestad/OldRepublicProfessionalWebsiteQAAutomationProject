@@ -5,7 +5,14 @@ I'm creating a project that will test the Old Republic Professional's main websi
 Automated UI testing suite for the Old Republic Professional insurance website (https://www.oldrepublicpro.com/)
 
 
+## Setup Instructions to Run Project
 
+1. Clone the repository
+2. Create virtual environment: `python -m venv venv`
+3. Activate virtual environment: `.\venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
+4. Install dependencies: `pip install -r requirements.txt`
+5. Install Playwright browsers: `python -m playwright install`
+6. Run tests: `pytest`
 
 ## List of Files and What They Do
 Requirements.txt
