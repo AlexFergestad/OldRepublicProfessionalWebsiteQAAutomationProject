@@ -18,7 +18,7 @@ Automated UI testing suite for the Old Republic Professional insurance website (
 - Footer links
 - About/Team pages
 
-### Testing done in the Future:
+### Testing to do in the Future:
 - Backend API testing
 - Performance testing
 - Security testing
