@@ -23,6 +23,3 @@ __init__.py
 - Marks a folder as a Python package.
 - It's a sign that says "This folder contains Python code".
 
-pytest.ini
-- Configuration file for pytest behavior.
-
