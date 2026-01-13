@@ -11,8 +11,8 @@ Automated UI testing suite for the Old Republic Professional insurance website (
 - Test cross-browser compatibility
 - Verify responsive design elements
 
-## Scope
-### In Scope:
+## Progress
+### In Progress:
 - Homepage functionality
 - Main navigation menu
 - Product pages (Public Companies, Private Companies, Law Firms, Financial Institutions, Crime)
@@ -20,7 +20,7 @@ Automated UI testing suite for the Old Republic Professional insurance website (
 - Footer links
 - About/Team pages
 
-### Out of Scope:
+### Testing done in the Future:
 - Backend API testing
 - Performance testing
 - Security testing
