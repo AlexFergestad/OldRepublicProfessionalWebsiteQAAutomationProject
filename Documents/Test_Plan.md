@@ -1,5 +1,5 @@
 # Test Plan - Old Republic Professional Website Automation
-Project Overview
+Project Overview:
 Automated UI testing suite for the Old Republic Professional insurance website (https://www.oldrepublicpro.com/)
 
 ## Test Objectives
