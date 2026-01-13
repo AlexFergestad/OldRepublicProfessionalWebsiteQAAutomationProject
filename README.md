@@ -33,10 +33,10 @@ Automated UI testing suite for the Old Republic Professional insurance website (
 - **Reporting**: HTML reports with screenshots
 
 ## Test Schedule
-- **Phase 1**: Smoke & Navigation Tests (Week 1)
-- **Phase 2**: Form Testing (Week 2)
-- **Phase 3**: Advanced Scenarios (Week 3)
-- **Phase 4**: Cross-browser & Reporting (Week 4)
+- **Phase 1**: Smoke & Navigation Tests
+- **Phase 2**: 
+- **Phase 3**:
+- **Phase 4**: 
 
 ## Test Summary
 
