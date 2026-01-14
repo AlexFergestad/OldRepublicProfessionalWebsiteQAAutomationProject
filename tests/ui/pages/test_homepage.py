@@ -13,10 +13,11 @@ from playwright.sync_api import Page, expect
 def test_homepage_loads(page: Page, base_url):
     page.goto(base_url)
     expect(page).to_have_title("Professional Liability Insurance | D&O | LPL | EPL | Old Republic Pro")
-    print("✅ TC-001 PASSED: Homepage loaded")
 
 """TC-002: Verify page title is correct"""
 @pytest.mark.ui
 @pytest.mark.smoke
 def test_page_title(page: Page, base_url):
-    page.goto
+    page.goto(base_url)
+    title = page.title()
+    assert "Old Republic" in title or "Professional" in title
