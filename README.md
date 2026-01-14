@@ -4,6 +4,27 @@ I'm creating a project that will test the Old Republic Professional's main websi
 ## Project Overview
 Automated UI testing suite for the Old Republic Professional insurance website (https://www.oldrepublicpro.com/)
 
+## Order of the Testing
+Tier 1: Smoke Tests (Test FIRST) 🔥
+Goal: Verify the app is stable enough to test further
+Start with the most critical, basic functionality:
+
+1. Page Loads ← You just did this!
+
+- Does the homepage load?
+- Does it load without errors?
+- Is the title correct?
+
+2. Critical Navigation
+
+- Can users access main pages?
+- Do primary menu items work?
+
+3. Critical Forms/Actions
+
+- Can users submit the contact form?
+- Do essential user actions work?
+
 
 ## Setup Instructions to Run Project
 

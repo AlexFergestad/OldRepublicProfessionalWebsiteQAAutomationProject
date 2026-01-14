@@ -8,6 +8,8 @@ from playwright.sync_api import Page, expect
 
 
 @pytest.mark.ui
-def test_homepage_title(page: Page, base_url):
+def test_browser_page__title(page: Page, base_url):
     page.goto(base_url)
-    expect(page).to_have_title("Old Republic Professional")
+    expect(page).to_have_title("Professional Liability Insurance | D&O | LPL | EPL | Old Republic Pro")
+
+
