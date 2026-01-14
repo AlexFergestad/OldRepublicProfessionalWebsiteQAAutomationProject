@@ -12,7 +12,16 @@ Automated UI testing suite for the Old Republic Professional insurance website (
 3. Activate virtual environment: `.\venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
 4. Install dependencies: `pip install -r requirements.txt`
 5. Install Playwright browsers: `python -m playwright install`
-6. Run tests: `pytest`
+6. Run tests: 
+   You can do:
+   - python -m pytest
+   - python -m pytest --headed (The UI version)
+   - python -m pytest --headed --slowmo=1000 (Adds a 1-second delay between actions (1000 milliseconds))
+   - python -m pytest --headed --slowmo=500 -s (The -s flag keeps output visible and can help with debugging)
+   - python -m pytest --headed --browser firefox
+   - python -m pytest --headed --browser webkit
+   - python -m pytest --headed --browser chromium
+   - python -m pytest --headed --browser chromium --browser firefox --browser webkit (Runs all browsers at once)
 
 ## List of Files and What They Do
 Requirements.txt
@@ -22,7 +31,7 @@ Requirements.txt
 - Without it, you would have to manually install each package.
 
 Conftest.py
-- Shared pytest configuration and fixtures for all your test.
+- Shared pytest configuration and fixtures for all your tests.
 - It's a toolbox that all your tests can access.
 - Pytest automatically finds and loads the conftest.py file. 
 
