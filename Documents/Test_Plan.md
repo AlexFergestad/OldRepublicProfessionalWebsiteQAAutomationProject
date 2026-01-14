@@ -38,5 +38,6 @@ Automated UI testing suite for the Old Republic Professional insurance website (
 
 ## Test Summary
 
-| ID | Test Case | Priority | Type | Status | Automated | File |
-|----|-----------|----------|------|--------|-----------|------|
+| ID     | Test Case      | Priority | Type  | Status  | Automated | File |
+|--------|----------------|----------|-------|---------|-----------|------|
+| TC-001 | Homepage loads | High     | Smoke | ✅ Pass | Yes       | test_homepage.py |
