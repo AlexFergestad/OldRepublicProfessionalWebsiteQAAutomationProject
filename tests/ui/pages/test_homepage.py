@@ -36,3 +36,14 @@ def test_main_header_visible_and_correct(page: Page, base_url):
     heading_text = heading.text_content()
     assert "Industry leader of Management and Professional Liability, with 40 years of continuous experience." in heading_text
 
+# Tests that I want done:
+# - Contact and careers in separate files
+# - search bar functionality on homepage
+# - company description (subheading)
+# - contact us on homepage
+# - old republic insurance group link, privacy link, and terms of use link all in a test case on homepage
+# - old republic professional logo validation test case on homepage
+# - home icon link validation test case on homepage
+# - old republic professional top left link is validated and works on homepage
+# - footer, nav bar, cards, test cases on separate folders
+# - Also finish the other test cases in Claude
