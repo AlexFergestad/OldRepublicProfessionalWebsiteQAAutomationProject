@@ -36,6 +36,8 @@ def test_main_header_visible_and_correct(page: Page, base_url):
     heading_text = heading.text_content()
     assert "Industry leader of Management and Professional Liability, with 40 years of continuous experience." in heading_text
 
+"""TC-004: Verify company description/subheading is visible and correct"""
+
 # Tests that I want done:
 # - Contact and careers in separate files
 # - search bar functionality on homepage
