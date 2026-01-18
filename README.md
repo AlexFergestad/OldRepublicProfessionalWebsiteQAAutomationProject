@@ -60,6 +60,10 @@ __init__.py
 - Marks a folder as a Python package.
 - It's a sign that says "This folder contains Python code".
 
+## Command to debug in a UI
+
+python -m playwright show-trace trace.zip
+
 ## Commands to Rum the Tests
 
 # Show print statements

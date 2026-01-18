@@ -54,9 +54,8 @@ def test_insurance_type_cards_visible(page: Page, base_url):
     # Sets a larger viewport to ensure all elements are visible
     page.set_viewport_size({"width": 1920, "height": 1080})
 
+    # Goes to the homepage fixture URL
     page.goto(base_url)
-    page.wait_for_load_state("networkidle")
-
 
     # List of insurance card titles to check
     insurance_types = [
@@ -64,19 +63,21 @@ def test_insurance_type_cards_visible(page: Page, base_url):
         "Private Companies",
         "Law Firms",
         "Financial Institutions",
-        "Commerical Crime"
+        "Commercial Crime"
     ]
 
     for insurance_type in insurance_types:
-        # 1. Exact text (case-insensitive)
-        card = page.get_by_text(insurance_type, exact=True).first
+        # Target the specific card element by class
+        card = page.locator(f".product-service-box__title:has-text('{insurance_type}')").first
+
         try:
             expect(card).to_be_visible(timeout=5000)
             print(f"✅ Found: {insurance_type}")
         except Exception as e:
             print(f"❌ Not found: {insurance_type}")
             print(f"   Error: {e}")
-    
+
+        
 # Tests that I want done:
 # - Contact and careers in separate files
 # - search bar functionality on homepage
