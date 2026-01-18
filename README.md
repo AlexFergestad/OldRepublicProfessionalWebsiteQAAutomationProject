@@ -60,3 +60,13 @@ __init__.py
 - Marks a folder as a Python package.
 - It's a sign that says "This folder contains Python code".
 
+## Commands to Rum the Tests
+
+# Show print statements
+python -m pytest -s
+
+# Or more verbose
+python -m pytest -s -v
+
+# For a specific test
+python -m pytest tests/test_homepage.py::test_insurance_type_cards_visible -s -v

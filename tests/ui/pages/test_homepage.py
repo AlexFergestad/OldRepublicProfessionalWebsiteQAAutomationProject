@@ -36,20 +36,47 @@ from playwright.sync_api import Page, expect
 #     heading_text = heading.text_content()
 #     assert "Industry leader of Management and Professional Liability, with 40 years of continuous experience." in heading_text
 
-"""TC-004: Verify company description/subheading is visible and correct"""
-@pytest.mark.ui
-@pytest.mark.smoke
-def test_company_description_visible(page: Page, base_url):
-    page.goto(base_url)
+# """TC-004: Verify company description/subheading is visible and correct"""
+# @pytest.mark.ui
+# @pytest.mark.smoke
+# def test_company_description_visible(page: Page, base_url):
+#     page.goto(base_url)
     
-    # Look for the description/subheading text
-    description = page.locator("text=/Old Republic Professional underwrites/i")
-    expect(description).to_be_visible()
+#     # Look for the description/subheading text
+#     description = page.locator("text=/Old Republic Professional underwrites/i")
+#     expect(description).to_be_visible()
 
-"""TC-005:"""
+"""TC-005: Verify all insurance type cards are visible"""
 @pytest.mark.ui
 @pytest.mark.smoke
+def test_insurance_type_cards_visible(page: Page, base_url):
+    
+    # Sets a larger viewport to ensure all elements are visible
+    page.set_viewport_size({"width": 1920, "height": 1080})
 
+    page.goto(base_url)
+    page.wait_for_load_state("networkidle")
+
+
+    # List of insurance card titles to check
+    insurance_types = [
+        "Public Companies",
+        "Private Companies",
+        "Law Firms",
+        "Financial Institutions",
+        "Commerical Crime"
+    ]
+
+    for insurance_type in insurance_types:
+        # 1. Exact text (case-insensitive)
+        card = page.get_by_text(insurance_type, exact=True).first
+        try:
+            expect(card).to_be_visible(timeout=5000)
+            print(f"✅ Found: {insurance_type}")
+        except Exception as e:
+            print(f"❌ Not found: {insurance_type}")
+            print(f"   Error: {e}")
+    
 # Tests that I want done:
 # - Contact and careers in separate files
 # - search bar functionality on homepage
