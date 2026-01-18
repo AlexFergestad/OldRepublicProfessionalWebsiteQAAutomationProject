@@ -46,6 +46,9 @@ def test_company_description_visible(page: Page, base_url):
     description = page.locator("text=/Old Republic Professional underwrites/i")
     expect(description).to_be_visible()
 
+"""TC-005:"""
+@pytest.mark.ui
+@pytest.mark.smoke
 
 # Tests that I want done:
 # - Contact and careers in separate files
