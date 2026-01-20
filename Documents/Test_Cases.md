@@ -82,3 +82,23 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_company_description_visible`)
 
+## TC-005: 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Wait for page to fully load.
+3. Verify on the middle of the page it exactly says "Old Republic Professional underwrites insurance" at the start of the subheading.
+
+### Expected Result: 
+- Page loads without errors.
+- Subheading is visible and exactly matches the intended text.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_company_description_visible`)
+
