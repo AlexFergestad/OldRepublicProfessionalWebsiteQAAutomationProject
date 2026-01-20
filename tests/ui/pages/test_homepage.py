@@ -75,7 +75,7 @@ def test_insurance_type_cards_visible(page: Page, base_url):
             print(f"✅ Found: {insurance_type}")
         except Exception as e:
             print(f"❌ Not found: {insurance_type}")
-            print(f"   Error: {e}")
+            print(f"   Error: {e}")g
 
         
 # Tests that I want done:
