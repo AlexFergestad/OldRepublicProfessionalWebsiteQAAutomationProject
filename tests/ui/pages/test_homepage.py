@@ -49,7 +49,7 @@ from playwright.sync_api import Page, expect
 """TC-005: Verify all insurance type cards are visible"""
 @pytest.mark.ui
 @pytest.mark.smoke
-def test_insurance_type_cards_visible(page: Page, base_url):
+def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     
     # Sets a larger viewport to ensure all elements are visible
     page.set_viewport_size({"width": 1920, "height": 1080})

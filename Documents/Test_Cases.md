@@ -82,7 +82,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_company_description_visible`)
 
-## TC-005: 
+## TC-005: Verify the Liability Overview Card Images and their Links in the Middle of the Home Page
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -100,5 +100,5 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_company_description_visible`)
+**Automated**: Yes (`tests/test_homepage.py::test_insurance_type_cards_and_links_visible`)
 
