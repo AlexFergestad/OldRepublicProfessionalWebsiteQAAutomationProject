@@ -77,7 +77,8 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
             print(f"❌ Not found: {insurance_type}")
             print(f"   Error: {e}")
 
-        
+    # Double check the correct elements of the titles and then do the images are visible for this test case
+
 # Tests that I want done:
 # - Contact and careers in separate files
 # - search bar functionality on homepage
