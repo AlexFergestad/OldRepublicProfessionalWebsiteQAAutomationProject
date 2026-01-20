@@ -82,7 +82,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_company_description_visible`)
 
-## TC-005: Verify the Liability Overview Card Images and their Links in the Middle of the Home Page
+## TC-005: Verify the Liability Overview Card Images and their Titles Are Visible
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -92,11 +92,11 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. Verify on the middle of the page it exactly says "Old Republic Professional underwrites insurance" at the start of the subheading.
+3. Verify on the middle of the page the liability overview cards and their titles are visible on the page
 
 ### Expected Result: 
 - Page loads without errors.
-- Subheading is visible and exactly matches the intended text.
+- Card images and their titles are visible and exactly matches the intended text.
 
 ### Actual Result:
 **Status**: ✅ Pass
