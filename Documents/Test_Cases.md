@@ -92,7 +92,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. Verify on the middle of the page the liability overview cards and their titles are visible on the page
+3. Verify on the middle of the page the liability overview cards and their titles are visible on the page.
 
 ### Expected Result: 
 - Page loads without errors.
