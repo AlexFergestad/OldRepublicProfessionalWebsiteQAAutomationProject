@@ -78,9 +78,9 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
             print(f"   Error: {e}")
         
         # Finds the card iamge element
-        
 
-    # Double check the correct elements of the titles and then do the images are visible for this test case
+
+    # Double check the correct elements of the titles and then do the images are visible for this test case - done
 
 # Tests that I want done:
 # - Contact and careers in separate files
