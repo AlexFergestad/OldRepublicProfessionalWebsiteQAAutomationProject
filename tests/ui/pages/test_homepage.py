@@ -67,7 +67,7 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     ]
 
     for insurance_type in insurance_types:
-        #as
+        
         # Target the specific card text element by its title
         card = page.locator(f".product-service-box__title:has-text('{insurance_type}')").first
 
