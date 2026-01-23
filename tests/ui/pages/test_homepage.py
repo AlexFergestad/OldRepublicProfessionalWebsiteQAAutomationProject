@@ -69,10 +69,10 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     for insurance_type in insurance_types:
         
         # Target the specific card text element by its title
-        card = page.locator(f".product-service-box__title:has-text('{insurance_type}')").first
+        caption = page.locator(f".product-service-box__title:has-text('{insurance_type}')").first
 
         try:
-            expect(card).to_be_visible(timeout=5000)
+            expect(caption).to_be_visible(timeout=5000)
             print(f"✅ Found: {insurance_type}")
         except Exception as e:
             print(f"❌ Not found: {insurance_type}")
