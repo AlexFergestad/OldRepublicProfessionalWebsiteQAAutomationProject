@@ -66,7 +66,7 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
         "Commercial Crime": "Commercial crime prevention"
     }
 
-    for insurance_type in insurance_types:
+    for insurance_type, alt_text in insurance_types:
         
         # Target the specific card text element by its title
         caption = page.locator(f".product-service-box__title:has-text('{insurance_type}')").first
@@ -90,7 +90,7 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
 
     # Double checks the correct elements of the titles and then do the images are visible for this test case - done
 
-# Tests that I want done:
+# Tests that I want done2:
 # - Contact and careers in separate files
 # - search bar functionality on homepage
 # - company description (subheading)
