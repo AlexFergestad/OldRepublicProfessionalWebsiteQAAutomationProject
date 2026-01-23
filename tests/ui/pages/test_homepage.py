@@ -58,13 +58,13 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     page.goto(base_url)
 
     # List of insurance card titles to check
-    insurance_types = [
-        "Public Companies",
-        "Private Companies",
-        "Law Firms",
-        "Financial Institutions",
-        "Commercial Crime"
-    ]
+    insurance_types = {
+        "Public Companies": "Public company employees smiling",
+        "Private Companies": "Private company employees smiling",
+        "Law Firms": "Law firm employees smiling",
+        "Financial Institutions": "Financial institution employees smiling",
+        "Commercial Crime": "Commercial crime prevention"
+    }
 
     for insurance_type in insurance_types:
         
@@ -79,7 +79,14 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
             print(f"   Error: {e}")
         
         # Finds the card image element
+        card_image = page.locator(f".product-service-box__icon__image:has-text('{insurance_type}')").first
 
+        try:
+            expect(card_image).to_be_visible(timeout=5000)
+            print(f"✅ Found image for: {insurance_type}")
+        except Exception as e:
+            print(f"❌ Not found image for: {insurance_type}")
+            print(f"   Error: {e}")
 
     # Double checks the correct elements of the titles and then do the images are visible for this test case - done
 
