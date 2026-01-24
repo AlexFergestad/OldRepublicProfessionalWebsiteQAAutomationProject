@@ -66,20 +66,6 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
         "Commercial Crime"
     ]
 
-    
-    # for insurance_type in insurance_types:
-    #     # Find the card link that contains this text
-    #     card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
-    #     expect(card_link).to_be_visible(timeout=5000)
-        
-    #     # Verify it has an image
-    #     card_image = card_link.locator("img.product-service-box__icon__image").first
-    #     expect(card_image).to_be_visible(timeout=5000)
-        
-    #     # Verify the title
-    #     card_title = card_link.locator("span.product-service-box__title").first
-    #     expect(card_title).to_have_text(insurance_type)
-        
     for insurance_type in insurance_types:
 
         # Finds the card link that contains this text
