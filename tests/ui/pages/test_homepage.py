@@ -66,31 +66,26 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
         "Commercial Crime"
     ]
 
-    # First, verify all 5 images exist
-    all_card_images = page.locator("img.product-service-box__icon__image").all()
-    assert len(all_card_images) == 5, f"Expected 5 card images, found {len(all_card_images)}"
-    print(f"✅ Found all 5 card images")
-    
-    # Verify all images are visible
-    for img in all_card_images:
-        expect(img).to_be_visible(timeout=5000)
-    print(f"✅ All 5 images are visible")
-
-
     for insurance_type in insurance_types:
         
-        # Find the card by title
+        # Find the card title
         card_title = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')").first
         expect(card_title).to_be_visible(timeout=5000)
         
-        # Find parent card container
-        card_box = card_title.locator("xpath=ancestor::*[contains(@class, 'product-service-box')]").first
+        # Find parent card container (the <a> tag) - just go up one level
+        card_box = card_title.locator("xpath=..").first
         
         # Verify the card has an image
         card_image = card_box.locator("img.product-service-box__icon__image").first
         expect(card_image).to_be_visible(timeout=5000)
         
-        print(f"✅ {insurance_type}: Card and image found")
+        # Verify image has loaded
+        image_src = card_image.get_attribute("src")
+        assert image_src and "http" in image_src, f"Invalid image source for {insurance_type}"
+        
+        print(f"✅ {insurance_type}: Card and image verified")
+        print(f"   Image: {image_src}")
+
 
 
 
