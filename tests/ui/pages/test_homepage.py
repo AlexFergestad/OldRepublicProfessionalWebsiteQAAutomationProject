@@ -67,29 +67,21 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     ]
 
 
-    for insurance_type, alt_text in insurance_types:
+    for insurance_type in insurance_types:
         
-        # Target the specific card text element by its title
-        caption = page.locator(f".product-service-box__title:has-text('{insurance_type}')").first
-
-        try:
-            expect(caption).to_be_visible(timeout=5000)
-            print(f"✅ Found: {insurance_type}")
-        except Exception as e:
-            print(f"❌ Not found: {insurance_type}")
-            print(f"   Error: {e}")
+        # Find the card by title
+        card_title = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')").first
+        expect(card_title).to_be_visible(timeout=5000)
         
-        # Finds the card image element
-        card_image = page.locator(f".product-service-box__icon__image:has-text('{insurance_type}')").first
+        # Find parent card container
+        card_box = card_title.locator("xpath=ancestor::*[contains(@class, 'product-service-box')]").first
+        
+        # Verify the card has an image
+        card_image = card_box.locator("img.product-service-box__icon__image").first
+        expect(card_image).to_be_visible(timeout=5000)
+        
+        print(f"✅ {insurance_type}: Card and image found")
 
-        try:
-            expect(card_image).to_be_visible(timeout=5000)
-            print(f"✅ Found image for: {insurance_type}")
-        except Exception as e:
-            print(f"❌ Not found image for: {insurance_type}")
-            print(f"   Error: {e}")
-
-    # Double checks the correct elements of the titles and then do the images are visible for this test case - done
 
 
 # Tests that I want done:
