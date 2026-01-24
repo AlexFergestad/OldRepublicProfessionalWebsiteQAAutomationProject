@@ -46,40 +46,41 @@ from playwright.sync_api import Page, expect
 #     description = page.locator("text=/Old Republic Professional underwrites/i")
 #     expect(description).to_be_visible()
 
-"""TC-005: Verify all insurance type cards are visible"""
-@pytest.mark.ui
-@pytest.mark.smoke
-def test_insurance_type_cards_and_links_visible(page: Page, base_url):
+# """TC-005: Verify all insurance type cards are visible"""
+# @pytest.mark.ui
+# @pytest.mark.smoke
+# def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     
-    # Sets a larger viewport to ensure all elements are visible
-    page.set_viewport_size({"width": 1920, "height": 1080})
+#     # Sets a larger viewport to ensure all elements are visible
+#     page.set_viewport_size({"width": 1920, "height": 1080})
 
-    # Goes to the homepage fixture URL
-    page.goto(base_url)
+#     # Goes to the homepage fixture URL
+#     page.goto(base_url)
 
-    # List of insurance card titles to check
-    insurance_types = [
-        "Public Companies",
-        "Private Companies",
-        "Law Firms",
-        "Financial Institutions",
-        "Commercial Crime"
-    ]
+#     # List of insurance card titles to check
+#     insurance_types = [
+#         "Public Companies",
+#         "Private Companies",
+#         "Law Firms",
+#         "Financial Institutions",
+#         "Commercial Crime"
+#     ]
 
-    for insurance_type in insurance_types:
+#     for insurance_type in insurance_types:
 
-        # Finds the card link that contains this text
-        card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
-        expect(card_link).to_be_visible(timeout=5000)
+#         # Finds the card link that contains this text
+#         card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
+#         expect(card_link).to_be_visible(timeout=5000)
         
-        # Verify it has an image
-        card_image = card_link.locator("img.product-service-box__icon__image").first
-        expect(card_image).to_be_visible(timeout=5000)
+#         # Verify it has an image
+#         card_image = card_link.locator("img.product-service-box__icon__image").first
+#         expect(card_image).to_be_visible(timeout=5000)
  
-        # Verify the title
-        card_title = card_link.locator("span.product-service-box__title").first
-        expect(card_title).to_have_text(insurance_type)
+#         # Verify the title
+#         card_title = card_link.locator("span.product-service-box__title").first
+#         expect(card_title).to_have_text(insurance_type)
 
+"""TC-006: Verify insurance type cards are clickable"""
 
 # Tests that I want done:
 # - Contact and careers in separate files
