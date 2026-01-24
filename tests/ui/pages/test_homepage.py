@@ -66,27 +66,33 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
         "Commercial Crime"
     ]
 
+    
+    # for insurance_type in insurance_types:
+    #     # Find the card link that contains this text
+    #     card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
+    #     expect(card_link).to_be_visible(timeout=5000)
+        
+    #     # Verify it has an image
+    #     card_image = card_link.locator("img.product-service-box__icon__image").first
+    #     expect(card_image).to_be_visible(timeout=5000)
+        
+    #     # Verify the title
+    #     card_title = card_link.locator("span.product-service-box__title").first
+    #     expect(card_title).to_have_text(insurance_type)
+        
     for insurance_type in insurance_types:
+
+        # Finds the card link that contains this text
+        card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
+        expect(card_link).to_be_visible(timeout=5000)
         
-        # Find the card title
-        card_title = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')").first
-        expect(card_title).to_be_visible(timeout=5000)
-        
-        # Find parent card container (the <a> tag) - just go up one level
-        card_box = card_title.locator("xpath=..").first
-        
-        # Verify the card has an image
-        card_image = card_box.locator("img.product-service-box__icon__image").first
+        # Verify it has an image
+        card_image = card_link.locator("img.product-service-box__icon__image").first
         expect(card_image).to_be_visible(timeout=5000)
-        
-        # Verify image has loaded
-        image_src = card_image.get_attribute("src")
-        assert image_src and "http" in image_src, f"Invalid image source for {insurance_type}"
-        
-        print(f"✅ {insurance_type}: Card and image verified")
-        print(f"   Image: {image_src}")
-
-
+ 
+        # Verify the title
+        card_title = card_link.locator("span.product-service-box__title").first
+        expect(card_title).to_have_text(insurance_type)
 
 
 # Tests that I want done:
