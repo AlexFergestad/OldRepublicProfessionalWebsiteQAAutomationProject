@@ -81,6 +81,10 @@ from playwright.sync_api import Page, expect
 #         expect(card_title).to_have_text(insurance_type)
 
 """TC-006: Verify insurance type cards are clickable"""
+@pytest.mark.ui
+@pytest.mark.smoke
+def test_insurance_cards_clickable(page: Page, base_url):
+    
 
 # Tests that I want done:
 # - Contact and careers in separate files
