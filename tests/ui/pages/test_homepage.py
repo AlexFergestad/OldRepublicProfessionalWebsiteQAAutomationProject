@@ -66,6 +66,16 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
         "Commercial Crime"
     ]
 
+    # First, verify all 5 images exist
+    all_card_images = page.locator("img.product-service-box__icon__image").all()
+    assert len(all_card_images) == 5, f"Expected 5 card images, found {len(all_card_images)}"
+    print(f"✅ Found all 5 card images")
+    
+    # Verify all images are visible
+    for img in all_card_images:
+        expect(img).to_be_visible(timeout=5000)
+    print(f"✅ All 5 images are visible")
+
 
     for insurance_type in insurance_types:
         
