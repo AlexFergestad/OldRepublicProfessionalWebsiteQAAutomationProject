@@ -58,13 +58,14 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     page.goto(base_url)
 
     # List of insurance card titles to check
-    insurance_types = {
-        "Public Companies": "Public company employees smiling",
-        "Private Companies": "Private company employees smiling",
-        "Law Firms": "Law firm employees smiling",
-        "Financial Institutions": "Financial institution employees smiling",
-        "Commercial Crime": "Commercial crime prevention"
-    }
+    insurance_types = [
+        "Public Companies",
+        "Private Companies",
+        "Law Firms",
+        "Financial Institutions",
+        "Commercial Crime"
+    ]
+
 
     for insurance_type, alt_text in insurance_types:
         
@@ -89,6 +90,7 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
             print(f"   Error: {e}")
 
     # Double checks the correct elements of the titles and then do the images are visible for this test case - done
+
 
 # Tests that I want done:
 # - Contact and careers in separate files
