@@ -82,7 +82,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_company_description_visible`)
 
-## TC-005: Verify the Liability Overview Card Images and their Titles Are Visible
+## TC-005: Verify the Insurance Type Card Images and their Titles Are Visible
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -92,7 +92,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. Verify on the middle of the page the liability overview cards and their titles are visible on the page.
+3. Verify on the middle of the page the insurance type cards and their titles are visible on the page.
 
 ### Expected Result: 
 - Page loads without errors.
