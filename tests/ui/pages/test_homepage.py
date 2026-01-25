@@ -80,18 +80,18 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
         card_title = card_link.locator("span.product-service-box__title").first
         expect(card_title).to_have_text(insurance_type)
 
-"""TC-006: Verify insurance type cards and links are clickable"""
+"""TC-006: Verify insurance type card titles and links are clickable"""
 @pytest.mark.ui
 @pytest.mark.smoke
 def test_insurance_cards_clickable(page: Page, base_url):
     page.goto(base_url)
     
-    # Click each insurance type card link
+    # Click each insurance type card title
 
 
     # Click each insurance type card image
 
-    
+
 
 
 # Tests that I want done:

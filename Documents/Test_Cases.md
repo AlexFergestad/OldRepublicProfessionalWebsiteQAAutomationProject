@@ -120,4 +120,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_insurance_type_cards_and_links_visible`)
+**Automated**: Yes (`tests/test_homepage.py::test_insurance_cards_clickable`)
