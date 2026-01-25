@@ -84,8 +84,18 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
 @pytest.mark.ui
 @pytest.mark.smoke
 def test_insurance_cards_clickable(page: Page, base_url):
-    page.goto(base_url)
     
+    insurance_types = [
+            "Public Companies",
+            "Private Companies",
+            "Law Firms",
+            "Financial Institutions",
+            "Commercial Crime"
+        ]
+
+    for insurance_type in insurance_types:
+        page.goto(base_url)
+
     # Click each insurance type card title
 
 
