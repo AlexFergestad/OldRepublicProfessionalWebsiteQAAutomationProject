@@ -102,3 +102,22 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_insurance_type_cards_and_links_visible`)
 
+## TC-006: Verify when clicking the Insurance Type Card Images and Titles, it brings a User to a new page 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Wait for page to fully load.
+3. Verify on the middle of the page the insurance type cards and their titles are visible on the page.
+
+### Expected Result: 
+- Page loads without errors.
+- Card images and their titles are visible and exactly matches the intended text.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_insurance_type_cards_and_links_visible`)
