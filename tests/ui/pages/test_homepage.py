@@ -85,6 +85,8 @@ def test_insurance_type_cards_and_links_visible(page: Page, base_url):
 @pytest.mark.smoke
 def test_insurance_cards_clickable(page: Page, base_url):
     
+    page.set_viewport_size({"width": 1920, "height": 1080})
+    
     insurance_types = [
             "Public Companies",
             "Private Companies",
@@ -97,13 +99,16 @@ def test_insurance_cards_clickable(page: Page, base_url):
         page.goto(base_url)
 
         # Click each insurance type card title
-        title_link = page.locator(f"span.product-service-box__title:has-text('{insurance_type})")
+        title_link = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')")
         title_link.click()
         title_click_url = page.url
 
+        # Go back to the main homepage and test clicking the image's link
+        page.goto(base_url)
+
         # Click each insurance type card image
         image_link= page.locator(f"a.product-service-box:has-text('{insurance_type}')").first \
-            .locator(f"product-service-box__icon__image").first
+            .locator("img.product-service-box__icon__image").first
         image_link.click()
         image_click_url = page.url
 
