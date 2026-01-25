@@ -96,13 +96,20 @@ def test_insurance_cards_clickable(page: Page, base_url):
     for insurance_type in insurance_types:
         page.goto(base_url)
 
-    # Click each insurance type card title
+        # Click each insurance type card title
+        title_link = page.locator(f"span.product-service-box__title:has-text('{insurance_type})")
+        title_link.click()
+        title_click_url = page.url
 
+        # Click each insurance type card image
+        image_link= page.locator(f"a.product-service-box:has-text('{insurance_type}')").first \
+            .locator(f"product-service-box__icon__image").first
+        image_link.click()
+        image_click_url = page.url
 
-    # Click each insurance type card image
-
-
-
+        # Verify the the navigate to the same place
+        assert image_click_url == title_click_url, \
+            f"Different URLs: Image={image_click_url}, Title={title_click_url}"
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
