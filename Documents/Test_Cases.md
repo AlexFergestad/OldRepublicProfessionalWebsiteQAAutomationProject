@@ -112,7 +112,11 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. Verify on the middle of the page the insurance type cards and their titles are visible on the page.
+3. Click on an image title.
+4. Verify that it brings you to the next page.
+5. Click the back arrow or type the address "https://www.oldrepublicpro.com/" into the url.
+6. 
+
 
 ### Expected Result: 
 - Page loads without errors.
