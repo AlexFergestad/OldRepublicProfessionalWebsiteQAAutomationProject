@@ -97,22 +97,26 @@ def test_insurance_cards_clickable(page: Page, base_url):
 
     for insurance_type in insurance_types:
         page.goto(base_url)
+        page.wait_for_load_state("networkidle")  # Waits for page to fully load
 
         # Click each insurance type card title
         title_link = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')")
         title_link.click()
+        page.wait_for_load_state("networkidle")  # Waits for page to fully load
         title_click_url = page.url
 
         # Go back to the main homepage and test clicking the image's link
         page.goto(base_url)
+        page.wait_for_load_state("networkidle")  # Waits for page to fully load
 
         # Click each insurance type card image
         image_link= page.locator(f"a.product-service-box:has-text('{insurance_type}')").first \
             .locator("img.product-service-box__icon__image").first
         image_link.click()
+        page.wait_for_load_state("networkidle")  # Waits for page to fully load
         image_click_url = page.url
 
-        # Verify the the navigate to the same place
+        # Verifies the links navigate to the same url/place
         assert image_click_url == title_click_url, \
             f"Different URLs: Image={image_click_url}, Title={title_click_url}"
 
