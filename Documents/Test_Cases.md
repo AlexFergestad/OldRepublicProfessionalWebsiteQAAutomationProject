@@ -113,14 +113,14 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
 3. Click on an image title.
-4. Verify that it brings you to the next page.
+4. Verify that it brings you to the correct next page.
 5. Click the back arrow or type the address "https://www.oldrepublicpro.com/" into the url.
-6. 
+6. Click the image itself and verify that it brings you to the correct next page.
+7. Rinse and repeat for each insurance type card title and image.
 
 
 ### Expected Result: 
-- Page loads without errors.
-- Card images and their titles are visible and exactly matches the intended text.
+- Each insurance type card image and their title bring the user to the next/correct page.
 
 ### Actual Result:
 **Status**: ✅ Pass
