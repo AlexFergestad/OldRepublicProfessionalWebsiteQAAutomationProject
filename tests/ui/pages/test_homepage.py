@@ -120,6 +120,8 @@ def test_insurance_cards_clickable(page: Page, base_url):
         assert image_click_url == title_click_url, \
             f"Different URLs: Image={image_click_url}, Title={title_click_url}"
 
+"""TC-007: Verify Contact Us"""
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
