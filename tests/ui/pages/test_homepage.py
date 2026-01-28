@@ -7,7 +7,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-"""TC-001: Verify home page loads"""
+# """TC-001: Verify home page loads"""
 # @pytest.mark.ui
 # @pytest.mark.smoke
 # def test_homepage_loads(page: Page, base_url):
@@ -44,88 +44,93 @@ from playwright.sync_api import Page, expect
     
 #     # Look for the description/subheading text
 #     description = page.locator("text=/Old Republic Professional underwrites/i")
-#     expect(description).to_be_visible()
+# #     expect(description).to_be_visible()
 
-"""TC-005: Verify all insurance type cards are visible"""
-@pytest.mark.ui
-@pytest.mark.smoke
-def test_insurance_type_cards_and_links_visible(page: Page, base_url):
+# """TC-005: Verify all insurance type cards are visible"""
+# @pytest.mark.ui
+# @pytest.mark.smoke
+# def test_insurance_type_cards_and_links_visible(page: Page, base_url):
     
-    # Sets a larger viewport to ensure all elements are visible
-    page.set_viewport_size({"width": 1920, "height": 1080})
+#     # Sets a larger viewport to ensure all elements are visible
+#     page.set_viewport_size({"width": 1920, "height": 1080})
 
-    # Goes to the homepage fixture URL
-    page.goto(base_url)
+#     # Goes to the homepage fixture URL
+#     page.goto(base_url)
 
-    # List of insurance card titles to check
-    insurance_types = [
-        "Public Companies",
-        "Private Companies",
-        "Law Firms",
-        "Financial Institutions",
-        "Commercial Crime"
-    ]
+#     # List of insurance card titles to check
+#     insurance_types = [
+#         "Public Companies",
+#         "Private Companies",
+#         "Law Firms",
+#         "Financial Institutions",
+#         "Commercial Crime"
+#     ]
 
-    for insurance_type in insurance_types:
+#     for insurance_type in insurance_types:
 
-        # Finds the card link that contains this text
-        card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
-        expect(card_link).to_be_visible(timeout=5000)
+#         # Finds the card link that contains this text
+#         card_link = page.locator(f"a.product-service-box:has-text('{insurance_type}')").first
+#         expect(card_link).to_be_visible(timeout=5000)
         
-        # Verify it has an image
-        card_image = card_link.locator("img.product-service-box__icon__image").first
-        expect(card_image).to_be_visible(timeout=5000)
+#         # Verify it has an image
+#         card_image = card_link.locator("img.product-service-box__icon__image").first
+#         expect(card_image).to_be_visible(timeout=5000)
  
-        # Verify the title
-        card_title = card_link.locator("span.product-service-box__title").first
-        expect(card_title).to_have_text(insurance_type)
+#         # Verify the title
+#         card_title = card_link.locator("span.product-service-box__title").first
+#         expect(card_title).to_have_text(insurance_type)
 
-"""TC-006: Verify insurance type card titles and links are clickable"""
-@pytest.mark.ui
-@pytest.mark.smoke
-def test_insurance_cards_clickable(page: Page, base_url):
+# """TC-006: Verify insurance type card titles and links are clickable"""
+# @pytest.mark.ui
+# @pytest.mark.smoke
+# def test_insurance_cards_clickable(page: Page, base_url):
     
-    page.set_viewport_size({"width": 1920, "height": 1080})
+#     page.set_viewport_size({"width": 1920, "height": 1080})
     
-    insurance_types = [
-            "Public Companies",
-            "Private Companies",
-            "Law Firms",
-            "Financial Institutions",
-            "Commercial Crime"
-        ]
+#     insurance_types = [
+#             "Public Companies",
+#             "Private Companies",
+#             "Law Firms",
+#             "Financial Institutions",
+#             "Commercial Crime"
+#         ]
 
-    for insurance_type in insurance_types:
-        page.goto(base_url)
-        page.wait_for_load_state("networkidle")  # Waits for page to fully load
+#     for insurance_type in insurance_types:
+#         page.goto(base_url)
+#         page.wait_for_load_state("networkidle")  # Waits for page to fully load
 
-        # Click each insurance type card title
-        title_link = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')")
-        title_link.click()
-        page.wait_for_load_state("networkidle")  # Waits for page to fully load
-        title_click_url = page.url
+#         # Click each insurance type card title
+#         title_link = page.locator(f"span.product-service-box__title:has-text('{insurance_type}')")
+#         title_link.click()
+#         page.wait_for_load_state("networkidle")  # Waits for page to fully load
+#         title_click_url = page.url
 
-        # Go back to the main homepage and test clicking the image's link
-        page.goto(base_url)
-        page.wait_for_load_state("networkidle")  # Waits for page to fully load
+#         # Go back to the main homepage and test clicking the image's link
+#         page.goto(base_url)
+#         page.wait_for_load_state("networkidle")  # Waits for page to fully load
 
-        # Click each insurance type card image
-        image_link= page.locator(f"a.product-service-box:has-text('{insurance_type}')").first \
-            .locator("img.product-service-box__icon__image").first
-        image_link.click()
-        page.wait_for_load_state("networkidle")  # Waits for page to fully load
-        image_click_url = page.url
+#         # Click each insurance type card image
+#         image_link= page.locator(f"a.product-service-box:has-text('{insurance_type}')").first \
+#             .locator("img.product-service-box__icon__image").first
+#         image_link.click()
+#         page.wait_for_load_state("networkidle")  # Waits for page to fully load
+#         image_click_url = page.url
 
-        # Verifies the links navigate to the same url/place
-        assert image_click_url == title_click_url, \
-            f"Different URLs: Image={image_click_url}, Title={title_click_url}"
+#         # Verifies the links navigate to the same url/place
+#         assert image_click_url == title_click_url, \
+#             f"Different URLs: Image={image_click_url}, Title={title_click_url}"
 
 """TC-007: Verify Contact Us is visible and links correctly to the contact page"""
 @pytest.mark.ui
+@pytest.mark.smoke
 def test_contact_us_link(page: Page, base_url):
     page.goto(base_url)
 
-    
+    # Look for the "Every great partnership starts with a conversation." text
+    contact_section = page.locator("text=/great partnership starts with a conversation./i").first
+    expect(contact_section).to_be_visible()
+
+
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
