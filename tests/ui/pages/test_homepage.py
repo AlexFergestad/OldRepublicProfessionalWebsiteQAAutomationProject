@@ -120,9 +120,12 @@ def test_insurance_cards_clickable(page: Page, base_url):
         assert image_click_url == title_click_url, \
             f"Different URLs: Image={image_click_url}, Title={title_click_url}"
 
-"""TC-007: Verify Contact Us"""
+"""TC-007: Verify Contact Us is visible and links correctly to the contact page"""
 @pytest.mark.ui
+def test_contact_us_link(page: Page, base_url):
+    page.goto(base_url)
 
+    
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
