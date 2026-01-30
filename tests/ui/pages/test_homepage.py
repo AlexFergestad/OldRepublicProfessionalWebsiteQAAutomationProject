@@ -126,8 +126,9 @@ def test_contact_us_link(page: Page, base_url):
     page.goto(base_url)
 
     # Look for the "Every great partnership starts with a conversation." text
-    contact_section = page.to_have_text("Every great partnership starts with a conversation.")
+    contact_section = page.get_by_text("Every great partnership starts with a conversation.")
     expect(contact_section).to_be_visible()
+    expect(contact_section).to_have_text("Every great partnership starts with a conversation.")
 
     # Find by role (best practice - matches how screen readers find it)
     contact_button = page.get_by_role("link", name="Contact Us").first
