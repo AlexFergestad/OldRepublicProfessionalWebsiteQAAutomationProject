@@ -74,3 +74,26 @@ python -m pytest -s -v
 
 # For a specific test
 python -m pytest tests/test_homepage.py::{name_of_test} -s -v
+
+
+## What Each Method Does:
+
+# to_be_visible()
+"Is this actually on the screen and clickable?"
+
+# to_have_text()
+"Does this have the exact text we expect?"
+
+
+
+
+
+## Additional Testing Information
+
+# Example of what exactly is in a test execution
+
+expect(contact_button).to_be_visible()
+  │         │              │
+  │         │              └─ Assertion method (checks a condition)
+  │         └─ Element to check
+  └─ Function that creates an assertion object

@@ -128,12 +128,12 @@ def test_contact_us_link(page: Page, base_url):
     contact_section = page.locator("text=/Every great partnership starts with a conversation./i").first
     expect(contact_section).to_be_visible()
 
-    # Find the Contact Us button
-    contact_button = page.locator("a.cta-btn:has-text('Contact Us')").first
-    
+    # Find by role (best practice - matches how screen readers find it)
+    contact_button = page.get_by_role("link", name="Contact Us").first
+
     # Verify it's visible
     expect(contact_button).to_be_visible(timeout=5000)
-
+    
     # Verify the text is exactly "Contact Us"
     expect(contact_button).to_have_text("Contact Us")
 
