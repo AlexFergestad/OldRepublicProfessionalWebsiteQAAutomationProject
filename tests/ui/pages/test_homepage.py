@@ -127,7 +127,7 @@ def test_contact_us_link(page: Page, base_url):
     page.goto(base_url)
 
     # Look for the "Every great partnership starts with a conversation." text
-    contact_section = page.locator("text=/great partnership starts with a conversation./i").first
+    contact_section = page.locator("text=/Every great partnership starts with a conversation./i").first
     expect(contact_section).to_be_visible()
 
 
