@@ -50,9 +50,7 @@ from playwright.sync_api import Page, expect
 # @pytest.mark.ui
 # @pytest.mark.smoke
 # def test_insurance_type_cards_and_links_visible(page: Page, base_url):
-    
-#     # Sets a larger viewport to ensure all elements are visible
-#     page.set_viewport_size({"width": 1920, "height": 1080})
+
 
 #     # Goes to the homepage fixture URL
 #     page.goto(base_url)
@@ -84,8 +82,7 @@ from playwright.sync_api import Page, expect
 # @pytest.mark.ui
 # @pytest.mark.smoke
 # def test_insurance_cards_clickable(page: Page, base_url):
-    
-#     page.set_viewport_size({"width": 1920, "height": 1080})
+
     
 #     insurance_types = [
 #             "Public Companies",
@@ -124,6 +121,7 @@ from playwright.sync_api import Page, expect
 @pytest.mark.ui
 @pytest.mark.smoke
 def test_contact_us_link(page: Page, base_url):
+    
     page.goto(base_url)
 
     # Look for the "Every great partnership starts with a conversation." text
