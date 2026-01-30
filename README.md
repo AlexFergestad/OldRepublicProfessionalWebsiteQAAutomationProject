@@ -54,7 +54,7 @@ Requirements.txt
 Conftest.py
 - Shared pytest configuration and fixtures for all your tests.
 - It's a toolbox that all your tests can access.
-- Pytest automatically finds and loads the conftest.py file. 
+- Pytest automtically finds and loads the conftest.py file. 
 
 __init__.py
 - Marks a folder as a Python package.
@@ -73,4 +73,4 @@ python -m pytest -s
 python -m pytest -s -v
 
 # For a specific test
-python -m pytest tests/test_homepage.py::test_insurance_type_cards_visible -s -v
+python -m pytest tests/test_homepage.py::{name_of_test} -s -v
