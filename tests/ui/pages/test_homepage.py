@@ -122,16 +122,17 @@ from playwright.sync_api import Page, expect
 @pytest.mark.smoke
 def test_contact_us_link(page: Page, base_url):
     
+    # Goes to the homepage
     page.goto(base_url)
 
     # Look for the "Every great partnership starts with a conversation." text
-    contact_section = page.get_by_text("Every great partnership starts with a conversation.")
+    contact_section = page.to_have_text("Every great partnership starts with a conversation.")
     expect(contact_section).to_be_visible()
 
     # Find by role (best practice - matches how screen readers find it)
     contact_button = page.get_by_role("link", name="Contact Us").first
 
-    # Verify it's visible
+    # Verify it's visible on the screen for a user
     expect(contact_button).to_be_visible(timeout=5000)
 
     # Verify the text is exactly "Contact Us"

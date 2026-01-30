@@ -82,10 +82,12 @@ python -m pytest tests/test_homepage.py::{name_of_test} -s -v
 "Is this actually on the screen and clickable?"
 
 # to_have_text()
-"Does this have the exact text we expect?"
+"Verify that this element has this text"
+- Used when you already have an element and want to verify its text.
 
-
-
+# get_by_text()
+"Find me the element with this text"
+- Used when you need to locate/find an element to interact with.
 
 
 ## Additional Testing Information
