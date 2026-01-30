@@ -133,9 +133,17 @@ def test_contact_us_link(page: Page, base_url):
     
     # Verify it's visible
     expect(contact_button).to_be_visible(timeout=5000)
-    
+
     # Verify the text is exactly "Contact Us"
     expect(contact_button).to_have_text("Contact Us")
+
+    # Click and verify navigation
+    contact_button.click()
+    page.wait_for_load_state("networkidle")
+    
+    # Verify we're on the contact page
+    current_url = page.url
+    assert "/contact" in current_url, f"Expected URL to contain '/contact', but got '{current_url}'"
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
