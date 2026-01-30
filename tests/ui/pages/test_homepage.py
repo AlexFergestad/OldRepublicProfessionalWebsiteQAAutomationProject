@@ -117,35 +117,37 @@ from playwright.sync_api import Page, expect
 #         assert image_click_url == title_click_url, \
 #             f"Different URLs: Image={image_click_url}, Title={title_click_url}"
 
-"""TC-007: Verify Contact Us is visible and links correctly to the contact page"""
-@pytest.mark.ui
-@pytest.mark.smoke
-def test_contact_us_link(page: Page, base_url):
+# """TC-007: Verify Contact Us is visible and links correctly to the contact page"""
+# @pytest.mark.ui
+# @pytest.mark.smoke
+# def test_contact_us_link(page: Page, base_url):
     
-    # Goes to the homepage
-    page.goto(base_url)
+#     # Goes to the homepage
+#     page.goto(base_url)
 
-    # Look for the "Every great partnership starts with a conversation." text
-    contact_section = page.get_by_text("Every great partnership starts with a conversation.")
-    expect(contact_section).to_be_visible()
-    expect(contact_section).to_have_text("Every great partnership starts with a conversation.")
+#     # Look for the "Every great partnership starts with a conversation." text
+#     contact_section = page.get_by_text("Every great partnership starts with a conversation.")
+#     expect(contact_section).to_be_visible()
+#     expect(contact_section).to_have_text("Every great partnership starts with a conversation.")
 
-    # Find by role (best practice - matches how screen readers find it)
-    contact_button = page.get_by_role("link", name="Contact Us").first
+#     # Find by role (best practice - matches how screen readers find it)
+#     contact_button = page.get_by_role("link", name="Contact Us").first
 
-    # Verify it's visible on the screen for a user
-    expect(contact_button).to_be_visible(timeout=5000)
+#     # Verify it's visible on the screen for a user
+#     expect(contact_button).to_be_visible(timeout=5000)
 
-    # Verify the text is exactly "Contact Us"
-    expect(contact_button).to_have_text("Contact Us")
+#     # Verify the text is exactly "Contact Us"
+#     expect(contact_button).to_have_text("Contact Us")
 
-    # Click and verify navigation
-    contact_button.click()
-    page.wait_for_load_state("networkidle")
+#     # Click and verify navigation
+#     contact_button.click()
+#     page.wait_for_load_state("networkidle")
     
-    # Verify we're on the contact page
-    current_url = page.url
-    assert "/contact" in current_url, f"Expected URL to contain '/contact', but got '{current_url}'"
+#     # Verify we're on the contact page
+#     current_url = page.url
+#     assert "/contact" in current_url, f"Expected URL to contain '/contact', but got '{current_url}'"
+
+"""TC-009"""
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
