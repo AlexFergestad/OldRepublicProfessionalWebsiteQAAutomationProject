@@ -154,8 +154,20 @@ def test_company_logo(page: Page, base_url):
 
     # Goes to the homepage
     page.goto(base_url)
+    page.wait_for_load_state("networkidle")
 
-    
+    # Find the company logo image
+    logo = page.get_by_alt_text("Old Republic Professional)")
+
+    # Verify it's visible
+    expect(logo).to_be_visible(timeout=5000)
+
+    # Click the logo
+    logo.click()
+    page.wait_for_load_state("networkidle")
+
+    # Does the url of the image match the base homepage url
+    assert page.url == base_url, f"Expected URL to be '{base_url}', but got '{page.url}'"
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
