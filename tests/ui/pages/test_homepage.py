@@ -166,8 +166,12 @@ def test_company_logo(page: Page, base_url):
     logo.click()
     page.wait_for_load_state("networkidle")
 
+    # Creates two variables that store the urls that remove the trailing slash if present
+    current_url = page.url.rstrip('/')
+    expected_url = base_url.rstrip('/')
+
     # Does the url of the image match the base homepage url
-    assert page.url == base_url, f"Expected URL to be '{base_url}', but got '{page.url}'"
+    assert current_url == expected_url, f"Expected URL to be '{expected_url}', but got '{current_url}'"
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
