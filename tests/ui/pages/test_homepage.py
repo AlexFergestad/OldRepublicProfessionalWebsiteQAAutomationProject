@@ -171,6 +171,7 @@ def test_company_logo(page: Page, base_url):
         f"Expected homepage '{expected_url}', got '{current_url}'"
 
 """TC-009: Verify Search Bar Functionality on Homepage"""
+@pytest.mark.ui
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
