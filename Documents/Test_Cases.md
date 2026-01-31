@@ -136,6 +136,32 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
+3. Verify that the contact us sub text to the left of the "Contact Us" button displays "Every great partnership starts with a conversation." exactly.
+4. Click on the "Contact Us" button.
+5. Verify that you are brought to the contact us page.
+6. Verify that the url at the end displays "/contact".
+
+
+### Expected Result: 
+- "Contact Us" subtext will display text "Every great partnership starts with a conversation.".
+- User will be successfully brought to the contact us page.
+- At the end of the url, it displays "/contact".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_contact_us_link`)
+
+
+## TC-008: Verify Company Logo is Visible and Links to Homepage
+**Priority**: Medium
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Wait for page to fully load.
 3. Click on the "Contact" button in the nav bar. 
 4. Verify that it brings you to the contact page.
 5. Click on the Old Republic Professional image on the top left.
@@ -148,5 +174,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_contact_us_link`)
-
+**Automated**: Yes (`tests/test_homepage.py::test_company_logo`)
