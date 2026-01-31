@@ -125,3 +125,28 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_insurance_cards_clickable`)
+
+## TC-007: Verify Contact Us is visible and links correctly to the contact page
+**Priority**: Medium
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Wait for page to fully load.
+3. Click on the "Contact" button in the nav bar. 
+4. Verify that it brings you to the contact page.
+5. Click on the Old Republic Professional image on the top left.
+6. Verify that the user was brought to the homepage.
+7. Verify that the image itself is visible and displays correct.
+
+
+### Expected Result: 
+- User will go from the contac page to the home page and the Old Republic Professional Logo will display correct.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_contact_us_link`)
+
