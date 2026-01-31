@@ -151,6 +151,10 @@ from playwright.sync_api import Page, expect
 @pytest.mark.ui
 @pytest.mark.smoke
 def test_company_logo(page: Page, base_url):
+
+    # Goes to the homepage
+    page.goto(base_url)
+
     
 
 # Tests that I want done:
