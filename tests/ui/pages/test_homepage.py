@@ -172,6 +172,11 @@ def test_company_logo(page: Page, base_url):
 
 """TC-009: Verify Search Bar Functionality on Homepage"""
 @pytest.mark.ui
+def test_home_search_bar(page: Page, base_url):
+
+    # Go to homepage
+    page.goto(base_url)
+
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
