@@ -147,7 +147,7 @@ from playwright.sync_api import Page, expect
 #     current_url = page.url
 #     assert "/contact" in current_url, f"Expected URL to contain '/contact', but got '{current_url}'"
 
-"""TC-009"""
+"""TC-009 Verify Company Logo is Visible and Links to Homepage"""
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
