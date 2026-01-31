@@ -157,7 +157,7 @@ def test_company_logo(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
     # Find the company logo image
-    logo = page.get_by_alt_text("Old Republic Professional)")
+    logo = page.get_by_alt_text("Old Republic Professional")
 
     # Verify it's visible
     expect(logo).to_be_visible(timeout=5000)
