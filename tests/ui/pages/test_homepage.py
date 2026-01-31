@@ -152,26 +152,23 @@ from playwright.sync_api import Page, expect
 @pytest.mark.smoke
 def test_company_logo(page: Page, base_url):
 
-    # Goes to the homepage
-    page.goto(base_url)
+    # Start on contact page (not homepage)
+    page.goto(f"{base_url}/contact")
     page.wait_for_load_state("networkidle")
 
-    # Find the company logo image
+    # Find and verify logo is visible
     logo = page.get_by_alt_text("Old Republic Professional")
-
-    # Verify it's visible
     expect(logo).to_be_visible(timeout=5000)
 
-    # Click the logo
+    # Click logo to go home
     logo.click()
     page.wait_for_load_state("networkidle")
 
-    # Creates two variables that store the urls that remove the trailing slash if present
+    # Verify we're on homepage
     current_url = page.url.rstrip('/')
     expected_url = base_url.rstrip('/')
-
-    # Does the url of the image match the base homepage url
-    assert current_url == expected_url, f"Expected URL to be '{expected_url}', but got '{current_url}'"
+    assert current_url == expected_url, \
+        f"Expected homepage '{expected_url}', got '{current_url}'"
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
