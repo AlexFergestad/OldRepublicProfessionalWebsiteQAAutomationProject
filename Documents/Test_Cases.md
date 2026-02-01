@@ -186,15 +186,11 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. Click on the "Contact" button in the nav bar. 
-4. Verify that it brings you to the contact page.
-5. Click on the Old Republic Professional image on the top left.
-6. Verify that the user was brought to the homepage.
-7. Verify that the image itself is visible and displays correct.
+3. 
 
 
 ### Expected Result: 
-- User will go from the contac page to the home page and the Old Republic Professional Logo will display correct.
+- User will enter key texts into the search bar.
 
 ### Actual Result:
 **Status**: ✅ Pass
