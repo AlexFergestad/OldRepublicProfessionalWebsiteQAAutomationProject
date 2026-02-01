@@ -176,6 +176,7 @@ def test_home_search_bar(page: Page, base_url):
 
     # Go to homepage
     page.goto(base_url)
+    page.wait_for_load_state("networkidle")
 
 
 # Tests that I want done:
