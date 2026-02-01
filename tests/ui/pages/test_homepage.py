@@ -178,6 +178,8 @@ def test_home_search_bar(page: Page, base_url):
     page.goto(base_url)
     page.wait_for_load_state("networkidle")
 
+    # Find the search input by placeholder text
+    search_input = page.get_by_placeholder("Search")
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
