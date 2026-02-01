@@ -181,6 +181,9 @@ def test_home_search_bar(page: Page, base_url):
     # Find the search input by placeholder text
     search_input = page.get_by_placeholder("Search")
 
+    # Verify it's visible
+    expect(search_input).to_be_visible(timeout=5000)
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
