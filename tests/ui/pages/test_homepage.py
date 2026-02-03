@@ -147,54 +147,59 @@ from playwright.sync_api import Page, expect
 #     current_url = page.url
 #     assert "/contact" in current_url, f"Expected URL to contain '/contact', but got '{current_url}'"
 
-"""TC-008: Verify Company Logo is Visible and Links to Homepage"""
-@pytest.mark.ui
-@pytest.mark.smoke
-def test_company_logo(page: Page, base_url):
+# """TC-008: Verify Company Logo is Visible and Links to Homepage"""
+# @pytest.mark.ui
+# @pytest.mark.smoke
+# def test_company_logo(page: Page, base_url):
 
-    # Start on contact page (not homepage)
-    page.goto(f"{base_url}/contact")
-    page.wait_for_load_state("networkidle")
+#     # Start on contact page (not homepage)
+#     page.goto(f"{base_url}/contact")
+#     page.wait_for_load_state("networkidle")
 
-    # Find and verify logo is visible
-    logo = page.get_by_alt_text("Old Republic Professional")
-    expect(logo).to_be_visible(timeout=5000)
+#     # Find and verify logo is visible
+#     logo = page.get_by_alt_text("Old Republic Professional")
+#     expect(logo).to_be_visible(timeout=5000)
 
-    # Click logo to go home
-    logo.click()
-    page.wait_for_load_state("networkidle")
+#     # Click logo to go home
+#     logo.click()
+#     page.wait_for_load_state("networkidle")
 
-    # Verify we're on homepage
-    current_url = page.url.rstrip('/')
-    expected_url = base_url.rstrip('/')
-    assert current_url == expected_url, \
-        f"Expected homepage '{expected_url}', got '{current_url}'"
+#     # Verify we're on homepage
+#     current_url = page.url.rstrip('/')
+#     expected_url = base_url.rstrip('/')
+#     assert current_url == expected_url, \
+#         f"Expected homepage '{expected_url}', got '{current_url}'"
 
 """TC-009: Verify Search Bar Functionality on Homepage"""
 @pytest.mark.ui
 def test_home_search_bar(page: Page, base_url):
 
-    # Go to homepage
-    page.goto(base_url)
-    page.wait_for_load_state("networkidle")
-
-    # Find the search input by placeholder text
-    search_bar = page.get_by_placeholder("Search")
-
-    # Verify it's visible
-    expect(search_bar).to_be_visible(timeout=5000)
-
-    # Type a search query
-    search_query = "Directors and Officers"
-    search_bar.fill(search_query)
-
-    # Press Enter to submit (or find the search button if there is one)
-    search_bar.press("Enter")
-    page.wait_for_load_state("networkidle")
-
-    # Verify we navigated (URL should change)
-    current_url = page.url
-    assert current_url != base_url, "Search did not navigate to results page"
+    # Test multiple search queries
+    search_queries = [
+        "Directors and Officers",
+        "Liability Insurance",
+        "Contact"
+    ]
+    
+    for query in search_queries:
+        # Go back to homepage for each search
+        page.goto(base_url)
+        page.wait_for_load_state("networkidle")
+        
+        # Find search input
+        search_input = page.get_by_placeholder("Search")
+        expect(search_input).to_be_visible(timeout=5000)
+        
+        # Enter query
+        search_input.fill(query)
+        
+        # Submit search (press Enter)
+        search_input.press("Enter")
+        page.wait_for_load_state("networkidle")
+        
+        # Verify navigation
+        current_url = page.url
+        assert current_url != base_url, f"Search '{query}' did not navigate"
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
