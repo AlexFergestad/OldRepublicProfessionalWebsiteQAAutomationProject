@@ -192,6 +192,10 @@ def test_home_search_bar(page: Page, base_url):
     search_bar.press("Enter")
     page.wait_for_load_state("networkidle")
 
+    # Verify we navigated (URL should change)
+    current_url = page.url
+    assert current_url != base_url, "Search did not navigate to results page"
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
