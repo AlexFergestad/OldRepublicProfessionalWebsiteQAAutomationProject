@@ -194,4 +194,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_home_search_bar`)
+**Automated**: Yes (`tests/test_homepage.py::test_search_bar`)

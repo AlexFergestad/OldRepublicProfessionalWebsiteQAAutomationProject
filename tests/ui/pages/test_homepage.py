@@ -172,7 +172,7 @@ from playwright.sync_api import Page, expect
 
 """TC-009: Verify Search Bar Functionality on Homepage"""
 @pytest.mark.ui
-def test_home_search_bar(page: Page, base_url):
+def test_search_bar(page: Page, base_url):
 
     # Test multiple search queries
     search_queries = [
