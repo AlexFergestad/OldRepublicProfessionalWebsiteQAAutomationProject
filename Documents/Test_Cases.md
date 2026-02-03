@@ -186,12 +186,16 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. 
+3. On the search bar in the top right, search "Directors and Officers" and then press "Enter".
+4. Verify that the search results display a link to the main Directors and Officers page.
+5. Repeat for "Liability Insurance" and "Contact".
 
 
 ### Expected Result: 
 - User will enter key texts into the search bar.
+- Search bar will display correct first links to "Directors and Officers", "Liability Insurance", and "Contact".  
 
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_search_bar`)
+

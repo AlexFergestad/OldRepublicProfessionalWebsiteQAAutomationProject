@@ -202,6 +202,8 @@ def test_search_bar(page: Page, base_url):
         current_url = page.url
         assert current_url != base_url, f"Search '{query}' did not navigate"
 
+"""TC-010: Company Description/Subheading Test"""
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
