@@ -184,6 +184,10 @@ def test_home_search_bar(page: Page, base_url):
     # Verify it's visible
     expect(search_bar).to_be_visible(timeout=5000)
 
+    # Type a search query
+    search_query = "Directors and Officers"
+    search_bar.fill(search_query)
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
