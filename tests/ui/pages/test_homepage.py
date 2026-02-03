@@ -182,7 +182,8 @@ def test_home_search_bar(page: Page, base_url):
     ]
     
     for query in search_queries:
-        # Go back to homepage for each search
+
+        # Goes back to homepage for each search
         page.goto(base_url)
         page.wait_for_load_state("networkidle")
         
