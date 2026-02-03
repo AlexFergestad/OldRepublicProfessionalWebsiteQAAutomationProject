@@ -188,6 +188,10 @@ def test_home_search_bar(page: Page, base_url):
     search_query = "Directors and Officers"
     search_bar.fill(search_query)
 
+    # Press Enter to submit (or find the search button if there is one)
+    search_bar.press("Enter")
+    page.wait_for_load_state("networkidle")
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
