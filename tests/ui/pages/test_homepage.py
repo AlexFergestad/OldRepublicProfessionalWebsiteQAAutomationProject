@@ -204,6 +204,7 @@ def test_search_bar(page: Page, base_url):
 
 """TC-010: Company Description/Subheading Test"""
 @pytest.mark.ui
+def test_company_description_subheading(page: Page, base_url):
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
