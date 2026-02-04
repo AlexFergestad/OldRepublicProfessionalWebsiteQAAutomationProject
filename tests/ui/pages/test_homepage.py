@@ -203,6 +203,7 @@ def test_search_bar(page: Page, base_url):
         assert current_url != base_url, f"Search '{query}' did not navigate"
 
 """TC-010: Company Description/Subheading Test"""
+@pytest.mark.ui
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
