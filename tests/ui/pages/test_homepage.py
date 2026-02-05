@@ -211,6 +211,7 @@ def test_company_description_subheading(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
     # Look for the description/subheading text
+    page.get_by_text("Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York.")
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
