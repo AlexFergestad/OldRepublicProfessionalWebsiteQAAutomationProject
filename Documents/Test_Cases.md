@@ -199,7 +199,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_search_bar`)
 
-## TC-010: Verify Home Page Search Bar
+## TC-010: Verify SubHeading
 **Priority**: Medium
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -220,4 +220,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_search_bar`)
+**Automated**: Yes (`tests/test_homepage.py::test_company_description_subheading`)
