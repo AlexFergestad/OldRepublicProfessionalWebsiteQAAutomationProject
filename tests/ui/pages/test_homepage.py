@@ -210,6 +210,8 @@ def test_company_description_subheading(page: Page, base_url):
     page.goto(base_url)
     page.wait_for_load_state("networkidle")
 
+    # Look for the description/subheading text
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
