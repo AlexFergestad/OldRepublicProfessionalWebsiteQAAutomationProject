@@ -217,4 +217,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_company_description_subheading`)
+**Automated**: Yes (`tests/test_homepage.py::test_above_footer`)
