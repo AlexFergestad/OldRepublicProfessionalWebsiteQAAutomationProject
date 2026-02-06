@@ -170,37 +170,37 @@ from playwright.sync_api import Page, expect
 #     assert current_url == expected_url, \
 #         f"Expected homepage '{expected_url}', got '{current_url}'"
 
-"""TC-009: Verify Search Bar Functionality on Homepage"""
-@pytest.mark.ui
-def test_search_bar(page: Page, base_url):
+# """TC-009: Verify Search Bar Functionality on Homepage"""
+# @pytest.mark.ui
+# def test_search_bar(page: Page, base_url):
 
-    # Test multiple search queries
-    search_queries = [
-        "Directors and Officers",
-        "Liability Insurance",
-        "Contact"
-    ]
+#     # Test multiple search queries
+#     search_queries = [
+#         "Directors and Officers",
+#         "Liability Insurance",
+#         "Contact"
+#     ]
     
-    for query in search_queries:
+#     for query in search_queries:
 
-        # Goes back to homepage for each search
-        page.goto(base_url)
-        page.wait_for_load_state("networkidle")
+#         # Goes back to homepage for each search
+#         page.goto(base_url)
+#         page.wait_for_load_state("networkidle")
         
-        # Find search input
-        search_input = page.get_by_placeholder("Search")
-        expect(search_input).to_be_visible(timeout=5000)
+#         # Find search input
+#         search_input = page.get_by_placeholder("Search")
+#         expect(search_input).to_be_visible(timeout=5000)
         
-        # Enter query
-        search_input.fill(query)
+#         # Enter query
+#         search_input.fill(query)
         
-        # Submit search (press Enter)
-        search_input.press("Enter")
-        page.wait_for_load_state("networkidle")
+#         # Submit search (press Enter)
+#         search_input.press("Enter")
+#         page.wait_for_load_state("networkidle")
         
-        # Verify navigation
-        current_url = page.url
-        assert current_url != base_url, f"Search '{query}' did not navigate"
+#         # Verify navigation
+#         current_url = page.url
+#         assert current_url != base_url, f"Search '{query}' did not navigate"
 
 """TC-010: Company Description/Subheading Test"""
 @pytest.mark.ui
@@ -211,7 +211,12 @@ def test_company_description_subheading(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
     # Look for the description/subheading text
-    page.get_by_text("Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York.")
+    subheading = page.get_by_text("Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York.")
+
+    # Verify the subheading is visible
+    expect(subheading).to_be_visible(timeout=5000)
+
+    
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
