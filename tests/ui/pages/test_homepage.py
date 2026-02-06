@@ -202,7 +202,7 @@ from playwright.sync_api import Page, expect
 #         current_url = page.url
 #         assert current_url != base_url, f"Search '{query}' did not navigate"
 
-"""TC-010: Company Description/Subheading Test"""
+"""TC-010: Verify ORPRO Above the Footer, "Old REpublic Insurance Group" Link, "Privacy" Link, and "Terms of Use" Link"""
 @pytest.mark.ui
 def test_company_description_subheading(page: Page, base_url):
      
@@ -216,7 +216,7 @@ def test_company_description_subheading(page: Page, base_url):
     # Verify the subheading is visible
     expect(subheading).to_be_visible(timeout=5000)
 
-    
+"""TC-011: Verify Home Logo"""
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
