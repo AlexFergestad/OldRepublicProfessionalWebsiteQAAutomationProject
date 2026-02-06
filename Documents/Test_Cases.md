@@ -210,13 +210,10 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
 3. On the homepage verify that "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York." displays below the main heading.
-4. Verify that the search results display a link to the main Directors and Officers page.
-5. Repeat for "Liability Insurance" and "Contact".
 
 
 ### Expected Result: 
-- User will enter key texts into the search bar.
-- Search bar will display correct first links to "Directors and Officers", "Liability Insurance", and "Contact".  
+- Subheading will display the following: "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York."
 
 ### Actual Result:
 **Status**: ✅ Pass
