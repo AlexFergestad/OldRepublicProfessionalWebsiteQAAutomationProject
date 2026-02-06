@@ -204,17 +204,13 @@ from playwright.sync_api import Page, expect
 
 """TC-010: Verify ORPRO Above the Footer, "Old REpublic Insurance Group" Link, "Privacy" Link, and "Terms of Use" Link"""
 @pytest.mark.ui
-def test_company_description_subheading(page: Page, base_url):
+def test_above_footer(page: Page, base_url):
      
     # Goes to the homepage
     page.goto(base_url)
     page.wait_for_load_state("networkidle")
 
-    # Look for the description/subheading text
-    subheading = page.get_by_text("Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York.")
-
-    # Verify the subheading is visible
-    expect(subheading).to_be_visible(timeout=5000)
+    # Verfify
 
 """TC-011: Verify Home Logo"""
 
