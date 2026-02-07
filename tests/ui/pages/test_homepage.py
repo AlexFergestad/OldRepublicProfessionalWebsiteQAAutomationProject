@@ -219,7 +219,7 @@ def test_above_footer(page: Page, base_url):
     expect(page.get_by_text("Privacy")).to_be_visible(timeout=5000)
 
     # Verify Terms of Use Link
-
+    page.get_by_text("Terms of Use")
 
 """TC-011: Verify Home Logo"""
 
