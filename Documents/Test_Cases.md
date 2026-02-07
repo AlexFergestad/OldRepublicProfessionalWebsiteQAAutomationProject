@@ -209,7 +209,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. 
+3. Verify the subheading text displays as "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York."
 
 ### Expected Result: 
 - 
