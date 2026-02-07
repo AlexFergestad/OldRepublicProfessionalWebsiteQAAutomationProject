@@ -212,7 +212,7 @@
 3. Verify the subheading text displays as "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York."
 
 ### Expected Result: 
-- 
+- The subheading on the main homepage displays as "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York."
 
 ### Actual Result:
 **Status**: ✅ Pass
