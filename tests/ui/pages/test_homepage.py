@@ -211,7 +211,7 @@ def test_above_footer(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
     # Verify Old Republic Insuranced Group
-    
+    page.get_by_text("Old Republic Insurance Group")
 
     # Verify Privacy Link
 
@@ -220,6 +220,8 @@ def test_above_footer(page: Page, base_url):
 
 
 """TC-011: Verify Home Logo"""
+
+
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
