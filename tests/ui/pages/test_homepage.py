@@ -210,7 +210,14 @@ def test_above_footer(page: Page, base_url):
     page.goto(base_url)
     page.wait_for_load_state("networkidle")
 
-    # Verfify
+    # Verify Old Republic Insuranced Group
+    
+
+    # Verify Privacy Link
+
+
+    # Verify Terms of Use Link
+
 
 """TC-011: Verify Home Logo"""
 
