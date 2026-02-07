@@ -212,9 +212,11 @@ def test_above_footer(page: Page, base_url):
 
     # Verify Old Republic Insuranced Group
     page.get_by_text("Old Republic Insurance Group")
+    expect(page.get_by_text("Old Republic Insurance Group")).to_be_visible(timeout=5000)
 
     # Verify Privacy Link
-
+    page.get_by_text("Privacy")
+    expect(page.get_by_text("Privacy")).to_be_visible(timeout=5000)
 
     # Verify Terms of Use Link
 
