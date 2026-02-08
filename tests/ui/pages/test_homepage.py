@@ -266,7 +266,7 @@ from playwright.sync_api import Page, expect
 # - contact us on homepage
 # - old republic insurance group link, privacy link, and terms of use link all in a test case on homepage
 # - old republic professional logo validation test case on homepage
-# - home icon link validation test case on homepage
+# - home icon link validation test case on homepage do in nav_bar page
 # - old republic professional top left link is validated and works on homepage
 # - footer, nav bar, cards, test cases on separate folders
 # - Also finish the other test cases in Claude
