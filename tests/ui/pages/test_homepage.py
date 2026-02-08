@@ -221,6 +221,11 @@ def test_above_footer(page: Page, base_url):
     orig_href = orig_link.get_attribute("href")
     assert orig_href, "Old Republic Insurance Group link has no href"
 
+    # Test orig link
+    orig_link.click()
+    page.wait_for_load_state("networkidle")
+    page.goto(base_url) # Goes back to homepage
+
     # Verify Privacy Link
     privacy_link = page.get_by_role("menuitem", name="Privacy")
     expect(privacy_link).to_be_visible(timeout=5000)
@@ -229,11 +234,22 @@ def test_above_footer(page: Page, base_url):
     assert privacy_href, "Privacy link has no href"
     print(f"✅ Privacy link: {privacy_href}")
 
+    # Test privacy link
+    privacy_link.click()
+    page.wait_for_load_state("networkidle")
+    page.goto(base_url) # Goes back to homepage
+
     # Verify Terms of Use Link
     terms_link = page.get_by_role("menuitem", name="Terms of Use")
     expect(terms_link).to_be_visible(timeout=5000)
     
     terms_href = terms_link.get_attribute("href")
+
+    # Test terms of use link
+    terms_link.click()
+    page.wait_for_load_state("networkidle")
+    page.goto(base_url) # Goes back to homepage
+
     assert terms_href, "Terms of Use link has no href"
 
     
