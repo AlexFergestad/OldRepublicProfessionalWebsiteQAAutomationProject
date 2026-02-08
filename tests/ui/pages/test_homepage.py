@@ -266,6 +266,12 @@ def test_main_center_image(page: Page, base_url):
     # Verify the element is visible
     expect(billboard_image).to_be_visible(timeout=5000)
 
+    # Get the style attribute
+    style = billboard.get_attribute("style")
+    
+    # Verify it has a background-image
+    assert style and "background-image" in style, "Billboard has no background-image"
+
 # Tests that I want done:
 # - Don't do TC8 from Claude
 # - Contact and careers in separate files
