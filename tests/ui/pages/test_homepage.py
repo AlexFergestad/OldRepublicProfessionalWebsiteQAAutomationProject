@@ -254,7 +254,7 @@ from playwright.sync_api import Page, expect
 
     
 
-"""TC-011: Verify Main Image"""
+"""TC-011: Verify Main Center Image"""
 
 
 
