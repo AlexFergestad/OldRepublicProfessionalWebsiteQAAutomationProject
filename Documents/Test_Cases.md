@@ -199,7 +199,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_search_bar`)
 
-## TC-010: Verify SubHeading
+## TC-010: Verify Links Above Footer
 **Priority**: Medium
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -209,10 +209,10 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. Verify the subheading text displays as "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York."
+3. Click and verify links above the footer named "Old Republic Insurance Group", "Privacy", and "Terms of Use" are on the page and navigate to the correct next page.
 
 ### Expected Result: 
-- The subheading on the main homepage displays as "Old Republic Professional underwrites insurance for Public and Private Directors and Officers Liability, Employment Practices Liability, Fiduciary Liability, and Professional Liability. We are headquartered in Chicago, with underwriting offices in Denver and New York."
+- The three links "Old Republic Insurance Group", "Privacy", and "Terms of Use" all navigate to the correct pages when clicked and display correctly on the homepage.
 
 ### Actual Result:
 **Status**: ✅ Pass
