@@ -231,7 +231,7 @@
 3. Verify the main center image looks like expected result image.
 
 ### Expected Result: 
-- 
+- Main center image should look like it should.
 
 ### Actual Result:
 **Status**: ✅ Pass
