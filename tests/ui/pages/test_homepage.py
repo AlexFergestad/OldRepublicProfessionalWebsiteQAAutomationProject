@@ -214,6 +214,9 @@ def test_above_footer(page: Page, base_url):
     orig_link = page.get_by_role("link", name="Old Republic Insurance Group")
     expect(orig_link).to_be_visible(timeout=5000)
 
+    orig_href = orig_link.get_attribute("href")
+    assert orig_href, "Old Republic Insurance Group link has no href"
+
     # Verify Privacy Link
     page.get_by_text("Privacy")
     expect(page.get_by_text("Privacy")).to_be_visible(timeout=5000)
