@@ -257,6 +257,11 @@ from playwright.sync_api import Page, expect
 """TC-011: Verify Main Center Image"""
 def test_main_center_image(page: Page, base_url):
 
+    # Starts at the homepage
+    page.goto(base_url)
+
+    # Look for the main center image (assuming it has an alt text we can use)
+    
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
