@@ -217,3 +217,23 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_above_footer`)
+
+## TC-011: Verify Center Image on Homepage
+**Priority**: Medium
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Wait for page to fully load.
+3. Click and verify links above the footer named "Old Republic Insurance Group", "Privacy", and "Terms of Use" are on the page and navigate to the correct next page.
+
+### Expected Result: 
+- The three links "Old Republic Insurance Group", "Privacy", and "Terms of Use" all navigate to the correct pages when clicked and display correctly on the homepage.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_above_footer`)
+
