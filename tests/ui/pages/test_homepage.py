@@ -226,8 +226,11 @@ def test_above_footer(page: Page, base_url):
     print(f"✅ Privacy link: {privacy_href}")
 
     # Verify Terms of Use Link
-    page.get_by_text("Terms of Use")
-    expect(page.get_by_text("Terms of Use")).to_be_visible(timeout=5000)
+    terms_link = page.get_by_role("link", name="Terms of Use")
+    expect(terms_link).to_be_visible(timeout=5000)
+    
+    terms_href = terms_link.get_attribute("href")
+    assert terms_href, "Terms of Use link has no href"
 
     
 
