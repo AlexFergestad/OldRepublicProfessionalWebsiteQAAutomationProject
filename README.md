@@ -75,6 +75,8 @@ python -m pytest -s -v
 # For a specific test
 python -m pytest tests/test_homepage.py::{name_of_test} -s -v
 
+# Run all of the Mark.UI Tests
+python -m pytest -m ui --headed -s
 
 ## What Each Method Does:
 
