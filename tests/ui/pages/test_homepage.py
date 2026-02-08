@@ -263,7 +263,8 @@ def test_main_center_image(page: Page, base_url):
     # Look for the main center image (assuming it has an alt text we can use)
     billboard_image = page.locator("div.billboard__underlay").first
 
-    
+    # Verify the element is visible
+    expect(billboard_image).to_be_visible(timeout=5000)
 
 # Tests that I want done:
 # - Don't do TC8 from Claude
