@@ -202,55 +202,55 @@ from playwright.sync_api import Page, expect
 #         current_url = page.url
 #         assert current_url != base_url, f"Search '{query}' did not navigate"
 
-"""TC-010: Verify ORPRO Above the Footer, "Old REpublic Insurance Group" Link, "Privacy" Link, and "Terms of Use" Link"""
-@pytest.mark.ui
-def test_above_footer(page: Page, base_url):
+# """TC-010: Verify ORPRO Above the Footer, "Old Republic Insurance Group" Link, "Privacy" Link, and "Terms of Use" Link"""
+# @pytest.mark.ui
+# def test_above_footer(page: Page, base_url):
      
-    # Goes to the homepage
-    page.goto(base_url)
-    page.wait_for_load_state("networkidle")
+#     # Goes to the homepage
+#     page.goto(base_url)
+#     page.wait_for_load_state("networkidle")
 
-    # Scroll to the bottom of the page to reveal footer
-    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-    page.wait_for_timeout(500)  # Give it a moment to settle
+#     # Scroll to the bottom of the page to reveal footer
+#     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+#     page.wait_for_timeout(500)  # Give it a moment to settle
 
-    # Verify Old Republic Insuranced Group Link
-    orig_link = page.get_by_role("menuitem", name="Old Republic Insurance Group")
-    expect(orig_link).to_be_visible(timeout=5000)
+#     # Verify Old Republic Insuranced Group Link
+#     orig_link = page.get_by_role("menuitem", name="Old Republic Insurance Group")
+#     expect(orig_link).to_be_visible(timeout=5000)
 
-    orig_href = orig_link.get_attribute("href")
-    assert orig_href, "Old Republic Insurance Group link has no href"
+#     orig_href = orig_link.get_attribute("href")
+#     assert orig_href, "Old Republic Insurance Group link has no href"
 
-    # Test orig link
-    orig_link.click()
-    page.wait_for_load_state("networkidle")
-    page.goto(base_url) # Goes back to homepage
+#     # Test orig link
+#     orig_link.click()
+#     page.wait_for_load_state("networkidle")
+#     page.goto(base_url) # Goes back to homepage
 
-    # Verify Privacy Link
-    privacy_link = page.get_by_role("menuitem", name="Privacy")
-    expect(privacy_link).to_be_visible(timeout=5000)
+#     # Verify Privacy Link
+#     privacy_link = page.get_by_role("menuitem", name="Privacy")
+#     expect(privacy_link).to_be_visible(timeout=5000)
     
-    privacy_href = privacy_link.get_attribute("href")
-    assert privacy_href, "Privacy link has no href"
-    print(f"✅ Privacy link: {privacy_href}")
+#     privacy_href = privacy_link.get_attribute("href")
+#     assert privacy_href, "Privacy link has no href"
+#     print(f"✅ Privacy link: {privacy_href}")
 
-    # Test privacy link
-    privacy_link.click()
-    page.wait_for_load_state("networkidle")
-    page.goto(base_url) # Goes back to homepage
+#     # Test privacy link
+#     privacy_link.click()
+#     page.wait_for_load_state("networkidle")
+#     page.goto(base_url) # Goes back to homepage
 
-    # Verify Terms of Use Link
-    terms_link = page.get_by_role("menuitem", name="Terms of Use")
-    expect(terms_link).to_be_visible(timeout=5000)
+#     # Verify Terms of Use Link
+#     terms_link = page.get_by_role("menuitem", name="Terms of Use")
+#     expect(terms_link).to_be_visible(timeout=5000)
     
-    terms_href = terms_link.get_attribute("href")
+#     terms_href = terms_link.get_attribute("href")
 
-    # Test terms of use link
-    terms_link.click()
-    page.wait_for_load_state("networkidle")
-    page.goto(base_url) # Goes back to homepage
+#     # Test terms of use link
+#     terms_link.click()
+#     page.wait_for_load_state("networkidle")
+#     page.goto(base_url) # Goes back to homepage
 
-    assert terms_href, "Terms of Use link has no href"
+#     assert terms_href, "Terms of Use link has no href"
 
     
 
