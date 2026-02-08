@@ -210,7 +210,7 @@ def test_above_footer(page: Page, base_url):
     page.goto(base_url)
     page.wait_for_load_state("networkidle")
 
-    # Verify Old Republic Insuranced Group
+    # Verify Old Republic Insuranced Group Link
     page.get_by_text("Old Republic Insurance Group")
     expect(page.get_by_text("Old Republic Insurance Group")).to_be_visible(timeout=5000)
 
