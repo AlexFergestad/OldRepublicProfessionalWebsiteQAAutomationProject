@@ -255,7 +255,7 @@ from playwright.sync_api import Page, expect
     
 
 """TC-011: Verify Main Center Image"""
-
+def test_main_center_image(page: Page, base_url):
 
 
 # Tests that I want done:
