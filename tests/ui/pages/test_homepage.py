@@ -267,7 +267,7 @@ def test_main_center_image(page: Page, base_url):
     expect(billboard_image).to_be_visible(timeout=5000)
 
     # Get the style attribute
-    style = billboard.get_attribute("style")
+    style = billboard_image.get_attribute("style")
     
     # Verify it has a background-image
     assert style and "background-image" in style, "Billboard has no background-image"

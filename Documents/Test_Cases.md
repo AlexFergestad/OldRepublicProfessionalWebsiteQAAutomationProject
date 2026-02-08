@@ -228,7 +228,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Wait for page to fully load.
-3. 
+3. Verify the main center image looks like expected result image.
 
 ### Expected Result: 
 - 
