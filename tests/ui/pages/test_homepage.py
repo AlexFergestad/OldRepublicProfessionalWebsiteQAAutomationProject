@@ -261,6 +261,8 @@ def test_main_center_image(page: Page, base_url):
     page.goto(base_url)
 
     # Look for the main center image (assuming it has an alt text we can use)
+    billboard_image = page.locator("div.billboard__underlay").first
+
     
 
 # Tests that I want done:
