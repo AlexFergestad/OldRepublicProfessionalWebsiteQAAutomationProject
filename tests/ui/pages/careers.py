@@ -19,6 +19,6 @@ def test_careers_page_loads(page: Page, base_url):
     """Test that the careers page loads successfully."""
     page.goto(base_url)
     
+    page.get_by_role("link", name="Careers").click()
 
-    
-    expect(page.locator("h1")).to_have_text("Careers at Old Republic Professional")
+    expect(page).to_have_url(f"{base_url}/careers")
