@@ -13,3 +13,5 @@ from playwright.sync_api import Page, expect
 # Maybe try to add a fixture that marks these tests as career page tests, 
 # so we can easily run them separately if needed.
 
+@pytest.mark.ui
+@pytest.mark.careers
