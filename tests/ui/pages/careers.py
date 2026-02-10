@@ -15,3 +15,10 @@ from playwright.sync_api import Page, expect
 
 @pytest.mark.ui
 @pytest.mark.careers
+def test_careers_page_loads(page: Page, base_url):
+    """Test that the careers page loads successfully."""
+    page.goto(base_url)
+    
+
+    
+    expect(page.locator("h1")).to_have_text("Careers at Old Republic Professional")
