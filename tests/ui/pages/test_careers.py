@@ -16,9 +16,12 @@ from playwright.sync_api import Page, expect
 @pytest.mark.ui
 @pytest.mark.careers
 def test_careers_page_loads(page: Page, base_url):
-    """Test that the careers page loads successfully."""
+
+    # Goes to the home page first
     page.goto(base_url)
     
-    page.get_by_role("link", name="Careers").click()
+    # Clicks on the Careers menu item to navigate to the careers page
+    page.get_by_role("menuitem", name="Careers").click()
 
+    # Verifies that the URL is correct for the careers page
     expect(page).to_have_url(f"{base_url}/careers")
