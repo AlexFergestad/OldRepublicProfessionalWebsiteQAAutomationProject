@@ -25,3 +25,14 @@ def test_careers_page_loads(page: Page, base_url):
 
     # Verifies that the URL is correct for the careers page
     expect(page).to_have_url(f"{base_url}/careers")
+
+
+# Test the browser tab name 
+# Test the h1 headin "Careers"
+# Test the LinkedIn link
+# Test the intern job listing
+# Test the About Us heading and content
+# Test the Culture heading and content
+# Test the Equal Employment Opportunity heading and content
+# Test the contact us button and subheading to the right of it
+# Test the three links above the footer
