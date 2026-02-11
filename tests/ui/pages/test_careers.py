@@ -1,7 +1,7 @@
 """
 
 Careers UI Tests
-Test Cases: TC-
+Test Cases: TC-001, TC-002
 
 * This page verifies the career page of the Old Republic Professional website.
 
@@ -13,6 +13,7 @@ from playwright.sync_api import Page, expect
 # Maybe try to add a fixture that marks these tests as career page tests, 
 # so we can easily run them separately if needed.
 
+"""Verify that the careers page loads correctly and has the correct URL when accessed from the home page."""
 @pytest.mark.ui
 @pytest.mark.careers
 def test_careers_page_loads(page: Page, base_url):
@@ -26,6 +27,7 @@ def test_careers_page_loads(page: Page, base_url):
     # Verifies that the URL is correct for the careers page
     expect(page).to_have_url(f"{base_url}/careers")
 
+"""Verify that the browser tab name is correct when on the careers page."""
 @pytest.mark.ui
 @pytest.mark.careers
 def test_careers_page_browser_tab(page: Page, base_url):
