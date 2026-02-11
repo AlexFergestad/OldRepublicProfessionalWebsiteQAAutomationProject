@@ -32,6 +32,14 @@ def test_careers_page_browser_tab(page: Page, base_url):
 
     # Goes to the careers page directly
     page.goto(f"{base_url}/careers")
+    page.wait_for_load_state("networkidle")
+
+    # Verifies that the browser tab name is correct
+    expect(page).to_have_title("Careers at ORPRO")
+
+    # Have the page wait for 4 seconds
+    page.wait_for_timeout(4000)
+
 
 # Test the browser tab name 
 # Test the h1 headin "Careers"
