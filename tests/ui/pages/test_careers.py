@@ -28,6 +28,7 @@ def test_careers_page_loads(page: Page, base_url):
 
 @pytest.mark.ui
 @pytest.mark.careers
+def test_careers_page_browser_tab(page: Page, base_url):
 
 
 # Test the browser tab name 
