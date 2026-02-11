@@ -30,6 +30,8 @@ def test_careers_page_loads(page: Page, base_url):
 @pytest.mark.careers
 def test_careers_page_browser_tab(page: Page, base_url):
 
+    # Goes to the careers page directly
+    page.goto(f"{base_url}/careers")
 
 # Test the browser tab name 
 # Test the h1 headin "Careers"
