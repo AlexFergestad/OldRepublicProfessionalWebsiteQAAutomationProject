@@ -41,6 +41,7 @@ from playwright.sync_api import Page, expect
 
 """Verify the Careers Header is on the Careers page."""
 @pytest.mark.ui
+@pytest.mark.careers
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
