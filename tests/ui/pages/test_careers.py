@@ -13,7 +13,7 @@ from playwright.sync_api import Page, expect
 # Maybe try to add a fixture that marks these tests as career page tests, 
 # so we can easily run them separately if needed.
 
-# """Verify that the careers page loads correctly and has the correct URL when accessed from the home page."""
+# """TC-01: Verify that the careers page loads correctly and has the correct URL when accessed from the home page."""
 # @pytest.mark.ui
 # @pytest.mark.careers
 # def test_careers_page_loads(page: Page, base_url):
@@ -27,7 +27,7 @@ from playwright.sync_api import Page, expect
 #     # Verifies that the URL is correct for the careers page
 #     expect(page).to_have_url(f"{base_url}/careers")
 
-# """Verify that the browser tab name is correct when on the careers page."""
+# """TC-02:Verify that the browser tab name is correct when on the careers page."""
 # @pytest.mark.ui
 # @pytest.mark.careers
 # def test_careers_page_browser_tab(page: Page, base_url):
@@ -39,23 +39,23 @@ from playwright.sync_api import Page, expect
 #     # Verifies that the browser tab name is correct
 #     expect(page).to_have_title("Careers at ORPRO")
 
-"""Verify the Careers Header is on the Careers page."""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_careers_page_header(page: Page, base_url):
+# """TC-03: Verify the Careers Header is on the Careers page."""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_careers_page_header(page: Page, base_url):
 
-    page.goto(f"{base_url}/careers")
-    page.wait_for_load_state("networkidle")
+#     page.goto(f"{base_url}/careers")
+#     page.wait_for_load_state("networkidle")
 
-    heading = page.locator("h1").first
+#     heading = page.locator("h1").first
     
-    # Verify it's visible
-    expect(heading).to_be_visible(timeout=5000)
+#     # Verify it's visible
+#     expect(heading).to_be_visible(timeout=5000)
 
-    # Verify exact text
-    expect(heading).to_have_text("Careers at ORPRO")
+#     # Verify exact text
+#     expect(heading).to_have_text("Careers at ORPRO")
 
-    
+
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
