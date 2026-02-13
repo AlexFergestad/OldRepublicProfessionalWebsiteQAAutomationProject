@@ -54,9 +54,8 @@
 ### Expected Result: 
 - Career page loads without errors.
 - The browser navigates to the correct page.
-- The browser tab title is called "Careers at ORPRO".
+- The careers page displays a h1 heading named "Careers at ORPRO".
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_careers_page_browser_tab`)
-test_careers_page_header
+**Automated**: Yes (`tests/test_homepage.py::test_careers_page_header`)
