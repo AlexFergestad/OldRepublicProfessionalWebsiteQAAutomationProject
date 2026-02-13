@@ -45,6 +45,17 @@ from playwright.sync_api import Page, expect
 def test_careers_page_header(page: Page, base_url):
 
     page.goto(f"{base_url}/careers")
+    page.wait_for_load_state("networkidle")
+
+    heading = page.locator("h1").first
+    
+    # Verify it's visible
+    expect(heading).to_be_visible(timeout=5000)
+
+    # Verify exact text
+    expect(heading).to_have_text("Careers at ORPRO")
+
+    
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
