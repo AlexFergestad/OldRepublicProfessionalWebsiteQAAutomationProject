@@ -44,6 +44,8 @@ from playwright.sync_api import Page, expect
 @pytest.mark.careers
 def test_careers_page_header(page: Page, base_url):
 
+    page.goto(f"{base_url}/careers")
+
 # Test the browser tab name --
 # Test the h1 headin "Careers"
 # Test the LinkedIn link
