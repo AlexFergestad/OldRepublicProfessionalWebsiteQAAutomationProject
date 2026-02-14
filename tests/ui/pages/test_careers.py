@@ -58,6 +58,9 @@ from playwright.sync_api import Page, expect
 """TC-004: Verify the LinkedIn link on the careers page."""
 @pytest.mark.ui
 @pytest.mark.careers
+def test_careers_page_linkedin_link(page: Page, base_url):
+
+    
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
