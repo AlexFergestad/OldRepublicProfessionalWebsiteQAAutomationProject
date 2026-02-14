@@ -55,7 +55,7 @@ from playwright.sync_api import Page, expect
 #     # Verify exact text
 #     expect(heading).to_have_text("Careers at ORPRO")
 
-
+"""TC-004: Verify the LinkedIn link on the careers page."""
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
