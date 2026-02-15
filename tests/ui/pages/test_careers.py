@@ -65,6 +65,12 @@ def test_careers_page_linkedin_link(page: Page, base_url):
     # Find the LinkedIn share button by text
     linkedin_button = page.get_by_role("button", name="Share").first
 
+    # Verify it's visible
+    expect(linkedin_button).to_be_visible(timeout=5000)
+    
+    # Click the button
+    linkedin_button.click()
+
     
     
 
