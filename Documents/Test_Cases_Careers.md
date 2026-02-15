@@ -64,7 +64,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_browser_tab`)
 
-## TC-003: Verify H1 Heading is Visible
+## TC-004: Verify LinkedIn Link Works as Intended
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
