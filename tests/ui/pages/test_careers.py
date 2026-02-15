@@ -71,7 +71,8 @@ def test_careers_page_linkedin_link(page: Page, base_url):
     # Click the button
     linkedin_button.click()
 
-    
+    # Wait a moment for LinkedIn popup/redirect
+    page.wait_for_timeout(2000)
     
 
 # Test the browser tab name --
