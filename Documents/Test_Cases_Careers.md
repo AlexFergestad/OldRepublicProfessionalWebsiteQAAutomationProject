@@ -73,12 +73,12 @@
 
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
-2. Click on the "Careers" button to the left of the search bar on the top left of the screen.
+2. Click on the LinkedIn Link that says "inShare".
+3. Verify that it opens up another window and asks to sign in.
 
 ### Expected Result: 
 - Career page loads without errors.
-- The browser navigates to the correct page.
-- The careers page displays a h1 heading named "Careers at ORPRO".
+- Ki
 
 ### Actual Result:
 **Status**: ✅ Pass
