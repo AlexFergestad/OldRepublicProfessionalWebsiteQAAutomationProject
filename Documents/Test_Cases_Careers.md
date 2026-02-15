@@ -74,11 +74,13 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on the LinkedIn Link that says "inShare".
-3. Verify that it opens up another window and asks to sign in.
+3. Verify that it opens up another window and asks for the user to sign in.
 
 ### Expected Result: 
 - Career page loads without errors.
-- Ki
+- LinkedIn Link is Visible.
+- LinkedIn link opens up another window prompting a sign in to LinkedIn. 
+
 
 ### Actual Result:
 **Status**: ✅ Pass
