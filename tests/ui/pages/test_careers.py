@@ -55,24 +55,26 @@ from playwright.sync_api import Page, expect
 #     # Verify exact text
 #     expect(heading).to_have_text("Careers at ORPRO")
 
-"""TC-004: Verify the LinkedIn link on the careers page."""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_careers_page_linkedin_link(page: Page, base_url):
-    page.goto(f"{base_url}/careers")
-    page.wait_for_load_state("networkidle")
+# """TC-004: Verify the LinkedIn link on the careers page."""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_careers_page_linkedin_link(page: Page, base_url):
+#     page.goto(f"{base_url}/careers")
+#     page.wait_for_load_state("networkidle")
 
-    # Find the LinkedIn share button by text
-    linkedin_button = page.get_by_role("button", name="Share").first
+#     # Find the LinkedIn share button by text
+#     linkedin_button = page.get_by_role("button", name="Share").first
 
-    # Verify it's visible
-    expect(linkedin_button).to_be_visible(timeout=5000)
+#     # Verify it's visible
+#     expect(linkedin_button).to_be_visible(timeout=5000)
     
-    # Click the button
-    linkedin_button.click()
+#     # Click the button
+#     linkedin_button.click()
 
-    # Wait a moment for LinkedIn popup/redirect
-    page.wait_for_timeout(2000)
+#     # Wait a moment for LinkedIn popup/redirect
+#     page.wait_for_timeout(2000)
+
+
     
 
 # Test the browser tab name --

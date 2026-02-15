@@ -79,7 +79,7 @@
 ### Expected Result: 
 - Career page loads without errors.
 - LinkedIn Link is Visible.
-- LinkedIn link opens up another window prompting a sign in to LinkedIn. 
+- LinkedIn link opens up another window prompting a sign in to enter in username and password to LinkedIn. 
 
 
 ### Actual Result:
