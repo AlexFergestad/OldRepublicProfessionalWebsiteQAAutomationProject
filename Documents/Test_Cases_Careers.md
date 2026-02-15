@@ -82,4 +82,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_careers_page_header`)
+**Automated**: Yes (`tests/test_homepage.py::test_careers_page_linkedin_link`)
