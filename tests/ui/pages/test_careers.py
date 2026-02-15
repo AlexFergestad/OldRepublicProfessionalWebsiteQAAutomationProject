@@ -62,6 +62,9 @@ def test_careers_page_linkedin_link(page: Page, base_url):
     page.goto(f"{base_url}/careers")
     page.wait_for_load_state("networkidle")
 
+    # Find the LinkedIn share button by text
+    linkedin_button = page.get_by_role("button", name="Share").first
+
     
     
 
