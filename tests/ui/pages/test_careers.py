@@ -76,6 +76,7 @@ from playwright.sync_api import Page, expect
 
 """TC-005: Verify the intern job listing on the careers page."""
 @pytest.mark.ui
+@pytest.mark.careers
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
