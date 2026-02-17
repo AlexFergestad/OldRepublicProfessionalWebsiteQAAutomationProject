@@ -74,7 +74,7 @@ from playwright.sync_api import Page, expect
 #     # Wait a moment for LinkedIn popup/redirect
 #     page.wait_for_timeout(2000)
 
-
+"""TC-005: Verify the intern job listing on the careers page."""
     
 
 # Test the browser tab name --
