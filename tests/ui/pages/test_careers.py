@@ -84,10 +84,22 @@ def test_careers_page_intern_listing(page: Page, base_url):
     # Find the job posting link
     job_link = page.get_by_role("link", name="Underwriting Analyst Intern")
 
+    # Verify it's visible
+    expect(job_link).to_be_visible(timeout=5000)
+
+    # Click the link
+    job_link.click()
+    page.wait_for_load_state("networkidle")
+
+    # Verify we navigated to the job details page
+    assert "/underwriting-analyst-intern" in page.url, \
+        f"Expected to navigate to job details, got: {page.url}"
+
 # Test the browser tab name --
 # Test the h1 headin "Careers"
 # Test the LinkedIn link
 # Test the intern job listing and maybe more inside of it
+# Test the inside of the Underwriting Analyst Intern job listing, including the description and the apply button
 # Test the About Us heading and content
 # Test the Culture heading and content
 # Test the Equal Employment Opportunity heading and content
