@@ -81,7 +81,8 @@ def test_careers_page_intern_listing(page: Page, base_url):
     page.goto(f"{base_url}/careers")
     page.wait_for_load_state("networkidle")
 
-    
+    # Find the job posting link
+    job_link = page.get_by_role("link", name="Underwriting Analyst Intern")
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
