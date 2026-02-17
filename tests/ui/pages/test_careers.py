@@ -75,7 +75,7 @@ from playwright.sync_api import Page, expect
 #     page.wait_for_timeout(2000)
 
 """TC-005: Verify the intern job listing on the careers page."""
-    
+@pytest.mark.ui
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
