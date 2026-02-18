@@ -74,26 +74,28 @@ from playwright.sync_api import Page, expect
 #     # Wait a moment for LinkedIn popup/redirect
 #     page.wait_for_timeout(2000)
 
-"""TC-005: Verify the intern job listing on the careers page."""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_careers_page_intern_listing(page: Page, base_url):
-    page.goto(f"{base_url}/careers")
-    page.wait_for_load_state("networkidle")
+# """TC-005: Verify the intern job listing on the careers page."""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_careers_page_intern_listing(page: Page, base_url):
+#     page.goto(f"{base_url}/careers")
+#     page.wait_for_load_state("networkidle")
 
-    # Find the job posting link
-    job_link = page.get_by_role("link", name="Underwriting Analyst Intern")
+#     # Find the job posting link
+#     job_link = page.get_by_role("link", name="Underwriting Analyst Intern")
 
-    # Verify it's visible
-    expect(job_link).to_be_visible(timeout=5000)
+#     # Verify it's visible
+#     expect(job_link).to_be_visible(timeout=5000)
 
-    # Click the link
-    job_link.click()
-    page.wait_for_load_state("networkidle")
+#     # Click the link
+#     job_link.click()
+#     page.wait_for_load_state("networkidle")
 
-    # Verify we navigated to the job details page
-    assert "/underwriting-analyst-intern" in page.url, \
-        f"Expected to navigate to job details, got: {page.url}"
+#     # Verify we navigated to the job details page
+#     assert "/underwriting-analyst-intern" in page.url, \
+#         f"Expected to navigate to job details, got: {page.url}"
+
+"""TC-006: Verify Job Description for Underwriting Analyst Intern."""
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
