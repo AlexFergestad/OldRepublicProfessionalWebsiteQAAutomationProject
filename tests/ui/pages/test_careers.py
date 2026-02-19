@@ -104,7 +104,7 @@ def test_careers_page_intern_job_description(page:Page, base_url):
     page.wait_for_load_state("networkidle")
 
     # Clikc on the job listing for the Underwriting Analyst Intern
-    job_title = page.locator("h2").first
+    job_link = page.get_by_role("link", name="Underwriting Analyst Intern").first
     expect(job_title).to_be_visible(timeout=5000)
     page.wait_for_load_state("networkidle")
 
