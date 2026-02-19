@@ -105,7 +105,10 @@ def test_careers_page_intern_job_description(page:Page, base_url):
 
     # Clikc on the job listing for the Underwriting Analyst Intern
     job_link = page.get_by_role("link", name="Underwriting Analyst Intern").first
-    expect(job_title).to_be_visible(timeout=5000)
+    expect(job_link).to_be_visible(timeout=5000)
+
+    job_link.click()
+    
     page.wait_for_load_state("networkidle")
 
     # Verify the job description title is visible
