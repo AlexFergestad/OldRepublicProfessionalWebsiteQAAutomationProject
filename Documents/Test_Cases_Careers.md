@@ -40,7 +40,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_browser_tab`)
 
-## TC-003: Verify H1 Heading is Visible
+## TC-003: Verify the Careers Header is on the Careers page.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -60,10 +60,6 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_header`)
 
-### Actual Result:
-**Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_careers_page_browser_tab`)
-
 ## TC-004: Verify LinkedIn Link Works as Intended
 **Priority**: High
 **Type**: Functional/Smoke
@@ -81,7 +77,7 @@
 - LinkedIn Link is Visible.
 - LinkedIn link opens up another window prompting a sign in to enter in username and password to LinkedIn. 
 
-### Actual Result:ssss
+### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_linkedin_link`)
 
@@ -106,7 +102,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_intern_listing`)
 
-## TC-006: 
+## TC-006: Verify Job Description for Underwriting Analyst Intern.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
