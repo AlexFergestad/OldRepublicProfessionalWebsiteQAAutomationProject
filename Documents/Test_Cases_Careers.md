@@ -112,12 +112,11 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on the "Underwriting Analyst Intern" link.
-3. Verify that it opens up another page with more information about the role. 
+3. Verify that it opens up another page with information such as "Job Description" and the paragraph below it. 
 
 ### Expected Result: 
 - Career page loads without errors.
-- "Underwriting Analyst Intern" link is visible.
-- The role link brings the user to a new page with more information about the role including a job description and job requirements and information on how to apply.
+- The role link brings the user to a new page with more information about the role including a job description and the paragraph going into more detail right below it.
 
 ### Actual Result:
 **Status**: ✅ Pass
