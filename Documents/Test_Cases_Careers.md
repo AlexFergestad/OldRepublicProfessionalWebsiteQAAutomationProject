@@ -81,8 +81,7 @@
 - LinkedIn Link is Visible.
 - LinkedIn link opens up another window prompting a sign in to enter in username and password to LinkedIn. 
 
-
-### Actual Result:
+### Actual Result:ssss
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_linkedin_link`)
 
@@ -103,6 +102,26 @@
 - "Underwriting Analyst Intern" link is visible.
 - The role link brings the user to a new page with more information about the role including a job description and job requirements and information on how to apply.
 
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_careers_page_intern_listing`)
+
+## TC-006: 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Click on the "Underwriting Analyst Intern" link.
+3. Verify that it opens up another page with more information about the role. 
+
+### Expected Result: 
+- Career page loads without errors.
+- "Underwriting Analyst Intern" link is visible.
+- The role link brings the user to a new page with more information about the role including a job description and job requirements and information on how to apply.
 
 ### Actual Result:
 **Status**: ✅ Pass
