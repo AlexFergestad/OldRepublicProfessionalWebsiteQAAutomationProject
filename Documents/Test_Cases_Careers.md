@@ -81,7 +81,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_linkedin_link`)
 
-## TC-005: Verify the intern job listing on the careers page.
+## TC-005: Verify the intern job listing link on the careers page.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -96,7 +96,7 @@
 ### Expected Result: 
 - Career page loads without errors.
 - "Underwriting Analyst Intern" link is visible.
-- The role link brings the user to a new page with more information about the role including a job description and job requirements and information on how to apply.
+- The role link brings the user to a new page.
 
 ### Actual Result:
 **Status**: ✅ Pass
@@ -121,4 +121,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_careers_page_intern_listing`)
+**Automated**: Yes (`tests/test_homepage.py::test_careers_page_intern_job_description`)
