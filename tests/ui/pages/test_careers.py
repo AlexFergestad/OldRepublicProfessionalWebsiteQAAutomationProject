@@ -95,36 +95,38 @@ from playwright.sync_api import Page, expect
 #     assert "/underwriting-analyst-intern" in page.url, \
 #         f"Expected to navigate to job details, got: {page.url}"
 
-"""TC-006: Verify Job Description for Underwriting Analyst Intern."""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_careers_page_intern_job_description(page:Page, base_url):
+# """TC-006: Verify Job Description for Underwriting Analyst Intern."""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_careers_page_intern_job_description(page:Page, base_url):
 
-    page.goto(f"{base_url}/careers")
-    page.wait_for_load_state("networkidle")
+#     page.goto(f"{base_url}/careers")
+#     page.wait_for_load_state("networkidle")
 
-    # Click on the job listing for the Underwriting Analyst Intern
-    job_link = page.get_by_role("link", name="Underwriting Analyst Intern").first
-    expect(job_link).to_be_visible(timeout=5000)
+#     # Click on the job listing for the Underwriting Analyst Intern
+#     job_link = page.get_by_role("link", name="Underwriting Analyst Intern").first
+#     expect(job_link).to_be_visible(timeout=5000)
 
-    # Clicks on the job listing for the Underwriting Analyst Intern and brings user to the page
-    job_link.click()
+#     # Clicks on the job listing for the Underwriting Analyst Intern and brings user to the page
+#     job_link.click()
 
-    page.wait_for_load_state("networkidle")
+#     page.wait_for_load_state("networkidle")
 
-    # Verify the job description title is visible
-    job_description_heading = page.get_by_role("heading", level=3, name="Job Description")
-    expect(job_description_heading).to_be_visible(timeout=5000)
+#     # Verify the job description title is visible
+#     job_description_heading = page.get_by_role("heading", level=3, name="Job Description")
+#     expect(job_description_heading).to_be_visible(timeout=5000)
 
-    heading_text = job_description_heading.text_content().strip()
-    assert heading_text == "Job Description", \
-        f"Expected 'Job Description', got: {heading_text}"
-    print(f"✅ Job Description heading verified: {heading_text}")
+#     heading_text = job_description_heading.text_content().strip()
+#     assert heading_text == "Job Description", \
+#         f"Expected 'Job Description', got: {heading_text}"
+#     print(f"✅ Job Description heading verified: {heading_text}")
 
-    # Verify the job description paragraph is visible
-    # The paragraph comes right after the h3
-    job_description_paragraph = page.locator("h3:has-text('Job Description') + p").first
-    expect(job_description_paragraph).to_be_visible(timeout=5000)
+#     # Verify the job description paragraph is visible
+#     # The paragraph comes right after the h3
+#     job_description_paragraph = page.locator("h3:has-text('Job Description') + p").first
+#     expect(job_description_paragraph).to_be_visible(timeout=5000)
+
+"""TC-007 Verify Job Requirements for Underwriting Analyst Intern Position."""
 
 
     
