@@ -127,7 +127,8 @@ from playwright.sync_api import Page, expect
 #     expect(job_description_paragraph).to_be_visible(timeout=5000)
 
 """TC-007 Verify Job Requirements for Underwriting Analyst Intern Position."""
-
+@pytest.mark.ui
+@pytest.mark.careers
 
     
 
