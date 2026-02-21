@@ -129,8 +129,11 @@ from playwright.sync_api import Page, expect
 """TC-007 Verify Job Requirements for Underwriting Analyst Intern Position."""
 @pytest.mark.ui
 @pytest.mark.careers
+def test_careers_page_intern_job_requirements(page:Page, base_url):
+    page.goto(f"{base_url}/careers")
+    page.wait_for_load_state("networkidle")
 
-    
+
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
