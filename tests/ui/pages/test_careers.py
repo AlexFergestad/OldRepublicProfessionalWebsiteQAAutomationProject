@@ -10,6 +10,9 @@ Test Cases: TC-001, TC-002
 import pytest
 from playwright.sync_api import Page, expect
 
+# Page Object
+from .careers_page_object import CareersPage
+
 # Maybe try to add a fixture that marks these tests as career page tests, 
 # so we can easily run them separately if needed.
 
@@ -132,6 +135,10 @@ from playwright.sync_api import Page, expect
 def test_careers_page_intern_job_requirements(page:Page, base_url):
     page.goto(f"{base_url}/careers")
     page.wait_for_load_state("networkidle")
+
+    # Click on the job listing for the Underwriting Analyst Intern
+    careers_page = CareersPage(page, base_url)
+    careers_page.click_underwriting_analyst_intern_job()
 
 
 
