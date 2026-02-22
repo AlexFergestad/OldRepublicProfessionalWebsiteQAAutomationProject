@@ -12,6 +12,7 @@ from playwright.sync_api import Page, expect
 
 # Page Object
 from .careers_page_object import CareersPage
+from .careers_job_details_page_object import JobDetailsPage
 
 # Maybe try to add a fixture that marks these tests as career page tests, 
 # so we can easily run them separately if needed.
@@ -139,6 +140,16 @@ def test_careers_page_intern_job_requirements(page:Page, base_url):
     # Click on the job listing for the Underwriting Analyst Intern
     careers_page = CareersPage(page, base_url)
     careers_page.click_underwriting_analyst_intern_job()
+
+    # Verify the job requirements heading is visible
+    job_details = JobDetailsPage(page)
+    
+    job_requirements_heading = job_details.verify_job_requirements_section()
+    assert job_requirements_heading == "Job Requirements", \
+        f"Expected 'Job Requirements', got: {job_requirements_heading}"
+    print(f"✅ Job Requirements heading verified: {job_requirements_heading}")
+    
+
 
 
 
