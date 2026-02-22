@@ -27,4 +27,4 @@ class CareersPage:
             expect(self.underwriting_analyst_intern_link).to_be_visible(timeout=5000)
             self.underwriting_analyst_intern_link.click()
             self.page.wait_for_load_state("networkidle")
-            self.page.wait_for_timeout
+            self.page.wait_for_timeout(1000)
