@@ -38,6 +38,8 @@ class JobDetailsPage:
         expect(self.job_requirements_heading).to_be_visible(timeout=5000)
         return self.job_requirements_heading.text_content().strip()
     
+    
+    
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
         expect(self.application_email).to_be_visible(timeout=5000)
