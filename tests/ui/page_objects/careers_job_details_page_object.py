@@ -13,6 +13,7 @@ class JobDetailsPage:
         self.job_description_heading = page.locator("h3").filter(has_text="Job Description").first
         self.job_description_paragraph = page.locator("h3:has-text('Job Description') + p").first
         self.job_requirements_heading = page.locator("h3").filter(has_text="Job Requirements").first
+        self.job_requirements_list = page.locator("h3:has-text('Job Requirements') ~ ul").first
         self.application_email = page.get_by_role("link", name="applications@oldrepublicpro.com")
     
     def verify_job_title_visible(self):
@@ -38,13 +39,63 @@ class JobDetailsPage:
         expect(self.job_requirements_heading).to_be_visible(timeout=5000)
         return self.job_requirements_heading.text_content().strip()
     
-    def verify_job_requirements_list(self):
-        """Verify the job requirements list is visible and has items"""
-        requirements_list = self.page.locator("h3:has-text('Job Requirements') + ul").first
-        expect(requirements_list).to_be_visible(timeout=5000)
-        items = requirements_list.locator("li")
-        expect(items).to_have_count_greater_than(0, timeout=5000)
-        return [item.text_content().strip() for item in items.all()]
+    def verify_job_requirements_section(self):
+        """Verify job requirements paragraphs before the bullet list"""
+    
+        # 1. Verify heading
+        expect(self.job_requirements_heading).to_be_visible(timeout=5000)
+        print("✅ Job Requirements heading")
+        
+        # 2. Get all paragraphs
+        paragraphs = self.page.locator(
+            "//h3[contains(text(), 'Job Requirements')]/following-sibling::p"
+        ).all()
+        
+        assert len(paragraphs) >= 3, f"Expected at least 3 paragraphs, found {len(paragraphs)}"
+        
+        # 3. Verify Paragraph 1: Degree
+        para1_text = paragraphs[0].text_content()
+        assert "Pursuing a bachelor's degree" in para1_text
+        assert "2 years of undergraduate" in para1_text
+        print(f"✅ Para 1: Bachelor's degree requirement")
+        
+        # 4. Verify Paragraph 2: Majors
+        para2_text = paragraphs[1].text_content()
+        assert "Preferred majors" in para2_text
+        majors = ["Risk Management", "Business", "Finance", "Accounting"]
+        for major in majors:
+            assert major in para2_text, f"Missing major: {major}"
+        print(f"✅ Para 2: Preferred majors ({', '.join(majors)})")
+        
+        # 5. Verify Paragraph 3: Intro
+        para3_text = paragraphs[2].text_content()
+        assert "desired candidate" in para3_text or "characteristics" in para3_text
+        print(f"✅ Para 3: Intro to characteristics")
+        
+        # 6. Verify list
+        list_items = self.job_requirements_list.locator("li").all()
+        assert len(list_items) == 6, f"Expected 6 items, found {len(list_items)}"
+        
+        expected_keywords = [
+            "Self-starter",
+            "organizational skills", 
+            "curiosity",
+            "communication skills",
+            "analytical mind",
+            "attention to detail"
+        ]
+        
+        full_list_text = self.job_requirements_list.text_content()
+        for keyword in expected_keywords:
+            assert keyword in full_list_text, f"Missing keyword: {keyword}"
+        
+        print(f"✅ List: {len(list_items)} characteristics verified")
+        
+        return {
+            "paragraphs": len(paragraphs),
+            "list_items": len(list_items),
+            "verified": True
+        }
     
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""

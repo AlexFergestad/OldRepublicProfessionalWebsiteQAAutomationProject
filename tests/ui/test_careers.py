@@ -10,9 +10,9 @@ Test Cases: TC-001, TC-002
 import pytest
 from playwright.sync_api import Page, expect
 
-# Page Object
-from .careers_page_object import CareersPage
-from .careers_job_details_page_object import JobDetailsPage
+# Page Objects - relative import from same ui folder
+from tests.ui.page_objects.careers_page_object import CareersPage
+from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 
 # Maybe try to add a fixture that marks these tests as career page tests, 
 # so we can easily run them separately if needed.
@@ -134,26 +134,20 @@ from .careers_job_details_page_object import JobDetailsPage
 @pytest.mark.ui
 @pytest.mark.careers
 def test_careers_page_intern_job_requirements(page:Page, base_url):
-    page.goto(f"{base_url}/careers")
-    page.wait_for_load_state("networkidle")
 
-    # Click on the job listing for the Underwriting Analyst Intern
+    # Initialize page objects
     careers_page = CareersPage(page, base_url)
-    careers_page.click_underwriting_analyst_intern_job()
-
-    # Create a variable for the job details page object
     job_details = JobDetailsPage(page)
     
-    # Verify the job requirements section exists and has the correct heading
-    job_requirements_heading = job_details.verify_job_requirements_section()
-    assert job_requirements_heading == "Job Requirements", \
-        f"Expected 'Job Requirements', got: {job_requirements_heading}"
-    print(f"✅ Job Requirements heading verified: {job_requirements_heading}")
-
-    # Verify the job requirements list is visible and has items
-    job_requirements = job_details.verify_job_requirements_list()
-    assert len(job_requirements) > 0, "Expected at least one job requirement, but found none."
-    print(f"✅ Job Requirements list verified with {len(job_requirements)} items.")
+    careers_page.navigate()
+    careers_page.click_underwriting_analyst_intern_job()
+    
+    # One method verifies everything
+    result = job_details.verify_job_requirements_section()
+    
+    print(f"\n✅ Job Requirements verified:")
+    print(f"   - {result['paragraphs']} paragraphs")
+    print(f"   - {result['list_items']} bullet points")
 
 
 
