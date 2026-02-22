@@ -150,7 +150,10 @@ def test_careers_page_intern_job_requirements(page:Page, base_url):
         f"Expected 'Job Requirements', got: {job_requirements_heading}"
     print(f"✅ Job Requirements heading verified: {job_requirements_heading}")
 
-    
+    # Verify the job requirements list is visible and has items
+    job_requirements = job_details.verify_job_requirements_list()
+    assert len(job_requirements) > 0, "Expected at least one job requirement, but found none."
+    print(f"✅ Job Requirements list verified with {len(job_requirements)} items.")
 
 
 

@@ -38,7 +38,13 @@ class JobDetailsPage:
         expect(self.job_requirements_heading).to_be_visible(timeout=5000)
         return self.job_requirements_heading.text_content().strip()
     
-    
+    def verify_job_requirements_list(self):
+        """Verify the job requirements list is visible and has items"""
+        requirements_list = self.page.locator("h3:has-text('Job Requirements') + ul").first
+        expect(requirements_list).to_be_visible(timeout=5000)
+        items = requirements_list.locator("li")
+        expect(items).to_have_count_greater_than(0, timeout=5000)
+        return [item.text_content().strip() for item in items.all()]
     
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
