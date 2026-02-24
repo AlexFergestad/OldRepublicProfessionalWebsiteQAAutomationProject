@@ -101,7 +101,44 @@ class JobDetailsPage:
             "verified": True
         }
     
+    def verify_about_orpro_section(self):
+        """Verify About Old Republic Professional section"""
     
+        # Verify heading
+        expect(self.about_orpro_heading).to_be_visible(timeout=5000)
+        heading_text = self.about_orpro_heading.text_content().strip()
+        assert heading_text == "About Old Republic Professional", \
+            f"Expected 'About Old Republic Professional', got '{heading_text}'"
+        print("✅ About Old Republic Professional heading")
+        
+        # Verify paragraph
+        expect(self.about_orpro_paragraph).to_be_visible(timeout=5000)
+        para_text = self.about_orpro_paragraph.text_content()
+        
+        # Verify key information is present
+        expected_content = [
+            "Old Republic Professional",
+            "ORPRO",
+            "established in December 1983",
+            "Old Republic International Corporation",
+            "NYSE: ORI",
+            "Fortune 500",
+            "Directors and Officers liability insurance",
+            "Lawyers Professional liability insurance",
+            "40 years"
+        ]
+        
+        for content in expected_content:
+            assert content in para_text, f"Missing expected content: '{content}'"
+        
+        print("✅ About Old Republic Professional paragraph verified")
+        print(f"   Content includes: established 1983, NYSE: ORI, Fortune 500, D&O insurance, 40+ years")
+        
+        return {
+            "heading": heading_text,
+            "paragraph_length": len(para_text),
+            "verified": True
+        } 
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
