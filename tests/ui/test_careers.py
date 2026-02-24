@@ -149,7 +149,7 @@ def test_careers_page_intern_job_requirements(page:Page, base_url):
     print(f"   - {result['paragraphs']} paragraphs")
     print(f"   - {result['list_items']} bullet points")
 
-
+"""TC-008 Verify About Old Republic Professional Section"""
 
 
 
