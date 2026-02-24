@@ -2,6 +2,8 @@
 
 from playwright.sync_api import Page, expect
 
+from conftest import page
+
 class JobDetailsPage:
     """Page Object for individual job detail pages"""
     
@@ -15,6 +17,8 @@ class JobDetailsPage:
         self.job_requirements_heading = page.locator("h3").filter(has_text="Job Requirements").first
         self.job_requirements_list = page.locator("h3:has-text('Job Requirements') ~ ul").first
         self.application_email = page.get_by_role("link", name="applications@oldrepublicpro.com")
+        self.about_orpro_heading = page.locator("h3:has-text('About Old Republic Professional')").first
+        self.about_orpro_paragraph = page.locator("h3:has-text('About Old Republic Professional') + p").first
     
     def verify_job_title_visible(self):
         """Verify the job title is visible and return the text"""
@@ -97,6 +101,8 @@ class JobDetailsPage:
             "verified": True
         }
     
+    
+
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
         expect(self.application_email).to_be_visible(timeout=5000)
