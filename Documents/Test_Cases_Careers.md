@@ -141,3 +141,5 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_careers_page_intern_job_requirements`)
+
+## TC-008: Verify About Old Republic Professional Section

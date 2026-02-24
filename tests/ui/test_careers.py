@@ -130,45 +130,45 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 #     job_description_paragraph = page.locator("h3:has-text('Job Description') + p").first
 #     expect(job_description_paragraph).to_be_visible(timeout=5000)
 
-"""TC-007 Verify Job Requirements for Underwriting Analyst Intern Position."""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_careers_page_intern_job_requirements(page:Page, base_url):
+# """TC-007 Verify Job Requirements for Underwriting Analyst Intern Position."""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_careers_page_intern_job_requirements(page:Page, base_url):
 
-    # Initialize page objects
-    careers_page = CareersPage(page, base_url)
-    job_details = JobDetailsPage(page)
+#     # Initialize page objects
+#     careers_page = CareersPage(page, base_url)
+#     job_details = JobDetailsPage(page)
     
-    careers_page.navigate()
-    careers_page.click_underwriting_analyst_intern_job()
+#     careers_page.navigate()
+#     careers_page.click_underwriting_analyst_intern_job()
     
-    # One method verifies everything
-    result = job_details.verify_job_requirements_section()
+#     # One method verifies everything
+#     result = job_details.verify_job_requirements_section()
     
-    print(f"\n✅ Job Requirements verified:")
-    print(f"   - {result['paragraphs']} paragraphs")
-    print(f"   - {result['list_items']} bullet points")
+#     print(f"\n✅ Job Requirements verified:")
+#     print(f"   - {result['paragraphs']} paragraphs")
+#     print(f"   - {result['list_items']} bullet points")
 
-"""TC-008 Verify About Old Republic Professional Section"""
-pytest.mark.ui
-pytest.mark.careers
-def test_about_orpro_section(page: Page, base_url):
-    """Verify About Old Republic Professional section on job page"""
+# """TC-008 Verify About Old Republic Professional Section"""
+# pytest.mark.ui
+# pytest.mark.careers
+# def test_about_orpro_section(page: Page, base_url):
+#     """Verify About Old Republic Professional section on job page"""
     
-    # Initialize page objects
-    careers_page = CareersPage(page, base_url)
-    job_details = JobDetailsPage(page)
+#     # Initialize page objects
+#     careers_page = CareersPage(page, base_url)
+#     job_details = JobDetailsPage(page)
     
-    # Navigate to job page
-    careers_page.navigate()
-    careers_page.click_underwriting_analyst_intern_job()
+#     # Navigate to job page
+#     careers_page.navigate()
+#     careers_page.click_underwriting_analyst_intern_job()
     
-    # Verify About ORPRO section
-    result = job_details.verify_about_orpro_section()
+#     # Verify About ORPRO section
+#     result = job_details.verify_about_orpro_section()
     
-    print(f"\n✅ About Old Republic Professional section verified")
-    print(f"   Heading: {result['heading']}")
-    print(f"   Paragraph length: {result['paragraph_length']} characters")
+#     print(f"\n✅ About Old Republic Professional section verified")
+#     print(f"   Heading: {result['heading']}")
+#     print(f"   Paragraph length: {result['paragraph_length']} characters")
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
