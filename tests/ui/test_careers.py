@@ -172,6 +172,7 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 
 """TC-009: Verify Culture Section"""
 @pytest.mark.ui
+@pytest.mark.careers
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
