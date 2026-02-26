@@ -170,7 +170,7 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 #     print(f"   Heading: {result['heading']}")
 #     print(f"   Paragraph length: {result['paragraph_length']} characters")
 
-"""TC-009: """
+"""TC-009: Verify"""
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
