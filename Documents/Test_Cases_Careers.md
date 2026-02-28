@@ -172,12 +172,11 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on the "Underwriting Analyst Intern" link.
-3. Verify that it opens up another page displaying the "About Old Republic Professional" heading and paragraph for the intern role.
+3. Verify that it opens up another page displaying the "Culture" heading and paragraph for the intern role.
 
 ### Expected Result: 
 - Career page loads without errors.
-- The role link brings the user to a new page with more information about the role including the about the company header and paragraph for the intern role.
-
+- The role link brings the user to a new page with more information about the role and includes the "Culture" header and the paragraph underneath.
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_culture_section`)
