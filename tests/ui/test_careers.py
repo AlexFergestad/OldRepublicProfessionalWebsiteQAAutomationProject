@@ -185,7 +185,11 @@ def test_culture_section(page: Page, base_url):
     careers_page.click_underwriting_analyst_intern_job()
 
     # Verify Culture section
-    culture = 
+    expect(page.locator("h3:has-text('Culture')").first).to_be_visible(timeout=5000)
+    culture_heading = page.locator("h3:has-text('Culture')").first
+    heading_text = culture_heading.text_content().strip()
+    assert heading_text == "Culture", \
+        f"Expected 'Culture', got '{heading_text}'"
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
