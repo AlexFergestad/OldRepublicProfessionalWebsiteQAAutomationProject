@@ -185,6 +185,7 @@ def test_culture_section(page: Page, base_url):
     careers_page.click_underwriting_analyst_intern_job()
 
     # Verify Culture section
+    culture = 
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
