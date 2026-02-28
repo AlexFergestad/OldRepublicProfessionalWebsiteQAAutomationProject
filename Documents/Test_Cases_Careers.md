@@ -162,4 +162,4 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_about_orpro_section`)
 
-## TC-009:
+## TC-009: Verify Culture Section
