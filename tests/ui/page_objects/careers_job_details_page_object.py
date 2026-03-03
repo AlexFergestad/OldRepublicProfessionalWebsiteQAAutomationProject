@@ -141,7 +141,7 @@ class JobDetailsPage:
         } 
 
     def verify_culture_section(self):
-        
+        """Verify the culture section"""
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
