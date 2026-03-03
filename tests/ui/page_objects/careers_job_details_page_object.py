@@ -142,6 +142,11 @@ class JobDetailsPage:
 
     def verify_culture_section(self):
         """Verify the culture section"""
+        culture_heading = self.page.locator("h3:has-text('Culture')").first
+        expect(culture_heading).to_be_visible(timeout=5000)
+        heading_text = culture_heading.text_content().strip()
+        assert heading_text == "Culture", \
+            f"Expected 'Culture', got '{heading_text}'"
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
