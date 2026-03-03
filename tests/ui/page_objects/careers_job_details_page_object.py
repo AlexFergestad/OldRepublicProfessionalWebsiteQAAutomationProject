@@ -140,6 +140,9 @@ class JobDetailsPage:
             "verified": True
         } 
 
+    def verify_culture_section(self):
+        
+
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
         expect(self.application_email).to_be_visible(timeout=5000)
