@@ -141,7 +141,7 @@ class JobDetailsPage:
         } 
 
     def verify_culture_section(self):
-        # Verify culture heading
+        # Verify Culture Heading
         expect(self.culture_heading).to_be_visible(timeout=5000)
         heading_text = self.culture_heading.text_content().strip()
         assert heading_text == "Culture", f"Expected 'Culture', got '{heading_text}'"
