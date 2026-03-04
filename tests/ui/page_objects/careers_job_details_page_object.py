@@ -164,6 +164,65 @@ class JobDetailsPage:
             "open-minded",
             "entrepreneurial"
         ]
+
+        print("\n✅ Culture values:")
+        for value in culture_values:
+            assert value in para_text, f"Missing culture value: {value}"
+            print(f"   ✓ {value}")
+        
+        # Verify employee benefits
+        expected_benefits = [
+            "competitive wages",
+            "BCBS medical",
+            "FSA/HSA",
+            "long-term disability",
+            "dental",
+            "vision",
+            "fertility and family building benefits",
+            "Employee Assistance Program",
+            "paid time off",
+            "PTO",
+            "paid holidays",
+            "Paid Leave of Absence",
+            "401(k)",
+            "Profit-Sharing Plan",
+            "529 Education Savings Plan",
+            "Gym Network 360",
+            "pet insurance",
+            "commuting reimbursement",
+            "tuition reimbursement"
+        ]
+        
+        found_benefits = []
+        missing_benefits = []
+        
+        for benefit in expected_benefits:
+            if benefit in para_text:
+                found_benefits.append(benefit)
+            else:
+                missing_benefits.append(benefit)
+        
+        print(f"\n✅ Employee benefits ({len(found_benefits)}/{len(expected_benefits)}):")
+        for benefit in found_benefits[:10]:  # Show first 10
+            print(f"   ✓ {benefit}")
+        if len(found_benefits) > 10:
+            print(f"   ... and {len(found_benefits) - 10} more")
+        
+        # Verify all benefits are present
+        assert len(found_benefits) == len(expected_benefits), \
+            f"Expected all {len(expected_benefits)} benefits, found {len(found_benefits)}. Missing: {missing_benefits}"
+        
+        if missing_benefits:
+            print(f"\n⚠️  Missing benefits: {', '.join(missing_benefits)}")
+        
+        return {
+            "heading": heading_text,
+            "culture_values": len(culture_values),
+            "benefits_found": len(found_benefits),
+            "benefits_total": len(expected_benefits),
+            "paragraph_length": len(para_text),
+            "verified": True
+        }
     
 
     def verify_application_email_visible(self):
