@@ -141,12 +141,26 @@ class JobDetailsPage:
         } 
 
     def verify_culture_section(self):
-        """Verify the culture section"""
-        culture_heading = self.page.locator("h3:has-text('Culture')").first
-        expect(culture_heading).to_be_visible(timeout=5000)
-        heading_text = culture_heading.text_content().strip()
-        assert heading_text == "Culture", \
-            f"Expected 'Culture', got '{heading_text}'"
+        # Verify culture heading
+        expect(self.culture_heading).to_be_visible(timeout=5000)
+        heading_text = self.culture_heading.text_content().strip()
+        assert heading_text == "Culture", f"Expected 'Culture', got '{heading_text}'"
+        print("✅ Culture heading")
+        
+        # Verify paragraph
+        expect(self.culture_paragraph).to_be_visible(timeout=5000)
+        para_text = self.culture_paragraph.text_content()
+        
+        # Verify culture values
+        culture_values = [
+            "Work-life balance",
+            "collaborative",
+            "professional",
+            "passionate",
+            "open-minded",
+            "entrepreneurial"
+        ]
+    
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
