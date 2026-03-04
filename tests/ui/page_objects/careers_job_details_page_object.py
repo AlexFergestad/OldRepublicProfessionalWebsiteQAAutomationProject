@@ -19,6 +19,10 @@ class JobDetailsPage:
         self.application_email = page.get_by_role("link", name="applications@oldrepublicpro.com")
         self.about_orpro_heading = page.locator("h3:has-text('About Old Republic Professional')").first
         self.about_orpro_paragraph = page.locator("h3:has-text('About Old Republic Professional') + p").first
+
+        # Culture section locators
+        self.culture_heading = page.locator("h3:has-text('Culture')").first
+        self.culture_paragraph = page.locator("h3:has-text('Culture') + p").first
     
     def verify_job_title_visible(self):
         """Verify the job title is visible and return the text"""
