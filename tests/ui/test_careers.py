@@ -188,7 +188,19 @@ def test_culture_section(page: Page, base_url):
     result = job_details.verify_culture_section()
 
 """ TC:-010: Verify Equal Employment Opportunity Section"""
-def test_equal_employment_opportunity_section(page: Page, base_url):  
+def test_equal_employment_opportunity_section(page: Page, base_url): 
+    """Verify Equal Employment Opportunity section on job page"""
+    
+    # Initialize page objects
+    careers_page = CareersPage(page, base_url)
+    job_details = JobDetailsPage(page)
+    
+    # Navigate to job page
+    careers_page.navigate()
+    careers_page.click_underwriting_analyst_intern_job()
+
+    # Verify Equal Employment Opportunity section
+    result = job_details.verify_equal_employment_opportunity_section()
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
