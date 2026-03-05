@@ -188,6 +188,7 @@ def test_culture_section(page: Page, base_url):
     result = job_details.verify_culture_section()
 
 """ TC:-010: Verify Equal Employment Opportunity Section"""
+def 
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
