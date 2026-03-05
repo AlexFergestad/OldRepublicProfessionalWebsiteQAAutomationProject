@@ -187,6 +187,8 @@ def test_culture_section(page: Page, base_url):
     # Verify Culture section
     result = job_details.verify_culture_section()
 
+""" """
+
 # Test the browser tab name --
 # Test the h1 headin "Careers"
 # Test the LinkedIn link
