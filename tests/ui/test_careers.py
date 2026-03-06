@@ -188,6 +188,8 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 #     result = job_details.verify_culture_section()
 
 """ TC:-010: Verify Equal Employment Opportunity Section"""
+@pytest.mark.ui 
+@pytest.mark.careers
 def test_equal_employment_opportunity_section(page: Page, base_url): 
     """Verify Equal Employment Opportunity section on job page"""
     
