@@ -223,6 +223,8 @@ class JobDetailsPage:
             "paragraph_length": len(para_text),
             "verified": True
         }
+
+    def verify_
     
 
     def verify_application_email_visible(self):
