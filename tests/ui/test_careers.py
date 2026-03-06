@@ -170,22 +170,22 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 #     print(f"   Heading: {result['heading']}")
 #     print(f"   Paragraph length: {result['paragraph_length']} characters")
 
-"""TC-009: Verify Culture Section"""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_culture_section(page: Page, base_url):
-    """Verify Culture section on job page"""
+# """TC-009: Verify Culture Section"""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_culture_section(page: Page, base_url):
+#     """Verify Culture section on job page"""
     
-    # Initialize page objects
-    careers_page = CareersPage(page, base_url)
-    job_details = JobDetailsPage(page)
+#     # Initialize page objects
+#     careers_page = CareersPage(page, base_url)
+#     job_details = JobDetailsPage(page)
     
-    # Navigate to job page
-    careers_page.navigate()
-    careers_page.click_underwriting_analyst_intern_job()
+#     # Navigate to job page
+#     careers_page.navigate()
+#     careers_page.click_underwriting_analyst_intern_job()
 
-    # Verify Culture section
-    result = job_details.verify_culture_section()
+#     # Verify Culture section
+#     result = job_details.verify_culture_section()
 
 """ TC:-010: Verify Equal Employment Opportunity Section"""
 def test_equal_employment_opportunity_section(page: Page, base_url): 

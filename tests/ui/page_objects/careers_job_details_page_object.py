@@ -225,7 +225,37 @@ class JobDetailsPage:
         }
 
     def verify_equal_employment_opportunity_section(self):
-    
+        """Verify Equal Employment Opportunity section exists and has content"""
+        eeo_heading = self.page.locator("h3:has-text('Equal Employment Opportunity')").first
+        eeo_paragraph = self.page.locator("h3:has-text('Equal Employment Opportunity') + p").first
+        
+        # Verify heading
+        expect(eeo_heading).to_be_visible(timeout=5000)
+        assert eeo_heading.text_content().strip() == "Equal Employment Opportunity"
+        print("✅ Equal Employment Opportunity heading")
+        
+        # Verify paragraph
+        expect(eeo_paragraph).to_be_visible(timeout=5000)
+        para_text = eeo_paragraph.text_content()
+        
+        expected_phrases = [
+            "equal opportunity employer",
+            "discrimination",
+            "protected classes",
+            "diverse workforce",
+            "inclusive workplace"
+        ]
+        
+        for phrase in expected_phrases:
+            assert phrase in para_text, f"Missing expected phrase: '{phrase}'"
+        
+        print("✅ Equal Employment Opportunity paragraph verified")
+        
+        return {
+            "heading": eeo_heading.text_content().strip(),
+            "paragraph_length": len(para_text),
+            "verified": True
+        }
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
