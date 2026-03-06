@@ -224,7 +224,7 @@ class JobDetailsPage:
             "verified": True
         }
 
-    def verify_
+    def verify_equal_employment_opportunity_section(self):
     
 
     def verify_application_email_visible(self):
