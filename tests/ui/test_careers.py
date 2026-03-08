@@ -197,7 +197,7 @@ def test_equal_employment_opportunity_section(page: Page, base_url):
     careers_page = CareersPage(page, base_url)
     job_details = JobDetailsPage(page)
     
-    # Navigate to job page
+    # Navigates to job page
     careers_page.navigate()
     careers_page.click_underwriting_analyst_intern_job()
 
