@@ -221,11 +221,11 @@ def test_email_popup_submit_resume_button(page: Page, base_url):
     # Verify the application instructions text is visible and correct
     job_details.verify_application_instructions()
 
-    # # Verify the application email is visible
-    # job_details.verify_application_email_visible()
+    # Verify the application email is visible
+    job_details.verify_application_email_visible()
 
-    # # Clicks the "Submit Your Resume" button in the email 
-    # result = job_details.verify_submit_resume_popup()
+    # Clicks the "Submit Your Resume" button in the email 
+    result = job_details.verify_submit_resume_popup()
 
 
 
