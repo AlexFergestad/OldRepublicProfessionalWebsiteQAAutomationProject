@@ -182,7 +182,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_culture_section`)
 
-## TC-010: Verify C
+## TC-010: Verify Equal Employment Opportunity
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -192,7 +192,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on the "Underwriting Analyst Intern" link.
-3. Verify that it opens up another page displaying the "Culture" heading and paragraph for the intern role.
+3. Verify that it opens up another page displaying the "Equal Employment Opportunity" heading and paragraph for the intern role.
 
 ### Expected Result: 
 - Career page loads without errors.
@@ -200,4 +200,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_culture_section`)
+**Automated**: Yes (`tests/test_homepage.py::test_equal_employment_opportunity_section`)
