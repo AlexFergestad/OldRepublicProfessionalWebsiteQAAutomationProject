@@ -20,6 +20,10 @@ class JobDetailsPage:
         self.about_orpro_heading = page.locator("h3:has-text('About Old Republic Professional')").first
         self.about_orpro_paragraph = page.locator("h3:has-text('About Old Republic Professional') + p").first
 
+        # Application section locators
+        self.application_instruction_text = page.get_by_text("Qualified candidates must submit a resume to")
+        self.application_email = page.get_by_role("link", name="applications@oldrepublicpro.com")
+
         # Culture section locators
         self.culture_heading = page.locator("h3:has-text('Culture')").first
         self.culture_paragraph = page.locator("h3:has-text('Culture') + p").first
@@ -258,6 +262,7 @@ class JobDetailsPage:
         }
 
     def verify_submit_resume_popup(self):
+
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
