@@ -21,7 +21,9 @@ class JobDetailsPage:
         self.about_orpro_paragraph = page.locator("h3:has-text('About Old Republic Professional') + p").first
 
         # Application section locators
-        self.application_instruction_text = page.get_by_text("Qualified candidates must submit a resume to")
+        self.application_instruction_text = page.locator(
+        "//a[contains(@href, 'mailto:applications@oldrepublicpro.com')]/ancestor::p/preceding-sibling::p[1]"
+    ).first
         self.application_email = page.get_by_role("link", name="applications@oldrepublicpro.com")
 
         # Culture section locators
@@ -261,6 +263,13 @@ class JobDetailsPage:
             "verified": True
         }
 
+    def verify_application_email_visible(self):
+        """Verify the application email link is visible"""
+        expect(self.application_email).to_be_visible(timeout=5000)
+        href = self.application_email.get_attribute("href")
+        assert "mailto:applications@oldrepublicpro.com" in href
+        return href
+
     def verify_submit_resume_popup(self):
         """Verify the submit resume popup appears when clicking the application email link"""
         self.application_email.click()
@@ -269,9 +278,4 @@ class JobDetailsPage:
         href = self.application_email.get_attribute("href")
         assert "mailto:applications@oldrepublicpro.com" in href
 
-    def verify_application_email_visible(self):
-        """Verify the application email link is visible"""
-        expect(self.application_email).to_be_visible(timeout=5000)
-        href = self.application_email.get_attribute("href")
-        assert "mailto:applications@oldrepublicpro.com" in href
-        return href
+
