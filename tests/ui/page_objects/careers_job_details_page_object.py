@@ -257,7 +257,7 @@ class JobDetailsPage:
             "verified": True
         }
 
-    def 
+    def verify_submit_resume_popup(self):
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
