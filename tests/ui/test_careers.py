@@ -193,7 +193,7 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 def test_equal_employment_opportunity_section(page: Page, base_url): 
     """Verify Equal Employment Opportunity section on job page"""
     
-    # Initialize page objects
+    # Initialize page object
     careers_page = CareersPage(page, base_url)
     job_details = JobDetailsPage(page)
     
