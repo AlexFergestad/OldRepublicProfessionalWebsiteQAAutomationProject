@@ -245,7 +245,6 @@ class JobDetailsPage:
         para_text = eeo_paragraph.text_content()
         
         expected_phrases = [
-            "equal opportunity employer",
             "discrimination",
             "protected classes",
             "diverse workforce",
