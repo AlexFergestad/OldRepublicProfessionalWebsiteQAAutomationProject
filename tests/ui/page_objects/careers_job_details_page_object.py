@@ -245,10 +245,13 @@ class JobDetailsPage:
         para_text = eeo_paragraph.text_content()
         
         expected_phrases = [
-            "discrimination",
-            "protected classes",
-            "diverse workforce",
-            "inclusive workplace"
+            "discrimination and harrassment",
+            "race",
+            "sex",
+            "color, religion, age, sex, national origin, disability status, genetics",
+            " provides equal employment opportunities",
+            "or any other characteristic protected by federal, state, or local laws",
+            "This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training."
         ]
         
         for phrase in expected_phrases:
