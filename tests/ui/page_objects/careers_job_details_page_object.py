@@ -23,7 +23,7 @@ class JobDetailsPage:
         # Application section locators
         self.application_instruction_text = page.locator(
         "//a[contains(@href, 'mailto:applications@oldrepublicpro.com')]/ancestor::p/preceding-sibling::p[1]"
-    ).first
+        ).first
         self.application_email = page.get_by_role("link", name="applications@oldrepublicpro.com")
 
         # Culture section locators
@@ -264,6 +264,24 @@ class JobDetailsPage:
         }
 
     def verify_application_instructions(self):
+        """Verify application instruction text is visible"""
+    
+        # Verify instruction is visible
+        expect(self.application_instruction_paragraph).to_be_visible(timeout=5000)
+        
+        # Get text content
+        instruction = self.application_instruction_paragraph.text_content().strip()
+        
+        # Verify key phrases
+        assert "Qualified candidates" in instruction, \
+            f"Expected 'Qualified candidates' in instruction"
+        assert "submit a resume" in instruction, \
+            f"Expected 'submit a resume' in instruction"
+        
+        print(f"✅ Application instruction verified")
+        print(f"   Text: {instruction}")
+        
+        return instruction
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
