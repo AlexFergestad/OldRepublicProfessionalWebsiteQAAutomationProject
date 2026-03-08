@@ -257,6 +257,8 @@ class JobDetailsPage:
             "verified": True
         }
 
+    def 
+
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
         expect(self.application_email).to_be_visible(timeout=5000)
