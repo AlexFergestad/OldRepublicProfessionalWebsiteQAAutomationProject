@@ -196,7 +196,7 @@
 
 ### Expected Result: 
 - Career page loads without errors.
-- The role link brings the user to a new page with more information about the role and includes the "Culture" header and the paragraph underneath.
+- The role link brings the user to a new page with more information about the role and includes the "Equal Employment Opportunity" header and the paragraph underneath.
 
 ### Actual Result:
 **Status**: ✅ Pass
