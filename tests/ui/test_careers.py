@@ -214,15 +214,15 @@ def test_email_popup_submit_resume_button(page: Page, base_url):
     careers_page = CareersPage(page, base_url)
     job_details = JobDetailsPage(page)
     
-    # # Navigate to job page
-    # careers_page.navigate()
-    # careers_page.click_underwriting_analyst_intern_job()
+    # Navigate to job page
+    careers_page.navigate()
+    careers_page.click_underwriting_analyst_intern_job()
 
-    # # Click the "Submit Your Resume" button to open the email popup
-    # job_details.click_submit_resume_button()
+    # Click the "Submit Your Resume" button to open the email popup
+    job_details.click_submit_resume_button()
 
-    # # Verify the email popup appears with the correct content
-    # result = job_details.verify_email_popup()
+    # Verify the email popup appears with the correct content
+    result = job_details.verify_email_popup()
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
