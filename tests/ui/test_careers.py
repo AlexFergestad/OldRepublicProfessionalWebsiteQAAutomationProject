@@ -205,6 +205,7 @@ from tests.ui.page_objects.careers_job_details_page_object import JobDetailsPage
 #     result = job_details.verify_equal_employment_opportunity_section()
 
 """TC-011: Verify Email Popup "Submit Your Resume" Button"""
+@pytest.mark.ui
 
 # Test the browser tab name --
 # Test the h1 headin "Careers"
