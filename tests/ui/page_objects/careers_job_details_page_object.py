@@ -263,6 +263,8 @@ class JobDetailsPage:
             "verified": True
         }
 
+    def verify_application_instructions(self):
+
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
         expect(self.application_email).to_be_visible(timeout=5000)
@@ -277,5 +279,6 @@ class JobDetailsPage:
         # Verify mailto link opens
         href = self.application_email.get_attribute("href")
         assert "mailto:applications@oldrepublicpro.com" in href
+
 
 
