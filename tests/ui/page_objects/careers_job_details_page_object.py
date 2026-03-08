@@ -283,20 +283,25 @@ class JobDetailsPage:
         
         return instruction
 
-    def verify_application_email_visible(self):
-        """Verify the application email link is visible"""
+    def verify_application_email_link(self):
+        """Verify application email link is present and correct (without clicking)"""
+    
+        # Verify link is visible
         expect(self.application_email).to_be_visible(timeout=5000)
-        href = self.application_email.get_attribute("href")
-        assert "mailto:applications@oldrepublicpro.com" in href
-        return href
-
-    def verify_submit_resume_popup(self):
-        """Verify the submit resume popup appears when clicking the application email link"""
-        self.application_email.click()
         
-        # Verify mailto link opens
+        # Verify it's a mailto link
         href = self.application_email.get_attribute("href")
-        assert "mailto:applications@oldrepublicpro.com" in href
+        assert href == "mailto:applications@oldrepublicpro.com", \
+            f"Expected 'mailto:applications@oldrepublicpro.com', got '{href}'"
+        
+        # Verify link text
+        email_text = self.application_email.text_content()
+        assert email_text == "applications@oldrepublicpro.com"
+        
+        print(f"✅ Email link verified: {href}")
+        print(f"   (Link not clicked to avoid opening email client)")
+        
+        return href
 
 
 
