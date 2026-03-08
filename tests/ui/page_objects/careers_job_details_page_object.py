@@ -262,7 +262,12 @@ class JobDetailsPage:
         }
 
     def verify_submit_resume_popup(self):
-
+        """Verify the submit resume popup appears when clicking the application email link"""
+        self.application_email.click()
+        
+        # Verify mailto link opens
+        href = self.application_email.get_attribute("href")
+        assert "mailto:applications@oldrepublicpro.com" in href
 
     def verify_application_email_visible(self):
         """Verify the application email link is visible"""
