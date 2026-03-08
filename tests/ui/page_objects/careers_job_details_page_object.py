@@ -267,10 +267,10 @@ class JobDetailsPage:
         """Verify application instruction text is visible"""
     
         # Verify instruction is visible
-        expect(self.application_instruction_paragraph).to_be_visible(timeout=5000)
+        expect(self.application_instruction_text).to_be_visible(timeout=5000)
         
         # Get text content
-        instruction = self.application_instruction_paragraph.text_content().strip()
+        instruction = self.application_instruction_text.text_content().strip()
         
         # Verify key phrases
         assert "Qualified candidates" in instruction, \
