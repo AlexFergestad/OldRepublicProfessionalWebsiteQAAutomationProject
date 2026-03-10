@@ -234,22 +234,27 @@ class JobDetailsPage:
         """Verify Equal Employment Opportunity section exists and has content"""
         eeo_heading = self.page.locator("h3:has-text('Equal Employment Opportunity')").first
         eeo_paragraph = self.page.locator("h3:has-text('Equal Employment Opportunity') + p").first
+        eeo_paragraph2 = self.page.locator("h3:has-text('Equal Employment Opportunity') + p + p").first
         
         # Verify heading
         expect(eeo_heading).to_be_visible(timeout=5000)
         assert eeo_heading.text_content().strip() == "Equal Employment Opportunity"
         print("✅ Equal Employment Opportunity heading")
         
-        # Verify paragraph
+        # Verify paragraph 1
         expect(eeo_paragraph).to_be_visible(timeout=5000)
-        para_text = eeo_paragraph.text_content()
+        para_text = eeo_paragraph.text_content() + " " + eeo_paragraph2.text_content()
+
+        # Verify paragraph 2
+        expect(eeo_paragraph2).to_be_visible(timeout=5000)
+        para2_text = eeo_paragraph2.text_content()
         
         expected_phrases = [
-            "discrimination and harrassment",
+            "discrimination and harassment",
             "race",
             "sex",
             "color, religion, age, sex, national origin, disability status, genetics",
-            " provides equal employment opportunities",
+            "provides equal employment opportunities",
             "or any other characteristic protected by federal, state, or local laws",
             "This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training."
         ]
@@ -288,7 +293,7 @@ class JobDetailsPage:
     def verify_application_email_link(self):
         """Verify application email link is present and correct (without clicking)"""
     
-        # Verify link is visible
+        # Verify link is visiblef
         expect(self.application_email).to_be_visible(timeout=5000)
         
         # Verify it's a mailto link
