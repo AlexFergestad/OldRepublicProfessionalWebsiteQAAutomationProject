@@ -293,7 +293,7 @@ class JobDetailsPage:
     def verify_application_email_link(self):
         """Verify application email link is present and correct (without clicking)"""
     
-        # Verify link is visiblef
+        # Verify link is visible
         expect(self.application_email).to_be_visible(timeout=5000)
         
         # Verify it's a mailto link
