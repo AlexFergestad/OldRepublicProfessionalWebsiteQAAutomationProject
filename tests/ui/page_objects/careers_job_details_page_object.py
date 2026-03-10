@@ -279,7 +279,7 @@ class JobDetailsPage:
         # Get text content
         instruction = self.application_instruction_text.text_content().strip()
         
-        # Verify key phrases
+        # Verify key phrasesd
         assert "Qualified candidates" in instruction, \
             f"Expected 'Qualified candidates' in instruction"
         assert "submit a resume" in instruction, \
