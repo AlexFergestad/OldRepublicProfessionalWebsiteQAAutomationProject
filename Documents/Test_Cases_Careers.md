@@ -220,4 +220,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_equal_employment_opportunity_section`)
+**Automated**: Yes (`tests/test_homepage.py::test_email_popup_submit_resume_button`)
