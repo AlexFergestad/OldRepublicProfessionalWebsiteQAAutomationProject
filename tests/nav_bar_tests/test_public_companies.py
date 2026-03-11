@@ -1,1 +1,1 @@
-# Tis file is for automating the testin of the public companies pages in the nav bar.
+# This file is for automating the testin of the public companies pages in the nav bar.
