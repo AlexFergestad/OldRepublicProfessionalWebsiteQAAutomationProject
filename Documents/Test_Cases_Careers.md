@@ -201,3 +201,23 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_equal_employment_opportunity_section`)
+
+## TC-011: Verify Equal Employment Opportunity
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Click on the "Underwriting Analyst Intern" link.
+3. Verify that it opens up another page displaying the "Equal Employment Opportunity" heading and paragraph for the intern role.
+
+### Expected Result: 
+- Career page loads without errors.
+- The role link brings the user to a new page with more information about the role and includes the "Equal Employment Opportunity" header and the paragraph underneath.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_equal_employment_opportunity_section`)
