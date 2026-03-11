@@ -1,7 +1,7 @@
 """
 
 Careers UI Tests
-Test Cases: TC-001, TC-002
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009, TC-010, TC-011
 
 * This page verifies the career page of the Old Republic Professional website.
 
