@@ -11,3 +11,11 @@ with correct titles and links, has a working Contact Us link, displays the compa
 homepage, has a functional search bar, and includes the expected links above the footer.
 
 """
+
+import pytest
+from playwright.sync_api import Page, expect
+
+# Page Objects - relative import from same ui folder
+from tests.ui.page_objects.careers_page_object import CareersPage
+
+"""TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
