@@ -19,3 +19,6 @@ from playwright.sync_api import Page, expect
 from tests.ui.page_objects.careers_page_object import CareersPage
 
 """TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
+@pytest.mark.ui
+@pytest.mark.careers
+def test_public_companies_page_loads(page: Page, base_url):
