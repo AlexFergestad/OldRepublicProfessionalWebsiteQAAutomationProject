@@ -27,5 +27,7 @@ def test_public_companies_page_loads(page: Page, base_url):
     
     # Clicks on the Public Companies menu item to navigate to the public companies page
 
+"""TC-002: Verify Browser Tab Name on Public Companies Page"""
+
 """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
     
