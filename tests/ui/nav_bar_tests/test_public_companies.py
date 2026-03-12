@@ -26,4 +26,6 @@ def test_public_companies_page_loads(page: Page, base_url):
     page.goto(base_url)
     
     # Clicks on the Public Companies menu item to navigate to the public companies page
+
+"""TC-002: Verify Public-Company Liability Overview Heading and Paragraph"""
     
