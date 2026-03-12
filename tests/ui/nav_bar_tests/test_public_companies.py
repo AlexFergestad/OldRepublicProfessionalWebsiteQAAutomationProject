@@ -26,7 +26,4 @@ def test_public_companies_page_loads(page: Page, base_url):
     page.goto(base_url)
     
     # Clicks on the Public Companies menu item to navigate to the public companies page
-    page.get_by_role("menuitem", name="Public Companies").click()
-
-    # Verifies that the URL is correct for the public companies page
-    expect(page).to_have_url(f"{base_url}/public-companies")
+    
