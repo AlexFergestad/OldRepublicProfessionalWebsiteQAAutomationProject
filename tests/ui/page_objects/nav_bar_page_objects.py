@@ -15,3 +15,5 @@ class NavigationMenu:
         self.law_firms_link = page.get_by_role("menuitem", name="Law Firms").first
         self.financial_institutions_link = page.get_by_role("menuitem", name="Financial Institutions").first
         self.commercial_crime_link = page.get_by_role("menuitem", name="Commercial Crime").first
+    
+    def
