@@ -35,6 +35,9 @@ def test_public_companies_page_loads(page: Page, base_url):
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).public_companies_link.click()
 
+    # Waits for the public companies page to load
+    page.wait_for_load_state("networkidle")
+
 # """TC-002: Verify Browser Tab Name on Public Companies Page"""
 # @pytest.mark.ui
 # @pytest.mark.careers
