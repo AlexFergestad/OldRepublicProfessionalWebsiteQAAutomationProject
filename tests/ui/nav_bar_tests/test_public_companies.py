@@ -1,5 +1,12 @@
 # This file is for automating the testin of the public companies pages in the nav bar.
 
+import pytest
+from playwright.sync_api import Page, expect
+
+# Page Objects - relative import from same ui folder
+from tests.ui.page_objects.careers_page_object import CareersPage
+from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
+
 """
 
 Private Companies Nav Bar Section UI Tests
@@ -26,7 +33,7 @@ def test_public_companies_page_loads(page: Page, base_url):
     page.goto(base_url)
     
     # Clicks on the Public Companies menu item to navigate to the public companies page
-    
+    NavigationMenu(page).public_companies_link.click()
 
 # """TC-002: Verify Browser Tab Name on Public Companies Page"""
 # @pytest.mark.ui
