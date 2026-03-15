@@ -39,8 +39,9 @@ def test_public_companies_page_loads(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
 # """TC-002: Verify Browser Tab Name on Public Companies Page"""
-# @pytest.mark.ui
-# @pytest.mark.careers
+@pytest.mark.ui
+@pytest.mark.careers
+
 
 # """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
 # @pytest.mark.ui
