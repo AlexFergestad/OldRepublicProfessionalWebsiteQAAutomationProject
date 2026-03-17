@@ -20,4 +20,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_homepage_loads`)
+**Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_loads`)
