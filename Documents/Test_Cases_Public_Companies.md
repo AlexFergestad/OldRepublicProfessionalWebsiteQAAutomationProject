@@ -11,12 +11,12 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on "Public Companies" in the nav bar.
 2. Wait for page to fully load.
-3. Verify browser tab title is called "Professional Liability Insurance | D&O | LPL | EPL | Old Republic Pro"
+3. Verify browser tab title is called "Professional Liability Insurance | D&O | LPL | EPL | Old Republic Pro".
 
 ### Expected Result: 
 - Page loads without errors.
 - Browser Tab Title is visible and correct.
-- You are able to navigate and hover on the main webpage.
+- You are able to navigate and hover on the public companies webpage.
 
 ### Actual Result:
 **Status**: ✅ Pass
