@@ -9,7 +9,7 @@
 
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
-2. 
+2. Click on "Public Companies" in the nav bar.
 2. Wait for page to fully load.
 3. Verify browser tab title is called "Professional Liability Insurance | D&O | LPL | EPL | Old Republic Pro"
 
