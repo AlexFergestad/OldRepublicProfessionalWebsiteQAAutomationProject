@@ -41,6 +41,7 @@ def test_public_companies_page_loads(page: Page, base_url):
 """TC-002: Verify Browser Tab Name on Public Companies Page"""
 @pytest.mark.ui
 @pytest.mark.careers
+def verify_public_companies_page_browser_title(page: Page, base_url):
 
 
 # """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
