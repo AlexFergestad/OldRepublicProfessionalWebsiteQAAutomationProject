@@ -20,7 +20,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_loads`)
 
-## TC-002: Verify Browser Tab is
+## TC-002: Verify Browser Tab is Correct
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
