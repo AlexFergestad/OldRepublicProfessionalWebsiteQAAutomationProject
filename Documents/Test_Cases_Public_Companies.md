@@ -22,7 +22,7 @@
 
 ## TC-002: Verify Browser Tab is Correct
 **Priority**: High
-**Type**: Functional/Smoke
+**Type**: Functional
 **Preconditions**: 
 - Have a computer/laptop connected to the internet.
 - Be on a common web browser such as Chrome, Edge, FireFox, Safari.
