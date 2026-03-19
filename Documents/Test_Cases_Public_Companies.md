@@ -13,7 +13,7 @@
 3. Wait for page to fully load.
 
 ### Expected Result: 
-- Page loads without errors.
+- Page loads without any errors.
 - You are able to navigate and hover on the public companies webpage.
 
 ### Actual Result:
@@ -34,7 +34,7 @@
 3. Verify browser tab title is exactly called "Professional Liability Insurance | D&O | LPL | EPL | Old Republic Pro".
 
 ### Expected Result: 
-- Page loads without errors.
+- Page loads without any errors.
 - Browser Tab Title is visible and correct.
 - You are able to navigate and hover on the public companies webpage.
 
