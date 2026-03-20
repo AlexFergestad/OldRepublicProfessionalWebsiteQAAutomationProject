@@ -40,4 +40,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::verify_public_companies_page_browser_title`)
+**Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_browser_title`)
