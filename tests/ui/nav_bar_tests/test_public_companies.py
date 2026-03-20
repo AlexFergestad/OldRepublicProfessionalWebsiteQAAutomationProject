@@ -60,6 +60,6 @@ def verify_public_companies_page_browser_title(page: Page, base_url):
     assert "Old Republic Professional" in title, f"Expected 'Old Republic Professional' in title, got: {title}"
 
 # """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
-# @pytest.mark.ui
-# @pytest.mark.careers
+@pytest.mark.ui
+@pytest.mark.careers
     
