@@ -41,13 +41,13 @@ def test_public_companies_page_loads(page: Page, base_url):
 """TC-002: Verify Browser Tab Name on Public Companies Page"""
 @pytest.mark.ui
 @pytest.mark.careers
-def verify_public_companies_page_browser_title(page: Page, base_url):
+def test_public_companies_page_browser_title(page: Page, base_url):
 
     # Navigate to the home page
     page.goto(base_url)
 
     # Click on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    NavigationMenusssssssssssssssssssssssssssss(page).navigate_to_nav_bar_item("Public Companies")
 
     # Wait for the public companies page to load
     page.wait_for_load_state("networkidle")
@@ -62,4 +62,3 @@ def verify_public_companies_page_browser_title(page: Page, base_url):
 """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
 @pytest.mark.ui
 @pytest.mark.careers
-    
