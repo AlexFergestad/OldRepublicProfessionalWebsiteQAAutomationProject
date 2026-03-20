@@ -63,3 +63,13 @@ def test_public_companies_page_browser_title(page: Page, base_url):
 @pytest.mark.ui
 @pytest.mark.careers
 def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
+    # Navigate to the home page
+    page.goto(base_url)
+
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
+
+    
