@@ -63,7 +63,7 @@ class Public_Company_Liability_Overview:
         
         return second_para
     
-    def verify_heading_and_paragraph(self):
+    def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
         self.verify_page_heading()
         self.verify_overview_paragraph1()
