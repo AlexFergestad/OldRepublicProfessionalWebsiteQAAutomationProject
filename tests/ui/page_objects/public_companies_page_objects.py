@@ -25,7 +25,7 @@ class Public_Company_Liability_Overview:
         
         return heading_text
     
-    def verify_overview_paragraphs(self):
+    def verify_overview_paragraph1(self):
         """Verify overview section paragraphs contain key information"""
         # Verify we have paragraphs
         paragraphs = self.overview_paragraphs.all()
@@ -53,8 +53,8 @@ class Public_Company_Liability_Overview:
     def verify_heading_and_paragraph(self):
         """Verify both heading and paragraphs"""
         self.verify_page_heading()
-        self.verify_overview_paragraphs()
+        self.verify_overview_paragraph1()
         
-        
+
         
         return True
