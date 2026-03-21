@@ -6,7 +6,7 @@ class Public_Company_Liability_Overview:
         self.base_url = base_url
         self.url = f"{base_url}/business-insurance-public-company"
         
-        # Locators
+        # TextLocators
         self.page_heading = page.locator("h1").first
         self.overview_paragraphs = page.locator("div.constrain > p")
     
