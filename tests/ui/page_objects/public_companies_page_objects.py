@@ -55,15 +55,9 @@ class Public_Company_Liability_Overview:
         second_para = self.overview_paragraphs.nth(1)
         expect(second_para).to_be_visible(timeout=5000)
         
-        key_facts = [
-            "Directors and Officers liability insurance",
-            "40 years",
-            "NASDAQ 100 Index",
-            "60 percent of the NASDAQ Biotechnology Index"
-        ]
-        
-        for fact in key_facts:
-            expect(second_para).to_contain_text(fact)
+        expect(second_para).to_contain_text("Corporate directors and officers and the public companies they " \
+        "represent are exposed to an ever-expanding array of risk. Selecting the right insurance carrier partner " \
+        "with an extensive track-record has never been more important.")
         
         print(f"✅ Second overview paragraph verified with key facts")
         
