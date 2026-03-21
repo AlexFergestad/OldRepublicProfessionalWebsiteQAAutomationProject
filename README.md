@@ -91,6 +91,10 @@ python -m pytest -m ui --headed -s
 "Find me the element with this text"
 - Used when you need to locate/find an element to interact with.
 
+# Text verification methods
+- to_have_text() = EXACT match (entire text must match exactly)
+- to_contain_text() = PARTIAL match (text must contain this phrase)
+- assert text == ... = EXACT match with custom error message
 
 ## Additional Testing Information
 
