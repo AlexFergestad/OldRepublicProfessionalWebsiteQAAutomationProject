@@ -7,6 +7,9 @@ class Public_Company_Liability_Overview:
 
         # Locators
         self.page_heading = page.locator("h1").first
+        
+         # All paragraphs in the header section
+        self.overview_paragraphs = page.locator("div.constrain > p")
     
     def verify_heading_and_paragraph(self):
         """Verify the heading and paragraph on the public company liability overview page"""
