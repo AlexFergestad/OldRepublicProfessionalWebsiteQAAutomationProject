@@ -69,6 +69,26 @@ class Public_Company_Liability_Overview:
         print(f"✅ Second overview paragraph verified with key facts")
         
         return second_para.text_content()
+
+    def verify_overview_paragraph3(self):
+        """Verify the third overview paragraph contains key information"""
+        third_para = self.overview_paragraphs.nth(2)
+        expect(third_para).to_be_visible(timeout=5000)
+        
+        # Checks for key concepts, not exact wording, this is best practice
+        key_facts = [
+            "Corporate directors and officers",
+            "ever-expanding array of risk",
+            "insurance carrier partner"
+        ]
+
+        for fact in key_facts:
+            expect(second_para).to_contain_text(fact)
+
+
+        print(f"✅ Second overview paragraph verified with key facts")
+        
+        return second_para.text_content()
     
     def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
