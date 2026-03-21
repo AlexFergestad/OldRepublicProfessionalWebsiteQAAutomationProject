@@ -73,7 +73,8 @@ class Public_Company_Liability_Overview:
         """Verify both heading and paragraphs"""
         self.verify_page_heading()
         self.verify_overview_paragraph1()
-        
+        self.verify_overview_paragraph2()
 
         
         return True
+
