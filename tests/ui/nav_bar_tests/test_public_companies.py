@@ -64,17 +64,22 @@ from tests.ui.page_objects.careers_page_object import CareersPage
 @pytest.mark.ui
 @pytest.mark.careers
 def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
+    """Verify Public Companies page heading and paragraphs"""
+    
     # Navigate to the home page
     page.goto(base_url)
-
-    # Click on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
-
-    # Wait for the public companies page to load
     page.wait_for_load_state("networkidle")
-
-    # Verify the heading and paragraph on the public company liability overview page
-    Public_Company_Liability_Overview(page).verify_heading_and_paragraph()
+    
+    # Click on the Public Companies menu item
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    page.wait_for_load_state("networkidle")
+    
+    # Verify the heading and paragraph
+    # ✅ FIXED: Pass both page AND base_url
+    public_companies = Public_Company_Liability_Overview(page, base_url)  
+    public_companies.verify_heading_and_paragraph()
+    
+    print("✅ Public Companies page verified")
 
     
 
