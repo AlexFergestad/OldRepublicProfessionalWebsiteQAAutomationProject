@@ -83,19 +83,19 @@ class Public_Company_Liability_Overview:
         ]
 
         for fact in key_facts:
-            expect(second_para).to_contain_text(fact)
+            expect(third_para).to_contain_text(fact)
 
 
-        print(f"✅ Second overview paragraph verified with key facts")
+        print(f"✅ Third overview paragraph verified with key facts")
         
-        return second_para.text_content()
+        return third_para.text_content()
     
     def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
         self.verify_page_heading()
         self.verify_overview_paragraph1()
         self.verify_overview_paragraph2()
-
+        self.verify_overview_paragraph3()
         
         return True
 
