@@ -8,4 +8,6 @@ class Public_Company_Liability_Overview:
         # Locators
         self.page_heading = page.locator("h1").first
     
-    def 
+    def verify_heading_and_paragraph(self):
+        """Verify the heading and paragraph on the public company liability overview page"""
+        expect(self.page_heading).to_have_text("Public Company Liability Overview")
