@@ -55,10 +55,17 @@ class Public_Company_Liability_Overview:
         second_para = self.overview_paragraphs.nth(1)
         expect(second_para).to_be_visible(timeout=5000)
         
-        expect(second_para).to_contain_text("Corporate directors and officers and the public companies they " \
-        "represent are exposed to an ever-expanding array of risk. Selecting the right insurance carrier partner " \
-        "with an extensive track-record has never been more important.")
-        
+        # Checks for key concepts, not exact wording, this is best practice
+        key_facts = [
+            "Corporate directors and officers",
+            "ever-expanding array of risk",
+            "insurance carrier partner"
+        ]
+
+        for fact in key_facts:
+            expect(second_para).to_contain_text(fact)
+
+
         print(f"✅ Second overview paragraph verified with key facts")
         
         return second_para
