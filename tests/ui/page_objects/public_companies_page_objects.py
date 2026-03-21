@@ -34,6 +34,9 @@ class Public_Company_Liability_Overview:
         # Get first paragraph
         first_para = self.overview_paragraphs.nth(0)
         expect(first_para).to_be_visible(timeout=5000)
+
+        # Grab text once — used for both assertions and return value
+        content = first_para.text_content()
         
         # Verify key facts in first paragraph
         key_facts = [
@@ -44,7 +47,10 @@ class Public_Company_Liability_Overview:
         ]
         
         for fact in key_facts:
-            expect(first_para).to_contain_text(fact)
+            assert fact in content, (
+                f"\nKey fact not found: '{fact}'\n"
+                f"Content says instead:\n  '{content[:200]}...'"
+            )
         
         print(f"✅ Overview paragraphs verified ({len(paragraphs)} paragraphs, {len(key_facts)} key facts)")
         
@@ -55,6 +61,9 @@ class Public_Company_Liability_Overview:
         second_para = self.overview_paragraphs.nth(1)
         expect(second_para).to_be_visible(timeout=5000)
         
+        # Grab text once — used for both assertions and return value
+        content = second_para.text_content()
+
         # Checks for key concepts, not exact wording, this is best practice
         key_facts = [
             "Corporate directors and officers",
@@ -63,8 +72,10 @@ class Public_Company_Liability_Overview:
         ]
 
         for fact in key_facts:
-            expect(second_para).to_contain_text(fact)
-
+            assert fact in content, (
+                f"\nKey fact not found: '{fact}'\n"
+                f"Content says instead:\n  '{content[:200]}...'"
+            )
 
         print(f"✅ Second overview paragraph verified with key facts")
         
@@ -75,6 +86,9 @@ class Public_Company_Liability_Overview:
         third_para = self.overview_paragraphs.nth(2)
         expect(third_para).to_be_visible(timeout=5000)
         
+        # Grab text once — used for both assertions and return value
+        content = third_para.text_content()
+
         # Checks for key concepts, not exact wording, this is best practice
         # Key facts: short, meaningful phrases
         key_facts = [
@@ -87,7 +101,10 @@ class Public_Company_Liability_Overview:
         ]
 
         for fact in key_facts:
-            expect(third_para).to_contain_text(fact)
+            assert fact in content, (
+                f"\nKey fact not found: '{fact}'\n"
+                f"Content says instead:\n  '{content[:200]}...'"
+            )
 
 
         print(f"✅ Third overview paragraph verified with key facts")
