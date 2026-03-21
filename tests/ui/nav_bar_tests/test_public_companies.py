@@ -11,7 +11,7 @@ from tests.ui.page_objects.public_companies_page_objects import Public_Company_L
 """
 
 Private Companies Nav Bar Section UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009, TC-010, TC-011
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005
 
 * This page verifies the homepage of the Old Republic Professional website loads correctly, 
 has the correct title and main header, displays the company description, shows all insurance type cards 
@@ -77,9 +77,12 @@ def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
     # Verify the heading and paragraph
     public_companies = Public_Company_Liability_Overview(page, base_url)  
     public_companies.verify_heading_and_paragraphs()
-    
-    print("✅ Public Companies page verified")
 
+    # Verify last paragraph with the bullet points
     
+
+# The Following next tests -> then Done
+# - Top Image
+# - Public Companies Section on the Right
 
     
