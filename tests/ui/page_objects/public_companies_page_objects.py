@@ -49,6 +49,25 @@ class Public_Company_Liability_Overview:
         print(f"✅ Overview paragraphs verified ({len(paragraphs)} paragraphs, {len(key_facts)} key facts)")
         
         return paragraphs
+
+    def verify_overview_paragraph2(self):
+        """Verify the second overview paragraph contains key information"""
+        second_para = self.overview_paragraphs.nth(1)
+        expect(second_para).to_be_visible(timeout=5000)
+        
+        key_facts = [
+            "Directors and Officers liability insurance",
+            "40 years",
+            "NASDAQ 100 Index",
+            "60 percent of the NASDAQ Biotechnology Index"
+        ]
+        
+        for fact in key_facts:
+            expect(second_para).to_contain_text(fact)
+        
+        print(f"✅ Second overview paragraph verified with key facts")
+        
+        return second_para
     
     def verify_heading_and_paragraph(self):
         """Verify both heading and paragraphs"""
