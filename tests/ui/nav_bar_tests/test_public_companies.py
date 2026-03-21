@@ -75,9 +75,8 @@ def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
     page.wait_for_load_state("networkidle")
     
     # Verify the heading and paragraph
-    # ✅ FIXED: Pass both page AND base_url
     public_companies = Public_Company_Liability_Overview(page, base_url)  
-    public_companies.verify_heading_and_paragraph()
+    public_companies.verify_heading_and_paragraphs()
     
     print("✅ Public Companies page verified")
 
