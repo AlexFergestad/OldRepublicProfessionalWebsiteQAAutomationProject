@@ -68,7 +68,7 @@ class Public_Company_Liability_Overview:
 
         print(f"✅ Second overview paragraph verified with key facts")
         
-        return second_para
+        return second_para.text_content()
     
     def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
