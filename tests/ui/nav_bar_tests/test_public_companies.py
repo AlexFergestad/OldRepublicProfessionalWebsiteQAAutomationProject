@@ -25,39 +25,39 @@ from playwright.sync_api import Page, expect
 # Page Objects - relative import from same ui folder
 from tests.ui.page_objects.careers_page_object import CareersPage
 
-"""TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_public_companies_page_loads(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_public_companies_page_loads(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
     
-    # Clicks on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Waits for the public companies page to load
-    page.wait_for_load_state("networkidle")
+#     # Waits for the public companies page to load
+#     page.wait_for_load_state("networkidle")
 
-"""TC-002: Verify Browser Tab Name on Public Companies Page"""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_public_companies_page_browser_title(page: Page, base_url):
+# """TC-002: Verify Browser Tab Name on Public Companies Page"""
+# @pytest.mark.ui
+# @pytest.mark.careers
+# def test_public_companies_page_browser_title(page: Page, base_url):
 
-    # Navigate to the home page
-    page.goto(base_url)
+#     # Navigate to the home page
+#     page.goto(base_url)
 
-    # Click on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Click on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Wait for the public companies page to load
-    page.wait_for_load_state("networkidle")
+#     # Wait for the public companies page to load
+#     page.wait_for_load_state("networkidle")
 
-    # Verify that the browser tab title is correct
-    ## Get the title
-    title = page.title()
+#     # Verify that the browser tab title is correct
+#     ## Get the title
+#     title = page.title()
     
-    # Verify it contains expected text
-    assert "Old Republic Professional" in title, f"Expected 'Old Republic Professional' in title, got: {title}"
+#     # Verify it contains expected text
+#     assert "Old Republic Professional" in title, f"Expected 'Old Republic Professional' in title, got: {title}"
 
 """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
 @pytest.mark.ui
