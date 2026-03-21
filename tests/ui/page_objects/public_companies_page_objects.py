@@ -77,9 +77,10 @@ class Public_Company_Liability_Overview:
         
         # Checks for key concepts, not exact wording, this is best practice
         key_facts = [
-            "Corporate directors and officers",
-            "ever-expanding array of risk",
-            "insurance carrier partner"
+            "Our underwriting team has an average of 20 years' experience in D&O underwriting",
+            " so we can consider more complex exposures such as initial public offerings",
+            "bankruptcies and corporate",
+            "in addition to more typical public and private company risks."
         ]
 
         for fact in key_facts:
