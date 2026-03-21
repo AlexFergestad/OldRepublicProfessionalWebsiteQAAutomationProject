@@ -76,11 +76,14 @@ class Public_Company_Liability_Overview:
         expect(third_para).to_be_visible(timeout=5000)
         
         # Checks for key concepts, not exact wording, this is best practice
+        # Key facts: short, meaningful phrases
         key_facts = [
-            "Our underwriting team has an average of 20 years' experience in D&O underwriting",
-            " so we can consider more complex exposures such as initial public offerings",
-            "bankruptcies and corporate",
-            "in addition to more typical public and private company risks."
+            "20 years' experience",
+            "D&O underwriting",
+            "initial public offerings",
+            "bankruptcies",
+            "turnarounds",
+            "public and private company risks"
         ]
 
         for fact in key_facts:
