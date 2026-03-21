@@ -53,16 +53,16 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on "Public Companies" in the nav bar.
 2. Wait for page to fully load.
-3. Verify the following:
+3. View the Heading and Paragraphs.
+
+### Expected Result: 
+- Page loads without any errors.
+- You are able to navigate and hover on the public companies webpage.
+- The following is verified for the heading and paragraphs:
     - Grammar is correct ✓
     - Spelling is correct ✓
     - Tone is appropriate ✓
     - Information is accurate ✓
-
-### Expected Result: 
-- Page loads without any errors.
-- Browser Tab Title is visible and correct.
-- You are able to navigate and hover on the public companies webpage.
 
 ### Actual Result:
 **Status**: ✅ Pass
