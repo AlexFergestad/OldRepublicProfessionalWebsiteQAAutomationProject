@@ -116,7 +116,7 @@ class Public_Company_Liability_Overview:
         section = self.page.get_by_text("Click through to learn more about").locator("..")
         expect(section).to_be_visible(timeout=5000)
 
-        full_content = full_content.replace("\u00a0", " ")
+        full_content = section.text_content()
         
         # Slice from "Click through" onward — ignore everything above it
         start = full_content.find("Click through")
@@ -127,8 +127,8 @@ class Public_Company_Liability_Overview:
         key_facts = [
             "Click through to learn more about",
             "Public company D&O solutions",
-            "Public company EPL solutions",
-            "Public company Fiduciary solutions",
+            "Public company\u00a0EPL solutions",
+            "Public company\u00a0Fiduciary solutions",
             "Information shown is subject to change",
         ]
 
