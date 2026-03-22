@@ -121,8 +121,6 @@ class Public_Company_Liability_Overview:
         # Slice from "Click through" onward — ignore everything above it
         start = full_content.find("Click through")
         content = full_content[start:]
-        
-        print(f"Relevant content:\n{content}\n")
 
         key_facts = [
             "Click through to learn more about",
