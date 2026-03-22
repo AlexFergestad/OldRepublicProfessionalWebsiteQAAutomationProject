@@ -81,8 +81,8 @@ def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
 """TC-004: Verify Top Image in Public Companies Page"""
 @pytest.mark.ui
 @pytest.mark.careers
-def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
-    """Verify Public Companies page heading and paragraphs"""
+def test_top_image_in_public_companies_page(page: Page, base_url):
+    """Verify Top Image in Public Companies page"""
     
 
 # The Following next tests -> then Done
