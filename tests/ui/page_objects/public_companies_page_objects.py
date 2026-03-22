@@ -110,6 +110,8 @@ class Public_Company_Liability_Overview:
         print(f"✅ Third overview paragraph verified with key facts")
         
         return third_para.text_content()
+
+    def verify_last_part_of_paragraph(self):
     
     def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
