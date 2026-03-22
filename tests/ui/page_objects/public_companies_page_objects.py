@@ -119,6 +119,8 @@ class Public_Company_Liability_Overview:
         # Grab text once — used for both assertions and return value
         content = last_para.text_content()
 
+        print(f"Last overview paragraph content:\n{content}\n")
+
         # Checks for key concepts, not exact wording, this is best practice
         key_facts = [
             "D&O insurance",
