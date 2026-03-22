@@ -78,7 +78,7 @@ def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
     public_companies = Public_Company_Liability_Overview(page, base_url)  
     public_companies.verify_heading_and_paragraphs()
 
-    # Verify last paragraph with the bullet points
+
     
 
 # The Following next tests -> then Done
