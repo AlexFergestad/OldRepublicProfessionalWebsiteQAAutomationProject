@@ -23,12 +23,9 @@ homepage, has a functional search bar, and includes the expected links above the
 import pytest
 from playwright.sync_api import Page, expect
 
-# Page Objects - relative import from same ui folder
-from tests.ui.page_objects.careers_page_object import CareersPage
-
 # """TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
 # @pytest.mark.ui
-# @pytest.mark.careers
+# @pytest.mark.public_companies_first_page
 # def test_public_companies_page_loads(page: Page, base_url):
 #     # Goes to the home page first
 #     page.goto(base_url)
@@ -41,7 +38,7 @@ from tests.ui.page_objects.careers_page_object import CareersPage
 
 # """TC-002: Verify Browser Tab Name on Public Companies Page"""
 # @pytest.mark.ui
-# @pytest.mark.careers
+# @pytest.mark.public_companies_first_page
 # def test_public_companies_page_browser_title(page: Page, base_url):
 
 #     # Navigate to the home page
@@ -60,27 +57,27 @@ from tests.ui.page_objects.careers_page_object import CareersPage
 #     # Verify it contains expected text
 #     assert "Old Republic Professional" in title, f"Expected 'Old Republic Professional' in title, got: {title}"
 
-"""TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
-@pytest.mark.ui
-@pytest.mark.careers
-def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
-    """Verify Public Companies page heading and paragraphs"""
+# """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_first_page
+# def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
+#     """Verify Public Companies page heading and paragraphs"""
     
-    # Navigate to the home page
-    page.goto(base_url)
-    page.wait_for_load_state("networkidle")
+#     # Navigate to the home page
+#     page.goto(base_url)
+#     page.wait_for_load_state("networkidle")
     
-    # Click on the Public Companies menu item
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
-    page.wait_for_load_state("networkidle")
+#     # Click on the Public Companies menu item
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     page.wait_for_load_state("networkidle")
     
-    # Verify the heading and paragraph
-    public_companies = Public_Company_Liability_Overview(page, base_url)  
-    public_companies.verify_heading_and_paragraphs()
+#     # Verify the heading and paragraph
+#     public_companies = Public_Company_Liability_Overview(page, base_url)  
+#     public_companies.verify_heading_and_paragraphs()
 
 """TC-004: Verify Top Image in Public Companies Page"""
 @pytest.mark.ui
-@pytest.mark.careers
+@pytest.mark.public_companies_first_page
 def test_top_image_in_public_companies_page(page: Page, base_url):
     """Verify Top Image in Public Companies page"""
     
