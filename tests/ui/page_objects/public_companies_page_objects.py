@@ -113,24 +113,23 @@ class Public_Company_Liability_Overview:
 
     def verify_last_part_of_paragraph(self):
         """Verify the last part of the overview section contains key information"""
-        last_para = self.overview_paragraphs.nth(3)
-        expect(last_para).to_be_visible(timeout=5000)
+        # Targets the parent that wraps both the <p> and <ul>
+        section = self.page.get_by_text("Click through to learn more about").locator("..")
+        expect(section).to_be_visible(timeout=5000)
         
         # Grab text once — used for both assertions and return value
-        content = last_para.text_content()
+        content = section.text_content()
 
         print(f"Last overview paragraph content:\n{content}\n")
 
         # Checks for key concepts, not exact wording, this is best practice
         key_facts = [
-            "D&O insurance",
-            "public companies",
-            "private companies",
-            "law firms",
-            "financial institutions",
-            "commercial crime"
+            "Click through to learn more about",
+            "Public company D&O solutions",
+            "Public company EPL solutions",
+            "Public company Fiduciary solutions",
+            "Information shown is subject to change",
         ]
-
         for fact in key_facts:
             assert fact in content, (
                 f"\nKey fact not found: '{fact}'\n"
@@ -147,6 +146,7 @@ class Public_Company_Liability_Overview:
         self.verify_overview_paragraph1()
         self.verify_overview_paragraph2()
         self.verify_overview_paragraph3()
+        self.verify_last_part_of_paragraph()
         
         return True
 
