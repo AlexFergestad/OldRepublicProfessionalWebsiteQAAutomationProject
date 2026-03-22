@@ -128,7 +128,7 @@ class Public_Company_Liability_Overview:
             "Public company D&O solutions",
             "Public company EPL solutions",
             "Public company Fiduciary solutions",
-            "Information shown is subject to change",
+            "Information shown is subject to change at any time without notice",
         ]
         for fact in key_facts:
             assert fact in content, (
@@ -138,7 +138,7 @@ class Public_Company_Liability_Overview:
 
         print(f"✅ Last overview paragraph verified with key facts")
         
-        return last_para.text_content()
+        return section.text_content()
     
     def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
