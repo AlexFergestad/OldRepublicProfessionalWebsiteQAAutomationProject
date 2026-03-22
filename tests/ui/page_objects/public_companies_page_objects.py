@@ -112,6 +112,32 @@ class Public_Company_Liability_Overview:
         return third_para.text_content()
 
     def verify_last_part_of_paragraph(self):
+        """Verify the last part of the overview section contains key information"""
+        last_para = self.overview_paragraphs.nth(3)
+        expect(last_para).to_be_visible(timeout=5000)
+        
+        # Grab text once — used for both assertions and return value
+        content = last_para.text_content()
+
+        # Checks for key concepts, not exact wording, this is best practice
+        key_facts = [
+            "D&O insurance",
+            "public companies",
+            "private companies",
+            "law firms",
+            "financial institutions",
+            "commercial crime"
+        ]
+
+        for fact in key_facts:
+            assert fact in content, (
+                f"\nKey fact not found: '{fact}'\n"
+                f"Content says instead:\n  '{content[:200]}...'"
+            )
+
+        print(f"✅ Last overview paragraph verified with key facts")
+        
+        return last_para.text_content()
     
     def verify_heading_and_paragraphs(self):
         """Verify both heading and paragraphs"""
