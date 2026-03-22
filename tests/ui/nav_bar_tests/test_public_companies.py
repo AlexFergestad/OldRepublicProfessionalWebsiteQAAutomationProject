@@ -78,7 +78,11 @@ def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
     public_companies = Public_Company_Liability_Overview(page, base_url)  
     public_companies.verify_heading_and_paragraphs()
 
-
+"""TC-004: Verify Top Image in Public Companies Page"""
+@pytest.mark.ui
+@pytest.mark.careers
+def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
+    """Verify Public Companies page heading and paragraphs"""
     
 
 # The Following next tests -> then Done
