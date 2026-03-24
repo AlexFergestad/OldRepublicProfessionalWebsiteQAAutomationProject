@@ -149,7 +149,19 @@ class Public_Company_Liability_Overview:
         
         return True
 
-    def verify_main_image(self):
-        """Verify the main image on the Public Companies page"""
-        
+    def verify_top_image(self):
+        """Verify the billboard background image is correct"""
+        billboard = self.page.locator(".billboard__underlay")
+        expect(billboard).to_be_visible(timeout=5000)
+
+        style = billboard.get_attribute("style")
+        expected_url = "public-companies-1200x320.jpg"
+
+        assert expected_url in style, (
+            f"\nBillboard image not found: '{expected_url}'\n"
+            f"Style attribute says instead:\n  '{style}'"
+        )
+
+        print(f"✅ Billboard background image verified")
+        return style
 
