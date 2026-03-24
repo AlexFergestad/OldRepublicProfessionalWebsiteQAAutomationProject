@@ -9,6 +9,10 @@ class Public_Company_Liability_Overview:
         # Text Locators
         self.page_heading = page.locator("h1").first
         self.overview_paragraphs = page.locator("div.constrain > p")
+
+        # Image locator
+        billboard = self.page.locator(".billboard__underlay")
+
     
     def navigate(self):
         """Navigate to the Public Companies page"""
@@ -151,10 +155,9 @@ class Public_Company_Liability_Overview:
 
     def verify_top_image(self):
         """Verify the billboard background image is correct"""
-        billboard = self.page.locator(".billboard__underlay")
-        expect(billboard).to_be_visible(timeout=5000)
+        expect(self.billboard).to_be_visible(timeout=5000)
 
-        style = billboard.get_attribute("style")
+        style = self.billboard.get_attribute("style")
         expected_url = "public-companies-1200x320.jpg"
 
         assert expected_url in style, (
