@@ -87,6 +87,9 @@ def test_top_image_in_public_companies_page(page: Page, base_url):
     # Click on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
+
 # The Following next tests -> then Done
 # - Top Image
 # - Public Companies Section on the Right
