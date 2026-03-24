@@ -150,5 +150,6 @@ class Public_Company_Liability_Overview:
         return True
 
     def verify_main_image(self):
+        """Verify the main image on the Public Companies page"""
         
 
