@@ -88,4 +88,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_heading_and_paragraph`)
+**Automated**: Yes (`tests/test_homepage.py::test_top_image_in_public_companies_page`)
