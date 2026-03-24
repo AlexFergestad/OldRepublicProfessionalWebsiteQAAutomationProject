@@ -81,6 +81,11 @@ from playwright.sync_api import Page, expect
 def test_top_image_in_public_companies_page(page: Page, base_url):
     """Verify Top Image in Public Companies page"""
     
+    # Navigate to the home page
+    page.goto(base_url)
+
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
 # The Following next tests -> then Done
 # - Top Image
