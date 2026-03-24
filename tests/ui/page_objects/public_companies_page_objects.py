@@ -11,7 +11,7 @@ class Public_Company_Liability_Overview:
         self.overview_paragraphs = page.locator("div.constrain > p")
 
         # Image locator
-        billboard = self.page.locator(".billboard__underlay")
+        self.billboard = self.page.locator(".billboard__underlay")
 
     
     def navigate(self):
