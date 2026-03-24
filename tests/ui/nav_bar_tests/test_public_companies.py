@@ -95,7 +95,7 @@ def test_top_image_in_public_companies_page(page: Page, base_url):
     public_companies.verify_top_image()
 
 # The Following next tests -> then Done
-# - Top Image
+# - Top Image -- Done
 # - Public Companies Section on the Right
 # - Add page performance metrics (in claude text) to this and careers test
 # - Add axe-core accessibility checks to this and careers test
