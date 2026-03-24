@@ -90,6 +90,10 @@ def test_top_image_in_public_companies_page(page: Page, base_url):
     # Wait for the public companies page to load
     page.wait_for_load_state("networkidle")
 
+    # Verify the top image is correct
+    public_companies = Public_Company_Liability_Overview(page, base_url)
+    public_companies.verify_top_image()
+
 # The Following next tests -> then Done
 # - Top Image
 # - Public Companies Section on the Right
