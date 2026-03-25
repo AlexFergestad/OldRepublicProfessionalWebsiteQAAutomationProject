@@ -94,6 +94,8 @@ def test_top_image_in_public_companies_page(page: Page, base_url):
     public_companies = Public_Company_Liability_Overview(page, base_url)
     public_companies.verify_top_image()
 
+"""TC-005: Verify Public Companies Section on the Right"""
+
 # The Following next tests -> then Done
 # - Top Image -- Done
 # - Public Companies Section on the Right
