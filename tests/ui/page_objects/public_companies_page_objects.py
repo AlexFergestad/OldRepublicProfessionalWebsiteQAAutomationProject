@@ -22,7 +22,7 @@ class Public_Company_Liability_Overview:
         self.fiduciary_liability_link = self.page.get_by_role("menuitem", name="Fiduciary Liability")
         self.public_companies_underwriters_link = self.page.get_by_role("menuitem", name="Public Companies Underwriters")
 
-            # Image locator
+        # Image locator
         self.billboard = self.page.locator(".billboard__underlay")
 
     
@@ -180,3 +180,27 @@ class Public_Company_Liability_Overview:
         print(f"✅ Billboard background image verified")
         return style
 
+    def verify_public_companies_right_section(self):
+        """Verify the right section of the public companies page contains key information"""
+        self.public_companies_menu.
+       
+        expect(right_section).to_be_visible(timeout=5000)
+
+        content = right_section.text_content()
+
+        key_facts = [
+            "Public Companies",
+            "D&O Liability Insurance",
+            "EPL Insurance",
+            "Fiduciary Liability Insurance",
+            "Contact us to learn more about our public company solutions"
+        ]
+
+        for fact in key_facts:
+            assert fact in content, (
+                f"\nKey fact not found: '{fact}'\n"
+                f"Content says instead:\n  '{content[:200]}...'"
+            )
+
+        print(f"✅ Right section of Public Companies page verified with key facts")
+        return content
