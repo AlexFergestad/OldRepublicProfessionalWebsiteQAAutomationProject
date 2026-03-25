@@ -9,8 +9,20 @@ class Public_Company_Liability_Overview:
         # Text Locators
         self.page_heading = page.locator("h1").first
         self.overview_paragraphs = page.locator("div.constrain > p")
+        self.public_companies_menu = self.page.get_by_role("menuitem", name="Public Companies")
 
-        # Image locator
+        # Public Companies submenu items
+        self.directors_officers_link = self.page.get_by_role("menuitem", name="Directors and Officers Liability")
+        self.products_link = self.page.get_by_role("menuitem", name="Products")
+        self.excess_liability_link = self.page.get_by_role("menuitem", name="Excess Liability")
+        self.lead_side_a_link = self.page.get_by_role("menuitem", name="Lead Side-A Only")
+        self.excess_side_a_link = self.page.get_by_role("menuitem", name="Excess Side-A Only")
+        self.epl_link = self.page.get_by_role("menuitem", name="Employment-Practices Liability")
+        self.epl_loss_prevention_link = self.page.get_by_role("menuitem", name="EPL Loss Prevention")
+        self.fiduciary_liability_link = self.page.get_by_role("menuitem", name="Fiduciary Liability")
+        self.public_companies_underwriters_link = self.page.get_by_role("menuitem", name="Public Companies Underwriters")
+
+            # Image locator
         self.billboard = self.page.locator(".billboard__underlay")
 
     
