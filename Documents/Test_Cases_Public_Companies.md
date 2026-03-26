@@ -90,7 +90,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_top_image_in_public_companies_page`)
 
-## TC-005: Verify Top Image
+## TC-005:
 **Priority**: High
 **Type**: Functional
 **Preconditions**: 
