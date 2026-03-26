@@ -90,7 +90,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_top_image_in_public_companies_page`)
 
-## TC-005:
+## TC-005: Verify Public Companies Section on the Right
 **Priority**: High
 **Type**: Functional
 **Preconditions**: 
