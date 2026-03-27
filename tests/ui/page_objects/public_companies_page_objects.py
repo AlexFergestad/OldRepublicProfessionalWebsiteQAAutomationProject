@@ -208,6 +208,6 @@ class Public_Company_Liability_Overview:
             expect(self.page).to_have_url(re.compile(expected_url))
             print(f"✅ Verified navigation to: {expected_url}")
         
-            # Go back for the next link
+            # Goes back for the next link
             self.page.go_back()
             self.page.wait_for_load_state("networkidle")
