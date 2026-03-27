@@ -182,12 +182,7 @@ class Public_Company_Liability_Overview:
 
     def verify_public_companies_right_section(self):
         """Verify the right section of the public companies page contains key information"""
-        self.public_companies_menu.
-       
-        expect(right_section).to_be_visible(timeout=5000)
-
-        content = right_section.text_content()
-
+        
         # Each tuple is (locator, expected URL snippet)
         nav_links = [
             (self.directors_officers_link, "/business-insurance-public-company/directors-and-officers-liability"),
