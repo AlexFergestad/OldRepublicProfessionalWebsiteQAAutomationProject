@@ -188,12 +188,17 @@ class Public_Company_Liability_Overview:
 
         content = right_section.text_content()
 
-        key_facts = [
-            "Public Companies",
-            "D&O Liability Insurance",
-            "EPL Insurance",
-            "Fiduciary Liability Insurance",
-            "Contact us to learn more about our public company solutions"
+        # Each tuple is (locator, expected URL snippet)
+        nav_links = [
+            (self.directors_officers_link, "/business-insurance-public-company/directors-and-officers-liability"),
+            (self.products_link, "/business-insurance-public-company/directors-and-officers-liability/products"),
+            (self.excess_liability_link, "/business-insurance-public-company/excess-liability"),
+            (self.lead_side_a_link, "/business-insurance-public-company/lead-side-a-only"),
+            (self.excess_side_a_link, "/business-insurance-public-company/excess-side-a-only"),
+            (self.epl_link, "/business-insurance-public-company/employment-practices-liability"),
+            (self.epl_loss_prevention_link, "/business-insurance-public-company/employment-practices-liability/loss-prevention"),
+            (self.fiduciary_liability_link, "/business-insurance-public-company/fiduciary-liability"),
+            (self.public_companies_underwriters_link, "/business-insurance-public-company/directors-and-officers-liability/underwriters"),
         ]
 
         for fact in key_facts:
