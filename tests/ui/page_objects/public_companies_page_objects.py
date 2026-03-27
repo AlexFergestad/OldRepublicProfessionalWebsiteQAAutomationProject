@@ -1,3 +1,5 @@
+import re
+
 from playwright.sync_api import Page, expect
 
 class Public_Company_Liability_Overview:
@@ -182,7 +184,7 @@ class Public_Company_Liability_Overview:
 
     def verify_public_companies_right_section(self):
         """Verify the right section of the public companies page contains key information"""
-        
+
         # Each tuple is (locator, expected URL snippet)
         nav_links = [
             (self.directors_officers_link, "/business-insurance-public-company/directors-and-officers-liability"),
@@ -196,11 +198,16 @@ class Public_Company_Liability_Overview:
             (self.public_companies_underwriters_link, "/business-insurance-public-company/directors-and-officers-liability/underwriters"),
         ]
 
-        for fact in key_facts:
-            assert fact in content, (
-                f"\nKey fact not found: '{fact}'\n"
-                f"Content says instead:\n  '{content[:200]}...'"
-            )
-
-        print(f"✅ Right section of Public Companies page verified with key facts")
-        return content
+        for link, expected_url in nav_links:
+            # Hover parent menu first to reveal submenu
+            self.public_companies_menu.hover()
+        
+            link.click()
+            self.page.wait_for_load_state("networkidle")
+            
+            expect(self.page).to_have_url(re.compile(expected_url))
+            print(f"✅ Verified navigation to: {expected_url}")
+        
+            # Go back for the next link
+            self.page.go_back()
+            self.page.wait_for_load_state("networkidle")
