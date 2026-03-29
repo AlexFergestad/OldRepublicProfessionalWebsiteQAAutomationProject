@@ -113,7 +113,7 @@ def test_public_companies_right_section(page: Page, base_url):
     public_companies = Public_Company_Liability_Overview(page, base_url)
 
     # Verify the links in the right section go to the correct pages and have the correct titles
-    
+    public_companies.verify_public_companies_right_section()
     
 
 # The Following next tests -> then Done
