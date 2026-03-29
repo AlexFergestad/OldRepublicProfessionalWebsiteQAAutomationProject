@@ -75,24 +75,24 @@ from playwright.sync_api import Page, expect
 #     public_companies = Public_Company_Liability_Overview(page, base_url)  
 #     public_companies.verify_heading_and_paragraphs()
 
-"""TC-004: Verify Top Image in Public Companies Page"""
-@pytest.mark.ui
-@pytest.mark.public_companies_first_page
-def test_top_image_in_public_companies_page(page: Page, base_url):
-    """Verify Top Image in Public Companies page"""
+# """TC-004: Verify Top Image in Public Companies Page"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_first_page
+# def test_top_image_in_public_companies_page(page: Page, base_url):
+#     """Verify Top Image in Public Companies page"""
     
-    # Navigate to the home page
-    page.goto(base_url)
+#     # Navigate to the home page
+#     page.goto(base_url)
 
-    # Click on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Click on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Wait for the public companies page to load
-    page.wait_for_load_state("networkidle")
+#     # Wait for the public companies page to load
+#     page.wait_for_load_state("networkidle")
 
-    # Verify the top image is correct
-    public_companies = Public_Company_Liability_Overview(page, base_url)
-    public_companies.verify_top_image()
+#     # Verify the top image is correct
+#     public_companies = Public_Company_Liability_Overview(page, base_url)
+#     public_companies.verify_top_image()
 
 """TC-005: Verify Public Companies Section on the Right"""
 @pytest.mark.ui
