@@ -201,6 +201,7 @@ class Public_Company_Liability_Overview:
             (self.public_companies_underwriters_link, "/directors-and-officers-liability/underwriters"),
         ]
 
+        # For each link, hover over the main menu to reveal it, click it, verify URL, then go back
         for link, expected_url in nav_links:
             self.public_companies_menu.hover()
             link.click()
