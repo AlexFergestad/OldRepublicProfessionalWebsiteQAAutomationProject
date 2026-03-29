@@ -191,27 +191,23 @@ class Public_Company_Liability_Overview:
 
         # Each tuple is (locator, expected URL snippet)
         nav_links = [
-            (self.directors_officers_link, "/business-insurance-public-company/directors-and-officers-liability"),
-            (self.products_link, "/business-insurance-public-company/directors-and-officers-liability/products"),
-            (self.excess_liability_link, "/business-insurance-public-company/excess-liability"),
-            (self.lead_side_a_link, "/business-insurance-public-company/lead-side-a-only"),
-            (self.excess_side_a_link, "/business-insurance-public-company/excess-side-a-only"),
-            (self.epl_link, "/business-insurance-public-company/employment-practices-liability"),
-            (self.epl_loss_prevention_link, "/business-insurance-public-company/employment-practices-liability/loss-prevention"),
-            (self.fiduciary_liability_link, "/business-insurance-public-company/fiduciary-liability"),
-            (self.public_companies_underwriters_link, "/business-insurance-public-company/directors-and-officers-liability/underwriters"),
+            (self.directors_officers_link, "/directors-and-officers-liability"),
+            (self.products_link, "/directors-and-officers-liability/products"),
+            (self.excess_liability_link, "/excess-liability"),
+            (self.lead_side_a_link, "/lead-side-a-only"),
+            (self.excess_side_a_link, "/excess-side-a-only"),
+            (self.epl_link, "/employment-practices-liability"),
+            (self.fiduciary_liability_link, "/fiduciary-liability"),
+            (self.public_companies_underwriters_link, "/directors-and-officers-liability/underwriters"),
         ]
 
         for link, expected_url in nav_links:
-            # Hover parent menu first to reveal submenu
             self.public_companies_menu.hover()
-        
             link.click()
             self.page.wait_for_load_state("networkidle")
-            
             expect(self.page).to_have_url(re.compile(expected_url))
             print(f"✅ Verified navigation to: {expected_url}")
-        
-            # Goes back for the next link
             self.page.go_back()
             self.page.wait_for_load_state("networkidle")
+
+    
