@@ -11,7 +11,7 @@ class Public_Company_Liability_Overview:
         # Text Locators
         self.page_heading = page.locator("h1").first
         self.overview_paragraphs = page.locator("div.constrain > p")
-        self.public_companies_menu = self.page.get_by_role("menuitem", name="Public Companies")
+        self.public_companies_menu = self.page.get_by_role("menuitem", name="Public Companies", exact=True)
 
         # Public Companies submenu items
         self.directors_officers_link = self.page.get_by_role("menuitem", name="Directors and Officers Liability")
