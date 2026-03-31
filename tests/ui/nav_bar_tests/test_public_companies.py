@@ -116,6 +116,7 @@ def test_public_companies_right_section(page: Page, base_url):
     public_companies.verify_public_companies_right_section()
 
 """TC-006: Verify Public Companies Page Performance Metrics"""
+@pytest.mark.ui
 
 # The Following next tests -> then Done
 # - Top Image -- Done
