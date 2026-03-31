@@ -114,7 +114,8 @@ def test_public_companies_right_section(page: Page, base_url):
 
     # Verify the links in the right section go to the correct pages and have the correct titles
     public_companies.verify_public_companies_right_section()
-    
+
+"""TC-006: Verify Public Companies Page Performance Metrics"""
 
 # The Following next tests -> then Done
 # - Top Image -- Done
