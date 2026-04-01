@@ -112,4 +112,25 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_public_companies_right_section`)
 
+## TC-005: Verify Public Companies Section on the Right
+**Priority**: High
+**Type**: Functional
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Click on "Public Companies" in the nav bar.
+2. Wait for the page to fully load.
+3. View the Links in the "Public Companies" section on the right.
+
+### Expected Result: 
+- Page loads without any errors.
+- You are able to navigate and hover on the public companies webpage.
+- The Right Section links go to the correct url and url itself is valid.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_public_companies_right_section`)
 Verify Public Companies Page Performance Metrics
