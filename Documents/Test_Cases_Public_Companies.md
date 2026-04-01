@@ -123,7 +123,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on "Public Companies" in the nav bar.
 2. Record how long it takes for the public companies page to load.
-4. 
+4. Make sure the page loads in less than 4 seconds.
 
 ### Expected Result: 
 - Page loads without any errors.
