@@ -128,7 +128,6 @@
 ### Expected Result: 
 - Page loads without any errors.
 - You are able to navigate and hover on the public companies webpage.
-- The Right Section links go to the correct url and url itself is valid.
 
 ### Actual Result:
 **Status**: ✅ Pass
