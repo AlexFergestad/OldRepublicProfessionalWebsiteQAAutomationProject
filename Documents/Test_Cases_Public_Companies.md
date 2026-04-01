@@ -111,3 +111,5 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_public_companies_right_section`)
+
+Verify Public Companies Page Performance Metrics
