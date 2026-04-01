@@ -122,7 +122,8 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on "Public Companies" in the nav bar.
-2. Wait for the page to fully load.
+2. Record how long it takes for the public companies page to load. Wait for the page to fully load.
+4. Record
 
 ### Expected Result: 
 - Page loads without any errors.
