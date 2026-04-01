@@ -132,4 +132,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_public_companies_right_section`)
+**Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_performance_metrics`)
