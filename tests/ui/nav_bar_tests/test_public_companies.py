@@ -132,7 +132,7 @@ def test_public_companies_page_performance_metrics(page: Page, base_url):
 
     # Gets the performance metrics for the public companies page
     public_companies = Public_Company_Liability_Overview(page, base_url)
-    # performance_metrics = public_companies.get_performance_metrics()
+    performance_metrics = public_companies.get_performance_metrics()
 
 # The Following next tests -> then Done
 # - Top Image -- Done
