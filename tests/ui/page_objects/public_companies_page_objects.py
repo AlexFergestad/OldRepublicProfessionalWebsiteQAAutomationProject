@@ -211,6 +211,6 @@ class Public_Company_Liability_Overview:
             self.page.go_back()
             self.page.wait_for_load_state("networkidle")
     
-    def
+    def get_performance_metrics(self):
 
     
