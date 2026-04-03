@@ -134,6 +134,13 @@ def test_public_companies_page_performance_metrics(page: Page, base_url):
     public_companies = Public_Company_Liability_Overview(page, base_url)
     performance_metrics = public_companies.get_performance_metrics()
 
+    # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
+    assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
+    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
+    assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
+    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+
+
 
 # The Following next tests -> then Done
 # - Top Image -- Done
