@@ -212,5 +212,20 @@ class Public_Company_Liability_Overview:
             self.page.wait_for_load_state("networkidle")
     
     def get_performance_metrics(self):
+        """Get performance metrics for the public companies page"""
+        # Use the Performance API to get metrics
+        metrics = self.page.evaluate("""
+            () => {
+                const perf = window.performance;
+                return {
+                    load_time: perf.timing.loadEventEnd - perf.timing.navigationStart,
+                    first_contentful_paint: perf.getEntriesByName('first-contentful-paint')[0]?.startTime || 0,
+                    largest_contentful_paint: perf.getEntriesByName('largest-contentful-paint')[0]?.startTime || 0,
+                    cumulative_layout_shift: perf.getEntriesByType('layout-shift').reduce((sum, entry) => sum + entry.value, 0)
+                };
+            }
+        """)
+        print(f"✅ Performance metrics: {metrics}")
+        return metrics
 
     
