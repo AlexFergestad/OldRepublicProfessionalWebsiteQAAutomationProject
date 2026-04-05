@@ -128,7 +128,7 @@
 ### Expected Result: 
 - Page loads without any errors.
 - You are able to navigate and hover on the public companies webpage.
-- Page
+- Page loads
 
 ### Actual Result:
 **Status**: ✅ Pass
