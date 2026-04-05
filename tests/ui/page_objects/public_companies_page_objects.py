@@ -218,9 +218,9 @@ class Public_Company_Liability_Overview:
             () => {
                 const perf = window.performance;
                 return {
-                    load_time: perf.timing.loadEventEnd - perf.timing.navigationStart,
+                    load_time: perf.getEntriesByType('navigation')[0]?.duration || 0,
                     first_contentful_paint: perf.getEntriesByName('first-contentful-paint')[0]?.startTime || 0,
-                    largest_contentful_paint: perf.getEntriesByName('largest-contentful-paint')[0]?.startTime || 0,
+                    largest_contentful_paint: perf.getEntriesByType('largest-contentful-paint')[0]?.startTime || 0,
                     cumulative_layout_shift: perf.getEntriesByType('layout-shift').reduce((sum, entry) => sum + entry.value, 0)
                 };
             }
