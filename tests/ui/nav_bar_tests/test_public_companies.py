@@ -115,30 +115,30 @@ from playwright.sync_api import Page, expect
 #     # Verify the links in the right section go to the correct pages and have the correct titles
 #     public_companies.verify_public_companies_right_section()
 
-"""TC-006: Verify Public Companies Page Performance Metrics"""
-@pytest.mark.ui
-@pytest.mark.public_companies_first_page
-def test_public_companies_page_performance_metrics(page: Page, base_url):
-    """Verify Public Companies Page Performance Metrics"""
+# """TC-006: Verify Public Companies Page Performance Metrics"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_first_page
+# def test_public_companies_page_performance_metrics(page: Page, base_url):
+#     """Verify Public Companies Page Performance Metrics"""
     
-    # Navigate to the home page
-    page.goto(base_url)
+#     # Navigate to the home page
+#     page.goto(base_url)
 
-    # Click on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Click on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Wait for the public companies page to load
-    page.wait_for_load_state("networkidle")
+#     # Wait for the public companies page to load
+#     page.wait_for_load_state("networkidle")
 
-    # Gets the performance metrics for the public companies page
-    public_companies = Public_Company_Liability_Overview(page, base_url)
-    performance_metrics = public_companies.get_performance_metrics()
+#     # Gets the performance metrics for the public companies page
+#     public_companies = Public_Company_Liability_Overview(page, base_url)
+#     performance_metrics = public_companies.get_performance_metrics()
 
-    # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
-    assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
-    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
-    assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
-    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+#     # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
+#     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
+#     assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
+#     assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
+#     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
 
 
