@@ -213,6 +213,9 @@ class Public_Company_Liability_Overview:
     
     def get_performance_metrics(self):
         """Get performance metrics for the public companies page"""
+        # Give the browser time to record async metrics like LCP
+        self.page.wait_for_timeout(1000)
+        
         # Use the Performance API to get metrics
         metrics = self.page.evaluate("""
             () => {
