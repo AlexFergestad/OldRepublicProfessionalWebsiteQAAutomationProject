@@ -141,6 +141,7 @@ from playwright.sync_api import Page, expect
 #     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
 """TC-007: Verify Public Companies Page Accessibility with axe-core"""
+@pytest.mark.ui
 
 # The Following next tests -> then Done
 # - Top Image -- Done
