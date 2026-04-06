@@ -142,6 +142,7 @@ from playwright.sync_api import Page, expect
 
 """TC-007: Verify Public Companies Page Accessibility with axe-core"""
 @pytest.mark.ui
+@pytest.mark.public_companies_first_page
 
 # The Following next tests -> then Done
 # - Top Image -- Done
