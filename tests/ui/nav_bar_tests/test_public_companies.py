@@ -140,7 +140,7 @@ from playwright.sync_api import Page, expect
 #     assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
 #     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
-
+"""TC-007: Verify Public Companies Page Accessibility with axe-core"""
 
 # The Following next tests -> then Done
 # - Top Image -- Done
