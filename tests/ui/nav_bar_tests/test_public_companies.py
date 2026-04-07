@@ -164,6 +164,12 @@ def test_public_companies_page_accessibility(page: Page, base_url):
         }
     """)
 
+    # Verify there are no accessibility violations
+    violations = axe_results.get("violations", [])
+    assert len(violations) == 0, f"Expected no accessibility violations, found: {len(violations)}. Details: {violations}"
+
+    
+
 # The Following next tests -> then Done
 # - Top Image -- Done
 # - Public Companies Section on the Right -- Done
