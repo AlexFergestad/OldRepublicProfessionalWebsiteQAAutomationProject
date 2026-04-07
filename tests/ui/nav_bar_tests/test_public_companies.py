@@ -153,6 +153,7 @@ def test_public_companies_page_accessibility(page: Page, base_url):
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
 
 # The Following next tests -> then Done
 # - Top Image -- Done
