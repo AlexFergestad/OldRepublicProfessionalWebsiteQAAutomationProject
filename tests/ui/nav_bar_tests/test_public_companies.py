@@ -152,6 +152,7 @@ def test_public_companies_page_accessibility(page: Page, base_url):
     # Click on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
+    # Wait for the public companies page to load
 
 # The Following next tests -> then Done
 # - Top Image -- Done
