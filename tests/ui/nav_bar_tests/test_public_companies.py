@@ -2,6 +2,7 @@
 
 import pytest
 from playwright.sync_api import Page, expect
+from axe_playwright_python.sync_playwright import Axe
 
 # Page Objects - relative import from same ui folder
 from tests.ui.page_objects.careers_page_object import CareersPage
@@ -168,7 +169,7 @@ def test_public_companies_page_accessibility(page: Page, base_url):
     violations = axe_results.get("violations", [])
     assert len(violations) == 0, f"Expected no accessibility violations, found: {len(violations)}. Details: {violations}"
 
-    
+
 
 # The Following next tests -> then Done
 # - Top Image -- Done
