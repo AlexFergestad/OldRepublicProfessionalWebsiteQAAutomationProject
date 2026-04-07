@@ -143,6 +143,15 @@ from playwright.sync_api import Page, expect
 """TC-007: Verify Public Companies Page Accessibility with axe-core"""
 @pytest.mark.ui
 @pytest.mark.public_companies_first_page
+def test_public_companies_page_accessibility(page: Page, base_url):
+    """Verify Public Companies Page Accessibility with axe-core"""
+    
+    # Navigate to the home page
+    page.goto(base_url)
+
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
 
 # The Following next tests -> then Done
 # - Top Image -- Done
