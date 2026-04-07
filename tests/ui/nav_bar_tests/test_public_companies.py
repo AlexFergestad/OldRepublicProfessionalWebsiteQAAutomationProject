@@ -156,18 +156,26 @@ def test_public_companies_page_accessibility(page: Page, base_url):
     # Wait for the public companies page to load
     page.wait_for_load_state("networkidle")
 
-    # Run axe-core accessibility checks on the public companies page
-    axe_results = page.evaluate("""
-        async () => {
-            const { AxePuppeteer } = await import('axe-puppeteer');
-            const results = await new AxePuppeteer(document).analyze();
-            return results;
-        }
-    """)
+    # Run axe-core accessibility checks
+    results = Axe().run(page)
 
-    # Verify there are no accessibility violations
-    violations = axe_results.get("violations", [])
-    assert len(violations) == 0, f"Expected no accessibility violations, found: {len(violations)}. Details: {violations}"
+    # Print summary
+    violations = results.violations
+    print(f"\n♿ Accessibility Results — Public Companies Page")
+    print(f"   Violations:  {len(violations)}")
+    print(f"   Passes:      {len(results.passes)}")
+    print(f"   Incomplete:  {len(results.incomplete)}")
+
+    # Print each violation with details
+    for v in violations:
+        print(f"\n   ❌ {v['id']} — {v['description']}")
+        print(f"      Impact: {v['impact']}")
+        print(f"      Help:   {v['helpUrl']}")
+
+    assert len(violations) == 0, (
+        f"\nFound {len(violations)} accessibility violation(s):\n"
+        + "\n".join(f"  - {v['id']}: {v['description']}" for v in violations)
+    )
 
 
 
