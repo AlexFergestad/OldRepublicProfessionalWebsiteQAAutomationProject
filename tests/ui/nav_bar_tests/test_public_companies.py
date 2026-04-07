@@ -156,6 +156,13 @@ def test_public_companies_page_accessibility(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
     # Run axe-core accessibility checks on the public companies page
+    axe_results = page.evaluate("""
+        async () => {
+            const { AxePuppeteer } = await import('axe-puppeteer');
+            const results = await new AxePuppeteer(document).analyze();
+            return results;
+        }
+    """)
 
 # The Following next tests -> then Done
 # - Top Image -- Done
