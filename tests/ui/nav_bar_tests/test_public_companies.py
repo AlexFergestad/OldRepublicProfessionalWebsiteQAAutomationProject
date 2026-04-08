@@ -173,7 +173,10 @@ def test_public_companies_page_accessibility(page: Page, base_url):
 
     # Known existing violations on the site — documented but outside QA scope
     known_violations = {"color-contrast", "input-button-name", "link-name"}
-    print(f"\n   ⚠️  Known existing violations skipped: {known_violations}")
+    skipped = [v for v in violations if v["id"] in known_violations]
+    print(f"\n   ⚠️  Known existing violations skipped ({len(skipped)}):")
+    for v in skipped:
+        print(f"      - {v['id']} ({v['impact']})")
 
     # Only fail on NEW critical/serious violations not already known
     critical_violations = [
