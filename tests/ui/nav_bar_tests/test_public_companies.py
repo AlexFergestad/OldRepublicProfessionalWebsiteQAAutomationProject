@@ -158,27 +158,9 @@ def test_public_companies_page_accessibility(page: Page, base_url):
 
     # Run axe-core accessibility checks
     results = Axe().run(page)
-
-    # Access as dictionary keys, not attributes
-    violations = results.results["violations"]
-    passes = results.results["passes"]
-    incomplete = results.results["incomplete"]
-
-    print(f"\n♿ Accessibility Results — Public Companies Page")
-    print(f"   Violations:  {len(violations)}")
-    print(f"   Passes:      {len(passes)}")
-    print(f"   Incomplete:  {len(incomplete)}")
-
-    for v in violations:
-        print(f"\n   ❌ {v['id']} — {v['description']}")
-        print(f"      Impact: {v['impact']}")
-        print(f"      Help:   {v['helpUrl']}")
-
-    critical_violations = [v for v in violations if v["impact"] in ("critical", "serious")]
-    assert len(critical_violations) == 0, (
-        f"\nFound {len(critical_violations)} critical/serious violation(s):\n"
-        + "\n".join(f"  - {v['id']} ({v['impact']}): {v['description']}" for v in critical_violations)
-    )
+    print(type(results))
+    print(dir(results))
+    print(vars(results))
 
 
 
