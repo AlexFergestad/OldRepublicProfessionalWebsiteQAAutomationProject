@@ -133,3 +133,26 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_performance_metrics`)
+
+
+## TC-007:
+**Priority**: High
+**Type**: Functional
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Click on "Public Companies" in the nav bar.
+3. Record how long it takes for the public companies page to load.
+4. Make sure the page loads in less than 4 seconds.
+
+### Expected Result: 
+- Page loads without any errors.
+- You are able to navigate and hover on the public companies webpage.
+- Page loads in less than 4 seconds.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_performance_metrics`)
