@@ -135,7 +135,7 @@
 **Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_performance_metrics`)
 
 
-## TC-007:
+## TC-007: Verify Public Companies Page Accessibility with axe-core
 **Priority**: High
 **Type**: Functional
 **Preconditions**: 
