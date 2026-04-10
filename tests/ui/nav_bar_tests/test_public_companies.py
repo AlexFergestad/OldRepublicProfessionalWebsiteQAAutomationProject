@@ -193,6 +193,7 @@ def test_public_companies_page_accessibility(page: Page, base_url):
     print(f"\n✅ Accessibility check passed — no new critical/serious violations found")
 
 
+
 # The Following next tests -> then Done
 # - Top Image -- Done
 # - Public Companies Section on the Right -- Done
