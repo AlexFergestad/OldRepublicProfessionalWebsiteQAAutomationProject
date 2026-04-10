@@ -192,6 +192,8 @@ def test_public_companies_page_accessibility(page: Page, base_url):
 
     print(f"\n✅ Accessibility check passed — no new critical/serious violations found")
 
+
+@pytest.mark.public_companies_first_page
 def test_public_companies_page_links(page: Page, base_url):
 
 # The Following next tests -> then Done
