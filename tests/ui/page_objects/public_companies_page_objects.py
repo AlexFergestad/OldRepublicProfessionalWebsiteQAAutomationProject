@@ -237,4 +237,5 @@ class Public_Company_Liability_Overview:
 
         return metrics
 
-    
+    def verify_public_companies_right_section():
+        
