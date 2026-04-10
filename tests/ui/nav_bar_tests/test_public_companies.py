@@ -196,6 +196,16 @@ def test_public_companies_page_accessibility(page: Page, base_url):
 @pytest.mark.ui
 @pytest.mark.public_companies_first_page
 def test_public_companies_page_links(page: Page, base_url):
+    """Verify Links in the Right Section of the Public Companies Page"""
+    
+    # Navigate to the public companies page
+    page.goto(base_url)
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    page.wait_for_load_state("networkidle")
+
+    # Verify the links in the right section go to the correct pages and have the correct titles
+    public_companies = Public_Company_Liability_Overview(page, base_url)
+    public_companies.verify_public_companies_right_section()
 
 # The Following next tests -> then Done
 # - Top Image -- Done
