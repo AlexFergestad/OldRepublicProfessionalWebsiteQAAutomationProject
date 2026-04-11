@@ -199,5 +199,3 @@ def test_public_companies_page_accessibility(page: Page, base_url):
 # - Add page performance metrics (in claude text) to this and careers test -- Done
 # - Add axe-core accessibility checks to this and careers test -- Done
 # - Add test for the links in the right section of the public companies page (and careers page) to verify they go to the correct pages and have the correct titles. -- Done
-
-    
