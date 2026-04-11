@@ -236,6 +236,3 @@ class Public_Company_Liability_Overview:
         print(f"   Cumulative Layout Shift:    {metrics['cumulative_layout_shift']:.4f}")
 
         return metrics
-
-    def verify_public_companies_right_section():
-        

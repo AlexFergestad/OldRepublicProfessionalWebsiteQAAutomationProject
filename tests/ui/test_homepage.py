@@ -280,6 +280,8 @@ def test_main_center_image(page: Page, base_url):
     # Verify it has a background-image
     assert style and "background-image" in style, "Billboard has no background-image"
 
+
+
 # Tests that I want done:
 # - Contact and careers in separate files
 # - search bar functionality on homepage
