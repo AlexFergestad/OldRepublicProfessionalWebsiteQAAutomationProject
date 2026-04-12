@@ -12,7 +12,7 @@ from tests.ui.page_objects.public_companies_page_objects import Public_Company_L
 """
 
 Private Companies Nav Bar Section UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007
 
 * This page verifies the homepage of the Old Republic Professional website loads correctly, 
 has the correct title and main header, displays the company description, shows all insurance type cards 
