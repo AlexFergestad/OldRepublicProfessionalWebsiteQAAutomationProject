@@ -1,4 +1,4 @@
-# This file is for automating the testin of the public companies pages in the nav bar.
+# This file is for automating the testing of the public companies pages in the nav bar.
 
 import pytest
 from playwright.sync_api import Page, expect
