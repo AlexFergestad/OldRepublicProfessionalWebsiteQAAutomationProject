@@ -24,122 +24,122 @@ homepage, has a functional search bar, and includes the expected links above the
 import pytest
 from playwright.sync_api import Page, expect
 
-# """TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_first_page
-# def test_public_companies_page_loads(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_public_companies_page_loads(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
     
-#     # Clicks on the Public Companies menu item to navigate to the public companies page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Waits for the public companies page to load
-#     page.wait_for_load_state("networkidle")
+    # Waits for the public companies page to load
+    page.wait_for_load_state("networkidle")
 
-# """TC-002: Verify Browser Tab Name on Public Companies Page"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_first_page
-# def test_public_companies_page_browser_title(page: Page, base_url):
+"""TC-002: Verify Browser Tab Name on Public Companies Page"""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_public_companies_page_browser_title(page: Page, base_url):
 
-#     # Navigate to the home page
-#     page.goto(base_url)
+    # Navigate to the home page
+    page.goto(base_url)
 
-#     # Click on the Public Companies menu item to navigate to the public companies page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Wait for the public companies page to load
-#     page.wait_for_load_state("networkidle")
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
 
-#     # Verify that the browser tab title is correct
-#     ## Get the title
-#     title = page.title()
+    # Verify that the browser tab title is correct
+    ## Get the title
+    title = page.title()
     
-#     # Verify it contains expected text
-#     assert "Old Republic Professional" in title, f"Expected 'Old Republic Professional' in title, got: {title}"
+    # Verify it contains expected text
+    assert "Old Republic Professional" in title, f"Expected 'Old Republic Professional' in title, got: {title}"
 
-# """TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_first_page
-# def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
-#     """Verify Public Companies page heading and paragraphs"""
+"""TC-003: Verify Public-Company Liability Overview Heading and Paragraph"""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_public_companies_page_heading_and_paragraph(page: Page, base_url):
+    """Verify Public Companies page heading and paragraphs"""
     
-#     # Navigate to the home page
-#     page.goto(base_url)
-#     page.wait_for_load_state("networkidle")
+    # Navigate to the home page
+    page.goto(base_url)
+    page.wait_for_load_state("networkidle")
     
-#     # Click on the Public Companies menu item
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
-#     page.wait_for_load_state("networkidle")
+    # Click on the Public Companies menu item
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    page.wait_for_load_state("networkidle")
     
-#     # Verify the heading and paragraph
-#     public_companies = Public_Company_Liability_Overview(page, base_url)  
-#     public_companies.verify_heading_and_paragraphs()
+    # Verify the heading and paragraph
+    public_companies = Public_Company_Liability_Overview(page, base_url)  
+    public_companies.verify_heading_and_paragraphs()
 
-# """TC-004: Verify Top Image in Public Companies Page"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_first_page
-# def test_top_image_in_public_companies_page(page: Page, base_url):
-#     """Verify Top Image in Public Companies page"""
+"""TC-004: Verify Top Image in Public Companies Page"""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_top_image_in_public_companies_page(page: Page, base_url):
+    """Verify Top Image in Public Companies page"""
     
-#     # Navigate to the home page
-#     page.goto(base_url)
+    # Navigate to the home page
+    page.goto(base_url)
 
-#     # Click on the Public Companies menu item to navigate to the public companies page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Wait for the public companies page to load
-#     page.wait_for_load_state("networkidle")
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
 
-#     # Verify the top image is correct
-#     public_companies = Public_Company_Liability_Overview(page, base_url)
-#     public_companies.verify_top_image()
+    # Verify the top image is correct
+    public_companies = Public_Company_Liability_Overview(page, base_url)
+    public_companies.verify_top_image()
 
-# """TC-005: Verify Public Companies Section on the Right"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_first_page
-# def test_public_companies_right_section(page: Page, base_url):
-#     """Verify Public Companies Section on the Right"""
+"""TC-005: Verify Public Companies Section on the Right"""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_public_companies_right_section(page: Page, base_url):
+    """Verify Public Companies Section on the Right"""
     
-#     # Navigate to the home page
-#     page.goto(base_url)
+    # Navigate to the home page
+    page.goto(base_url)
 
-#     # Click on the Public Companies menu item to navigate to the public companies page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Wait for the public companies page to load
-#     page.wait_for_load_state("networkidle")
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
 
-#     # Verify the right section of the public companies page
-#     public_companies = Public_Company_Liability_Overview(page, base_url)
+    # Verify the right section of the public companies page
+    public_companies = Public_Company_Liability_Overview(page, base_url)
 
-#     # Verify the links in the right section go to the correct pages and have the correct titles
-#     public_companies.verify_public_companies_right_section()
+    # Verify the links in the right section go to the correct pages and have the correct titles
+    public_companies.verify_public_companies_right_section()
 
-# """TC-006: Verify Public Companies Page Performance Metrics"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_first_page
-# def test_public_companies_page_performance_metrics(page: Page, base_url):
-#     """Verify Public Companies Page Performance Metrics"""
+"""TC-006: Verify Public Companies Page Performance Metrics"""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_public_companies_page_performance_metrics(page: Page, base_url):
+    """Verify Public Companies Page Performance Metrics"""
     
-#     # Navigate to the home page
-#     page.goto(base_url)
+    # Navigate to the home page
+    page.goto(base_url)
 
-#     # Click on the Public Companies menu item to navigate to the public companies page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Wait for the public companies page to load
-#     page.wait_for_load_state("networkidle")
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
 
-#     # Gets the performance metrics for the public companies page
-#     public_companies = Public_Company_Liability_Overview(page, base_url)
-#     performance_metrics = public_companies.get_performance_metrics()
+    # Gets the performance metrics for the public companies page
+    public_companies = Public_Company_Liability_Overview(page, base_url)
+    performance_metrics = public_companies.get_performance_metrics()
 
-#     # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
-#     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
-#     assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
-#     assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
-#     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+    # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
+    assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
+    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
+    assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
+    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
 """TC-007: Verify Public Companies Page Accessibility with axe-core"""
 @pytest.mark.ui
