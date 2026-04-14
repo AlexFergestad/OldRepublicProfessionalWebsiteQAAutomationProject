@@ -11,3 +11,4 @@ from tests.ui.page_objects.public_companies_page_objects import Public_Company_L
 
 
 """TC-01: Verify that the public companies directors and officers liability page loads correctly and has the correct URL when accessed from the home page."""
+@pytest.mark.ui
