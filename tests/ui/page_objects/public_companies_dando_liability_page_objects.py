@@ -6,3 +6,8 @@ from tests.ui.page_objects.careers_page_object import CareersPage
 from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
 from tests.ui.page_objects.public_companies_page_objects import Public_Company_Liability_Overview
 
+class Public_Company_Dando_Liability_Page:
+    def __init__(self):
+        # Locators for the Directors and Officers Liability page
+        self.page_title_locator = "h1"
+        self.page_url = "/public-companies/directors-and-officers-liability"
