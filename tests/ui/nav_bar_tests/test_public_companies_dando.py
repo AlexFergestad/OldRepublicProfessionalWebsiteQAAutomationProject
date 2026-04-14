@@ -8,6 +8,7 @@ from axe_playwright_python.sync_playwright import Axe
 from tests.ui.page_objects.careers_page_object import CareersPage
 from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
 from tests.ui.page_objects.public_companies_page_objects import Public_Company_Liability_Overview
+from tests.ui.page_objects.public_companies_dando_liability_page_objects import Public_Company_Dando_Liability_Page
 
 
 """TC-01: Verify that the public companies directors and officers liability page loads correctly and has the correct URL when accessed from the home page."""
