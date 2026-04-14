@@ -10,3 +10,4 @@ from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
 from tests.ui.page_objects.public_companies_page_objects import Public_Company_Liability_Overview
 
 
+"""TC-01: Verify that the public companies directors and officers liability page loads correctly and has the correct URL when accessed from the home page."""
