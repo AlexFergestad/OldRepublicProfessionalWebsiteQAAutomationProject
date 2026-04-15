@@ -11,3 +11,5 @@ class Public_Company_Dando_Liability_Page:
         # Locators for the Directors and Officers Liability page
         self.page_title_locator = "h1"
         self.page_url = "/public-companies/directors-and-officers-liability"
+    
+    def navigate_to_directors_and_officers_liability_page()
