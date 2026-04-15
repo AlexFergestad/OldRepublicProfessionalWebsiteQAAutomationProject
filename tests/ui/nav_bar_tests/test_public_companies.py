@@ -21,7 +21,6 @@ homepage, has a functional search bar, and includes the expected links above the
 
 """
 
-import pytest
 from playwright.sync_api import Page, expect
 
 """TC-01: Verify that the public companies page loads correctly and has the correct URL when accessed from the home page."""
