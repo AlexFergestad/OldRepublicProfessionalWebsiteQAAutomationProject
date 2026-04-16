@@ -8,7 +8,7 @@ from axe_playwright_python.sync_playwright import Axe
 from tests.ui.page_objects.careers_page_object import CareersPage
 from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
 from tests.ui.page_objects.public_companies_page_objects import Public_Company_Liability_Overview
-from tests.ui.page_objects.public_companies_dando_liability_page_objects import Public_Company_Dando_Liability_Page
+from tests.ui.page_objects.public_companies_dando_liability_page_objects import Public_Company_Dando_Liability
 
 
 """TC-01: Verify that the public companies directors and officers liability page loads correctly and has the correct URL when accessed from the home page."""
@@ -22,7 +22,7 @@ def test_public_companies_directors_and_officers_liability_page_loads(page: Page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
     
     # Clicks on the Directors and Officers Liability card to navigate to the directors and officers liability page
-    Public_Company_Liability_Overview(page, base_url).navigate_to_directors_and_officers_liability_page()
+    Public_Company_Dando_Liability(page).navigate_to_directors_and_officers_liability_page(page)
 
     # Waits for the directors and officers liability page to load
     page.wait_for_load_state("networkidle")
