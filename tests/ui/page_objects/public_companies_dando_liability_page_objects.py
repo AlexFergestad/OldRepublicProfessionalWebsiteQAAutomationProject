@@ -11,6 +11,8 @@ from tests.ui.page_objects.public_companies_page_objects import Public_Company_L
 class Public_Company_Dando_Liability_Page:
     def __init__(self, base_url: str):
         # Locators for the Directors and Officers Liability page
+        self.page = page
+
         self.page_title_locator = "h1"
         self.page_url = "/public-companies/directors-and-officers-liability"
         self.dAndOPage = page.locator("a[href='/business-insurance-public-company/directors-and-officers-liability'][role='menuitem']")
