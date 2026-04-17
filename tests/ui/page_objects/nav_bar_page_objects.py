@@ -43,3 +43,9 @@ class NavigationMenu:
         dropdown_option.click()
 
         self.page.wait_for_timeout(500)  # Wait for the dropdown to open
+
+        options = self.page.get_by_role("menuitem", name=option)
+
+        options.click()
+
+        self.page.wait_for_load_state("networkidle")
