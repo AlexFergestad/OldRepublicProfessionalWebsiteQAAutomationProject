@@ -15,7 +15,7 @@ class Public_Company_Dando_Liability:
 
         self.page_title_locator = "h1"
         self.page_url = "/public-companies/directors-and-officers-liability"
-        self.dAndOPage = page.locator("a[href='/business-insurance-public-company/directors-and-officers-liability'][role='menuitem']")
+        self.dAndOPage = page.get_by_role("menuitem", name="Directors and Officers Liability")
     
     def navigate_to_directors_and_officers_liability_page(self, page: Page):
         # Clicks on the Directors and Officers Liability card to navigate to the directors and officers liability page
