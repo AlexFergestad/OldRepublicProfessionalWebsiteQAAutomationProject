@@ -33,3 +33,7 @@ class NavigationMenu:
             raise ValueError(f"Navigation item '{item_name}' not found in the navigation menu.")
         
         self.page.wait_for_load_state("networkidle")
+
+    def open_dropdown(self, dropdown_option: str, option: str):
+        """Open a dropdown menu by name"""
+        
