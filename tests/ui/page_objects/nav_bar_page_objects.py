@@ -44,7 +44,7 @@ class NavigationMenu:
 
         self.page.wait_for_timeout(500)  # Wait for the dropdown to open
 
-        options = self.page.get_by_role("menuitem", name=option)
+        options = self.page.get_by_text(option).first
 
         options.click()
 
