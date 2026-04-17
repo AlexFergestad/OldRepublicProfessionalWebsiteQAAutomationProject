@@ -37,3 +37,7 @@ class NavigationMenu:
     def open_dropdown(self, dropdown_option: str, option: str):
         """Open a dropdown menu by name"""
         
+        self.page.wait_for_timeout(500)  # Wait for the dropdown to be interactable
+
+        # To highliht the dropdown option, we can use the get_by_role method to find the dropdown menu item and click it
+        dropdown_option.click()
