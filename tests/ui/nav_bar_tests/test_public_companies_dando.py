@@ -28,3 +28,4 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     page.wait_for_load_state("networkidle")
 
 """Verify H1 Title and Who We Are Paragraph"""
+@pytest.mark.ui
