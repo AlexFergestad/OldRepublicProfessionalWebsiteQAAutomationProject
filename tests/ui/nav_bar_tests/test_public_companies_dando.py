@@ -29,3 +29,4 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 
 """Verify H1 Title and Who We Are Paragraph"""
 @pytest.mark.ui
+@pytest.mark.public_companies_directors_and_officers_liability_page
