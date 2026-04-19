@@ -26,3 +26,5 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 
 #     # Waits for the directors and officers liability page to load
 #     page.wait_for_load_state("networkidle")
+
+"""Verify H1 Title and Who We Are Paragraph"""
