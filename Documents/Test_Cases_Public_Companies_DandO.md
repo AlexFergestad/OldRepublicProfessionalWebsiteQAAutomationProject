@@ -9,12 +9,12 @@
 
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
-2. Click on "Public Companies" in the nav bar.
+2. Hover over "Public Companies" in the nav bar and select the first option called "Directors and Officers Liability".
 3. Wait for page to fully load.
 
 ### Expected Result: 
 - Page loads without any errors.
-- You are able to navigate and hover on the public companies webpage.
+- You are able to hover over the public companies text in the nav bar and click on "Directors and Officers Liability".
 
 ### Actual Result:
 **Status**: ✅ Pass
