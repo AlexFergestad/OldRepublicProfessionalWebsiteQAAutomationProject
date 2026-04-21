@@ -32,3 +32,5 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 @pytest.mark.public_companies_directors_and_officers_liability_page
 def test_who_we_are_paragraph(page: Page, base_url):
     """Verify H1 Title and Who We Are Paragraph"""
+    # Goes to the home page first
+    page.goto(base_url)
