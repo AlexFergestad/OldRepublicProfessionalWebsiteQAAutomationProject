@@ -34,3 +34,6 @@ def test_who_we_are_paragraph(page: Page, base_url):
     """Verify H1 Title and Who We Are Paragraph"""
     # Goes to the home page first
     page.goto(base_url)
+
+    # Clicks on the Public Companies menu item to navigate to the public companies page
+    # NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
