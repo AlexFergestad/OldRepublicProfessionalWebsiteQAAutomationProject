@@ -38,3 +38,6 @@ def test_who_we_are_paragraph(page: Page, base_url):
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
+    # Verifies the Title
+    Public_Company_Dando_Liability(page).verify_title()
+
