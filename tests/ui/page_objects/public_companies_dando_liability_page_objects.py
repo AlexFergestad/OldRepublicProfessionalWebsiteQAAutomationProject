@@ -15,3 +15,5 @@ class Public_Company_Dando_Liability:
     def navigate_to_directors_and_officers_liability_page(self):
         self.dAndOPage.click()
         self.page.wait_for_load_state("networkidle")
+    
+    def verify_title(self):
