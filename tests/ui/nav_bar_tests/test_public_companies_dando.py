@@ -40,5 +40,4 @@ def test_who_we_are_paragraph(page: Page, base_url):
     # Verifies the Title
     Public_Company_Dando_Liability(page).verify_title()
 
-
-
+    # Verifies the "Who We Are" paragraph
