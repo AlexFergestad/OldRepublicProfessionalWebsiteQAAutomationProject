@@ -27,7 +27,7 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     # Waits for the directors and officers liability page to load
 #     page.wait_for_load_state("networkidle")
 
-"""Verify H1 Title and Who We Are Paragraph"""
+"""TC-02: Verify H1 Title and Who We Are Paragraph"""
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
 def test_who_we_are_paragraph(page: Page, base_url):
@@ -40,4 +40,6 @@ def test_who_we_are_paragraph(page: Page, base_url):
 
     # Verifies the Title
     Public_Company_Dando_Liability(page).verify_title()
+
+
 
