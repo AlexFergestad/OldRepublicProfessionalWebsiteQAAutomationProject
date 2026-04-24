@@ -20,5 +20,5 @@ class Public_Company_Dando_Liability:
         expect(self.page_title_locator).to_have_text("Directors and Officers Liability Insurance")
 
     def verify_who_we_are(page):
-        
+        expect()
         
