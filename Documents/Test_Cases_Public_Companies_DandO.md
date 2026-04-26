@@ -20,7 +20,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_public_companies_directors_and_officers_liability_page_loads`)
 
-## TC-002: 
+## TC-002: Verify H1 Title and Who We Are Paragraph
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
