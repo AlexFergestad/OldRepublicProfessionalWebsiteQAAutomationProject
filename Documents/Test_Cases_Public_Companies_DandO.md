@@ -30,7 +30,8 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the first option called "Directors and Officers Liability".
-3. Wait for page to fully load.
+3. Verify that the title says "Directors & Officers Liability".
+4. 
 
 ### Expected Result: 
 - Page loads without any errors.
