@@ -11,6 +11,7 @@ class Public_Company_Dando_Liability:
         self.page_title_locator = page.locator("h1")
         self.page_url = "/business-insurance-public-company/directors-and-officers-liability"
         self.dAndOPage = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu").get_by_role("menuitem", name="Directors and Officers Liability")
+        self.who_we_are_paragraph = page.locator("p").filter(has_text="established in December 1983")
     
     def navigate_to_directors_and_officers_liability_page(self):
         self.dAndOPage.click()
