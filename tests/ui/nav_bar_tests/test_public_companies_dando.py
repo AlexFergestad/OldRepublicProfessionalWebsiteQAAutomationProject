@@ -37,8 +37,9 @@ def test_who_we_are_paragraph(page: Page, base_url):
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the subpage link to navigate to the Directors and Officers Liability page
-    Public_Company_Dando_Liability(page).go_to_subpage(Public_Company_Dando_Liability(page).directors_officers_link)
+    # Clicks the D&O link from the Public Companies overview page object
+    public_companies_page = Public_Company_Liability_Overview(page, base_url)
+    public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
 
     # Verifies the Title
     Public_Company_Dando_Liability(page).verify_title()
