@@ -20,6 +20,5 @@ class Public_Company_Dando_Liability:
     def verify_title(self):
         expect(self.page_title_locator).to_have_text("Directors and Officers Liability Insurance")
 
-    def verify_who_we_are(page):
-        
-        
+    def verify_who_we_are(self):
+        expect(self.who_we_are_paragraph).to_be_visible()
