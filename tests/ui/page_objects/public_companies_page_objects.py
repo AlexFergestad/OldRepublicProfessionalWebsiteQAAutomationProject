@@ -36,6 +36,12 @@ class Public_Company_Liability_Overview:
         """Navigate to the Public Companies page"""
         self.page.goto(self.url)
         self.page.wait_for_load_state("networkidle")
+
+    def go_to_subpage(self, subpage_link: str):
+        """Navigate to a subpage of the Public Companies page"""
+        subpage_link.click()
+        
+        self.page.wait_for_load_state("networkidle")
     
     def verify_page_heading(self):
         """Verify the main page heading"""
