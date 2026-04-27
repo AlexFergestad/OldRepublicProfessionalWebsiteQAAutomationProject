@@ -36,6 +36,7 @@
 ### Expected Result: 
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Directors and Officers Liability".
+- The title says "Directors & Officers Liability".
 
 ### Actual Result:
 **Status**: ✅ Pass
