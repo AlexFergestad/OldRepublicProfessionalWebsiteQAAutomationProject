@@ -31,7 +31,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the first option called "Directors and Officers Liability".
 3. Verify that the title says "Directors & Officers Liability".
-4. 
+4. Verify the "Who We Are Paragraph" says "Old Republic Professional...New York".
 
 ### Expected Result: 
 - Page loads without any errors.
