@@ -18,7 +18,7 @@ class Public_Company_Dando_Liability:
         self.page.wait_for_load_state("networkidle")
     
     def verify_title(self):
-        expect(self.page_title_locator).to_have_text("Directors and Officers Liability Insurance")
+        expect(self.page_title_locator).to_have_text("Directors and Officers Liability")
 
     def verify_who_we_are(self):
         expect(self.who_we_are_paragraph).to_be_visible()
