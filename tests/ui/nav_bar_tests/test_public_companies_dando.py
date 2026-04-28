@@ -47,4 +47,4 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     # Verifies the "Who We Are" paragraph
 #     Public_Company_Dando_Liability(page).verify_who_we_are()
 
-"""TC-03:"""
+"""TC-03: Verify What We Offer Section"""
