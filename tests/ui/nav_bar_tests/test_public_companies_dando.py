@@ -53,3 +53,6 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 def test_verify_what_we_offer_section(page: Page, base_url):
     # Goes to the home page
     page.goto(base_url)
+
+    # Clicks on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
