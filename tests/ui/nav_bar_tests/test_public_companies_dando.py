@@ -50,4 +50,4 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 """TC-03: Verify What We Offer Section"""
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
-def 
+def test_verify_what_we_offer_section(page: Page, base_url):
