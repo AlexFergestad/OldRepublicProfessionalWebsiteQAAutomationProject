@@ -51,3 +51,5 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
 def test_verify_what_we_offer_section(page: Page, base_url):
+    # Goes to the home page
+    page.goto(base_url)
