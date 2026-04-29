@@ -56,3 +56,6 @@ def test_verify_what_we_offer_section(page: Page, base_url):
 
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    # Clicks the D&O link from the Public Companies overview page object
+    public_companies_page = Public_Company_Liability_Overview(page, base_url)
