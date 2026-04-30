@@ -42,3 +42,5 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_who_we_are_paragraph`)
+
+Verify What We Offer Section
