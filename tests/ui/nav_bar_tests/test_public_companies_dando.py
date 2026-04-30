@@ -61,3 +61,4 @@ def test_verify_what_we_offer_section(page: Page, base_url):
     public_companies_page = Public_Company_Liability_Overview(page, base_url)
     public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
     
+    # Verifies the What We Offer Paragraph
