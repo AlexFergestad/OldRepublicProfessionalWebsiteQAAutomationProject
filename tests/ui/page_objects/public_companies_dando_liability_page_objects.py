@@ -1,5 +1,6 @@
 from playwright.sync_api import Page, expect
 
+from conftest import page
 from tests.ui.page_objects.careers_page_object import CareersPage
 from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
 from tests.ui.page_objects.public_companies_page_objects import Public_Company_Liability_Overview
@@ -14,6 +15,8 @@ class Public_Company_Dando_Liability:
         self.who_we_are_paragraph = page.locator("p").filter(has_text="established in December 1983")
         self.who_we_are = page.locator("h2").first
         self.what_we_offer = page.locator("h2").nth(1)
+        self.consistency_heading = page.locator("h3").filter(has_text="Consistency:")
+        self.consistency_list = page.locator("ul").filter(has_text="40 years of D&O underwriting")
 
     
     def navigate_to_directors_and_officers_liability_page(self):
