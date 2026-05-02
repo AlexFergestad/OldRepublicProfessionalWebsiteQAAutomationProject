@@ -24,3 +24,5 @@ class Public_Company_Dando_Liability:
     def verify_who_we_are(self):
         expect(self.who_we_are).to_have_text("Who We Are:")
         expect(self.who_we_are_paragraph).to_be_visible()
+
+    def verify_what_we_offer(self):
