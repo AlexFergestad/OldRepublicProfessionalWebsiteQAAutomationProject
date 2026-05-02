@@ -32,3 +32,6 @@ class Public_Company_Dando_Liability:
 
     def verify_what_we_offer(self):
         expect(self.what_we_offer).to_have_text("What We Offer:")
+        expect(self.consistency_heading).to_be_visible()
+        expect(self.consistency_list).to_be_visible()
+        
