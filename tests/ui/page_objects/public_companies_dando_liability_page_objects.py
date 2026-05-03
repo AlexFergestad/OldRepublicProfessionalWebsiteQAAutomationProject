@@ -17,7 +17,7 @@ class Public_Company_Dando_Liability:
         self.what_we_offer = page.locator("h2").nth(1)
         self.consistency_heading = page.locator("h3").filter(has_text="Consistency:")
         self.consistency_list = page.locator("ul").filter(has_text="40 years of D&O underwriting")
-        self.experienced_underwriting_staff = page.locator("h3").filter(has_text="Experienced:")
+        self.experienced_underwriting_staff = page.locator("h3").filter(has_text="Experienced underwriting staff:")
         self.experienced_underwriting_list = page.locator("ul").filter(has_text="Empowered to be decisional")
 
     
