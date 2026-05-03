@@ -36,6 +36,6 @@ class Public_Company_Dando_Liability:
         expect(self.what_we_offer).to_have_text("What We Offer:")
         expect(self.consistency_heading).to_be_visible()
         expect(self.consistency_list).to_be_visible()
-        expect(self.experienced_underwriting_staff).to_have_text("Experienced:")
         expect(self.experienced_underwriting_staff).to_be_visible()
+        expect(self.experienced_underwriting_list).to_be_visible()
         
