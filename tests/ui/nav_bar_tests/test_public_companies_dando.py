@@ -63,3 +63,4 @@ def test_verify_what_we_offer_section(page: Page, base_url):
     
     # Verifies the What We Offer Paragraph
     Public_Company_Dando_Liability(page).verify_what_we_offer()
+
