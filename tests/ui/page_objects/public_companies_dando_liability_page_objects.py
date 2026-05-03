@@ -18,6 +18,7 @@ class Public_Company_Dando_Liability:
         self.consistency_heading = page.locator("h3").filter(has_text="Consistency:")
         self.consistency_list = page.locator("ul").filter(has_text="40 years of D&O underwriting")
         self.experienced_underwriting_staff = page.locator("h3").filter(has_text="Experienced:")
+        self.experienced_underwriting_list = page.locator("ul").filter(has_text="Empowered to be decisional")
 
     
     def navigate_to_directors_and_officers_liability_page(self):
