@@ -17,7 +17,7 @@ class Public_Company_Dando_Liability:
         self.what_we_offer = page.locator("h2").nth(1)
         self.consistency_heading = page.locator("h3").filter(has_text="Consistency:")
         self.consistency_list = page.locator("ul").filter(has_text="40 years of D&O underwriting")
-        self.experienced_underwriting_stagg = page.locator("h3").filter(has_text="Experienced:")
+        self.experienced_underwriting_staff = page.locator("h3").filter(has_text="Experienced:")
 
     
     def navigate_to_directors_and_officers_liability_page(self):
@@ -35,5 +35,6 @@ class Public_Company_Dando_Liability:
         expect(self.what_we_offer).to_have_text("What We Offer:")
         expect(self.consistency_heading).to_be_visible()
         expect(self.consistency_list).to_be_visible()
-        
+        expect(self.experienced_underwriting_staff).to_have_text("Experienced:")
+        expect(self.experienced_underwriting_staff).to_be_visible()
         
