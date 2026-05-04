@@ -20,6 +20,7 @@ class Public_Company_Dando_Liability:
         self.experienced_underwriting_staff = page.locator("h3").filter(has_text="Experienced underwriting staff:")
         self.experienced_underwriting_list = page.locator("ul").filter(has_text="Empowered to be decisional")
         self.experienced_in_house_claims_staff = page.locator("h3").filter(has_text="Experienced in-house claims staff:")
+        self.experienced_in_house_claims_list = page.locator("ul").filter(has_text="Accessible team without separation from underwriters")
 
 
     def navigate_to_directors_and_officers_liability_page(self):
