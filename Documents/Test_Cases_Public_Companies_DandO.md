@@ -60,7 +60,7 @@
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Directors and Officers Liability".
 - The title says "What We Offer: ".
-- The 
+- The consistency, experienced underwriting, and experienced in house claims staff lists have correct text.
 
 ### Actual Result:
 **Status**: ✅ Pass
