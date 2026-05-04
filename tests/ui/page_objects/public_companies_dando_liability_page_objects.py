@@ -21,7 +21,7 @@ class Public_Company_Dando_Liability:
         self.experienced_underwriting_list = page.locator("ul").filter(has_text="Empowered to be decisional")
         self.experienced_in_house_claims_staff = page.locator("h3").filter(has_text="Experienced in-house claims staff:")
 
-    
+
     def navigate_to_directors_and_officers_liability_page(self):
         self.dAndOPage.click()
         self.page.wait_for_load_state("networkidle")
@@ -39,4 +39,5 @@ class Public_Company_Dando_Liability:
         expect(self.consistency_list).to_be_visible()
         expect(self.experienced_underwriting_staff).to_be_visible()
         expect(self.experienced_underwriting_list).to_be_visible()
+        expect(self.experienced_in_house_claims_staff).to_be_visible()
         
