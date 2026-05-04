@@ -54,7 +54,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the first option called "Directors and Officers Liability".
 3. Verify that the title says "What We Offer: ".
-4. Verify the 
+4. Verify the consistency, experienced underwriting, and experienced in house claims staff lists.
 
 ### Expected Result: 
 - Page loads without any errors.
