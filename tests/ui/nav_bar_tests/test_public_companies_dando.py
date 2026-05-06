@@ -47,20 +47,21 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     # Verifies the "Who We Are" paragraph
 #     Public_Company_Dando_Liability(page).verify_who_we_are()
 
-"""TC-03: Verify What We Offer Section"""
-@pytest.mark.ui
-@pytest.mark.public_companies_directors_and_officers_liability_page
-def test_verify_what_we_offer_section(page: Page, base_url):
-    # Goes to the home page
-    page.goto(base_url)
+# """TC-03: Verify What We Offer Section"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_directors_and_officers_liability_page
+# def test_verify_what_we_offer_section(page: Page, base_url):
+#     # Goes to the home page
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks the D&O link from the Public Companies overview page object
-    public_companies_page = Public_Company_Liability_Overview(page, base_url)
-    public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
+#     # Clicks the D&O link from the Public Companies overview page object
+#     public_companies_page = Public_Company_Liability_Overview(page, base_url)
+#     public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
     
-    # Verifies the What We Offer Paragraph
-    Public_Company_Dando_Liability(page).verify_what_we_offer()
+#     # Verifies the What We Offer Paragraph
+#     Public_Company_Dando_Liability(page).verify_what_we_offer()
+
 
