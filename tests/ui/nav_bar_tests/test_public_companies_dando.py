@@ -64,4 +64,23 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     # Verifies the What We Offer Paragraph
 #     Public_Company_Dando_Liability(page).verify_what_we_offer()
 
- """TC-04: Verify """
+"""TC-04: Verify Public Companies Section on the Right"""
+@pytest.mark.ui
+@pytest.mark.public_companies_first_page
+def test_public_companies_right_section(page: Page, base_url):
+    """Verify Public Companies Section on the Right"""
+        
+    # Navigate to the home page
+    page.goto(base_url)
+
+    # Click on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    # Wait for the public companies page to load
+    page.wait_for_load_state("networkidle")
+
+    # Verify the right section of the public companies page
+    public_companies = Public_Company_Liability_Overview(page, base_url)
+
+    # Verify the links in the right section go to the correct pages and have the correct titles
+    public_companies.verify_public_companies_right_section()
