@@ -84,3 +84,6 @@ def test_public_companies_right_section(page: Page, base_url):
 
     # Verify the links in the right section go to the correct pages and have the correct titles
     public_companies.verify_public_companies_right_section()
+    
+
+# Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
