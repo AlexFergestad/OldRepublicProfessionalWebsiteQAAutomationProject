@@ -87,4 +87,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_dando.py::test_verify_what_we_offer_section`)
+**Automated**: Yes (`tests/test_public_companies_dando.py::`)
