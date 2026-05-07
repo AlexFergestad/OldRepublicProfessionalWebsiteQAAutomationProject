@@ -66,7 +66,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_verify_what_we_offer_section`)
 
-## TC-004: Verify 
+## TC-004: Verify Public Companies Section on the Right
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
