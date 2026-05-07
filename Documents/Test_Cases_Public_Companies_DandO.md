@@ -65,3 +65,26 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_verify_what_we_offer_section`)
+
+## TC-004: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the first option called "Directors and Officers Liability".
+3. Verify that the title says "What We Offer: ".
+4. Verify the consistency, experienced underwriting, and experienced in house claims staff lists.
+
+### Expected Result: 
+- Page loads without any errors.
+- You are able to hover over the public companies text in the nav bar and click on "Directors and Officers Liability".
+- The title says "What We Offer: ".
+- The consistency, experienced underwriting, and experienced in house claims staff lists have correct text.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_dando.py::test_verify_what_we_offer_section`)
