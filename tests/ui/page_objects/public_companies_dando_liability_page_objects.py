@@ -45,4 +45,7 @@ class Public_Company_Dando_Liability:
         expect(self.experienced_in_house_claims_list).to_be_visible()
     
     def verify_dando_products_link(self):
-        
+        expect(self.dandOProductLink).to_be_visible()
+        self.dandOProductLink.click()
+        self.page.wait_for_load_state("networkidle")
+
