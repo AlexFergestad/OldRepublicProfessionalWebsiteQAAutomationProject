@@ -42,4 +42,6 @@ class Public_Company_Dando_Liability:
         expect(self.experienced_underwriting_list).to_be_visible()
         expect(self.experienced_in_house_claims_staff).to_be_visible()
         expect(self.experienced_in_house_claims_list).to_be_visible()
+    
+    def verify_dando_products_link(self):
         
