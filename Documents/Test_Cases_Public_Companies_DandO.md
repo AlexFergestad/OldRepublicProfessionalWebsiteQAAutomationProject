@@ -88,7 +88,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_public_companies_right_section`)
 
-## TC-005: Verify 
+## TC-005: Verify D&O Products Link
 **Priority**: High
 **Type**: Functional
 **Preconditions**: 
