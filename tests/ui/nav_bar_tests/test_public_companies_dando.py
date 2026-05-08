@@ -88,5 +88,6 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 """TC-05: Verify D&O Products Link"""
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
+def test_verify_dando_products_link(page: Page, base_url):
 
 # Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
