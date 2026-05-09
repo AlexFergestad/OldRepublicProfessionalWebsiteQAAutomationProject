@@ -104,7 +104,7 @@
 ### Expected Result: 
 - Page loads without any errors.
 - You are able to navigate and hover on the public companies webpage.
-- 
+- After clicking the "D&O Products" link, it correctly brings you to the correct page. 
 
 ### Actual Result:
 **Status**: ✅ Pass
