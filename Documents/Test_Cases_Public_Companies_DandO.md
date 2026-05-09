@@ -98,8 +98,8 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Click on "Directors and Officers Liability" inside the "Public Companies" section in the nav bar.
-2. Wait for the page to fully load.
-3. Click on the "D&O Products" link.
+3. Wait for the page to fully load.
+4. Click on the "D&O Products" link.
 
 ### Expected Result: 
 - Page loads without any errors.
