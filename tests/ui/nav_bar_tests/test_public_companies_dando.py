@@ -105,6 +105,7 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 """TC-06: Verify Performance of Directors and Officers Liability Page"""
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
+def test_performance_of_dando_page(page: Page, base_url):
 
 
 
