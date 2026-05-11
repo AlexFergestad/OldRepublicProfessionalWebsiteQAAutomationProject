@@ -114,7 +114,7 @@ def test_performance_of_dando_page(page: Page, base_url):
 
      # Clicks the D&O link from the Public Companies overview page object
     public_companies_page = Public_Company_Liability_Overview(page, base_url)
-    public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
+    public_companies_d_and_o_page = public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
 
     # Gets the performance metrics for the public companies page
     performance_metrics = public_companies.get_performance_metrics()
