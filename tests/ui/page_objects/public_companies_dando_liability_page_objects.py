@@ -49,3 +49,18 @@ class Public_Company_Dando_Liability:
         self.dandOProductLink.click()
         self.page.wait_for_load_state("networkidle")
 
+    def get_performance_metrics(self) -> dict:
+        metrics = self.page.evaluate("""() => {
+            const nav = performance.getEntriesByType('navigation')[0];
+            const paint = performance.getEntriesByType('paint');
+            const fcp = paint.find(p => p.name === 'first-contentful-paint');
+            const lcp = performance.getEntriesByType('largest-contentful-paint').slice(-1)[0];
+            const cls = performance.getEntriesByType('layout-shift').reduce((sum, e) => sum + e.value, 0);
+            return {
+                load_time: nav ? nav.loadEventEnd - nav.startTime : null,
+                first_contentful_paint: fcp ? fcp.startTime : null,
+                largest_contentful_paint: lcp ? lcp.startTime : null,
+                cumulative_layout_shift: cls
+            };
+        }""")
+        return metrics
