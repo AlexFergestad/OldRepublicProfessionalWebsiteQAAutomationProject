@@ -50,6 +50,10 @@ class Public_Company_Dando_Liability:
         self.page.wait_for_load_state("networkidle")
 
     def get_performance_metrics(self) -> dict:
+        # Scroll to trigger LCP finalization
+        self.page.evaluate("window.scrollBy(0, 100)")
+        self.page.wait_for_timeout(500)
+
         metrics = self.page.evaluate("""() => {
             const nav = performance.getEntriesByType('navigation')[0];
             const paint = performance.getEntriesByType('paint');
