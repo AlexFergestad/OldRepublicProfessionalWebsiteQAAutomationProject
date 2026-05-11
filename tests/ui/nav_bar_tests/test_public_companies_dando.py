@@ -117,7 +117,7 @@ def test_performance_of_dando_page(page: Page, base_url):
     public_companies_d_and_o_page = public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
 
     # Gets the performance metrics for the public companies page
-    performance_metrics = public_companies.get_performance_metrics()
+    performance_metrics = public_companies_d_and_o_page.get_performance_metrics()
 
     # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
