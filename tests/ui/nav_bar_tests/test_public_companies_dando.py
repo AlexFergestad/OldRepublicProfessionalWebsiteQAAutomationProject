@@ -102,6 +102,8 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     # Verifies the D&O Products link in the right section goes to the correct page and has the correct title
 #     Public_Company_Dando_Liability(page).verify_dando_products_link()
 
+"""TC-06: Verify Performance of Directors and Officers Liability Page"""
+
 
 
 # Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
