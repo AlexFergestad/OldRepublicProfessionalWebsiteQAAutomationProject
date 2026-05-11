@@ -116,6 +116,15 @@ def test_performance_of_dando_page(page: Page, base_url):
     public_companies_page = Public_Company_Liability_Overview(page, base_url)
     public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
 
+    # Gets the performance metrics for the public companies page
+    performance_metrics = public_companies.get_performance_metrics()
+
+    # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
+    assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
+    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
+    assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
+    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+
 
 
 # Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
