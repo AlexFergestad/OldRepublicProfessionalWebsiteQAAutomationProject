@@ -106,6 +106,15 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
 def test_performance_of_dando_page(page: Page, base_url):
+    # Goes to the home page
+    page.goto(base_url)
+
+     # Clicks on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+     # Clicks the D&O link from the Public Companies overview page object
+    public_companies_page = Public_Company_Liability_Overview(page, base_url)
+    public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
 
 
 
