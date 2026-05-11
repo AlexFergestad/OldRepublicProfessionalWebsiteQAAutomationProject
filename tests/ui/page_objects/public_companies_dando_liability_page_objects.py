@@ -68,10 +68,10 @@ class Public_Company_Dando_Liability:
             };
         }""")
 
-        print(f"\n📊 Performance Metrics — Public Companies Page")
+        print(f"\n📊 Performance Metrics — Public Companies D&O Page")
         print(f"   Load Time:                  {metrics['load_time']:.0f}ms")
         print(f"   First Contentful Paint:     {metrics['first_contentful_paint']:.0f}ms")
-        print(f"   Largest Contentful Paint:   {metrics['largest_contentful_paint']:.0f}ms")
+        print(f"   Largest Contentful Paint:   {f'{metrics["largest_contentful_paint"]:.0f}ms' if metrics['largest_contentful_paint'] is not None else 'N/A (headless)'}")
         print(f"   Cumulative Layout Shift:    {metrics['cumulative_layout_shift']:.4f}")
-        
+
         return metrics
