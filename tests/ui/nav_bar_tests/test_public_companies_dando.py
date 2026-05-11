@@ -106,24 +106,21 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
 def test_performance_of_dando_page(page: Page, base_url):
-    # Goes to the home page
     page.goto(base_url)
 
-     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-     # Clicks the D&O link from the Public Companies overview page object
-    public_companies_page = Public_Company_Liability_Overview(page, base_url)
-    public_companies_d_and_o_page = public_companies_page.go_to_subpage(public_companies_page.directors_officers_link)
+    overview = Public_Company_Liability_Overview(page, base_url)
+    overview.go_to_subpage(overview.directors_officers_link)
 
-    # Gets the performance metrics for the public companies page
-    performance_metrics = public_companies_d_and_o_page.get_performance_metrics()
+    # Now instantiate the D&O page object and get metrics
+    dando_page = Public_Company_Dando_Liability(page)
+    performance_metrics = dando_page.get_performance_metrics()
 
-    # Verify the performance metrics meet expected thresholds (these thresholds can be adjusted based on requirements)
     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
-    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected first contentful paint < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
-    assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected largest contentful paint < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
-    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected cumulative layout shift < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected FCP < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
+    assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected LCP < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
+    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
 
 
