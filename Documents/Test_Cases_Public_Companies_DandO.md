@@ -126,7 +126,7 @@
 
 ### Expected Result: 
 - Page loads without any errors.
-- You are able to navigate and hover on the public companies webpage.
+- You are able to navigate and hover on the directors and officers liability webpage.
 - Page loads in less than 4 seconds.
  
 ### Actual Result:
