@@ -111,4 +111,26 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_verify_dando_products_link`)
 
-test_performance_of_dando_page
+## TC-005: Verify D&O Products Link
+**Priority**: High
+**Type**: Functional
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Click on "Directors and Officers Liability" inside the "Public Companies" section in the nav bar.
+3. Wait for the page to fully load.
+4. Click on the "D&O Products" link.
+5. Wait for the "D&O Products" page to fully load.
+
+### Expected Result: 
+- Page loads without any errors.
+- You are able to navigate and hover on the public companies webpage.
+- After clicking the "D&O Products" link, it correctly brings you to the correct page. 
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_dando.py::test_performance_of_dando_page`)
+
