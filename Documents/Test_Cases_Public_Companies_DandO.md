@@ -120,7 +120,7 @@
 
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
-2. Click on "Public Companies" in the nav bar.
+2. Hover over the "Public Companies" text in the nav bar and select the "Directors and Officers Liability" text.
 3. Record how long it takes for the public companies page to load.
 4. Make sure the page loads in less than 4 seconds.
 
@@ -129,7 +129,6 @@
 - You are able to navigate and hover on the public companies webpage.
 - Page loads in less than 4 seconds.
  
-
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_performance_of_dando_page`)
