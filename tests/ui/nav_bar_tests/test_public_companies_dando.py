@@ -126,5 +126,5 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
     # assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
 
-
+"""TC-07: Verify Accessibility of Directors and Officers Liability Page"""
 # Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
