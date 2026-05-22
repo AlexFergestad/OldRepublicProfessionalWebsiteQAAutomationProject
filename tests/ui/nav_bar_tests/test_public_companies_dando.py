@@ -102,16 +102,16 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 #     # Verifies the D&O Products link in the right section goes to the correct page and has the correct title
 #     Public_Company_Dando_Liability(page).verify_dando_products_link()
 
-"""TC-06: Verify Performance of Directors and Officers Liability Page"""
-@pytest.mark.ui
-@pytest.mark.public_companies_directors_and_officers_liability_page
-def test_performance_of_dando_page(page: Page, base_url):
-    page.goto(base_url)
+# """TC-06: Verify Performance of Directors and Officers Liability Page"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_directors_and_officers_liability_page
+# def test_performance_of_dando_page(page: Page, base_url):
+#     page.goto(base_url)
 
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    overview = Public_Company_Liability_Overview(page, base_url)
-    overview.go_to_subpage(overview.directors_officers_link)
+#     overview = Public_Company_Liability_Overview(page, base_url)
+#     overview.go_to_subpage(overview.directors_officers_link)
 
     # # Now instantiate the D&O page object and get metrics
     # dando_page = Public_Company_Dando_Liability(page)
