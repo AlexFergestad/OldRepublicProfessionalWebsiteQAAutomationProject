@@ -149,7 +149,7 @@ def test_accessibility_of_dando_page(page: Page, base_url):
     incomplete = results.response.get("incomplete", [])
 
     # Print summary
-    print(f"\n♿ Accessibility Results — Public Companies Page")
+    print(f"\n♿ Accessibility Results — Public Companies Directors and Liability Page")
     print(f"   Violations:  {len(violations)}")
     print(f"   Passes:      {len(passes)}")
     print(f"   Incomplete:  {len(incomplete)}")
