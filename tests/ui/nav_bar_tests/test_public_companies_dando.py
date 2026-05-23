@@ -129,5 +129,5 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 """TC-07: Verify Accessibility of Directors and Officers Liability Page"""
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
-def test_accessibility
+def test_accessibility_of_dando_page(page: Page, base_url):
 # Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
