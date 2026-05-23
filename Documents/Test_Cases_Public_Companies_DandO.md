@@ -148,8 +148,8 @@
 
 ### Expected Result: 
 - Page loads without any errors.
-- You are able to navigate and hover on the directors and officers liability webpage.
-- Page loads in less than 4 seconds.
+- Accessibility score is higher than 75%.
+- Accessibility metrics are set.
  
 ### Actual Result:
 **Status**: ✅ Pass
