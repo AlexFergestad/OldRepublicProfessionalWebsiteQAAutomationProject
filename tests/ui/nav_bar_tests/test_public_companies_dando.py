@@ -130,4 +130,54 @@ from tests.ui.page_objects.public_companies_dando_liability_page_objects import 
 @pytest.mark.ui
 @pytest.mark.public_companies_directors_and_officers_liability_page
 def test_accessibility_of_dando_page(page: Page, base_url):
+    page.goto(base_url)
+
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    overview = Public_Company_Liability_Overview(page, base_url)
+    overview.go_to_subpage(overview.directors_officers_link)
+
+    # Now instantiate the D&O page object and run accessibility audit
+    dando_page = Public_Company_Dando_Liability(page)
+    page.wait_for_load_state("networkidle")
+
+    # Run axe-core accessibility checks
+    results = Axe().run(page)
+
+    violations = results.response["violations"]
+    passes = results.response["passes"]
+    incomplete = results.response.get("incomplete", [])
+
+    # Print summary
+    print(f"\n♿ Accessibility Results — Public Companies Page")
+    print(f"   Violations:  {len(violations)}")
+    print(f"   Passes:      {len(passes)}")
+    print(f"   Incomplete:  {len(incomplete)}")
+
+    # Print each violation with details
+    for v in violations:
+        print(f"\n   ❌ {v['id']} — {v['description']}")
+        print(f"      Impact: {v['impact']}")
+        print(f"      Help:   {v['helpUrl']}")
+
+    # Known existing violations on the site — documented but outside QA scope
+    known_violations = {"color-contrast", "input-button-name", "link-name"}
+    skipped = [v for v in violations if v["id"] in known_violations]
+    print(f"\n   ⚠️  Known existing violations skipped ({len(skipped)}):")
+    for v in skipped:
+        print(f"      - {v['id']} ({v['impact']})")
+
+    # Only fail on NEW critical/serious violations not already known
+    critical_violations = [
+        v for v in violations
+        if v["impact"] in ("critical", "serious")
+        and v["id"] not in known_violations
+    ]
+
+    assert len(critical_violations) == 0, (
+        f"\nFound {len(critical_violations)} new critical/serious violation(s):\n"
+        + "\n".join(f"  - {v['id']} ({v['impact']}): {v['description']}" for v in critical_violations)
+    )
+
+    print(f"\n✅ Accessibility check passed — no new critical/serious violations found")
 # Finished TC-04, do md file for it then verify performance and accessibility for the directors and officers public companies page.
