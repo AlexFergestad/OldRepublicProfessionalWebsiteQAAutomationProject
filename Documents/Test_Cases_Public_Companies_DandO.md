@@ -143,8 +143,8 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over the "Public Companies" text in the nav bar and select the "Directors and Officers Liability" text.
-3. Record how long it takes for the public companies page to load.
-4. Make sure the page loads in less than 4 seconds.
+3. Record the accessibility metrics.
+4. Make sure the page fits the accessibility requirements.
 
 ### Expected Result: 
 - Page loads without any errors.
