@@ -111,7 +111,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_dando.py::test_verify_dando_products_link`)
 
-## TC-005: Verify Performance of Directors and Officers Liability Page
+## TC-006: Verify Performance of Directors and Officers Liability Page
 **Priority**: High
 **Type**: Functional
 **Preconditions**: 
