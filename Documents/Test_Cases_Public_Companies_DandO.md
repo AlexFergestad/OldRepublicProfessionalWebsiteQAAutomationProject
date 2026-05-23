@@ -153,5 +153,5 @@
  
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_dando.py::test_performance_of_dando_page`)
+**Automated**: Yes (`tests/test_public_companies_dando.py::test_accessibility_of_dando_page`)
 
