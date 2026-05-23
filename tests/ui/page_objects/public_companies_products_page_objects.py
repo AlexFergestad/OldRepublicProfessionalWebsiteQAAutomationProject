@@ -6,4 +6,4 @@ class Public_Company_Products:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.base_url = base_url
-        self.url = f"{base_url}/business-insurance-public-company"
+        self.url = f"{base_url}/business-insurance-public-company/directors-and-officers-liability/products"
