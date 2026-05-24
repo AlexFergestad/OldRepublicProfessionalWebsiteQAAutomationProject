@@ -19,3 +19,5 @@ Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
 
 """
+
+"""TC-01: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page."""
