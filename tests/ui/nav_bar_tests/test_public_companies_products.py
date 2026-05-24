@@ -13,7 +13,7 @@ from tests.ui.page_objects.public_companies_products_page_objects import Public_
 """
 
 Public Companies Products Page UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007
+Test Cases: TC-001,
 
 * This page verifies the Products page of the Old Republic Professional website loads correctly, 
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
@@ -29,3 +29,4 @@ def test_public_companies_products_page_loads(page: Page, base_url):
 
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
