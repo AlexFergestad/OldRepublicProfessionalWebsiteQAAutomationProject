@@ -31,4 +31,4 @@ def test_public_companies_products_page_loads(page: Page, base_url):
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Products link to navigate to the products page
-
+    Public_Company_Products(page).navigate_to_products_page()
