@@ -33,4 +33,4 @@ def test_public_companies_products_page_loads(page: Page, base_url):
     # Clicks on the Products link to navigate to the products page
     Public_Company_Products(page).navigate_to_products_page()
 
-    #
+    # Verifies that the products page loads correctly and has the correct URL
