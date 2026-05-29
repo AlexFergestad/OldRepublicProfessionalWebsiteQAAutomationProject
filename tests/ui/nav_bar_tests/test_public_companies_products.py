@@ -34,3 +34,4 @@ def test_public_companies_products_page_loads(page: Page, base_url):
     Public_Company_Products(page).navigate_to_products_page()
 
     # Verifies that the products page loads correctly and has the correct URL
+    page.wait_for_load_state("networkidle")
