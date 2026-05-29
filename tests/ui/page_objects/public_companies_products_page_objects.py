@@ -11,5 +11,5 @@ class Public_Company_Products:
         self.url = f"{base_url}/business-insurance-public-company/directors-and-officers-liability/products"
 
     def navigate_to_products_page(self):
-        self.dAndOPage.click()
+        self.productsPage.click()
         self.page.wait_for_load_state("networkidle")
