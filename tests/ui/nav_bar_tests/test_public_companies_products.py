@@ -39,4 +39,4 @@ def test_public_companies_products_page_loads(page: Page, base_url):
 """TC-02: Verify H1 Title"""
 @pytest.mark.ui
 @pytest.mark.public_companies_products_page
-def test_h1_title_in_products_page
+def test_h1_title_in_products_page(page: Page, base_url):
