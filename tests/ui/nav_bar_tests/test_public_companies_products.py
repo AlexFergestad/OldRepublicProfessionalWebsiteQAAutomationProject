@@ -37,4 +37,4 @@ def test_public_companies_products_page_loads(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
 """TC-02: Verify H1 Title"""
-
+@pytest.mark.ui
