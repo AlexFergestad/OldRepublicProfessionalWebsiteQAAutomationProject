@@ -35,3 +35,6 @@ def test_public_companies_products_page_loads(page: Page, base_url):
 
     # Verifies that the products page loads correctly and has the correct URL
     page.wait_for_load_state("networkidle")
+
+"""TC-02: Verify H1 Title"""
+
