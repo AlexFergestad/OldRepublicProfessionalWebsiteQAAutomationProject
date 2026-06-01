@@ -13,3 +13,5 @@ class Public_Company_Products:
     def navigate_to_products_page(self):
         self.productsPage.click()
         self.page.wait_for_load_state("networkidle")
+
+    
