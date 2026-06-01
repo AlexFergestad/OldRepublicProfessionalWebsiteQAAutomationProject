@@ -50,3 +50,4 @@ def test_h1_title_in_products_page(page: Page, base_url):
     Public_Company_Products(page, base_url).navigate_to_products_page()
 
     # Verifies that the H1 title is correct
+    Public_Company_Products(page, base_url).verify_products_h1()
