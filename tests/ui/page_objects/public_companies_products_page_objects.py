@@ -14,4 +14,5 @@ class Public_Company_Products:
         self.productsPage.click()
         self.page.wait_for_load_state("networkidle")
 
-    
+    def verify_products_h1(self):
+        expect(self.products_h1).to_have_text("Products")
