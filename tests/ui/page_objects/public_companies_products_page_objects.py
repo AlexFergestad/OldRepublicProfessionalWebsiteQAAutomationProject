@@ -8,7 +8,7 @@ class Public_Company_Products:
         self.base_url = base_url
         self.productsPage = page.get_by_role("menuitem", name="Products") 
         self.url = f"{base_url}/business-insurance-public-company/directors-and-officers-liability/products"
-        
+        self.products_h1 = page.locator("h1")
 
     def navigate_to_products_page(self):
         self.productsPage.click()
