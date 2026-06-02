@@ -57,3 +57,6 @@ def test_h1_title_in_products_page(page: Page, base_url):
 @pytest.mark.public_companies_products_page
 def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
     # Goes to the home page first
+    page.goto(base_url)
+
+    
