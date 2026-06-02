@@ -51,3 +51,5 @@ def test_h1_title_in_products_page(page: Page, base_url):
 
     # Verifies that the H1 title is correct
     Public_Company_Products(page, base_url).verify_products_h1()
+
+"""TC-03: Verify page performance"""
