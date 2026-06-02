@@ -54,3 +54,4 @@ def test_h1_title_in_products_page(page: Page, base_url):
 
 """TC-03: Verify page performance"""
 @pytest.mark.ui
+@pytest.mark.public_companies_products_page
