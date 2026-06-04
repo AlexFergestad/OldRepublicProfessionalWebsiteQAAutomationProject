@@ -59,4 +59,4 @@ def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
-    
+    # Clicks on the Products link to navigate to the products page
