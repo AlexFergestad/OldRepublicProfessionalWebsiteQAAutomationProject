@@ -61,3 +61,5 @@ def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
 
     # Clicks on the Products link to navigate to the products page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    
