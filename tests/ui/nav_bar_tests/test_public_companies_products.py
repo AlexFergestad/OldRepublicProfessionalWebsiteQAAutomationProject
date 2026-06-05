@@ -65,4 +65,4 @@ def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
     # Clicks on the Products link to navigate to the products page
     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Clicks on the Primary,
+    # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
