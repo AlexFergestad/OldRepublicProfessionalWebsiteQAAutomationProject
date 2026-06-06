@@ -12,10 +12,10 @@
 2. Hover over "Public Companies" in the nav bar and select the first option called "Directors and Officers Liability".
 3. Wait for page to fully load.
 
-### Expected Result: 
+### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Directors and Officers Liability".
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_directors_and_officers_liability_page_loads`)
+**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_products_page_loads`)
