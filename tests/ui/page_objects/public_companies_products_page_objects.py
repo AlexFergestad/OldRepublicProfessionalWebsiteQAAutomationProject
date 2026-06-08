@@ -17,3 +17,5 @@ class Public_Company_Products:
     def verify_products_h1(self):
         expect(self.products_h1).to_have_text("Public Company Directors & Officers Liability Underwriting Products")
         expect(self.products_h1).to_be_visible()
+
+    def 
