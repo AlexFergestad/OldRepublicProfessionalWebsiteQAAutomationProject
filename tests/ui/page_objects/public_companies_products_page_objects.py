@@ -18,4 +18,4 @@ class Public_Company_Products:
         expect(self.products_h1).to_have_text("Public Company Directors & Officers Liability Underwriting Products")
         expect(self.products_h1).to_be_visible()
 
-    def verify_primary_traditional_d_and_o
+    def verify_primary_traditional_d_and_o_bullet_point(self):
