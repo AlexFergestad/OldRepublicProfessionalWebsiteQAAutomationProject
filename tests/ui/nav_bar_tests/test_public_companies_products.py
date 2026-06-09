@@ -67,4 +67,5 @@ def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
 
     # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
 
+
 """TC-04: Verify"""
