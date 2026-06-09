@@ -52,7 +52,7 @@ def test_h1_title_in_products_page(page: Page, base_url):
     # Verifies that the H1 title is correct
     Public_Company_Products(page, base_url).verify_products_h1()
 
-"""TC-03: Verify """
+"""TC-03: Verify Primary Traditional"""
 @pytest.mark.ui
 @pytest.mark.public_companies_products_page
 def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
