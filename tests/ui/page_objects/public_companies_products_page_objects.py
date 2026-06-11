@@ -24,3 +24,4 @@ class Public_Company_Products:
         expect(self.primary_tradtional_d_and_o_title).to_be_visible()
 
         expect()
+        expect().to_be_visible()
