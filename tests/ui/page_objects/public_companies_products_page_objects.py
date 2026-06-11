@@ -22,3 +22,5 @@ class Public_Company_Products:
     def verify_primary_traditional_d_and_o_bullet_point(self):
         expect(self.primary_tradtional_d_and_o_title).to_have_text("Primary Traditional D&O")
         expect(self.primary_tradtional_d_and_o_title).to_be_visible()
+
+        expect()
