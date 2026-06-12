@@ -69,3 +69,4 @@ def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
     Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
 
 """TC-04: Verify Excess Liability Bullet Point"""
+@pytest.mark.ui
