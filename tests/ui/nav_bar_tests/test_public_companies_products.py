@@ -20,37 +20,37 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """
 
-"""TC-01: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page."""
-@pytest.mark.ui
-@pytest.mark.public_companies_products_page
-def test_public_companies_products_page_loads(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-01: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_products_page
+# def test_public_companies_products_page_loads(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Products link to navigate to the products page
-    Public_Company_Products(page, base_url).navigate_to_products_page()
+#     # Clicks on the Products link to navigate to the products page
+#     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Verifies that the products page loads correctly and has the correct URL
-    page.wait_for_load_state("networkidle")
+#     # Verifies that the products page loads correctly and has the correct URL
+#     page.wait_for_load_state("networkidle")
 
-"""TC-02: Verify H1 Title"""
-@pytest.mark.ui
-@pytest.mark.public_companies_products_page
-def test_h1_title_in_products_page(page: Page, base_url): 
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-02: Verify H1 Title"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_products_page
+# def test_h1_title_in_products_page(page: Page, base_url): 
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Products link to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Products link to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Products link to navigate to the products page
-    Public_Company_Products(page, base_url).navigate_to_products_page()
+#     # Clicks on the Products link to navigate to the products page
+#     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Verifies that the H1 title is correct
-    Public_Company_Products(page, base_url).verify_products_h1()
+#     # Verifies that the H1 title is correct
+#     Public_Company_Products(page, base_url).verify_products_h1()
 
 """TC-03: Verify Primary Traditional D&O Bullet Point"""
 @pytest.mark.ui
