@@ -23,5 +23,6 @@ class Public_Company_Products:
         expect(self.primary_tradtional_d_and_o_title).to_have_text("Primary Traditional D&O")
         expect(self.primary_tradtional_d_and_o_title).to_be_visible()
 
-        expect()
-        expect().to_be_visible()
+        # Verifies its sub bullet points are visible
+        expect(self.page.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
+        expect(self.page.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
