@@ -80,3 +80,4 @@ def test_excess_liability_bullet_point(page: Page, base_url):
 
     # Clicks on the Products link to navigate to the products page  
     Public_Company_Products(page, base_url).navigate_to_products_page()
+    
