@@ -75,7 +75,7 @@ def test_excess_liability_bullet_point(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
-    # Clicks on the Products link to navigate to the products page
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Products link to navigate to the products page  
