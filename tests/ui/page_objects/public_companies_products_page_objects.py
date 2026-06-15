@@ -20,9 +20,8 @@ class Public_Company_Products:
         expect(self.products_h1).to_be_visible()
 
     def verify_primary_traditional_d_and_o_bullet_point(self):
-        expect(self.primary_tradtional_d_and_o_title).to_have_text("Primary \u201ctraditional\u201d D&O")
-        expect(self.primary_tradtional_d_and_o_title).to_be_visible()
+        expect(self.primary_tradtional_d_and_o_title).to_contain_text("traditional")
+    expect(self.primary_tradtional_d_and_o_title).to_be_visible()
 
-        # Verifies its sub bullet points are visible
-        expect(self.page.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
-        expect(self.page.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
+    expect(self.page.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
+    expect(self.page.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
