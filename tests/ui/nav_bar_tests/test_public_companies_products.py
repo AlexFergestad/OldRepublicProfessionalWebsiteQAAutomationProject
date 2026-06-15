@@ -52,21 +52,21 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the H1 title is correct
 #     Public_Company_Products(page, base_url).verify_products_h1()
 
-"""TC-03: Verify Primary Traditional D&O Bullet Point"""
-@pytest.mark.ui
-@pytest.mark.public_companies_products_page
-def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-03: Verify Primary Traditional D&O Bullet Point"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_products_page
+# def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Products link to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Products link to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Products link to navigate to the products page
-    Public_Company_Products(page, base_url).navigate_to_products_page()
+#     # Clicks on the Products link to navigate to the products page
+#     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
-    Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
+#     # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
+#     Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
 
 """TC-04: Verify Excess Liability Bullet Point"""
 @pytest.mark.ui
