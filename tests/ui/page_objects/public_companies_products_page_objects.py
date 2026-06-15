@@ -21,9 +21,9 @@ class Public_Company_Products:
 
     def verify_primary_traditional_d_and_o_bullet_point(self):
         expect(self.primary_tradtional_d_and_o_title).to_contain_text("traditional")
-    expect(self.primary_tradtional_d_and_o_title).to_be_visible()
+        expect(self.primary_tradtional_d_and_o_title).to_be_visible()
 
-    # Scope to the Primary D&O section to avoid matching other sections
-    primary_do_section = self.page.locator("div.constrain").filter(has_text="Primary").first
-    expect(primary_do_section.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
-    expect(primary_do_section.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
+        # Scope to the Primary D&O section to avoid matching other sections
+        primary_do_section = self.page.locator("div.constrain").filter(has_text="Primary").first
+        expect(primary_do_section.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
+        expect(primary_do_section.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
