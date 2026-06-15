@@ -24,6 +24,6 @@ class Public_Company_Products:
         expect(self.primary_tradtional_d_and_o_title).to_be_visible()
 
         # Scope to the Primary D&O section to avoid matching other sections
-        primary_do_section = self.page.locator("div.constrain").filter(has_text="Primary").first
-        expect(primary_do_section.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
-        expect(primary_do_section.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
+        primary_do_links = self.page.locator("h3").filter(has_text="traditional").locator("xpath=following-sibling::ul[1]")
+    expect(primary_do_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
+    expect(primary_do_links.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
