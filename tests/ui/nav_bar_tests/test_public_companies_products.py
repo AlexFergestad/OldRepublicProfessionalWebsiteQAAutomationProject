@@ -67,7 +67,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 #     # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
 #     Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
-# Hello, does this work?! | Hello?!
+
 
 """TC-04: Verify Excess Liability Bullet Point"""
 @pytest.mark.ui
