@@ -83,4 +83,4 @@ def test_excess_liability_bullet_point(page: Page, base_url):
     Public_Company_Products(page, base_url).navigate_to_products_page()
 
     # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
-    
+    Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
