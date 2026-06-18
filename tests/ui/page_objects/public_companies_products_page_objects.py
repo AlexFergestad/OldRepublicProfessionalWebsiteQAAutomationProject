@@ -28,3 +28,4 @@ class Public_Company_Products:
         expect(primary_do_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
         expect(primary_do_links.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
     
+    def 
