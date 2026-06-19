@@ -37,3 +37,5 @@ class Public_Company_Products:
         self.excess_liability_links = self.page.locator("h3").filter(has_text=re.compile("excess liability", re.IGNORECASE)).locator("xpath=following-sibling::ul[1]")
         expect(self.excess_liability_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
         expect(self.excess_liability_links.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
+        expect(self.excess_liability_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
+        expect(self.excess_liability_links.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
