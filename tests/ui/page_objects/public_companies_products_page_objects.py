@@ -32,3 +32,5 @@ class Public_Company_Products:
     def verify_excess_liability_bullet_point(self):
         expect(self.excess_liability_title).to_contain_text("excess liability")
         expect(self.excess_liability_title).to_be_visible()
+
+        
