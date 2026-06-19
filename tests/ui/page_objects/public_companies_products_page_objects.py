@@ -34,3 +34,4 @@ class Public_Company_Products:
         expect(self.excess_liability_title).to_be_visible()
 
         # Scope to the Excess Liability section to avoid matching other sections
+        self.excess_liability_links = self.page.locator("h3").filter(has_text=re.compile("excess liability", re.IGNORECASE)).locator("xpath=following-sibling::ul[1]")
