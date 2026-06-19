@@ -30,4 +30,4 @@ class Public_Company_Products:
     
     def verify_excess_liability_bullet_point():
         expect()
-        expect(*)
+        expect()
