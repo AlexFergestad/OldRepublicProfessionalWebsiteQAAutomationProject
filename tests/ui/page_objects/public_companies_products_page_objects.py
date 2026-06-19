@@ -33,4 +33,4 @@ class Public_Company_Products:
         expect(self.excess_liability_title).to_contain_text("excess liability")
         expect(self.excess_liability_title).to_be_visible()
 
-        
+        # Scope to the Excess Liability section to avoid matching other sections
