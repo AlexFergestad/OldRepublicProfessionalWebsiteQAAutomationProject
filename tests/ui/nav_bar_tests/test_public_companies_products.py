@@ -88,4 +88,4 @@ def test_excess_liability_bullet_point(page: Page, base_url):
 """TC-05: Verify Lead Side-A Bullet Point"""
 @pytest.mark.ui
 @pytest.mark.public_companies_products_page
-def test_
+def test_lead_side_a_bullet_point(page: Page, base_url):
