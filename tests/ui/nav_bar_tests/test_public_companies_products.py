@@ -85,5 +85,5 @@ def test_excess_liability_bullet_point(page: Page, base_url):
     # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
     Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
 
-"""TC-05"""
+"""TC-05: Verify Lead Side-A Bullet Point"""
 def test_
