@@ -90,4 +90,4 @@ def test_excess_liability_bullet_point(page: Page, base_url):
 @pytest.mark.public_companies_products_page
 def test_lead_side_a_bullet_point(page: Page, base_url):
     # Goes to the home page first
-    
+    page.goto(base_url)
