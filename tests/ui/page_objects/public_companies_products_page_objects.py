@@ -30,14 +30,14 @@ class Public_Company_Products:
         expect(primary_do_links.get_by_role("link", name="Policy form ORUG-95")).to_be_visible()
     
     def verify_excess_liability_bullet_point(self):
-        expect(self.excess_liability_title).to_contain_text("excess liability")
+        expect(self.excess_liability_title).to_contain_text("Excess Liability")
         expect(self.excess_liability_title).to_be_visible()
 
         # Scope to the Excess Liability section to avoid matching other sections
         self.excess_liability_links = self.page.locator("h3").filter(has_text=re.compile("excess liability", re.IGNORECASE)).locator("xpath=following-sibling::ul[1]")
         expect(self.excess_liability_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
         expect(self.excess_liability_links.get_by_role("link", name="Policy form ORUG-91")).to_be_visible()
-        expect(self.excess_liability_links.get_by_role("link", name="Excess Plus Highlights (PDF)")).to_be_visible()
+        expect(self.excess_liability_links.get_by_role("link", name="Excess Plus Highlights (PDF)")).to_be_visible()     
         expect(self.excess_liability_links.get_by_role("link", name="Excess Plus endorsement")).to_be_visible()
     
     
