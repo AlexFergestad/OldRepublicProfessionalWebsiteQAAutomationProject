@@ -6,7 +6,7 @@ class Public_Company_Products:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.base_url = base_url
-        self.productsPage = page.locator("header").get_by_role("menuitem", name="Products")
+        self.productsPage = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu").get_by_role("menuitem", name="Products")
         self.url = f"{base_url}/business-insurance-public-company/directors-and-officers-liability/products"
         self.products_h1 = page.locator("h1")
         self.primary_tradtional_d_and_o_title = page.locator("h3").first
