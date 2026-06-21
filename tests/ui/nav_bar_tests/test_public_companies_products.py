@@ -85,11 +85,11 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
 #     Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
 
-# """TC-05: Verify Lead Side-A Bullet Point"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_lead_side_a_bullet_point(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-05: Verify Lead Side-A Bullet Point"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_lead_side_a_bullet_point(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
     
