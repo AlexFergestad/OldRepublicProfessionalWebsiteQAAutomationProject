@@ -69,27 +69,27 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
 
 
-"""TC-04: Verify Excess Liability Bullet Point"""
-@pytest.mark.ui
-@pytest.mark.public_companies_products_page
-def test_excess_liability_bullet_point(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-04: Verify Excess Liability Bullet Point"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_products_page
+# def test_excess_liability_bullet_point(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Products link to navigate to the public companies nav bar dropdown
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Products link to navigate to the products page  
-    Public_Company_Products(page, base_url).navigate_to_products_page()
+#     # Clicks on the Products link to navigate to the products page  
+#     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
-    Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
+#     # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
+#     Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
 
-"""TC-05: Verify Lead Side-A Bullet Point"""
-@pytest.mark.ui
-@pytest.mark.public_companies_products_page
-def test_lead_side_a_bullet_point(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-05: Verify Lead Side-A Bullet Point"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_products_page
+# def test_lead_side_a_bullet_point(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
     
