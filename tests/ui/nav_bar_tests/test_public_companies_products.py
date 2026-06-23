@@ -95,3 +95,4 @@ def test_lead_side_a_bullet_point(page: Page, base_url):
     # Clicks on the Products link to navigate to the public companies nav bar dropdown
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
     
+    # Clicks on the Products link to navigate to the products page  
