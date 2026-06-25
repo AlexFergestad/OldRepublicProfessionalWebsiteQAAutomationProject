@@ -11,6 +11,7 @@ class Public_Company_Products:
         self.products_h1 = page.locator("h1")
         self.primary_tradtional_d_and_o_title = page.locator("h3").first
         self.excess_liability_title = page.locator("h3").filter(has_text=re.compile("excess liability", re.IGNORECASE)).first
+        self.lead_side_a_title = page.locator("h3").filter(has_text=re.compile("lead side a", re.IGNORECASE)).first
 
     def navigate_to_products_page(self):
         self.productsPage.click()
@@ -41,7 +42,7 @@ class Public_Company_Products:
         expect(self.excess_liability_links.get_by_role("link", name="Excess Plus endorsement")).to_be_visible()
     
     def verify_lead_side_a_bullet_point(self):
-        expect()
+        expect(self.)
         expect()
     
     
