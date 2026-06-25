@@ -48,4 +48,4 @@ class Public_Company_Products:
         # Scope to the Lead Side A section to avoid matching other sections
         self.lead_side_a_links = self.page.locator("h3").filter(has_text=re.compile("lead side a", re.IGNORECASE)).locator("xpath=following-sibling::ul[1]")
         expect(self.lead_side_a_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
-        expect(self.lead_side_a_links.get_by_role("link", name="Policy form ORUG-92")).to_be_visible()
+        expect(self.lead_side_a_links.get_by_role("link", name="Policy form ORUG-93")).to_be_visible()
