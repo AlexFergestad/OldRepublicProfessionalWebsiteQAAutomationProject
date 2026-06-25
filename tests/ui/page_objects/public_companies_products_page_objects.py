@@ -42,5 +42,6 @@ class Public_Company_Products:
     
     def verify_lead_side_a_bullet_point(self):
         expect()
+        expect()
     
     
