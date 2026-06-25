@@ -41,5 +41,6 @@ class Public_Company_Products:
         expect(self.excess_liability_links.get_by_role("link", name="Excess Plus endorsement")).to_be_visible()
     
     def verify_lead_side_a_bullet_point(self):
+        expect()
     
     
