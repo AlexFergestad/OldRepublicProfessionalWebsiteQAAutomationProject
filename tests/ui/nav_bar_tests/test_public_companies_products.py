@@ -105,3 +105,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.ui
 @pytest.mark.public_companies_products_page
 def test_excess_side_a_bullet_point(page: Page, base_url):
+    
