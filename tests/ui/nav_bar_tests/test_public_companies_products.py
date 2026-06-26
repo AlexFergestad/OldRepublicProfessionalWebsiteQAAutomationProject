@@ -102,3 +102,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Products(page, base_url).verify_lead_side_a_bullet_point()
 
 """TC-06: Verify Excess Side A Bullet Point"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
