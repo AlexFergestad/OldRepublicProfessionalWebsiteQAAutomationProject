@@ -107,4 +107,6 @@ has the correct title and headers, performanced checks the page, and accessibili
 def test_excess_side_a_bullet_point(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
-    
+
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
