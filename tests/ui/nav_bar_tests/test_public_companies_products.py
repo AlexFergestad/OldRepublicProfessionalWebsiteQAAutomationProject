@@ -101,3 +101,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on the Lead Side-A bullet point to verify it is clickable and navigates to the correct page
 #     Public_Company_Products(page, base_url).verify_lead_side_a_bullet_point()
 
+"""TC-06:"""
