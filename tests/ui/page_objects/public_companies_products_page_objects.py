@@ -42,10 +42,10 @@ class Public_Company_Products:
         expect(self.excess_liability_links.get_by_role("link", name="Excess Plus endorsement")).to_be_visible()
     
     def verify_lead_side_a_bullet_point(self):
-        expect(self.lead_side_a_title).to_contain_text("Lead Side A")
+        expect(self.lead_side_a_title).to_contain_text("Lead Side-A")
         expect(self.lead_side_a_title).to_be_visible()
 
         # Scope to the Lead Side A section to avoid matching other sections
-        self.lead_side_a_links = self.page.locator("h3").filter(has_text=re.compile("lead side a", re.IGNORECASE)).locator("xpath=following-sibling::ul[1]")
+        self.lead_side_a_links = self.page.locator("h3").filter(has_text=re.compile(r"lead side[\s-]a", re.IGNORECASE)).locator("xpath=following-sibling::ul[1]")
         expect(self.lead_side_a_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
         expect(self.lead_side_a_links.get_by_role("link", name="Policy form ORUG-93")).to_be_visible()
