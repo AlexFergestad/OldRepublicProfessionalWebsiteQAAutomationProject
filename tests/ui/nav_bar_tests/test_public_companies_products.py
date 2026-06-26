@@ -98,7 +98,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on the Products link to navigate to the products page
 #     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Clicks on the Lead Side-A bullet point to verify it is clickable and navigates to the correct page
+#     # Clicks on the Lead Side A bullet point to verify it is clickable and navigates to the correct page
 #     Public_Company_Products(page, base_url).verify_lead_side_a_bullet_point()
 
 """TC-06: Verify Excess Side A Bullet Point"""
@@ -114,5 +114,4 @@ def test_excess_side_a_bullet_point(page: Page, base_url):
     # Clicks on the Products link to navigate to the products page
     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Clicks on the Lead Side-A bullet point to verify it is clickable and navigates to the correct page
-    
+    # Clicks on the Excess Side A bullet point to verify it is clickable and navigates to the correct page
