@@ -77,9 +77,12 @@
 2. Hover over "Public Companies" in the nav bar and select the second option called "Products".
 3. Wait for page to fully load.
 
+
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Products".
+- The Second Top H3 Title displays as "Excess Liability".
+- The bottom four bullet pints display as "Product Highlights (PDF)", "Policy form ORUG-91", "Excess Plus Highlights (PDF)", and "Excess Plus endorsement".
 
 ### Actual Result:
 **Status**: ✅ Pass
