@@ -99,6 +99,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Products".
 3. Wait for page to fully load.
+4. Verify the third h3 title and bullet points underneath.
 
 ### Expected Result:
 - Page loads without any errors.
