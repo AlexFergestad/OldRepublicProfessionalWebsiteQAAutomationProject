@@ -104,6 +104,8 @@
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Products".
+- The Third Top H3 Title displays as "Lead Side-A".
+- The bottom two bullet pints display as "Product Highlights (PDF)" and "Policy form ORUG-93".
 
 ### Actual Result:
 **Status**: ✅ Pass
