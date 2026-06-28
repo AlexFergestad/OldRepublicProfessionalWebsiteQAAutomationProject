@@ -82,7 +82,7 @@
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Products".
 - The Second Top H3 Title displays as "Excess Liability".
-- The bottom four bullet pints display as "Product Highlights (PDF)", "Policy form ORUG-91", "Excess Plus Highlights (PDF)", and "Excess Plus endorsement".
+- The bottom four bullet points display as "Product Highlights (PDF)", "Policy form ORUG-91", "Excess Plus Highlights (PDF)", and "Excess Plus endorsement".
 
 ### Actual Result:
 **Status**: ✅ Pass
@@ -105,7 +105,7 @@
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Products".
 - The Third Top H3 Title displays as "Lead Side-A".
-- The bottom two bullet pints display as "Product Highlights (PDF)" and "Policy form ORUG-93".
+- The bottom two bullet points display as "Product Highlights (PDF)" and "Policy form ORUG-93".
 
 ### Actual Result:
 **Status**: ✅ Pass
@@ -127,6 +127,7 @@
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Products".
+- The bottom two bullet points display as "Product Highlights (PDF)" and "Policy form ORUG-92".
 
 ### Actual Result:
 **Status**: ✅ Pass
