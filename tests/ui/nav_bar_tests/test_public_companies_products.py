@@ -36,7 +36,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the products page loads correctly and has the correct URL
 #     page.wait_for_load_state("networkidle")
 
-# """TC-02: Verify H1 Title"""
+# """TC-02: Verify H1 Title in Products Page"""
 # @pytest.mark.ui
 # @pytest.mark.public_companies_products_page
 # def test_h1_title_in_products_page(page: Page, base_url): 
