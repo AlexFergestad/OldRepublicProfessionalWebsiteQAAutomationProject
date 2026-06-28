@@ -83,7 +83,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_products_page_loads`)
+**Automated**: Yes (`tests/test_public_companies_products.py::test_excess_liability_bullet_point`)
 
 # TC-005:
 **Priority**: High
