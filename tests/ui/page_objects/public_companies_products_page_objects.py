@@ -12,7 +12,7 @@ class Public_Company_Products:
         self.primary_tradtional_d_and_o_title = page.locator("h3").first
         self.excess_liability_title = page.locator("h3").filter(has_text=re.compile("excess liability", re.IGNORECASE)).first
         self.lead_side_a_title = page.locator("h3").filter(has_text=re.compile(r"lead side[\s-]a", re.IGNORECASE)).first
-        self.
+        self.excess_side_a_title = page.locator("h3").filter(has_text=re.compile(r"excess side[\s-]a", re.IGNORECASE)).first
 
     def navigate_to_products_page(self):
         self.productsPage.click()
