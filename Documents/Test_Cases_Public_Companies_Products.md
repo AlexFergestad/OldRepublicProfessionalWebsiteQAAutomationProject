@@ -53,14 +53,17 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Products".
 3. Wait for page to fully load.
+4. Verify the first h3 title and bullet points underneath.
 
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Products".
+- The Top H3 Title displays as "Primary "traditional" D&O".
+- The bottom two bullet points display as "Product Highlights (PDF)" and "Policy form ORUG-95".
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_products_page_loads`)
+**Automated**: Yes (`tests/test_public_companies_products.py::test_primary_traditional_d_and_o_bullet_point`)
 
 # TC-004:
 **Priority**: High
