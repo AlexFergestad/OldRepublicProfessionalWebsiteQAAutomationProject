@@ -42,7 +42,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_h1_title_in_products_page`)
 
-# TC-003:
+# TC-003: Verify Primary Traditional D&O Bullet Point
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
