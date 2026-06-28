@@ -88,7 +88,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_excess_liability_bullet_point`)
 
-# TC-005:
+# TC-005: Verify Lead Side A Bullet Point
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
