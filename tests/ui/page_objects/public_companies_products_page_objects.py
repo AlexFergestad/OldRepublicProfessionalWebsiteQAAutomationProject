@@ -50,3 +50,4 @@ class Public_Company_Products:
         expect(self.lead_side_a_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
         expect(self.lead_side_a_links.get_by_role("link", name="Policy form ORUG-93")).to_be_visible()
 
+    def verify_excess_side_a_bullet_point
