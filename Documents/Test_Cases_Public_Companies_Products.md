@@ -65,7 +65,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_primary_traditional_d_and_o_bullet_point`)
 
-# TC-004:
+# TC-004: Verify Excess Liability Bullet Point
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
