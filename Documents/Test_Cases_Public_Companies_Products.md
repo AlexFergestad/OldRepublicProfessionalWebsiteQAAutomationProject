@@ -31,11 +31,12 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Products".
 3. Wait for page to fully load.
-4. Verify the H1 Title displays as "Public Company Directors & Officers Liability Underwriting Products"
+4. Verify the H1 Title displays as "Public Company Directors & Officers Liability Underwriting Products".
 
 ### Expected Result:
 - Page loads without any errors.
-- You are able to hover over the public companies text in the nav bar and click on "Products".
+- The H1 Title displays "Public Company Directors & Officers Liability Underwriting Products".
+
 
 ### Actual Result:
 **Status**: ✅ Pass
