@@ -111,7 +111,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_lead_side_a_bullet_points`)
 
-# TC-006:
+# TC-006: Verify Excess Side A Bullet Point
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
