@@ -40,7 +40,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_products_page_loads`)
+**Automated**: Yes (`tests/test_public_companies_products.py::test_h1_title_in_products_page`)
 
 # TC-003:
 **Priority**: High
