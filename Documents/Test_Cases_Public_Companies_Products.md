@@ -20,7 +20,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_products_page_loads`)
 
-# TC-002:
+# TC-002: Verify H1 Title in Products Page
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
