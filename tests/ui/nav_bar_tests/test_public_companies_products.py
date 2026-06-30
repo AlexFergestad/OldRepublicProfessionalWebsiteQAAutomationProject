@@ -119,6 +119,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-07: Verify Contact Us Button"""
 @pytest.mark.ui
+@pytest.mark.public_companies_products_page
 
 # """TC-08: Verify Performance Metrics"""
 
