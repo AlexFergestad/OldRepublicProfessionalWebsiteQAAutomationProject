@@ -119,6 +119,6 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-07: Verify Contact Us Button"""
 
-"""TC-08: Verify Performance Metrics"""
+# """TC-08: Verify Performance Metrics"""
 
-"""TC-09: Verify Accessibility Checks"""
+# """TC-09: Verify Accessibility Checks"""
