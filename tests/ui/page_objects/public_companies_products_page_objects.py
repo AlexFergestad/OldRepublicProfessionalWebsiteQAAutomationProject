@@ -61,4 +61,5 @@ class Public_Company_Products:
         expect(self.excess_side_a_links.get_by_role("link", name="Policy form ORUG-92")).to_be_visible()
     
     def verify_contact_us_button(self):
+        expect(self.contact_us_button).to_contain_text("Contact Us")
         expect(self.contact_us_button).to_be_visible()
