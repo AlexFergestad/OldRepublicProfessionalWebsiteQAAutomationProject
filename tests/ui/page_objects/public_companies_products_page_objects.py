@@ -69,3 +69,4 @@ class Public_Company_Products:
         self.page.wait_for_load_state("networkidle")
 
         # Correct Url is https://www.oldrepublicpro.com/contact
+        expect(self.page).to_have_url(f"{self.base_url}/contact")
