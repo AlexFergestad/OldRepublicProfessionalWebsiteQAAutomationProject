@@ -128,6 +128,7 @@ def test_excess_side_a_bullet_point(page: Page, base_url):
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
 
 # """TC-08: Verify Performance Metrics"""
