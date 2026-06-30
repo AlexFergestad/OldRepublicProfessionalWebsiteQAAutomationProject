@@ -120,7 +120,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-07: Verify Contact Us Button"""
 @pytest.mark.ui
 @pytest.mark.public_companies_products_page
-def test_excess_side_a_bullet_point(page: Page, base_url):
+def test_contact_us_button(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
@@ -131,6 +131,7 @@ def test_excess_side_a_bullet_point(page: Page, base_url):
     Public_Company_Products(page, base_url).navigate_to_products_page()
 
     # Clicks on the Contact Us button to verify it is clickable and navigates to the correct page
+    Public_Company_Products(page, base_url).verify_contact_us_button()
 
 
 # """TC-08: Verify Performance Metrics"""
