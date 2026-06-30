@@ -63,3 +63,9 @@ class Public_Company_Products:
     def verify_contact_us_button(self):
         expect(self.contact_us_button).to_contain_text("Contact Us")
         expect(self.contact_us_button).to_be_visible()
+
+        # Verifies it goes to the correct url when clicked
+        self.contact_us_button.click()
+        self.page.wait_for_load_state("networkidle")
+
+        # Correct Url is https://www.oldrepublicpro.com/contact
