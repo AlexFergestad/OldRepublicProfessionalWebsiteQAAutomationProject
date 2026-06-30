@@ -59,4 +59,5 @@ class Public_Company_Products:
         expect(self.excess_side_a_links.get_by_role("link", name="Product Highlights (PDF)")).to_be_visible()
         expect(self.excess_side_a_links.get_by_role("link", name="Policy form ORUG-92")).to_be_visible()
     
-    def verify_contact_us_button
+    def verify_contact_us_button(self):
+        
