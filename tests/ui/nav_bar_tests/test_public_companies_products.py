@@ -118,6 +118,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Products(page, base_url).verify_excess_side_a_bullet_point()
 
 """TC-07: Verify Contact Us Button"""
+@pytest.mark.ui
 
 # """TC-08: Verify Performance Metrics"""
 
