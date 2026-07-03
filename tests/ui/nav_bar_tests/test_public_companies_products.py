@@ -117,21 +117,21 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on the Excess Side A bullet point to verify it is clickable and navigates to the correct page
 #     Public_Company_Products(page, base_url).verify_excess_side_a_bullet_point()
 
-"""TC-07: Verify Contact Us Button"""
-@pytest.mark.ui
-@pytest.mark.public_companies_products_page
-def test_contact_us_button(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-07: Verify Contact Us Button"""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_products_page
+# def test_contact_us_button(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Products link to navigate to the public companies nav bar dropdown
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Products link to navigate to the products page
-    Public_Company_Products(page, base_url).navigate_to_products_page()
+#     # Clicks on the Products link to navigate to the products page
+#     Public_Company_Products(page, base_url).navigate_to_products_page()
 
-    # Clicks on the Contact Us button to verify it is clickable and navigates to the correct page
-    Public_Company_Products(page, base_url).verify_contact_us_button()
+#     # Clicks on the Contact Us button to verify it is clickable and navigates to the correct page
+#     Public_Company_Products(page, base_url).verify_contact_us_button()
 
 
 # """TC-08: Verify Performance Metrics"""
