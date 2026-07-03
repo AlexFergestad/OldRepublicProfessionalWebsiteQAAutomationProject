@@ -149,8 +149,8 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- You are able to hover over the public companies text in the nav bar and click on "Products".
-- The bottom two bullet points display as "Product Highlights (PDF)" and "Policy form ORUG-92".
+- The "Contact Us" button is able to be clicked.
+- After the "Contact Us" button is clicked, the url matched the expected url. 
 
 ### Actual Result:
 **Status**: ✅ Pass
