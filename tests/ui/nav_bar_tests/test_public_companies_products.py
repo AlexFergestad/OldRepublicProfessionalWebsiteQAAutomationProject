@@ -139,6 +139,8 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.public_companies_products_page
 def test_performance_metrics_products_page(page: Page, base_url):
     # Goes to the home page first
+    page.goto(base_url)
+
     
 
 # """TC-09: Verify Accessibility Checks"""
