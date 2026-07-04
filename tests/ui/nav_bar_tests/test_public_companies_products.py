@@ -141,6 +141,6 @@ def test_performance_metrics_products_page(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
-    
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
 
 # """TC-09: Verify Accessibility Checks"""
