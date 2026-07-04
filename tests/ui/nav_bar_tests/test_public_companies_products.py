@@ -134,6 +134,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Products(page, base_url).verify_contact_us_button()
 
 
-# """TC-08: Verify Performance Metrics"""
+"""TC-08: Verify Performance Metrics"""
+
 
 # """TC-09: Verify Accessibility Checks"""
