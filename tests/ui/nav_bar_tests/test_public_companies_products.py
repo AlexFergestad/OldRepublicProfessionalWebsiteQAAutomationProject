@@ -161,4 +161,5 @@ def test_performance_metrics_products_page(page: Page, base_url):
         print("Warning: LCP metric not available in headless mode")
     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
+
 # """TC-09: Verify Accessibility Checks"""
