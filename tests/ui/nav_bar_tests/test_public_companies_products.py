@@ -150,7 +150,7 @@ def test_performance_metrics_products_page(page: Page, base_url):
 
     # Verifies the Performance Metrics section is visible and contains the expected content
     # Now instantiate the D&O page object and get metrics
-    products_page = Public_Company_Products(page)
+    products_page = Public_Company_Products(page, base_url)
     performance_metrics = products_page.get_performance_metrics()
 
     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
