@@ -147,6 +147,7 @@ def test_performance_metrics_products_page(page: Page, base_url):
     # Clicks on the Products link to navigate to the products page
     Public_Company_Products(page, base_url).navigate_to_products_page()
 
+    # Verifies the Performance Metrics section is visible and contains the expected content
     
 
 # """TC-09: Verify Accessibility Checks"""
