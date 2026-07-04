@@ -70,3 +70,30 @@ class Public_Company_Products:
 
         # Correct Url is https://www.oldrepublicpro.com/contact
         expect(self.page).to_have_url(f"{self.base_url}/contact")
+    
+    def get_performance_metrics(self):
+    # Scroll to trigger LCP finalization
+        self.page.evaluate("window.scrollBy(0, 100)")
+        self.page.wait_for_timeout(500)
+
+        metrics = self.page.evaluate("""() => {
+            const nav = performance.getEntriesByType('navigation')[0];
+            const paint = performance.getEntriesByType('paint');
+            const fcp = paint.find(p => p.name === 'first-contentful-paint');
+            const lcp = performance.getEntriesByType('largest-contentful-paint').slice(-1)[0];
+            const cls = performance.getEntriesByType('layout-shift').reduce((sum, e) => sum + e.value, 0);
+            return {
+                load_time: nav ? nav.loadEventEnd - nav.startTime : null,
+                first_contentful_paint: fcp ? fcp.startTime : null,
+                largest_contentful_paint: lcp ? lcp.startTime : null,
+                cumulative_layout_shift: cls
+            };
+        }""")
+
+        print(f"\n📊 Performance Metrics — Public Companies D&O Page")
+        print(f"   Load Time:                  {metrics['load_time']:.0f}ms")
+        print(f"   First Contentful Paint:     {metrics['first_contentful_paint']:.0f}ms")
+        print(f"   Largest Contentful Paint:   {f'{metrics["largest_contentful_paint"]:.0f}ms' if metrics['largest_contentful_paint'] is not None else 'N/A (headless)'}")
+        print(f"   Cumulative Layout Shift:    {metrics['cumulative_layout_shift']:.4f}")
+
+        return metrics
