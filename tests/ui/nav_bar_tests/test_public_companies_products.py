@@ -135,6 +135,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 
 """TC-08: Verify Performance Metrics"""
+@pytest.mark.ui
 
 
 # """TC-09: Verify Accessibility Checks"""
