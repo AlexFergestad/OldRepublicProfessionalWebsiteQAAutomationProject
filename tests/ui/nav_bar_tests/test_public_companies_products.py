@@ -171,3 +171,5 @@ def test_accessibility_checks_products_page(page: Page, base_url):
 
     # Clicks on the Products link to navigate to the public companies nav bar dropdown
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    
