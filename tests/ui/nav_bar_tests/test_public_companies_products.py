@@ -174,3 +174,5 @@ def test_accessibility_checks_products_page(page: Page, base_url):
 
     # Clicks on the Products link to navigate to the products page
     Public_Company_Products(page, base_url).navigate_to_products_page()
+
+    
