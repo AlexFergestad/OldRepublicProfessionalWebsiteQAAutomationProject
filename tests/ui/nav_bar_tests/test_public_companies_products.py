@@ -163,3 +163,4 @@ def test_performance_metrics_products_page(page: Page, base_url):
 
 
 # """TC-09: Verify Accessibility Checks"""
+
