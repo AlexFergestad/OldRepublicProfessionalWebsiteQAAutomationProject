@@ -163,4 +163,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 
 # """TC-09: Verify Accessibility Checks"""
-
+@pytest.mark.ui
