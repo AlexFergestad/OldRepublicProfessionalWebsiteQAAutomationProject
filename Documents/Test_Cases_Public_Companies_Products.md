@@ -192,8 +192,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- The "Contact Us" button is able to be clicked.
-- After the "Contact Us" button is clicked, the url matched the expected url. 
+- Accessibility on this webpage performs as expected.
 
 ### Actual Result:
 **Status**: ✅ Pass
