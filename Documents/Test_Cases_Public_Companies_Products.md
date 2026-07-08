@@ -177,3 +177,25 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_performance_metrics_products_page`)
 
+# TC-009: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Products".
+3. Wait for page to fully load.
+4. Click on the "Contact Us" button/link.
+5. Verify that the url (after clicking) matches the expected url.
+
+### Expected Result:
+- Page loads without any errors.
+- The "Contact Us" button is able to be clicked.
+- After the "Contact Us" button is clicked, the url matched the expected url. 
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_products.py::test_contact_us_button`)
