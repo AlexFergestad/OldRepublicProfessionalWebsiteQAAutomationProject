@@ -22,201 +22,201 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """
 
-# """TC-01: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page."""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_public_companies_products_page_loads(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-01: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page."""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_public_companies_products_page_loads(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Public Companies menu item to navigate to the products page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Public Companies menu item to navigate to the products page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Verifies that the products page loads correctly and has the correct URL
-#     page.wait_for_load_state("networkidle")
+    # Verifies that the products page loads correctly and has the correct URL
+    page.wait_for_load_state("networkidle")
 
-# """TC-02: Verify H1 Title in Products Page"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_h1_title_in_products_page(page: Page, base_url): 
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-02: Verify H1 Title in Products Page"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_h1_title_in_products_page(page: Page, base_url): 
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the products page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the products page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Verifies that the H1 title is correct
-#     Public_Company_Products(page, base_url).verify_products_h1()
+    # Verifies that the H1 title is correct
+    Public_Company_Products(page, base_url).verify_products_h1()
 
-# """TC-03: Verify Primary Traditional D&O Bullet Point"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-03: Verify Primary Traditional D&O Bullet Point"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_primary_traditional_d_and_o_bullet_point(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
-#     Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
+    # Clicks on the Primary, Traditional D&O bullet point to verify it is clickable and navigates to the correct page
+    Public_Company_Products(page, base_url).verify_primary_traditional_d_and_o_bullet_point()
 
 
-# """TC-04: Verify Excess Liability Bullet Point"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_excess_liability_bullet_point(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-04: Verify Excess Liability Bullet Point"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_excess_liability_bullet_point(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page  
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page  
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
-#     Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
+    # Clicks on the Excess Liability bullet point to verify it is clickable and navigates to the correct page
+    Public_Company_Products(page, base_url).verify_excess_liability_bullet_point()
 
-# """TC-05: Verify Lead Side A Bullet Point"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_lead_side_a_bullet_point(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-05: Verify Lead Side A Bullet Point"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_lead_side_a_bullet_point(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
     
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Clicks on the Lead Side A bullet point to verify it is clickable and navigates to the correct page
-#     Public_Company_Products(page, base_url).verify_lead_side_a_bullet_point()
+    # Clicks on the Lead Side A bullet point to verify it is clickable and navigates to the correct page
+    Public_Company_Products(page, base_url).verify_lead_side_a_bullet_point()
 
-# """TC-06: Verify Excess Side A Bullet Point"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_excess_side_a_bullet_point(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-06: Verify Excess Side A Bullet Point"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_excess_side_a_bullet_point(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Clicks on the Excess Side A bullet point to verify it is clickable and navigates to the correct page
-#     Public_Company_Products(page, base_url).verify_excess_side_a_bullet_point()
+    # Clicks on the Excess Side A bullet point to verify it is clickable and navigates to the correct page
+    Public_Company_Products(page, base_url).verify_excess_side_a_bullet_point()
 
-# """TC-07: Verify Contact Us Button"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_contact_us_button(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-07: Verify Contact Us Button"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_contact_us_button(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Clicks on the Contact Us button to verify it is clickable and navigates to the correct page
-#     Public_Company_Products(page, base_url).verify_contact_us_button()
-
-
-# """TC-08: Verify Performance Metrics"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_performance_metrics_products_page(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
-
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
-
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
-
-#     # Verifies the Performance Metrics section is visible and contains the expected content
-#     # Now instantiate the D&O page object and get metrics
-#     products_page = Public_Company_Products(page, base_url)
-#     performance_metrics = products_page.get_performance_metrics()
-
-#     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
-#     assert performance_metrics["first_contentful_paint"] < 2000, f"Expected FCP < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
-#     if performance_metrics["largest_contentful_paint"] is not None:
-#         assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected LCP < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
-#     else:
-#         print("Warning: LCP metric not available in headless mode")
-#     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+    # Clicks on the Contact Us button to verify it is clickable and navigates to the correct page
+    Public_Company_Products(page, base_url).verify_contact_us_button()
 
 
-# """TC-09: Verify Accessibility Checks"""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_products_page
-# def test_accessibility_checks_products_page(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-08: Verify Performance Metrics"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_performance_metrics_products_page(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Products link to navigate to the public companies nav bar dropdown
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Products link to navigate to the products page
-#     Public_Company_Products(page, base_url).navigate_to_products_page()
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Performs accessibility checks on the products page using Axe
-#     # Instantiate the products page object and run accessibility audit
-#     products_page = Public_Company_Products(page, base_url)
-#     page.wait_for_load_state("networkidle")
+    # Verifies the Performance Metrics section is visible and contains the expected content
+    # Now instantiate the D&O page object and get metrics
+    products_page = Public_Company_Products(page, base_url)
+    performance_metrics = products_page.get_performance_metrics()
 
-#     # Run axe-core accessibility checks
-#     results = Axe().run(page)
+    assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
+    assert performance_metrics["first_contentful_paint"] < 2000, f"Expected FCP < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
+    if performance_metrics["largest_contentful_paint"] is not None:
+        assert performance_metrics["largest_contentful_paint"] < 2500, f"Expected LCP < 2500ms, got: {performance_metrics['largest_contentful_paint']}ms"
+    else:
+        print("Warning: LCP metric not available in headless mode")
+    assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
-#     violations = results.response["violations"]
-#     passes = results.response["passes"]
-#     incomplete = results.response.get("incomplete", [])
 
-#     # Print summary
-#     print(f"\n♿ Accessibility Results — Public Companies Products Page")
-#     print(f"   Violations:  {len(violations)}")
-#     print(f"   Passes:      {len(passes)}")
-#     print(f"   Incomplete:  {len(incomplete)}")
+"""TC-09: Verify Accessibility Checks"""
+@pytest.mark.ui
+@pytest.mark.public_companies_products_page
+def test_accessibility_checks_products_page(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Print each violation with details
-#     for v in violations:
-#         print(f"\n   ❌ {v['id']} — {v['description']}")
-#         print(f"      Impact: {v['impact']}")
-#         print(f"      Help:   {v['helpUrl']}")
+    # Clicks on the Products link to navigate to the public companies nav bar dropdown
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Known existing violations on the site — documented but outside QA scope
-#     known_violations = {"color-contrast", "input-button-name", "link-name"}
-#     skipped = [v for v in violations if v["id"] in known_violations]
-#     print(f"\n   ⚠️  Known existing violations skipped ({len(skipped)}):")
-#     for v in skipped:
-#         print(f"      - {v['id']} ({v['impact']})")
+    # Clicks on the Products link to navigate to the products page
+    Public_Company_Products(page, base_url).navigate_to_products_page()
 
-#     # Only fail on NEW critical/serious violations not already known
-#     critical_violations = [
-#         v for v in violations
-#         if v["impact"] in ("critical", "serious")
-#         and v["id"] not in known_violations
-#     ]
+    # Performs accessibility checks on the products page using Axe
+    # Instantiate the products page object and run accessibility audit
+    products_page = Public_Company_Products(page, base_url)
+    page.wait_for_load_state("networkidle")
 
-#     assert len(critical_violations) == 0, (
-#         f"\nFound {len(critical_violations)} new critical/serious violation(s):\n"
-#         + "\n".join(f"  - {v['id']} ({v['impact']}): {v['description']}" for v in critical_violations)
-#     )
+    # Run axe-core accessibility checks
+    results = Axe().run(page)
 
-#     print(f"\n✅ Accessibility check passed — no new critical/serious violations found")
+    violations = results.response["violations"]
+    passes = results.response["passes"]
+    incomplete = results.response.get("incomplete", [])
+
+    # Print summary
+    print(f"\n♿ Accessibility Results — Public Companies Products Page")
+    print(f"   Violations:  {len(violations)}")
+    print(f"   Passes:      {len(passes)}")
+    print(f"   Incomplete:  {len(incomplete)}")
+
+    # Print each violation with details
+    for v in violations:
+        print(f"\n   ❌ {v['id']} — {v['description']}")
+        print(f"      Impact: {v['impact']}")
+        print(f"      Help:   {v['helpUrl']}")
+
+    # Known existing violations on the site — documented but outside QA scope
+    known_violations = {"color-contrast", "input-button-name", "link-name"}
+    skipped = [v for v in violations if v["id"] in known_violations]
+    print(f"\n   ⚠️  Known existing violations skipped ({len(skipped)}):")
+    for v in skipped:
+        print(f"      - {v['id']} ({v['impact']})")
+
+    # Only fail on NEW critical/serious violations not already known
+    critical_violations = [
+        v for v in violations
+        if v["impact"] in ("critical", "serious")
+        and v["id"] not in known_violations
+    ]
+
+    assert len(critical_violations) == 0, (
+        f"\nFound {len(critical_violations)} new critical/serious violation(s):\n"
+        + "\n".join(f"  - {v['id']} ({v['impact']}): {v['description']}" for v in critical_violations)
+    )
+
+    print(f"\n✅ Accessibility check passed — no new critical/serious violations found")
