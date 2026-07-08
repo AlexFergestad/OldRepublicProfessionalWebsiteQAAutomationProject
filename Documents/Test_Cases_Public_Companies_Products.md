@@ -198,4 +198,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_contact_us_button`)
+**Automated**: Yes (`tests/test_public_companies_products.py::test_accessibility_checks_products_page`)
