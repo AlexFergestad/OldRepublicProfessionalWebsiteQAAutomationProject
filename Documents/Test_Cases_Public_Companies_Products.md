@@ -177,7 +177,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_performance_metrics_products_page`)
 
-# TC-009: Verify 
+# TC-009: Verify Accessibility Checks
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
