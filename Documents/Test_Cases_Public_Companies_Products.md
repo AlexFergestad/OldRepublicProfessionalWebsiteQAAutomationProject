@@ -188,8 +188,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Products".
 3. Wait for page to fully load.
-4. Click on the "Contact Us" button/link.
-5. Verify that the url (after clicking) matches the expected url.
+4. Record the accessibility metrics.
 
 ### Expected Result:
 - Page loads without any errors.
