@@ -23,4 +23,9 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-01: Verify that the public companies excess liability page loads correctly and has the correct URL when accessed from the home page."""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_liability
-def test_public_companies_excess_liability_page_loads_correctly(page: Page):
+def test_public_companies_excess_liability_page_loads_correctly(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
+
+    # Clicks on the Public Companies menu item to navigate to the products page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
