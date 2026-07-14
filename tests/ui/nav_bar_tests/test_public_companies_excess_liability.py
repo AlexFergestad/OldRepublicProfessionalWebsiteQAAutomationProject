@@ -31,4 +31,4 @@ def test_public_companies_excess_liability_page_loads_correctly(page: Page, base
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Excess Liability link to navigate to the excess liability page
-    
+    Public_Company_Dando_Liability(page, base_url).navigate_to_excess_liability_page()
