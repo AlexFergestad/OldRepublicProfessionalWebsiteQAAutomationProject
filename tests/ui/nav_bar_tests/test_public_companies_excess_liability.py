@@ -34,5 +34,6 @@ def test_public_companies_excess_liability_page_loads_correctly(page: Page, base
     Public_Company_Dando_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies that the page has loaded correctly by checking the URL and the page title
+    page.wait_for_load_state("networkidle")
 
-    
+
