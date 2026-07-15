@@ -7,7 +7,7 @@ class Public_Company_Excess_Liability:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.base_url = base_url
-        self.
+        self.excess_liability_page = page.locator("#hs_menu_wrapper
         
 
     def navigate_to_excess_liability_page(self):
