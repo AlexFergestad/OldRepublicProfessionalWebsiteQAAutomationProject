@@ -14,3 +14,5 @@ class Public_Company_Excess_Liability:
         self.excess_liability_page.click()
         self.page.wait_for_load_state("networkidle")
         self.excess_liability_page.click()
+
+        
