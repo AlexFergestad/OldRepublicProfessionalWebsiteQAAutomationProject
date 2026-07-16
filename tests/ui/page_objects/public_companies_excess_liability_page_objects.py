@@ -7,7 +7,8 @@ class Public_Company_Excess_Liability:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.base_url = base_url
-        self.excess_liability_page = page.get_by_role("menuitem", name="Excess Liability")
+        self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
+        self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
         
 
     def navigate_to_excess_liability_page(self):
