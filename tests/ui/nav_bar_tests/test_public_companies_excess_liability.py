@@ -39,3 +39,4 @@ def test_public_companies_excess_liability_page_loads_correctly(page: Page, base
 
 
 """TC-02: Verify that the public companies excess liability page has the correct title."""
+@pytest.mark.ui
