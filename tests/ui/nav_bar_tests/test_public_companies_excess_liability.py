@@ -38,4 +38,4 @@ def test_public_companies_excess_liability_page_loads_correctly(page: Page, base
     page.wait_for_load_state("networkidle")
 
 
-"""TC-02:"""
+"""TC-02: Verify that the public companies excess liability page has the correct title."""
