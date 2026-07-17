@@ -53,3 +53,4 @@ def test_public_companies_excess_liability_page_title(page: Page, base_url):
 
     # Verifies the title of the page is correct
     Public_Company_Excess_Liability(page, base_url).verify_excess_liability_h1()
+
