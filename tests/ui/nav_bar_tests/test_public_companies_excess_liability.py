@@ -54,3 +54,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies the title of the page is correct
 #     Public_Company_Excess_Liability(page, base_url).verify_excess_liability_h1()
 
+"""TC-03: Verify the H1 paragraph underneath has the correct text."""
