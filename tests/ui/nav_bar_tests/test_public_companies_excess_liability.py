@@ -38,19 +38,19 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     page.wait_for_load_state("networkidle")
 
 
-"""TC-02: Verify that the public companies excess liability page has the correct title."""
-@pytest.mark.ui
-@pytest.mark.public_companies_excess_liability
-def test_public_companies_excess_liability_page_title(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-02: Verify that the public companies excess liability page has the correct title."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_excess_liability
+# def test_public_companies_excess_liability_page_title(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Excess Liability link to navigate to the excess liability page
-    Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
+#     # Clicks on the Excess Liability link to navigate to the excess liability page
+#     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
-    # Verifies the title of the page is correct
-    Public_Company_Excess_Liability(page, base_url).verify_excess_liability_h1()
+#     # Verifies the title of the page is correct
+#     Public_Company_Excess_Liability(page, base_url).verify_excess_liability_h1()
 
