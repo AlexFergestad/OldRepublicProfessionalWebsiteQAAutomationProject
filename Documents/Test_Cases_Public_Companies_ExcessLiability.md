@@ -36,6 +36,7 @@
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Excess Liability".
+- The H1 title says "Excess D&O and Excess Plus™".
 
 ### Actual Result:
 **Status**: ✅ Pass
