@@ -1,6 +1,6 @@
 # Test Cases Public Companies Excess Liability File
 
-# TC-001: Verify that the public companies excess liability page loads correctly and has the correct URL when accessed from the home page.
+# TC-001: Verify that the public companies excess liability page loads correctly and has the correct URL when accessed from the home page
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -20,4 +20,4 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_loads_correctly`)
 
-# TC-002: 
+# TC-002: Verify that the public companies excess liability page has the correct title
