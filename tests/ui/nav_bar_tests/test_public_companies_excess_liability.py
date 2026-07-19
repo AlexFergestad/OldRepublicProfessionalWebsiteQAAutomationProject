@@ -57,3 +57,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-03: Verify the H1 paragraph underneath has the correct text."""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_liability
+def test_public_companies_excess_liability_page_title_paragraph(page: Page, base_url):
