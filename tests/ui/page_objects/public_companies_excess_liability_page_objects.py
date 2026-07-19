@@ -9,10 +9,10 @@ class Public_Company_Excess_Liability:
         self.base_url = base_url
         self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
         self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
-        
+
 
     def navigate_to_excess_liability_page(self):
         self.excess_liability_page.click()
         self.page.wait_for_load_state("networkidle")
 
-
+    def
