@@ -1,6 +1,6 @@
 # Test Cases Public Companies Products File
 
-# TC-001: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page.
+# TC-001: Verify that the public companies products page loads correctly and has the correct URL when accessed from the home page
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
