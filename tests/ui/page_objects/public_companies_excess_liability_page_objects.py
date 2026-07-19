@@ -15,4 +15,4 @@ class Public_Company_Excess_Liability:
         self.excess_liability_page.click()
         self.page.wait_for_load_state("networkidle")
 
-    def
+    def verify_excess_liability_h1(self)
