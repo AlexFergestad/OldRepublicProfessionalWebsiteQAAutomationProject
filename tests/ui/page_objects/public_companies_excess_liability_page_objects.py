@@ -11,6 +11,7 @@ class Public_Company_Excess_Liability:
         self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
 
         self.h1 = page.locator("h1").first
+        self.h1_paragraph = 
 
 
     def navigate_to_excess_liability_page(self):
@@ -22,4 +23,4 @@ class Public_Company_Excess_Liability:
         self.page.wait_for_load_state("networkidle")
 
     def verify_h1_paragraph(self):
-        
+
