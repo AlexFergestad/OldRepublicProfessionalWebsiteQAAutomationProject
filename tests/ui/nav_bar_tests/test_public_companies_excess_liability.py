@@ -68,3 +68,4 @@ def test_public_companies_excess_liability_page_title_paragraph(page: Page, base
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     Public_Company_Excess_Liability(page, base_url).verify_h1_paragraph()
+
