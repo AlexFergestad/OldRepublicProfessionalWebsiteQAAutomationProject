@@ -11,7 +11,7 @@ class Public_Company_Excess_Liability:
         self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
 
         self.h1 = page.locator("h1").first
-        self.h1_paragraph = page.locator()
+        self.h1_paragraph = page.locator("h1 + p")
 
 
     def navigate_to_excess_liability_page(self):
