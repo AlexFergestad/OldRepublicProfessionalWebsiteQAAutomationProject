@@ -44,7 +44,7 @@
 
 
 
-# TC-002: Verify that the public companies excess liability page has the correct title
+# TC-002: Verify 
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
