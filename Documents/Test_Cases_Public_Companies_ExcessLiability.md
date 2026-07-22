@@ -44,7 +44,7 @@
 
 
 
-# TC-002: Verify 
+# TC-003: Verify the H1 paragraph underneath has the correct text
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
