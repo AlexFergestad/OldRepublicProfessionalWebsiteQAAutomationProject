@@ -60,7 +60,7 @@
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Excess Liability".
-- The H1 title says "Excess D&O and Excess Plus™".
+- The H1 title says "Intended to follow the underlying policy(s) in a layered program, excess policies are the building blocks that make up the towers of D&O and other Management Liability protection. ORUG-91 is our excess policy form for public company and private company policyholders".
 
 ### Actual Result:
 **Status**: ✅ Pass
