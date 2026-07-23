@@ -72,4 +72,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-04: Verify policy features and bullet points underneath."""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_liability
-def 
+def test_policy_features_and_bullet_points_underneath(page: Page, base_url):
+    
