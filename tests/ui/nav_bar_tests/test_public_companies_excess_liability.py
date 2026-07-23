@@ -71,3 +71,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-04: Verify the H1 paragraph underneath has the correct text."""
 @pytest.mark.ui
+@pytest.mark.public_companies_excess_liability
