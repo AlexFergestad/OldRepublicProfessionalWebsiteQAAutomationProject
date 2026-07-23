@@ -69,3 +69,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 #     Public_Company_Excess_Liability(page, base_url).verify_h1_paragraph()
 
+"""TC-04: Verify the H1 paragraph underneath has the correct text."""
