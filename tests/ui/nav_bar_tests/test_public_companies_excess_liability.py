@@ -67,6 +67,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on the Excess Liability link to navigate to the excess liability page
 #     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
+      # Verifies the h1 paragraph
 #     Public_Company_Excess_Liability(page, base_url).verify_h1_paragraph()
 
 """TC-04: Verify policy features and bullet points underneath."""
