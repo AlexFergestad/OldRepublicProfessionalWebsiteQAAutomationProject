@@ -26,4 +26,4 @@ class Public_Company_Excess_Liability:
         expect(self.h1_paragraph).to_be_visible(timeout=5000)
         self.page.wait_for_load_state("networkidle")
 
-    def 
+    def verify_policy_features
