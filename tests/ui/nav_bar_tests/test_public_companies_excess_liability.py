@@ -84,6 +84,6 @@ def test_policy_features_and_bullet_points_underneath(page: Page, base_url):
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies policy features and the bullet points undereath
-    Public_Company_Excess_Liability(page, base_url).verify_policy_features
+    Public_Company_Excess_Liability(page, base_url).verify_policy_features()
 
     
