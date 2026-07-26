@@ -10,7 +10,7 @@ class Public_Company_Excess_Liability:
         self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
         self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
         self.policy_features = page.locator("h2").first
-        self.policy_features_bullet_point_top = 
+        self.policy_features_bullet_point_top = page.locator()
 
         self.h1 = page.locator("h1").first
         self.h1_paragraph = page.locator("h1 + p")
