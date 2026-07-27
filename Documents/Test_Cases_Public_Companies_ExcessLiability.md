@@ -79,10 +79,10 @@
 2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
 3. Wait for page to fully load.
 4. Verify that the  policy features title is correct and the bullet points underneath include:
-    -  "".
-    - "".
-    - "".
-    - "".
+    -  "One-page".
+    - "Market-leading erosion language".
+    - "Shareholder Derivative Demand Investigations".
+    - "Excess Flex™".
 
 ### Expected Result:
 - Page loads without any errors.
