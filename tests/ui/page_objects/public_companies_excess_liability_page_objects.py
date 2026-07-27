@@ -31,13 +31,13 @@ class Public_Company_Excess_Liability:
     def verify_policy_features(self):
         expect(self.policy_features).to_be_visible(timeout=5000)
 
-    bullet_point_texts = [
-        "One-page",
-        "Market-leading erosion language",
-        "Shareholder Derivative Demand Investigations",
-        "Excess Flex™"
-    ]
+        bullet_point_texts = [
+            "One-page",
+            "Market-leading erosion language",
+            "Shareholder Derivative Demand Investigations",
+            "Excess Flex™"
+        ]
 
-    for text in bullet_point_texts:
-        expect(self.policy_features_list).to_contain_text(text)
+        for text in bullet_point_texts:
+            expect(self.policy_features_list).to_contain_text(text)
 
