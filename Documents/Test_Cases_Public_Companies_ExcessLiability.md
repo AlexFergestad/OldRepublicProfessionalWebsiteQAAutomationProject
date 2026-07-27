@@ -67,3 +67,26 @@
 **Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_title_paragraph`)
 
 
+# TC-004: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
+3. Wait for page to fully load.
+4. Verify that the h1 paragraph says "Intended to follow the underlying policy(s) in a layered program, excess policies are the building blocks that make up the towers of D&O and other Management Liability protection. ORUG-91 is our excess policy form for public company and private company policyholders".
+
+### Expected Result:
+- Page loads without any errors.
+- You are able to hover over the public companies text in the nav bar and click on "Excess Liability".
+- The H1 title says "Intended to follow the underlying policy(s) in a layered program, excess policies are the building blocks that make up the towers of D&O and other Management Liability protection. ORUG-91 is our excess policy form for public company and private company policyholders".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_title_paragraph`)
+
+
