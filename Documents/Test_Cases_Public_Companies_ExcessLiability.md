@@ -78,7 +78,11 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
 3. Wait for page to fully load.
-4. Verify that the h1 paragraph says "Intended to follow the underlying policy(s) in a layered program, excess policies are the building blocks that make up the towers of D&O and other Management Liability protection. ORUG-91 is our excess policy form for public company and private company policyholders".
+4. Verify that the  policy features title is correct and the bullet points underneath include:
+    -  "".
+    - "".
+    - "".
+    - "".
 
 ### Expected Result:
 - Page loads without any errors.
