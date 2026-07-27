@@ -30,3 +30,23 @@ class Public_Company_Excess_Liability:
 
     def verify_policy_features(self):
         expect(self.policy_features).to_be_visible(timeout=5000)
+        # Grab text once — used for both assertions and return value
+        content = self.policy_features.text_content()
+                
+        # Verify key facts in first paragraph
+        key_facts = [
+            "Directors and Officers liability insurance",
+            "40 years",
+            "NASDAQ 100 Index",
+            "60 percent of the NASDAQ Biotechnology Index"
+        ]
+                
+        for fact in key_facts:
+            assert fact in content, (
+                 f"\nKey fact not found: '{fact}'\n"
+                f"Content says instead:\n  '{content[:200]}...'"
+            )
+                
+        print(f"✅ Overview paragraphs verified ({len(paragraphs)} paragraphs, {len(key_facts)} key facts)")
+                
+        return paragraphs
