@@ -88,5 +88,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Excess_Liability(page, base_url).verify_policy_features()
 
 
-"""TC-05: Verify """
+"""TC-05: Verify Capacity, Attachment, Eligibility, are correct and that the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page."""
     
