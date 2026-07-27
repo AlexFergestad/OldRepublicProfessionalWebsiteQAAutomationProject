@@ -32,22 +32,19 @@ class Public_Company_Excess_Liability:
         expect(self.policy_features).to_be_visible(timeout=5000)
 
         # Grab text once — used for both assertions and return value
-        content = self.policy_features.text_content()
+        policy_features_bullet_points = self.policy_features.text_content()
                 
-        # Verify key facts in first paragraph
-        key_facts = [
+        # Verify policy features bullet points
+        self.bullet_points_texts = [
             "One-page",
             "Market-leading erosion language",
             "Shareholder Derivative Demand Investigations",
             "Excess Flex™"
         ]
                 
-        for fact in key_facts:
-            assert fact in content, (
+        for fact in policy_features_bullet_points:
+            assert fact in policy_features_bullet_points, (
                  f"\nKey fact not found: '{fact}'\n"
-                f"Content says instead:\n  '{content[:200]}...'"
+                f"Content says instead:\n  '{policy_features_bullet_points[:200]}...'"
             )
-                
-        print(f"✅ Overview paragraphs verified ({len(paragraphs)} paragraphs, {len(key_facts)} key facts)")
-                
-        return paragraphs
+
