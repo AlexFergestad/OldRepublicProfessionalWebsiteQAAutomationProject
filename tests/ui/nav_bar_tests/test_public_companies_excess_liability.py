@@ -14,7 +14,7 @@ from tests.ui.page_objects.public_companies_excess_liability_page_objects import
 """
 
 Public Companies Excess Liability Page UI Tests
-Test Cases: TC-001, TC-002, TC-003. TC-004
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005
 
 * This page verifies the Excess Liability page of the Old Republic Professional website loads correctly, 
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
@@ -88,5 +88,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Excess_Liability(page, base_url).verify_policy_features()
 
 
-"""TC-05:"""
+"""TC-05: """
     
