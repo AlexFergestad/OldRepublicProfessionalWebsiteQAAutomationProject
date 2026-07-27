@@ -9,7 +9,7 @@ class Public_Company_Excess_Liability:
         self.base_url = base_url
         self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
         self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
-        self.policy_features = page.locator("h2").first
+        self.policy_features_list = page.locator("h2").filter(has_text="Policy features").locator("xpath=following-sibling::ul[1]")
         # self.policy_features_bullet_point_top = page.locator()
 
         self.h1 = page.locator("h1").first
@@ -31,20 +31,13 @@ class Public_Company_Excess_Liability:
     def verify_policy_features(self):
         expect(self.policy_features).to_be_visible(timeout=5000)
 
-        # Grab text once — used for both assertions and return value
-        policy_features_bullet_points = self.policy_features.text_content()
-                
-        # Verify policy features bullet points
-        self.bullet_points_texts = [
-            "One-page",
-            "Market-leading erosion language",
-            "Shareholder Derivative Demand Investigations",
-            "Excess Flex™"
-        ]
-                
-        for text in policy_features_bullet_points:
-            assert text in policy_features_bullet_points, (
-                 f"\nPolicy features bullet point text not found: '{text}'\n"
-                f"Content says instead:\n  '{policy_features_bullet_points[:200]}...'"
-            )
+    bullet_point_texts = [
+        "One-page",
+        "Market-leading erosion language",
+        "Shareholder Derivative Demand Investigations",
+        "Excess Flex™"
+    ]
+
+    for text in bullet_point_texts:
+        expect(self.policy_features_list).to_contain_text(text)
 
