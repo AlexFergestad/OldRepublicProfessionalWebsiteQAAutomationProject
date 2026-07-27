@@ -18,7 +18,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_loads_correctly`)
+**Automated**: Yes (`tests/test_public_companies_excess_liabilit.py::test_public_companies_excess_liability_page_loads_correctly`)
 
 # TC-002: Verify that the public companies excess liability page has the correct title
 **Priority**: High
@@ -40,7 +40,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_title`)
+**Automated**: Yes (`tests/test_public_companies_excess_liabilit.py::test_public_companies_excess_liability_page_title`)
 
 
 
@@ -64,7 +64,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_title_paragraph`)
+**Automated**: Yes (`tests/test_public_companies_excess_liabilit.py::test_public_companies_excess_liability_page_title_paragraph`)
 
 
 # TC-004: Verify 
@@ -87,6 +87,6 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_products.py::test_public_companies_excess_liability_page_title_paragraph`)
+**Automated**: Yes (`tests/test_public_companies_excess_liability.py::test_policy_features_and_bullet_points_underneath`)
 
 
