@@ -42,9 +42,9 @@ class Public_Company_Excess_Liability:
             "Excess Flex™"
         ]
                 
-        for fact in policy_features_bullet_points:
-            assert fact in policy_features_bullet_points, (
-                 f"\nKey fact not found: '{fact}'\n"
+        for text in policy_features_bullet_points:
+            assert text in policy_features_bullet_points, (
+                 f"\nPolicy features bullet point text not found: '{text}'\n"
                 f"Content says instead:\n  '{policy_features_bullet_points[:200]}...'"
             )
 
