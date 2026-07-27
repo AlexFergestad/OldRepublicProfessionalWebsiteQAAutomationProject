@@ -74,6 +74,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_liability
 def test_policy_features_and_bullet_points_underneath(page: Page, base_url):
+    
     # Goes to the home page first
     page.goto(base_url)
 
@@ -85,5 +86,7 @@ def test_policy_features_and_bullet_points_underneath(page: Page, base_url):
 
     # Verifies policy features and the bullet points undereath
     Public_Company_Excess_Liability(page, base_url).verify_policy_features()
+
+    
 
     
