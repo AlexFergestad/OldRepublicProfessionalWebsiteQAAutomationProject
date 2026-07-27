@@ -67,7 +67,7 @@
 **Automated**: Yes (`tests/test_public_companies_excess_liabilit.py::test_public_companies_excess_liability_page_title_paragraph`)
 
 
-# TC-004: Verify policy features and bullet points underneath.
+# TC-004: Verify policy features and bullet points underneath
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
