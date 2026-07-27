@@ -9,6 +9,7 @@ class Public_Company_Excess_Liability:
         self.base_url = base_url
         self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
         self.excess_liability_page = self.header_nav.get_by_role("menuitem", name="Excess Liability")
+        self.policy_features = page.locator("h2").filter(has_text="Policy features")
         self.policy_features_list = page.locator("h2").filter(has_text="Policy features").locator("xpath=following-sibling::ul[1]")
         # self.policy_features_bullet_point_top = page.locator()
 
