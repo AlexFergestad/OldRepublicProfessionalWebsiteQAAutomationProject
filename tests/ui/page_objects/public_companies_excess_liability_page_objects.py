@@ -30,6 +30,7 @@ class Public_Company_Excess_Liability:
 
     def verify_policy_features(self):
         expect(self.policy_features).to_be_visible(timeout=5000)
+        
         # Grab text once — used for both assertions and return value
         content = self.policy_features.text_content()
                 
