@@ -91,6 +91,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-05: Verify Capacity, Attachment, Eligibility, are correct and that the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page."""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_liability
-def test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button():
+def test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button(page: Page, base_url):
+
     # Goes to the home page first
     page.goto(base_url)
