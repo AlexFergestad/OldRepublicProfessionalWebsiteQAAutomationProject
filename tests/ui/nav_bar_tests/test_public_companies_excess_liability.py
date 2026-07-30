@@ -102,4 +102,4 @@ def test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button(p
     # Clicks on the Excess Liability link to navigate to the excess liability page
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
-    
+    # Clicks on Capacity
