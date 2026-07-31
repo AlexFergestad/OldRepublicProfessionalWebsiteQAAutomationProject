@@ -43,5 +43,5 @@ class Public_Company_Excess_Liability:
             expect(self.policy_features_list).to_contain_text(text)
 
 
-    def verify_
+    def verify_capacity_attachment_eligibility_and_download_button
 
