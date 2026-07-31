@@ -103,5 +103,5 @@ def test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button(p
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Clicks on Capacity, Attachment, Eligibility, and the 'Download Excess D&O Sell Sheet' button
-
+    Public_Company_Excess_Liability(page, base_url)
     
