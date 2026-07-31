@@ -43,5 +43,5 @@ class Public_Company_Excess_Liability:
             expect(self.policy_features_list).to_contain_text(text)
 
 
-    def
+    def verify_
 
