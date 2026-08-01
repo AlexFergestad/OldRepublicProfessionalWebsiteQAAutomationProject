@@ -45,5 +45,5 @@ class Public_Company_Excess_Liability:
 
 
     def verify_capacity_attachment_eligibility_and_download_button():
-        expect()
+        expect(self.capacity).to_be_visible(timeout=5000)
 
