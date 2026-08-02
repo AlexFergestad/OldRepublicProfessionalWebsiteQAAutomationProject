@@ -17,7 +17,7 @@ class Public_Company_Excess_Liability:
         self.h1_paragraph = page.locator("h1 + p")
         self.capacity = page.locator("p").filter(has_text="Capacity:")
         self.attachment = page.locator("p").filter(has_text="Attachment:")
-        self.eligibility = 
+        self.eligibility = page.locator("p").filter(has_text="Eligibility:")
 
     def navigate_to_excess_liability_page(self):
         self.excess_liability_page.click()
