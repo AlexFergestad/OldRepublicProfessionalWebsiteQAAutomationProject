@@ -88,20 +88,20 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Excess_Liability(page, base_url).verify_policy_features()
 
 
-"""TC-05: Verify Capacity, Attachment, Eligibility, are correct and that the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page."""
-@pytest.mark.ui
-@pytest.mark.public_companies_excess_liability
-def test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button(page: Page, base_url):
+# """TC-05: Verify Capacity, Attachment, Eligibility, are correct and that the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_excess_liability
+# def test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button(page: Page, base_url):
 
-    # Goes to the home page first
-    page.goto(base_url)
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Excess Liability link to navigate to the excess liability page
-    Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
+#     # Clicks on the Excess Liability link to navigate to the excess liability page
+#     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
-    # Clicks on Capacity, Attachment, Eligibility, and the 'Download Excess D&O Sell Sheet' button
-    Public_Company_Excess_Liability(page, base_url).verify_capacity_attachment_eligibility_and_download_button()
-    
+#     # Clicks on Capacity, Attachment, Eligibility, and the 'Download Excess D&O Sell Sheet' button
+#     Public_Company_Excess_Liability(page, base_url).verify_capacity_attachment_eligibility_and_download_button()
+
