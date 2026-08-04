@@ -52,8 +52,10 @@ class Public_Company_Excess_Liability:
         expect(self.download_excess_do_sell_sheet).to_be_visible(timeout=5000)
         self.download_excess_do_sell_sheet.click()
 
+        self.page.wait_for_timeout(2000)
+
         # verify the url matches the expected url
-        expected_url = f"{self.base_url}/wp-content/uploads/2023/09/Excess-D-and-O-Sell-Sheet.pdf"
+        expected_url = "https://www.oldrepublicpro.com/hubfs/2025%20Sell%20Sheets/Excess%20Mgmt%20Liability%20Sell%20Sheet.pdf"
 
         current_url = self.page.url
 
