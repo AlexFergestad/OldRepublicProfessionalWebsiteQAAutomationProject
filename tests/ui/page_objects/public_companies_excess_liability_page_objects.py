@@ -51,5 +51,12 @@ class Public_Company_Excess_Liability:
         expect(self.eligibility).to_be_visible(timeout=5000)
         expect(self.download_excess_do_sell_sheet).to_be_visible(timeout=5000)
         self.download_excess_do_sell_sheet.click()
+
+        # verify the url matches the expected url
+        expected_url = f"{self.base_url}/wp-content/uploads/2023/09/Excess-D-and-O-Sell-Sheet.pdf"
+
+        current_url = self.page.url
+
+        assert current_url == expected_url, f"Expected URL: {expected_url}, but got: {current_url}"
         self.page.wait_for_timeout(5000)
         
