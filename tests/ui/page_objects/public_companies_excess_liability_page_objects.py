@@ -52,5 +52,4 @@ class Public_Company_Excess_Liability:
         expect(self.download_excess_do_sell_sheet).to_be_visible(timeout=5000)
         self.download_excess_do_sell_sheet.click()
         self.page.wait_for_timeout(5000)
-
         
