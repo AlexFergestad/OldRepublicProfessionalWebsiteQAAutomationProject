@@ -54,11 +54,11 @@ class Public_Company_Excess_Liability:
 
         self.page.wait_for_timeout(2000)
 
-        # verify the url matches the expected url
+        with self.page.context.expect_page() as new_page_info:
+            self.download_excess_do_sell_sheet.click()
+    
+        new_page = new_page_info.value
+        new_page.wait_for_load_state("networkidle")
+
         expected_url = "https://www.oldrepublicpro.com/hubfs/2025%20Sell%20Sheets/Excess%20Mgmt%20Liability%20Sell%20Sheet.pdf"
-
-        current_url = self.page.url
-
-        assert current_url == expected_url, f"Expected URL: {expected_url}, but got: {current_url}"
-        self.page.wait_for_timeout(5000)
-        
+        assert new_page.url == expected_url, f"Expected URL: {expected_url}, but got: {new_page.url}"
