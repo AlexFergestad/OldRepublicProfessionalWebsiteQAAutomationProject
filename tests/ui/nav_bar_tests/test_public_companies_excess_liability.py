@@ -105,4 +105,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on Capacity, Attachment, Eligibility, and the 'Download Excess D&O Sell Sheet' button
 #     Public_Company_Excess_Liability(page, base_url).verify_capacity_attachment_eligibility_and_download_button()
 
-"""TC-06: Verify """
+"""TC-06: Verify Our Excess Plus™ Endorsement Link and Paragraph Underneath."""
