@@ -94,3 +94,4 @@
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py::test_policy_features_and_bullet_points_underneath`)
 
 
+Verify Capacity, Attachment, Eligibility, are correct and that the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page.
