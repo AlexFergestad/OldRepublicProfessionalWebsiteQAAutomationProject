@@ -95,4 +95,6 @@
 
 
 # TC-005: Verify Capacity, Attachment, Eligibility, are correct and that the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page.
-
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:  
