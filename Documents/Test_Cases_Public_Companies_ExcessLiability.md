@@ -110,3 +110,6 @@
 - Verify "Capacity", "Attachment", "Eligibility" sections display correct.
 - Verify the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page.
 
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button`)
