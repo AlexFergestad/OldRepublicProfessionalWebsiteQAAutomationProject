@@ -129,4 +129,4 @@
 
 ## Expected Result:
 - Verify "Capacity", "Attachment", "Eligibility" sections display correct.
-- Verify the 'Download Excess D&O Sell Sheet' button is clickable/navigates to the correct page.
+- Verify the 'Excess Plus™ Endorsement' Link and the Paragraph underneath work as expected.
