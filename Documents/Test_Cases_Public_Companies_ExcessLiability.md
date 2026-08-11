@@ -115,4 +115,6 @@
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_capacity_attachment_eligibility_and_download_excess_sell_sheet_button`)
 
 # TC-006: Verify Our Excess Plus™ Endorsement Link and Paragraph Underneath.
-
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:  
