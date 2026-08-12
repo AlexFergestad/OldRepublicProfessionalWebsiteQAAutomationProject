@@ -18,8 +18,7 @@ class Public_Company_Excess_Liability:
         self.attachment = page.locator("p").filter(has_text="Attachment:")
         self.eligibility = page.locator("p").filter(has_text="Eligibility:")
         self.download_excess_do_sell_sheet = page.get_by_role("link", name="Download Excess D&O Sell Sheet")
-        self.our_excess_plus_endorsement = page
-
+        self.our_excess_plus_endorsement = page.get_by_role("link", name="Our Excess Plus™ Endorsement")
     def navigate_to_excess_liability_page(self):
         self.excess_liability_page.click()
         self.page.wait_for_load_state("networkidle")
