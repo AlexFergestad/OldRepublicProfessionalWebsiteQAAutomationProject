@@ -68,4 +68,4 @@ class Public_Company_Excess_Liability:
 
     def verify_our_eccess_plus_endorsement_link_and_paragraph(self):
         expect(self.our_excess_plus_endorsement).to_be_visible(timeout=5000)
-
+        expect(self.our_excess_plus_endorsement_paragraph).to_be_visible(timeout=5000)
