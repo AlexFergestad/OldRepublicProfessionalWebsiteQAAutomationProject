@@ -19,7 +19,7 @@ class Public_Company_Excess_Liability:
         self.eligibility = page.locator("p").filter(has_text="Eligibility:")
         self.download_excess_do_sell_sheet = page.get_by_role("link", name="Download Excess D&O Sell Sheet")
         self.our_excess_plus_endorsement = page.get_by_role("link", name="Our Excess Plus™ Endorsement")
-        self.our_excess_plus_endorsement_paragraph = page.locator("p").filter(has_text="Our Excess Plus™ Endorsement")
+        self.our_excess_plus_endorsement_paragraph = page.locator("h3").filter(has_text="Our Excess Plus™ Endorsement").locator("xpath=following-sibling::p[1]")
 
 
     def navigate_to_excess_liability_page(self):
