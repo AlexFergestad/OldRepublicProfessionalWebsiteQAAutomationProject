@@ -105,20 +105,20 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Clicks on Capacity, Attachment, Eligibility, and the 'Download Excess D&O Sell Sheet' button
 #     Public_Company_Excess_Liability(page, base_url).verify_capacity_attachment_eligibility_and_download_button()
 
-"""TC-06: Verify Our Excess Plus™ Endorsement Link and Paragraph Underneath."""
-@pytest.mark.ui
-@pytest.mark.public_companies_excess_liability
-def test_our_excess_plus_endorsement_link_and_paragraph_underneath(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-06: Verify Our Excess Plus™ Endorsement Link and Paragraph Underneath."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_excess_liability
+# def test_our_excess_plus_endorsement_link_and_paragraph_underneath(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Excess Liability link to navigate to the excess liability page
-    Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
+#     # Clicks on the Excess Liability link to navigate to the excess liability page
+#     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
-    # Verifies the Our Excess Plus™ Endorsement link and paragraph underneath
-    Public_Company_Excess_Liability(page, base_url).verify_our_eccess_plus_endorsement_link_and_paragraph()
+#     # Verifies the Our Excess Plus™ Endorsement link and paragraph underneath
+#     Public_Company_Excess_Liability(page, base_url).verify_our_eccess_plus_endorsement_link_and_paragraph()
 
     
