@@ -124,6 +124,6 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-07: Verify ."""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_liability
-def test_our_excess_plus_endorsement_link_and_paragraph_underneath(page: Page, base_url):
+def test_h(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
