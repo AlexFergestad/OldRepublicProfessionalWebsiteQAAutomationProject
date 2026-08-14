@@ -135,3 +135,4 @@ def test_how_excess_plus_works_and_bullet_points_underneath(page: Page, base_url
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies the How Excess Plus™ Works and Bullet Points Underneath
+    Public_Company_Excess_Liability(page, base_url).verify_how_excess_plus_works_and_bullet_points()
