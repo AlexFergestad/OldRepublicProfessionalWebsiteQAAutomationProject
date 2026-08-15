@@ -147,3 +147,6 @@
 2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
 3. Wait for page to fully load.
 
+## Expected Result:
+- Verify "Capacity", "Attachment", "Eligibility" sections display correct.
+- Verify the 'Excess Plus™ Endorsement' Link and the Paragraph underneath work as expected.
