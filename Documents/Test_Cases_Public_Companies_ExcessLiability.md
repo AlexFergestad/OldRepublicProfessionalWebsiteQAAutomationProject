@@ -142,3 +142,7 @@
 - Have a computer/laptop connected to the internet.
 - Be on a common web browser such as Chrome, Edge, FireFox, Safari.
 
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
+3. Wait for page to fully load.
