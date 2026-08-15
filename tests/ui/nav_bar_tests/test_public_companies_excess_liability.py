@@ -143,3 +143,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 def test_excess_plus_benefits_and_bullet_points_underneath(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
+
+    
