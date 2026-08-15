@@ -149,5 +149,5 @@
 
 ## Expected Result:
 - Verify "How Excess Plus™ Works" section display correct.
-- Verify the 'Excess Plus™ Endorsement' Link and the Paragraph underneath work as expected.
+- Verify the Paragraph underneath work as expected.
 
