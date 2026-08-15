@@ -136,3 +136,5 @@
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_our_excess_plus_endorsement_link_and_paragraph_underneath`)
 
 # TC-007: Verify How Excess Plus™ Works and Bullet Points Underneath.
+**Priority**: High
+**Type**: Functional/Smoke
