@@ -138,3 +138,6 @@
 # TC-007: Verify How Excess Plus™ Works and Bullet Points Underneath.
 **Priority**: High
 **Type**: Functional/Smoke
+**Preconditions**:  
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
