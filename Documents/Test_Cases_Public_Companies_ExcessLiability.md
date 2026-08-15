@@ -148,5 +148,6 @@
 3. Wait for page to fully load.
 
 ## Expected Result:
-- Verify "Capacity", "Attachment", "Eligibility" sections display correct.
+- Verify "How Excess Plus™ Works" section display correct.
 - Verify the 'Excess Plus™ Endorsement' Link and the Paragraph underneath work as expected.
+
