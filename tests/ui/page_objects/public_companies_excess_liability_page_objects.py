@@ -60,19 +60,20 @@ class Public_Company_Excess_Liability:
 
         with self.page.context.expect_page() as new_page_info:
             self.download_excess_do_sell_sheet.click()
-    
+
         new_page = new_page_info.value
         new_page.wait_for_load_state("networkidle")
 
         expected_url = "https://www.oldrepublicpro.com/hubfs/2025%20Sell%20Sheets/Excess%20Mgmt%20Liability%20Sell%20Sheet.pdf"
         assert new_page.url == expected_url, f"Expected URL: {expected_url}, but got: {new_page.url}"
 
-    def verify_our_eccess_plus_endorsement_link_and_paragraph(self):
+    def verify_our_excess_plus_endorsement_link_and_paragraph(self):
         expect(self.our_excess_plus_endorsement).to_be_visible(timeout=5000)
         expect(self.our_excess_plus_endorsement_paragraph).to_be_visible(timeout=5000)
 
     def verify_how_excess_plus_works_and_bullet_points(self):
         expect(self.how_excess_plus_works).to_be_visible(timeout=5000)
 
-        
+
         self.page.wait_for_load_state("networkidle")
+
