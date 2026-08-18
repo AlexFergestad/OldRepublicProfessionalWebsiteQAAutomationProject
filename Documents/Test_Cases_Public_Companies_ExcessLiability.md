@@ -167,3 +167,6 @@
 2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
 3. Wait for page to fully load.
 
+## Expected Result:
+- Verify "Excess Plus Benefits" section display correct.
+- Verify the Paragraph underneath work as expected.
