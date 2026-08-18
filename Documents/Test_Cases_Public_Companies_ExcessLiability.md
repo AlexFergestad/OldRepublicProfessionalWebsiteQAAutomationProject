@@ -149,7 +149,7 @@
 
 ## Expected Result:
 - Verify "How Excess Plus™ Works" section display correct.
-- Verify the Paragraph underneath work as expected.
+- Verify the Paragraph underneath work and display as expected.
 
 ### Actual Result:
 **Status**: ✅ Pass
@@ -169,4 +169,5 @@
 
 ## Expected Result:
 - Verify "Excess Plus Benefits" section display correct.
-- Verify the Paragraph underneath work as expected.
+- Verify the Paragraph underneath work and display as expected.
+
