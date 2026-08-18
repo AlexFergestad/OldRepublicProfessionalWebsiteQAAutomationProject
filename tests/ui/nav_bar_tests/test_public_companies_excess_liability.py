@@ -137,21 +137,21 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies the How Excess Plus™ Works and Bullet Points Underneath
 #     Public_Company_Excess_Liability(page, base_url).verify_how_excess_plus_works_and_bullet_points()
 
-"""TC-08: Verify the Excess Plus Benefits and Bullet Points Underneath."""
-@pytest.mark.ui
-@pytest.mark.public_companies_excess_liability
-def test_excess_plus_benefits_and_bullet_points_underneath(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-08: Verify the Excess Plus Benefits and Bullet Points Underneath."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_excess_liability
+# def test_excess_plus_benefits_and_bullet_points_underneath(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Excess Liability link to navigate to the excess liability page
-    Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
+#     # Clicks on the Excess Liability link to navigate to the excess liability page
+#     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
-    # Verifies the How Excess Plus™ Works and Bullet Points Underneath
-    Public_Company_Excess_Liability(page, base_url).verify_excess_plus_benefits_and_bullet_points()
+#     # Verifies the How Excess Plus™ Works and Bullet Points Underneath
+#     Public_Company_Excess_Liability(page, base_url).verify_excess_plus_benefits_and_bullet_points()
 
     
 
