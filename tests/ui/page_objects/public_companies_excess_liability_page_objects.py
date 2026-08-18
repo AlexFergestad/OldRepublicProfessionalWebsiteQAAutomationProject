@@ -22,7 +22,7 @@ class Public_Company_Excess_Liability:
         self.our_excess_plus_endorsement_paragraph = page.locator("h3").filter(has_text="Our Excess Plus™ Endorsement").locator("xpath=following-sibling::p[1]")
         self.how_excess_plus_works = page.locator("h4").filter(has_text="How Excess Plus™ Works")        
         self.how_excess_plus_works_list = page.locator("h4").filter(has_text="How Excess Plus™ Works:").locator("xpath=following-sibling::ul[1]")
-        self.
+        self.excess_plus_benefits = page.locator("h4").filter(has_text="Excess Plus™ Benefits")
 
 
     def navigate_to_excess_liability_page(self):
