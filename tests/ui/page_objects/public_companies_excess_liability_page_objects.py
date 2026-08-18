@@ -76,3 +76,4 @@ class Public_Company_Excess_Liability:
         expect(self.how_excess_plus_works_list).to_be_visible(timeout=5000)
         self.page.wait_for_load_state("networkidle")
 
+    def verify_excess_plus_benefits_and_bullet_points
