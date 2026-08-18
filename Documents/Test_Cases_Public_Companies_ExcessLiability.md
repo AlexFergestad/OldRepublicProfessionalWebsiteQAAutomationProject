@@ -171,3 +171,6 @@
 - Verify "Excess Plus Benefits" section display correct.
 - Verify the Paragraph underneath work and display as expected.
 
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_`)
