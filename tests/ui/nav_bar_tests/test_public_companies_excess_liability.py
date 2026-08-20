@@ -160,4 +160,5 @@ def test_download_excess_plus_sell_sheet_button(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
-    
+    # Clicks on the Public Companies menu item to navigate to the products page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
