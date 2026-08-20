@@ -155,3 +155,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-009: Verify Download Excess Plus™ Sell Sheet button is clickable and navigates to the correct page."""
 @pytest.mark.ui
+@pytest.mark.public_companies_excess_liability
