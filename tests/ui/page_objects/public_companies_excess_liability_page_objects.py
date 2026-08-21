@@ -24,7 +24,7 @@ class Public_Company_Excess_Liability:
         self.how_excess_plus_works_list = page.locator("h4").filter(has_text="How Excess Plus™ Works:").locator("xpath=following-sibling::ul[1]")
         self.excess_plus_benefits = page.locator("h4").filter(has_text="Excess Plus™ Benefits")
         self.excess_plus_benefits_list = page.locator("h4").filter(has_text="Excess Plus™ Benefits:").locator("xpath=following-sibling::ul[1]")
-
+        self.download_excess_plus_sell_sheet = page.get_by_role("link", name="Download Excess Plus™ Sell Sheet")
 
     def navigate_to_excess_liability_page(self):
         self.excess_liability_page.click()
