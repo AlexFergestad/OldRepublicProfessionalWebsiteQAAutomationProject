@@ -84,4 +84,4 @@ class Public_Company_Excess_Liability:
         expect(self.excess_plus_benefits_list).to_be_visible(timeout=5000)
         self.page.wait_for_load_state("networkidle")
 
-        
+    def
