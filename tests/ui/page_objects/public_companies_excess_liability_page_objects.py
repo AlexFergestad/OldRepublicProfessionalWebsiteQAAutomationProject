@@ -87,7 +87,12 @@ class Public_Company_Excess_Liability:
     def verify_download_excess_plus_sell_sheet_button(self):
         expect(self.download_excess_plus_sell_sheet).to_be_visible(timeout=5000)
         expect(self.download_excess_plus_sell_sheet).to_be_enabled(timeout=5000)
-        self.download_excess_plus_sell_sheet.click()
 
         url = "https://www.oldrepublicpro.com/business-insurance-public-company/excess-liability"
+
+        expected_url = "https://www.oldrepublicpro.com/hubfs/2025%20Sell%20Sheets/Excess%20Plus%20Sell%20Sheet.pdf"
+
+        with self.page.context.expect_page() as new_page_info:
+            self.download_excess_plus_sell_sheet.click()
+            
 
