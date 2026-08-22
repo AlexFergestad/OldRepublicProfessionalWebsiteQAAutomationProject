@@ -87,4 +87,5 @@ class Public_Company_Excess_Liability:
     def verify_download_excess_plus_sell_sheet_button(self):
         expect(self.download_excess_plus_sell_sheet).to_be_visible(timeout=5000)
         expect(self.download_excess_plus_sell_sheet).to_be_enabled(timeout=5000)
+        self.download_excess_plus_sell_sheet.click()
 
