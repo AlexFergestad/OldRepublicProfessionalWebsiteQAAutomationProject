@@ -90,7 +90,7 @@ class Public_Company_Excess_Liability:
 
         url = "https://www.oldrepublicpro.com/business-insurance-public-company/excess-liability"
 
-        expected_url = "https://www.oldrepublicpro.com/hubfs/2025%20Sell%20Sheets/Excess%20Plus%20Sell%20Sheet.pdf"
+        expected_url_after_click = "https://www.oldrepublicpro.com/hubfs/2025%20Sell%20Sheets/Excess%20Plus%20Sell%20Sheet.pdf"
 
         with self.page.context.expect_page() as new_page_info:
             self.download_excess_plus_sell_sheet.click()
