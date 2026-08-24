@@ -194,4 +194,4 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_download_excess_plus_sell_sheet_button`)
 
-# TC-010
+# TC-010: Verify
