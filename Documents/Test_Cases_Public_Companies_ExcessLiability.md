@@ -175,7 +175,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_excess_plus_benefits_and_bullet_points_underneath`)
 
-# TC-008: Verify Download Excess Plus™ Sell Sheet button is clickable and navigates to the correct page.
+# TC-009: Verify Download Excess Plus™ Sell Sheet button is clickable and navigates to the correct page.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**:  
