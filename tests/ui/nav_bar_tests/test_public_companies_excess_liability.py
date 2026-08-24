@@ -14,7 +14,7 @@ from tests.ui.page_objects.public_companies_excess_liability_page_objects import
 """
 
 Public Companies Excess Liability Page UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009, TC-010, TC-011
 
 * This page verifies the Excess Liability page of the Old Republic Professional website loads correctly, 
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
@@ -195,4 +195,3 @@ def test_public_companies_excess_liability_page_performance(page: Page, base_url
         print("Warning: LCP metric not available in headless mode")
     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
-    
