@@ -188,7 +188,7 @@
 3. Wait for page to fully load.
 
 ## Expected Result:
-- Verify "Excess Plus Benefits" section display correct.
+- Verify the "Download Excess Plus™ Sell Sheet" button navigates to the correct page.
 - Verify the Paragraph underneath work and display as expected.
 
 ### Actual Result:
