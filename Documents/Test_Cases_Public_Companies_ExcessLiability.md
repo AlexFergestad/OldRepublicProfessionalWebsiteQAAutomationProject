@@ -189,8 +189,9 @@
 
 ## Expected Result:
 - Verify the "Download Excess Plus™ Sell Sheet" button navigates to the correct page.
-- Verify the Paragraph underneath work and display as expected.
 
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_download_excess_plus_sell_sheet_button`)
+
+# TC-010
