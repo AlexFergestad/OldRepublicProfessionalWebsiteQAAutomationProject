@@ -169,4 +169,3 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies the Download Excess Plus™ Sell Sheet button is clickable and navigates to the correct page
 #     Public_Company_Excess_Liability(page, base_url).verify_download_excess_plus_sell_sheet_button()
 
-"""TC-010:"""
