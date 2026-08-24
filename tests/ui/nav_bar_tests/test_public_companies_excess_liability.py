@@ -183,7 +183,7 @@ def test_public_companies_excess_liability_page_performance(page: Page, base_url
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies the Performance Metrics section is visible and contains the expected content
-    # Now instantiate the D&O page object and get metrics
+    # Now instantiate the excess liability page object and get metrics
     excess_liability_page = Public_Company_Excess_Liability(page, base_url)
     performance_metrics = excess_liability_page.get_performance_metrics()
     
