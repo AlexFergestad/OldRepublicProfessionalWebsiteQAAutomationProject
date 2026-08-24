@@ -175,3 +175,4 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_excess_plus_benefits_and_bullet_points_underneath`)
 
+Verify Download Excess Plus™ Sell Sheet button is clickable and navigates to the correct page.
