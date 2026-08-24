@@ -193,4 +193,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_excess_plus_benefits_and_bullet_points_underneath`)
+**Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_download_excess_plus_sell_sheet_button`)
