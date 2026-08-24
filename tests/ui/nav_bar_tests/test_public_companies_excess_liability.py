@@ -194,3 +194,5 @@ def test_public_companies_excess_liability_page_performance(page: Page, base_url
     else:
         print("Warning: LCP metric not available in headless mode")
     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
+
+    
