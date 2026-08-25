@@ -200,3 +200,4 @@
 **Preconditions**:  
 - Have a computer/laptop connected to the internet.
 - Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
