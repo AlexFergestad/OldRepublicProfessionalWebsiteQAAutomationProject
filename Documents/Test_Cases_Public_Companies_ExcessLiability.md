@@ -195,3 +195,8 @@
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_download_excess_plus_sell_sheet_button`)
 
 # TC-010: Verify the performance of the public companies excess liability page using Playwright's built-in performance metrics.
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:  
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
