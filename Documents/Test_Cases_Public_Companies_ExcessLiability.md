@@ -194,4 +194,4 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_download_excess_plus_sell_sheet_button`)
 
-# TC-010: Verify
+# TC-010: Verify the performance of the public companies excess liability page using Playwright's built-in performance metrics.
