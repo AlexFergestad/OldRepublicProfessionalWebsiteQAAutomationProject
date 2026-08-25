@@ -205,3 +205,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Liability".
 3. Wait for page to fully load.
+
+
+## Expected Result:
+- Verify the exces liability page performs within the expected time in seconds.
