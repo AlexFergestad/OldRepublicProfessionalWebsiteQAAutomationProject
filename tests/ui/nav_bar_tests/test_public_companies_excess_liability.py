@@ -197,3 +197,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-011: Verify the accessibility of the public companies excess liability page using axe-playwright-python."""
 @pytest.mark.ui
+@pytest.mark.public_companies_excess_liability
