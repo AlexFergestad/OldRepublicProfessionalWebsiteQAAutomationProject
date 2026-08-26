@@ -209,4 +209,45 @@ def test_public_companies_excess_liability_page_accessibility(page: Page, base_u
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies the accessibility of the page using axe-playwright-python
+    products_page = Public_Company_Products(page, base_url)
+    page.wait_for_load_state("networkidle")
     
+    # Run axe-core accessibility checks
+    results = Axe().run(page)
+    
+    violations = results.response["violations"]
+    passes = results.response["passes"]
+    incomplete = results.response.get("incomplete", [])
+    
+    # Print summary
+    print(f"\n♿ Accessibility Results — Public Companies Products Page")
+    print(f"   Violations:  {len(violations)}")
+    print(f"   Passes:      {len(passes)}")
+    print(f"   Incomplete:  {len(incomplete)}")
+    
+    # Print each violation with details
+    for v in violations:
+        print(f"\n   ❌ {v['id']} — {v['description']}")
+        print(f"      Impact: {v['impact']}")
+        print(f"      Help:   {v['helpUrl']}")
+    
+    # Known existing violations on the site — documented but outside QA scope
+    known_violations = {"color-contrast", "input-button-name", "link-name"}
+    skipped = [v for v in violations if v["id"] in known_violations]
+    print(f"\n   ⚠️  Known existing violations skipped ({len(skipped)}):")
+    for v in skipped:
+        print(f"      - {v['id']} ({v['impact']})")
+    
+    # Only fail on NEW critical/serious violations not already known
+    critical_violations = [
+        v for v in violations
+        if v["impact"] in ("critical", "serious")
+        and v["id"] not in known_violations
+    ]
+    
+    assert len(critical_violations) == 0, (
+        f"\nFound {len(critical_violations)} new critical/serious violation(s):\n"
+        + "\n".join(f"  - {v['id']} ({v['impact']}): {v['description']}" for v in critical_violations)
+    )
+    
+    print(f"\n✅ Accessibility check passed — no new critical/serious violations found")
