@@ -209,7 +209,7 @@ def test_public_companies_excess_liability_page_accessibility(page: Page, base_u
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies the accessibility of the page using axe-playwright-python
-    products_page = Public_Company_Products(page, base_url)
+    excess_liability_page = Public_Company_Excess_Liability(page, base_url)
     page.wait_for_load_state("networkidle")
     
     # Run axe-core accessibility checks
@@ -220,7 +220,7 @@ def test_public_companies_excess_liability_page_accessibility(page: Page, base_u
     incomplete = results.response.get("incomplete", [])
     
     # Print summary
-    print(f"\n♿ Accessibility Results — Public Companies Products Page")
+    print(f"\n♿ Accessibility Results — Public Companies Excess Liability Page")
     print(f"   Violations:  {len(violations)}")
     print(f"   Passes:      {len(passes)}")
     print(f"   Incomplete:  {len(incomplete)}")
