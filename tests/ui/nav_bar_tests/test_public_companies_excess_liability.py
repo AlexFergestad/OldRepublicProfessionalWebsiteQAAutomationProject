@@ -209,3 +209,4 @@ def test_public_companies_excess_liability_page_accessibility(page: Page, base_u
     Public_Company_Excess_Liability(page, base_url).navigate_to_excess_liability_page()
 
     # Verifies the accessibility of the page using axe-playwright-python
+    
