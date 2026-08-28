@@ -213,4 +213,4 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excess_liability.py:: test_public_companies_excess_liability_page_performance`)
 
-# TC-011:
+# TC-011: Verify the accessibility of the public companies excess liability page using axe-playwright-python.
