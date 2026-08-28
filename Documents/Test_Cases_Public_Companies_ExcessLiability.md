@@ -226,7 +226,7 @@
 3. Wait for page to fully load.
 
 ## Expected Result:
-- Verify the exces liability page performs within the expected time in seconds.
+- Verify the exces liability page is acessible within the expected time in seconds.
 
 ### Actual Result:
 **Status**: ✅ Pass
