@@ -12,3 +12,5 @@ class Public_Company_Lead_Side_A:
     def navigate_to_lead_side_a_page(self):
         self.lead_side_a_page.click()
         self.page.wait_for_load_state("networkidle")
+
+
