@@ -1,4 +1,4 @@
-# This file is for automating the testing of the excess liability page in the public companies section in the nav bar.
+# This file is for automating the testing of the lead side a page in the public companies section in the nav bar.
 
 import playwright
 import pytest
