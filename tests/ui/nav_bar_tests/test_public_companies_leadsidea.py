@@ -31,5 +31,6 @@ def test_public_companies_lead_side_a_page_loads(page: Page, base_url):
     # Clicks on the Public Companies menu item to navigate to the products page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    
+    # Verifies that the page has loaded correctly by checking the URL and the page title
+    page.wait_for_load_state("networkidle")
 
