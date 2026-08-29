@@ -9,4 +9,4 @@ class Public_Company_Lead_Side_A:
         self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
         self.lead_side_a_page = self.header_nav.get_by_role("menuitem", name="Lead Side A")
 
-    def 
+    def navigate_to_lead_side_a_page(self):
