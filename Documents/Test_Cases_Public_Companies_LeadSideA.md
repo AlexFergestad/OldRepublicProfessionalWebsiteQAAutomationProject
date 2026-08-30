@@ -19,4 +19,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_::test_`)
+**Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_`)
