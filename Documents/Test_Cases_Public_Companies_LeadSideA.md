@@ -19,4 +19,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_excess_liabilit.py::test_public_companies_excess_liability_page_loads_correctly`)
+**Automated**: Yes (`tests/test_::test_`)
