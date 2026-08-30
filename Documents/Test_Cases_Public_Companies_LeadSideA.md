@@ -16,3 +16,7 @@
 ### Expected Result:
 - Page loads without any errors.
 - You are able to hover over the public companies text in the nav bar and click on "Lead Side-A Only".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_excess_liabilit.py::test_public_companies_excess_liability_page_loads_correctly`)
