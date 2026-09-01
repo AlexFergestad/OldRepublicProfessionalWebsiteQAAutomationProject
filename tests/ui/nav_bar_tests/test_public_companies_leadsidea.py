@@ -50,5 +50,5 @@ def test_public_companies_lead_side_a_page_title_and_headers(page: Page, base_ur
     # Clicks on the Excess Liability link to navigate to the excess liability page
     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
-    
+    # Verifies that the page has loaded correctly by checking the URL and the page title    
 
