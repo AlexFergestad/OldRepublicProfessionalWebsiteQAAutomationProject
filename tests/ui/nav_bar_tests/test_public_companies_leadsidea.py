@@ -52,3 +52,5 @@ def test_public_companies_lead_side_a_page_title_and_headers(page: Page, base_ur
 
     # Verifies that the page has loaded correctly by checking the URL and the page title    
     Public_Company_Lead_Side_A(page, base_url).verify_lead_side_a_page_title_and_headers()
+
+    
