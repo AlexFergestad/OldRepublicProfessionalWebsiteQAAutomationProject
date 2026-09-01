@@ -37,4 +37,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has loaded correctly by checking the URL and the page title
 #     page.wait_for_load_state("networkidle")
 
-"""TC-02: Verify """
+"""TC-02: Verify that the public companies lead side a page has the correct title and headers."""
