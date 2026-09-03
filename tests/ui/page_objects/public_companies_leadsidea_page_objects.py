@@ -13,4 +13,4 @@ class Public_Company_Lead_Side_A:
         self.lead_side_a_page.click()
         self.page.wait_for_load_state("networkidle")
 
-    def verify_lead_side_a_page_title_and_headers
+    def verify_lead_side_a_page_title_and_headers(self):
