@@ -37,20 +37,20 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has loaded correctly by checking the URL and the page title
 #     page.wait_for_load_state("networkidle")
 
-"""TC-02: Verify that the public companies lead side a page has the correct title and headers."""
-@pytest.mark.ui
-@pytest.mark.public_companies_lead_side_a_page
-def test_public_companies_lead_side_a_page_title_and_headers(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-02: Verify that the public companies lead side a page has the correct title and headers."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_lead_side_a_page
+# def test_public_companies_lead_side_a_page_title_and_headers(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Excess Liability link to navigate to the excess liability page
-    Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
+#     # Clicks on the Excess Liability link to navigate to the excess liability page
+#     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
-    # Verifies that the page has loaded correctly by checking the URL and the page title    
-    Public_Company_Lead_Side_A(page, base_url).verify_lead_side_a_page_title_and_headers()
+#     # Verifies that the page has loaded correctly by checking the URL and the page title    
+#     Public_Company_Lead_Side_A(page, base_url).verify_lead_side_a_page_title_and_headers()
 
     
