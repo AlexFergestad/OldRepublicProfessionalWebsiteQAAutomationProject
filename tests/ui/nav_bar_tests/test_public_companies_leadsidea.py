@@ -55,3 +55,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-03: Verify the paragraph underneath 'Lead Side-A D&O: "A-Sure'"""
 @pytest.mark.ui
+@pytest.mark.public_companies_lead_side_a_page
