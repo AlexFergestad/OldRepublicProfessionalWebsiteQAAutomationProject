@@ -54,3 +54,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Lead_Side_A(page, base_url).verify_lead_side_a_page_title_and_headers()
 
 """TC-03: Verify the paragraph underneath 'Lead Side-A D&O: "A-Sure'"""
+@pytest.mark.ui
