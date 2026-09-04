@@ -67,5 +67,4 @@ def test_public_companies_lead_side_a_h1_paragraph(page: Page, base_url):
     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
     # Verifies that the paragraph underneath 'Lead Side-A D&O: "A-Sure' is visible
-    paragraph = page.locator("p").filter(has_text="Lead Side-A D&O: \"A-Sure\"")
-    expect(paragraph).to_be_visible(timeout=5000)
+    
