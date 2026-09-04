@@ -1,4 +1,4 @@
-from playwright.async_api import Page
+from playwright.async_api import Page, expect
 
 
 class Public_Company_Lead_Side_A:
@@ -16,4 +16,5 @@ class Public_Company_Lead_Side_A:
 
     def verify_lead_side_a_page_title_and_headers(self):
         expect(self.lead_side_a_page_title).to_be_visible(timeout=5000)
+
 
