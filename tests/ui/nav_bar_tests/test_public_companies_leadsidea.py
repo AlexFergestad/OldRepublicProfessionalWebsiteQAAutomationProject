@@ -56,4 +56,16 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-03: Verify the paragraph underneath 'Lead Side-A D&O: "A-Sure'"""
 @pytest.mark.ui
 @pytest.mark.public_companies_lead_side_a_page
-def test_
+def test_public_companies_lead_side_a_h1_paragraph(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
+
+    # Clicks on the Public Companies menu item to navigate to the products page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    # Clicks on the Lead Side-A link to navigate to the lead side a page
+    Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
+
+    # Verifies that the paragraph underneath 'Lead Side-A D&O: "A-Sure' is visible
+    paragraph = page.locator("p").filter(has_text="Lead Side-A D&O: \"A-Sure\"")
+    expect(paragraph).to_be_visible(timeout=5000)
