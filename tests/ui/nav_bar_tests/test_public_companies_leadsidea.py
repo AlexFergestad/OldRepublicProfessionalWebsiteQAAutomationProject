@@ -68,3 +68,8 @@ def test_public_companies_lead_side_a_h1_paragraph(page: Page, base_url):
 
     # Verifies that the paragraph underneath 'Lead Side-A D&O: "A-Sure' is visible
     Public_Company_Lead_Side_A(page, base_url).verify_lead_side_a_h1_paragraph()
+
+
+
+
+    
