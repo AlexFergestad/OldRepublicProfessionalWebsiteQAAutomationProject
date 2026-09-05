@@ -73,4 +73,4 @@ def test_public_companies_lead_side_a_h1_paragraph(page: Page, base_url):
 """TC-04: Verify the download buttonns."""
 @pytest.mark.ui
 @pytest.mark.public_companies_lead_side_a_page
-def 
+def test_
