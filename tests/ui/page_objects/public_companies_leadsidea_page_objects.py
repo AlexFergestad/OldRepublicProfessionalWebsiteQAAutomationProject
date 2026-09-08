@@ -21,4 +21,10 @@ class Public_Company_Lead_Side_A:
     def verify_download_buttons(self):
         expect(self.download_lead_side_a).to_be_visible(timeout=5000)
         self.download_lead_side_a.click()
+        self.page.wait_for_load_state("networkidle")
+
+        self.page.go_back()
+
+
+
 
