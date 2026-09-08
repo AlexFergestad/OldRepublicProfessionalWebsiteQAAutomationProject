@@ -84,4 +84,5 @@ def test_public_companies_lead_side_a_download_buttons(page: Page, base_url):
     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
     # Verifies that the download buttons are visible
+    Public_Company_Lead_Side_A(page, base_url).verify_download_buttons()
 
