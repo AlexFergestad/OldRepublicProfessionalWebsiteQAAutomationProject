@@ -77,4 +77,6 @@ def test_public_companies_lead_side_a_download_buttons(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
+    # Clicks on the Public Companies menu item to navigate to the products page
+
 
