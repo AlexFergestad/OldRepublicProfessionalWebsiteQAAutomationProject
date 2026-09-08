@@ -78,5 +78,5 @@ def test_public_companies_lead_side_a_download_buttons(page: Page, base_url):
     page.goto(base_url)
 
     # Clicks on the Public Companies menu item to navigate to the products page
-
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
