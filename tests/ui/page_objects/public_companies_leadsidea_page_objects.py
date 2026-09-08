@@ -10,6 +10,7 @@ class Public_Company_Lead_Side_A:
         self.lead_side_a_page = self.header_nav.get_by_role("menuitem", name="Lead Side-A Only")
         self.lead_side_a_page_title = page.locator("h1").filter(has_text="A-Sure")
         self.download_lead_side_a = page.locator("a:has-text(\"Download Lead Side-A-Sure\" Sell Sheet\")")
+        self.download_policy_forms = page.locator("a:has-text(\"Download Policy Forms\")")
 
     def navigate_to_lead_side_a_page(self):
         self.lead_side_a_page.click()
