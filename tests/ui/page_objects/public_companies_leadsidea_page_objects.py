@@ -25,6 +25,8 @@ class Public_Company_Lead_Side_A:
 
         self.page.go_back()
 
+        expect()
+
 
 
 
