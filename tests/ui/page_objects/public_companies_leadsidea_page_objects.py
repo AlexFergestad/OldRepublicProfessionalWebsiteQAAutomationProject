@@ -27,7 +27,9 @@ class Public_Company_Lead_Side_A:
         self.page.go_back()
 
         expect(self.download_policy_forms).to_be_visible(timeout=5000)
+        self.download_policy_forms.click()
         
+        self.page.wait_for_load_state("networkidle")
 
 
 
