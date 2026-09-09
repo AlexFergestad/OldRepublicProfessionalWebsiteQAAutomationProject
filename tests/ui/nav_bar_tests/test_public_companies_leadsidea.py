@@ -95,3 +95,5 @@ def test_public_companies_lead_side_a_page_performance(page: Page, base_url):
 
     # Clicks on the Public Companies menu item to navigate to the products page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    
