@@ -30,7 +30,6 @@ class Public_Company_Lead_Side_A:
         self.download_policy_forms.click()
         self.page.go_back()
 
-        self.download_lead_side_a.click
 
 
 
