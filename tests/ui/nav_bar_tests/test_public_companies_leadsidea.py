@@ -87,3 +87,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Lead_Side_A(page, base_url).verify_download_buttons()
 
 """TC-05: Verify the Performance of the public companies lead side a page."""
+@pytest.mark.ui
