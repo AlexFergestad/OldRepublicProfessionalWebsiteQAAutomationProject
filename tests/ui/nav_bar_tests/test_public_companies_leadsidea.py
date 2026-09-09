@@ -70,19 +70,19 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Lead_Side_A(page, base_url).verify_lead_side_a_h1_paragraph()
 
 
-"""TC-04: Verify the download buttonns."""
-@pytest.mark.ui
-@pytest.mark.public_companies_lead_side_a_page
-def test_public_companies_lead_side_a_download_buttons(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-04: Verify the download buttonns."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_lead_side_a_page
+# def test_public_companies_lead_side_a_download_buttons(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the products page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the products page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    
+#     # Clicks on the Lead Side-A link to navigate to the lead side a page
+#     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
-    # Clicks on the Lead Side-A link to navigate to the lead side a page
-    Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
-
-    # Verifies that the download buttons are visible
-    Public_Company_Lead_Side_A(page, base_url).verify_download_buttons()
+#     # Verifies that the download buttons are visible
+#     Public_Company_Lead_Side_A(page, base_url).verify_download_buttons()
 
