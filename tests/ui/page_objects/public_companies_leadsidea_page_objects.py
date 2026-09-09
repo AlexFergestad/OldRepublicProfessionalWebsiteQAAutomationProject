@@ -7,12 +7,14 @@ class Public_Company_Lead_Side_A:
         self.page = page
         self.base_url = base_url
         self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
+        
         self.lead_side_a_page = self.header_nav.get_by_role("menuitem", name="Lead Side-A Only")
         self.lead_side_a_page_title = page.locator("h1").filter(has_text="A-Sure")
         self.download_lead_side_a = page.get_by_role("link", name="Download Lead Side-A").filter(has_text="Sell Sheet")
         self.download_policy_forms = page.locator("a:has-text(\"Download Policy Forms\")")
 
     def navigate_to_lead_side_a_page(self):
+        self.lead_side_a_page.hover()
         self.lead_side_a_page.click()
         self.page.wait_for_load_state("networkidle")
 
