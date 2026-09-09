@@ -14,6 +14,7 @@ class Public_Company_Lead_Side_A:
         self.download_policy_forms = page.locator("a:has-text(\"Download Policy Forms\")")
 
     def navigate_to_lead_side_a_page(self):
+        self.page.wait_for_timeout(1000)
         self.lead_side_a_page.hover()
         self.lead_side_a_page.click()
         self.page.wait_for_load_state("networkidle")
