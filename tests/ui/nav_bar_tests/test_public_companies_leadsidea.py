@@ -116,3 +116,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.ui
 @pytest.mark.public_companies_lead_side_a_page
 def test_public_companies_lead_side_a_page_accessibility(page: Page, base_url):
+
