@@ -115,3 +115,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-06: Verify the Accessibility of the public companies lead side a page."""
 @pytest.mark.ui
 @pytest.mark.public_companies_lead_side_a_page
+def test_public_companies_lead_side_a_page_accessibility(page: Page, base_url):
