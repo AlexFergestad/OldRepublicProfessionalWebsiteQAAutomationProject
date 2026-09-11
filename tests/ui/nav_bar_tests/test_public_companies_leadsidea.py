@@ -101,8 +101,8 @@ def test_public_companies_lead_side_a_page_performance(page: Page, base_url):
 
     # Verifies the Performance Metrics section is visible and contains the expected content
     # Now instantiate the D&O page object and get metrics
-    leadsidea_page = Public_Company_Products(page, base_url)
-    performance_metrics = products_page.get_performance_metrics()
+    leadsidea_page = Public_Company_Lead_Side_A(page, base_url)
+    performance_metrics = leadsidea_page.get_performance_metrics()
     
     assert performance_metrics["load_time"] < 3000, f"Expected load time < 3000ms, got: {performance_metrics['load_time']}ms"
     assert performance_metrics["first_contentful_paint"] < 2000, f"Expected FCP < 2000ms, got: {performance_metrics['first_contentful_paint']}ms"
