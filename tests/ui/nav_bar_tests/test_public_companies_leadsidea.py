@@ -112,4 +112,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #         print("Warning: LCP metric not available in headless mode")
 #     assert performance_metrics["cumulative_layout_shift"] < 0.1, f"Expected CLS < 0.1, got: {performance_metrics['cumulative_layout_shift']}"
 
-"""TC-06:"""
+"""TC-06: Verify the Accessibility of the public companies lead side a page."""
