@@ -100,3 +100,5 @@ def test_public_companies_lead_side_a_page_performance(page: Page, base_url):
     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
     # Verifies the Performance Metrics section is visible and contains the expected content
+    
+
