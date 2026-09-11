@@ -50,7 +50,7 @@ class Public_Company_Lead_Side_A:
             };
         }""")
     
-        print(f"\n📊 Performance Metrics — Public Companies D&O Page")
+        print(f"\n📊 Performance Metrics — Public Companies Lead Side-A Page")
         print(f"   Load Time:                  {metrics['load_time']:.0f}ms")
         print(f"   First Contentful Paint:     {metrics['first_contentful_paint']:.0f}ms")
         print(f"   Largest Contentful Paint:   {f'{metrics["largest_contentful_paint"]:.0f}ms' if metrics['largest_contentful_paint'] is not None else 'N/A (headless)'}")
