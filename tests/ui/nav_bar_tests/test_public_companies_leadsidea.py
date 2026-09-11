@@ -100,7 +100,7 @@ def test_public_companies_lead_side_a_page_performance(page: Page, base_url):
     Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
 
     # Verifies the Performance Metrics section is visible and contains the expected content
-    # Now instantiate the D&O page object and get metrics
+    # Now instantiate the lead side a page object and get metrics
     leadsidea_page = Public_Company_Lead_Side_A(page, base_url)
     performance_metrics = leadsidea_page.get_performance_metrics()
     
