@@ -123,3 +123,4 @@ def test_public_companies_lead_side_a_page_accessibility(page: Page, base_url):
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Lead Side-A link to navigate to the lead side a page
+    Public_Company_Lead_Side_A(page, base_url).navigate_to_lead_side_a_page()
