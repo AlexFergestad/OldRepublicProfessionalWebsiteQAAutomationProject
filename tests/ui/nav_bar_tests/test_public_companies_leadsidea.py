@@ -122,4 +122,4 @@ def test_public_companies_lead_side_a_page_accessibility(page: Page, base_url):
     # Clicks on the Public Companies menu item to navigate to the products page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    
+    # Clicks on the Lead Side-A link to navigate to the lead side a page
