@@ -149,12 +149,12 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
 3. Wait for page to fully load.
-4. Verify the page performance metrics meet expectations.
+4. Verify the page accessibility metrics meet expectations.
 
 
 ### Expected Result:
 - Page loads without any errors.
-- The Lead Side A page peformance metrics meets expectations. 
+- The Lead Side A page accessibility metrics meets expectations. 
 
 ### Actual Result:
 **Status**: ✅ Pass
