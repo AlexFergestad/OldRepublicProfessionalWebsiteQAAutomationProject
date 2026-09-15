@@ -109,7 +109,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- The two download links navigate to the correct pages and urls.
+- The Lead Side A page peformance metrics meets expectations. 
 
 ### Actual Result:
 **Status**: ✅ Pass
