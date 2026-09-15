@@ -69,3 +69,25 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_h1_paragraph`)
 
+# TC-004: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
+3. Wait for page to fully load.
+4. Verify the "Lead Side A" paragraphs works and displays as expected.
+
+
+### Expected Result:
+- Page loads without any errors.
+- You are able to read the "Lead Side A" h1 paragraph text.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_h1_paragraph`)
