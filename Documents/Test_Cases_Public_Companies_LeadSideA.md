@@ -137,7 +137,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_page_performance`)
 
-# TC-006: Verify 
+# TC-006: Verify the Accessibility of the public companies lead side a page.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
