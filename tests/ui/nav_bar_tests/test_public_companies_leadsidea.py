@@ -143,3 +143,5 @@ def test_public_companies_lead_side_a_page_accessibility(page: Page, base_url):
         print(f"\n   ❌ {v['id']} — {v['description']}")
         print(f"      Impact: {v['impact']}")
         print(f"      Help:   {v['helpUrl']}")
+
+
