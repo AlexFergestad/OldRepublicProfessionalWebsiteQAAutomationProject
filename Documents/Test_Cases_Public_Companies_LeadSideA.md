@@ -63,7 +63,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- You are able to hover over the public companies text in the nav bar and click on "Lead Side-A Only".
+- You are able to read the "Lead Side A" paragraph text.
 - Title and Header work as expected.
 
 ### Actual Result:
