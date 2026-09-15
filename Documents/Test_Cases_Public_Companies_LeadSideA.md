@@ -64,7 +64,6 @@
 ### Expected Result:
 - Page loads without any errors.
 - You are able to read the "Lead Side A" h1 paragraph text.
-- Title and Header work as expected.
 
 ### Actual Result:
 **Status**: ✅ Pass
