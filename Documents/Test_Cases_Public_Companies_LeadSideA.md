@@ -114,4 +114,48 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_page_performance`)
+# TC-005: Verify the Performance of the public companies lead side a page.
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
 
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
+3. Wait for page to fully load.
+4. Verify the page performance metrics meet expectations.
+
+
+### Expected Result:
+- Page loads without any errors.
+- The Lead Side A page peformance metrics meets expectations. 
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_page_performance`)
+
+# TC-006: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
+3. Wait for page to fully load.
+4. Verify the page performance metrics meet expectations.
+
+
+### Expected Result:
+- Page loads without any errors.
+- The Lead Side A page peformance metrics meets expectations. 
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_page_performance`)
