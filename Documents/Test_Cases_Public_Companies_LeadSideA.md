@@ -58,7 +58,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
 3. Wait for page to fully load.
-4. Verify the title and header work as expected.
+4. Verify the "Lead Side A" paragraphs works and displays as expected.
 
 
 ### Expected Result:
