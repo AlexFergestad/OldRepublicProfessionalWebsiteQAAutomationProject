@@ -86,7 +86,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- You are able to read the "Lead Side A" h1 paragraph text.
+- The two download links navigate to the correct pages and urls.
 
 ### Actual Result:
 **Status**: ✅ Pass
