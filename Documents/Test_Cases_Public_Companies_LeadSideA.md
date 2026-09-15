@@ -92,3 +92,25 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_download_buttons`)
 
+# TC-005: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
+3. Wait for page to fully load.
+4. Click on the two download buttons and verify they navigate to the correct pages and urls.
+
+
+### Expected Result:
+- Page loads without any errors.
+- The two download links navigate to the correct pages and urls.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_download_buttons`)
