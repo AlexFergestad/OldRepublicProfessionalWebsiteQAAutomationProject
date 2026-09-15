@@ -128,4 +128,18 @@ def test_public_companies_lead_side_a_page_accessibility(page: Page, base_url):
     # Verifies the Accessibility of the public companies lead side a page using axe-playwright-python\
     results = Axe().run(page)
 
-    
+    violations = results.response["violations"]
+    passes = results.response["passes"]
+    incomplete = results.response.get("incomplete", [])
+
+    # Print summary
+    print(f"\n♿ Accessibility Results — Public Companies Products Page")
+    print(f"   Violations:  {len(violations)}")
+    print(f"   Passes:      {len(passes)}")
+    print(f"   Incomplete:  {len(incomplete)}")
+
+    # Print each violation with details
+    for v in violations:
+        print(f"\n   ❌ {v['id']} — {v['description']}")
+        print(f"      Impact: {v['impact']}")
+        print(f"      Help:   {v['helpUrl']}")
