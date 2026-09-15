@@ -81,7 +81,7 @@
 1. Navigate to https://www.oldrepublicpro.com/.
 2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
 3. Wait for page to fully load.
-4. Verify the "Lead Side A" paragraphs works and displays as expected.
+4. Click on the two download buttons and verify they navigate to the correct pages and urls.
 
 
 ### Expected Result:
