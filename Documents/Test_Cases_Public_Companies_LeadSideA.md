@@ -92,7 +92,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_download_buttons`)
 
-# TC-005: Verify 
+# TC-005: Verify the Performance of the public companies lead side a page.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
