@@ -45,3 +45,27 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_page_title_and_headers`)
+
+# TC-003: Verify 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Lead Side-A Only".
+3. Wait for page to fully load.
+4. Verify the title and header work as expected.
+
+
+### Expected Result:
+- Page loads without any errors.
+- You are able to hover over the public companies text in the nav bar and click on "Lead Side-A Only".
+- Title and Header work as expected.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_leadsidea.py::test_public_companies_lead_side_a_page_title_and_headers`)
