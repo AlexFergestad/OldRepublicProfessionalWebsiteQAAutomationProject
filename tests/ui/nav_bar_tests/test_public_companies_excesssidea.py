@@ -40,3 +40,6 @@ def test_public_companies_excess_side_a_page_loads(page: Page, base_url):
     page.wait_for_load_state("networkidle")
 
 """TC-002:"""
+
+
+
