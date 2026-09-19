@@ -38,3 +38,5 @@ def test_public_companies_excess_side_a_page_loads(page: Page, base_url):
 
     # Verifies that the page has loaded correctly by checking the URL and the page title
     
+
+    
