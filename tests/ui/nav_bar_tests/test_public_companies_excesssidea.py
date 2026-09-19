@@ -6,6 +6,7 @@ from playwright.sync_api import Page, expect
 from axe_playwright_python.sync_playwright import Axe
 
 from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
+from tests.ui.page_objects.public_companies_excess_sidea_page_objects import Public_Company_Excess_Side_A
 
 # Page Objects - relative import from same ui folder
 
