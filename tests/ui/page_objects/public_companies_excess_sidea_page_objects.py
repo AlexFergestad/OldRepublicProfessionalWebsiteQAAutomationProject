@@ -11,5 +11,7 @@ class Public_Company_Excess_Side_A:
         self.excess_side_a_page = self.header_nav.get_by_role("menuitem", name="Excess Side-A Only")
 
     def navigate_to_excess_side_a_page(self):
-
-        
+        self.page.wait_for_timeout(1000)
+        self.excess_side_a_page.hover()
+        self.excess_side_a_page.click()
+        self.page.wait_for_load_state("networkidle")
