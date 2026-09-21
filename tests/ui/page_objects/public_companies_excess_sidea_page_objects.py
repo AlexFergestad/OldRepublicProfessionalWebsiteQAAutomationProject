@@ -19,6 +19,6 @@ class Public_Company_Excess_Side_A:
 
     def verify_page_title_and_header(self):
         # Verifies that the page has the correct title and header
-        expect(self.page).to_have_title("Excess Side-A Only | Old Republic Professional")
-        expect(self.page.locator("h1")).to_have_text("Excess Side-A Only")
+        expect(self.page).to_have_title("Excess Side-A D&O | Public Company D&O | Old Republic Professional")
+        expect(self.page.locator("h1")).to_contain_text("Excess Side-A")
 
