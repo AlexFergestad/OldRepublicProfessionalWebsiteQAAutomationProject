@@ -53,7 +53,7 @@ def test_public_companies_excess_side_a_page_title_and_headers(page: Page, base_
     # Clicks on the Excess Side A link to navigate to the excess liability page
     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
-    # Verifies that the page has the correct title and headers
-    Public_Company_Excess_Side_A(page, base_url).
+    # Verifies that the page has the correct title and header
+    Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
 
 
