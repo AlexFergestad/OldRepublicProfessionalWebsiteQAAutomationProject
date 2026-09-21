@@ -44,3 +44,8 @@ def test_public_companies_excess_side_a_page_loads(page: Page, base_url):
 @pytest.mark.public_companies_excess_side_a_page
 def test_public_companies_excess_side_a_page_title_and_headers(page: Page, base_url):
 
+    # Goes to the home page first
+    page.goto(base_url)
+
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
