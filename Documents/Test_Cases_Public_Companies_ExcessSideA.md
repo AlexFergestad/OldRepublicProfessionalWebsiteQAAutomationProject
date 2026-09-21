@@ -19,3 +19,4 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_loads`)
+
