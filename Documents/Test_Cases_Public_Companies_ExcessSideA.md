@@ -9,12 +9,12 @@
 
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
-2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Side A".
+2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Side A-Only".
 3. Wait for page to fully load.
 
 ### Expected Result:
 - Page loads without any errors.
-- You are able to hover over the public companies text in the nav bar and click on "Excess Side A".
+- You are able to hover over the public companies text in the nav bar and click on "Excess Side A-Only".
 
 ### Actual Result:
 **Status**: ✅ Pass
