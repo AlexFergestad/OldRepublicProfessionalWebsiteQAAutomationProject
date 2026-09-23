@@ -56,4 +56,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has the correct title and header
 #     Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
 
-"""TC-03:"""
+"""TC-03: Verify Policy features bullet point list, the capactiy, and the eligibility text are correct."""
