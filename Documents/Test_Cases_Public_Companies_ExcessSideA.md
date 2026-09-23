@@ -34,7 +34,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- You are able to hover over the public companies text in the nav bar and click on "Excess Side A-Only".
+- The browser title exactly says "Excess Side-A D&O | Public Company D & O | Old Republic Professional"
 
 ### Actual Result:
 **Status**: ✅ Pass
