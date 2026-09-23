@@ -34,7 +34,8 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- The browser title exactly says "Excess Side-A D&O | Public Company D & O | Old Republic Professional"
+- The browser title exactly says "Excess Side-A D&O | Public Company D & O | Old Republic Professional".
+- The header exactly says "Excess Side-A D&O".
 
 ### Actual Result:
 **Status**: ✅ Pass
