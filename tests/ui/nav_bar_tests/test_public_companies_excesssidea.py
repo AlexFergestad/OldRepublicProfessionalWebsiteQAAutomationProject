@@ -57,3 +57,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
 
 """TC-03: Verify Policy features bullet point list, the capactiy, and the eligibility text are correct."""
+@pytest.mark.ui
+
