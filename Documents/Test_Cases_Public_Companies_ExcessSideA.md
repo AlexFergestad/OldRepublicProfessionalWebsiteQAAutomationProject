@@ -20,7 +20,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_loads`)
 
-# TC-002: Verify 
+# TC-002: Verify that the public companies excess side a page has the correct title and headers.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
