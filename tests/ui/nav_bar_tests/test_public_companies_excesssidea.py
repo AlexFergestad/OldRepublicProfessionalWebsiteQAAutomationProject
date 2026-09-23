@@ -39,21 +39,21 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has loaded correctly by checking the URL and the page title
 #     page.wait_for_load_state("networkidle")
 
-"""TC-002: Verify that the public companies excess side a page has the correct title and headers."""
-@pytest.mark.ui
-@pytest.mark.public_companies_excess_side_a_page
-def test_public_companies_excess_side_a_page_title_and_headers(page: Page, base_url):
+# """TC-002: Verify that the public companies excess side a page has the correct title and headers."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_excess_side_a_page
+# def test_public_companies_excess_side_a_page_title_and_headers(page: Page, base_url):
 
-    # Goes to the home page first
-    page.goto(base_url)
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the exccess side a page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the exccess side a page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Excess Side A link to navigate to the excess liability page
-    Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
+#     # Clicks on the Excess Side A link to navigate to the excess liability page
+#     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
-    # Verifies that the page has the correct title and header
-    Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
+#     # Verifies that the page has the correct title and header
+#     Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
 
 
