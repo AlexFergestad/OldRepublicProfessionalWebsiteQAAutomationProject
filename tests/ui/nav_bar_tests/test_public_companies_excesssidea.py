@@ -64,5 +64,6 @@ def test_public_companies_excess_side_a_page_policy_features(page: Page, base_ur
     page.goto(base_url)
 
     # Clicks on the Public Companies menu item to navigate to the exccess side a page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
 
