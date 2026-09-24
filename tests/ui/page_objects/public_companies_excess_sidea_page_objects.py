@@ -26,10 +26,9 @@ class Public_Company_Excess_Side_A:
         # Verifies that the page has the correct policy features bullet point list, capacity, and eligibility text
         expect(self.page.locator("h2")).to_contain_text("Policy Features (ORUG-92):")
         expect(self.page.locator("ul li")).to_have_count(5)
-        expect(self.page.locator("ul li").nth(0)).to_contain_text("Excess Side-A coverage for public companies")
-        expect(self.page.locator("ul li").nth(1)).to_contain_text("Capacity: $5 million per claim / $5 million aggregate")
-        expect(self.page.locator("ul li").nth(2)).to_contain_text("Eligibility: Public companies with a market capitalization of at least $500 million")
-        expect(self.page.locator("ul li").nth(3)).to_contain_text("Claims-made coverage form")
-        expect(self.page.locator("ul li").nth(4)).to_contain_text("Coverage for directors and officers of public companies")
+        expect(self.page.locator("ul li").nth(0)).to_contain_text("One-page streamlined")
+        expect(self.page.locator("ul li").nth(1)).to_contain_text("Independent Director Liability")
+        expect(self.page.locator("ul li").nth(2)).to_contain_text("DIC into DIC feature")
+        expect(self.page.locator("ul li").nth(3)).to_contain_text("Double reinstatement")
 
 
