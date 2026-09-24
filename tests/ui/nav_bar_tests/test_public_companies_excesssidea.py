@@ -69,4 +69,6 @@ def test_public_companies_excess_side_a_page_policy_features(page: Page, base_ur
     # Clicks on the Excess Side A link to navigate to the excess liability page
     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
+    # Verifies that the page has the correct policy features bullet point list, capacity, and eligibility text
+
 
