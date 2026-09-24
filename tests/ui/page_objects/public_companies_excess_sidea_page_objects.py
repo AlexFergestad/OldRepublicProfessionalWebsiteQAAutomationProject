@@ -22,3 +22,4 @@ class Public_Company_Excess_Side_A:
         expect(self.page).to_have_title("Excess Side-A D&O | Public Company D&O | Old Republic Professional")
         expect(self.page.locator("h1")).to_contain_text("Excess Side-A")
 
+    def verify_policy_features_bullet_points()
