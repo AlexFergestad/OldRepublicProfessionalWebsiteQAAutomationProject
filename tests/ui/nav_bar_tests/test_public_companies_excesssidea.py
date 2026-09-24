@@ -70,7 +70,7 @@ def test_public_companies_excess_side_a_page_policy_features(page: Page, base_ur
     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
     # Verifies that the page has the correct policy features bullet point list, capacity, and eligibility text
-
+    Public_Company_Excess_Side_A(page, base_url).verify_policy_features_bullet_points()
 
 
 
