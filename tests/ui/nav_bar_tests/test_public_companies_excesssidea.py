@@ -73,4 +73,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     Public_Company_Excess_Side_A(page, base_url).verify_policy_features_bullet_points()
 
 """TC-04: Verify"""
-
+@pytest.mark.ui
