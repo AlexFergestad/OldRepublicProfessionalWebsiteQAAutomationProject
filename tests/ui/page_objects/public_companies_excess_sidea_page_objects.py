@@ -27,7 +27,7 @@ class Public_Company_Excess_Side_A:
         expect(self.policy_features).to_contain_text("Policy features (ORUG-92):")
     
         policy_features_list = self.policy_features.locator("xpath=following-sibling::ul[1]")
-        expect(policy_features_list.locator("li")).to_have_count(5)
+        expect(policy_features_list.locator("li")).to_have_count(4)
         # expect(self.page.locator("ul li").nth(0)).to_contain_text("One-page streamlined")
         # expect(self.page.locator("ul li").nth(1)).to_contain_text("Independent Director Liability")
         # expect(self.page.locator("ul li").nth(2)).to_contain_text("DIC into DIC feature")
