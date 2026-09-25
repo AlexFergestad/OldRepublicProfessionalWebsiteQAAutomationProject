@@ -33,6 +33,10 @@ class Public_Company_Excess_Side_A:
         policy_features_list = self.policy_features.locator("xpath=following-sibling::ul[1]")
         expect(policy_features_list.locator("li")).to_have_count(4)
 
-        
+        expect(self.capacity).to_be_visible()
+        expect(self.capacity).to_contain_text("Up to $25,000,000")
+    
+        expect(self.eligibility).to_be_visible()
+        expect(self.eligibility).to_contain_text("All U.S. public and private companies.")
 
 
