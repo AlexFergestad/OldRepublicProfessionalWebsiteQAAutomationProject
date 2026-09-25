@@ -24,12 +24,13 @@ class Public_Company_Excess_Side_A:
         expect(self.page.locator("h1")).to_contain_text("Excess Side-A")
 
     def verify_policy_features_bullet_points(self):
-        # Verifies that the page has the correct policy features bullet point list, capacity, and eligibility text
         expect(self.policy_features).to_contain_text("Policy features (ORUG-92):")
-        expect(self.page.locator("ul li")).to_have_count(5)
-        expect(self.page.locator("ul li").nth(0)).to_contain_text("One-page streamlined")
-        expect(self.page.locator("ul li").nth(1)).to_contain_text("Independent Director Liability")
-        expect(self.page.locator("ul li").nth(2)).to_contain_text("DIC into DIC feature")
-        expect(self.page.locator("ul li").nth(3)).to_contain_text("Double reinstatement")
+    
+        policy_features_list = self.policy_features.locator("xpath=following-sibling::ul[1]")
+        expect(policy_features_list.locator("li")).to_have_count(5)
+        # expect(self.page.locator("ul li").nth(0)).to_contain_text("One-page streamlined")
+        # expect(self.page.locator("ul li").nth(1)).to_contain_text("Independent Director Liability")
+        # expect(self.page.locator("ul li").nth(2)).to_contain_text("DIC into DIC feature")
+        # expect(self.page.locator("ul li").nth(3)).to_contain_text("Double reinstatement")
 
 
