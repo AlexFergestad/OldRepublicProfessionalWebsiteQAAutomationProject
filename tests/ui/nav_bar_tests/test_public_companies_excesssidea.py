@@ -78,4 +78,6 @@ has the correct title and headers, performanced checks the page, and accessibili
 def test__public_companies_excess_side_a_page_download_buttons(self, page: Page, base_url: str):
     # Goes to the home page first
     page.goto(base_url)
+
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
     
