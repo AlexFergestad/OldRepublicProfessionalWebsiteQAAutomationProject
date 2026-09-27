@@ -42,5 +42,9 @@ class Public_Company_Excess_Side_A:
         expect(self.eligibility).to_contain_text("All U.S. public and private companies.")
 
     def verify_download_buttons(self):
+        expect(self.download_excess_side_a_sell_button).to_be_visible()
+        self.download_excess_side_a_sell_button.click()
 
+        expect(self.download_policy_formn_button).to_be_visible()
+        
 
