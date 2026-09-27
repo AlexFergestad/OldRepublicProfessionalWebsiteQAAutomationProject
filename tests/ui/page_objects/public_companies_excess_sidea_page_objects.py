@@ -16,6 +16,7 @@ class Public_Company_Excess_Side_A:
         self.capacity = page.locator("p").filter(has_text="Capacity:")
         self.eligibility = page.locator("strong").filter(has_text="Eligibility:")
         self.download_excess_side_a_sell_button = page.locator("a").filter(has_text="Download Excess Side-A Sell Sheet")
+        self.download_policy_formn_button = page.locator("a").filter(has_text="Download Policy Form")
 
     def navigate_to_excess_side_a_page(self):
         self.page.wait_for_timeout(1000)
