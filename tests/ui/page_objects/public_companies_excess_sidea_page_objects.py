@@ -16,7 +16,7 @@ class Public_Company_Excess_Side_A:
         self.capacity = page.locator("p").filter(has_text="Capacity:")
         self.eligibility = page.locator("strong").filter(has_text="Eligibility:")
         self.download_excess_side_a_sell_button = page.locator("a").filter(has_text="Download Excess Side-A Sell Sheet")
-        self.download_policy_formn_button = page.locator("a").filter(has_text="Download Policy Form")
+        self.download_policy_form_button = page.locator("a").filter(has_text="Download Policy Form")
 
     def navigate_to_excess_side_a_page(self):
         self.page.wait_for_timeout(1000)
@@ -45,6 +45,6 @@ class Public_Company_Excess_Side_A:
         expect(self.download_excess_side_a_sell_button).to_be_visible()
         self.download_excess_side_a_sell_button.click()
 
-        expect(self.download_policy_formn_button).to_be_visible()
-        
+        expect(self.download_policy_form_button).to_be_visible()
+        self.download_policy_form_button.click()
 
