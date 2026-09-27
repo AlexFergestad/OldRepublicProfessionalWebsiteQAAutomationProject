@@ -83,4 +83,4 @@ def test__public_companies_excess_side_a_page_download_buttons(self, page: Page,
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Excess Side A link to navigate to the excess liability page
-    
+    Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
