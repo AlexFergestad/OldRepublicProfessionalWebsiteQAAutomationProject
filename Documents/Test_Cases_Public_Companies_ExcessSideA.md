@@ -78,7 +78,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- The browser title exactly says "Excess Side-A D&O | Public Company D & O | Old Republic Professional".
+- Clicking the "Download Excess Side-A Sell Sheet" button navigates to the correct page.
 - The header exactly says "Excess Side-A D&O".
 
 ### Actual Result:
