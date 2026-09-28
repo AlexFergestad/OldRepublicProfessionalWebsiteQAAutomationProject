@@ -75,7 +75,7 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-04: Verify"""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_side_a_page
-def test__public_companies_excess_side_a_page_download_buttons(self, page: Page, base_url: str):
+def test_public_companies_excess_side_a_page_download_buttons(self, page: Page, base_url: str):
     # Goes to the home page first
     page.goto(base_url)
 
