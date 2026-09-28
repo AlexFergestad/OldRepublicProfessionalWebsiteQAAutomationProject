@@ -45,6 +45,10 @@ class Public_Company_Excess_Side_A:
         expect(self.download_excess_side_a_sell_button).to_be_visible()
         self.download_excess_side_a_sell_button.click()
 
+        self.page.wait_for_timeout(2000)
+
         expect(self.download_policy_form_button).to_be_visible()
         self.download_policy_form_button.click()
+
+        self.page.wait_for_timeout(2000)
 
