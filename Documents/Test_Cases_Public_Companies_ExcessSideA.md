@@ -43,4 +43,4 @@
 
 # TC-003:
 
-# TC-004:
+# TC-004: Verify that the public companies excess side a page has the correct download buttons and that they are functional.
