@@ -62,8 +62,6 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_policy_features`)
 
-
-
 # TC-004: Verify that the public companies excess side a page has the correct download buttons and that they are functional.
 **Priority**: High
 **Type**: Functional/Smoke
@@ -83,4 +81,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_policy_features`)
+**Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_download_buttons`)
