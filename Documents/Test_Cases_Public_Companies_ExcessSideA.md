@@ -42,5 +42,6 @@
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_title_and_headers`)
 
 # TC-003: Verify Policy features bullet point list, the capactiy, and the eligibility text are correct.
+test_public_companies_excess_side_a_page_policy_features
 
 # TC-004: Verify that the public companies excess side a page has the correct download buttons and that they are functional.
