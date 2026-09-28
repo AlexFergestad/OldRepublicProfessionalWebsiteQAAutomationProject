@@ -41,7 +41,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_title_and_headers`)
 
-# TC-003: Verify Policy features bullet point list, the capactiy, and the eligibility text are correct.
+# TC-003: Verify Policy features bullet point list, the capacity, and the eligibility text are correct.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -55,8 +55,10 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- The browser title exactly says "Excess Side-A D&O | Public Company D & O | Old Republic Professional".
-- The header exactly says "Excess Side-A D&O".
+- The policy features sub title says "Policy features (ORUG-92):".
+- There are 4 bulleted points underneath.
+- The capacity line says "Capacity: Up to $25,000,000 per Claim / $50,000,000 Aggregate in a single layer or split over more than one layer.".
+- The Eligibility line says "Eligibility: All U.S. public and private companies.".
 
 ### Actual Result:
 **Status**: ✅ Pass
