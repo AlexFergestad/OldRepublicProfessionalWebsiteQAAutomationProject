@@ -79,7 +79,7 @@
 ### Expected Result:
 - Page loads without any errors.
 - Clicking the "Download Excess Side-A Sell Sheet" button navigates to the correct page.
-- The header exactly says "Excess Side-A D&O".
+- Clicking the "Download Policy Form" button navigates to the correct page.
 
 ### Actual Result:
 **Status**: ✅ Pass
