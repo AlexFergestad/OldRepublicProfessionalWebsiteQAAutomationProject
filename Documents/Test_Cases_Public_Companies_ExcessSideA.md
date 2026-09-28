@@ -62,4 +62,25 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_policy_features`)
 
+
+
 # TC-004: Verify that the public companies excess side a page has the correct download buttons and that they are functional.
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Side A-Only".
+3. Wait for page to fully load.
+
+### Expected Result:
+- Page loads without any errors.
+- The browser title exactly says "Excess Side-A D&O | Public Company D & O | Old Republic Professional".
+- The header exactly says "Excess Side-A D&O".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_policy_features`)
