@@ -95,4 +95,4 @@ def test_public_companies_excess_side_a_page_performance(page: Page, base_url: s
     # Goes to the home page first
     page.goto(base_url)
 
-    
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
