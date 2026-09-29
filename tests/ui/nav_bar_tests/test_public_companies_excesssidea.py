@@ -97,3 +97,5 @@ def test_public_companies_excess_side_a_page_performance(page: Page, base_url: s
 
     # Clicks on the Public Companies menu item to navigate to the exccess side a page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    
