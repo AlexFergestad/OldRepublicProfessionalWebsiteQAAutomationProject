@@ -102,7 +102,6 @@ def test_public_companies_excess_side_a_page_performance(page: Page, base_url: s
     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
     # Verifies that the page has the correct performance metrics
+    Public_Company_Excess_Side_A(page, base_url).verify_performance_metrics()
 
 
-
-    
