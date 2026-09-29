@@ -88,4 +88,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has the correct download buttons and that they are functional
 #     Public_Company_Excess_Side_A(page, base_url).verify_download_buttons()
 
-"""TC-05: Verify """
+"""TC-05: Verify Performance of the public companies excess side a page."""
