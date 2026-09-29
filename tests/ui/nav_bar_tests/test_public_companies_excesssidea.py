@@ -94,3 +94,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 def test_public_companies_excess_side_a_page_performance(page: Page, base_url: str):
     # Goes to the home page first
     page.goto(base_url)
+
+    
