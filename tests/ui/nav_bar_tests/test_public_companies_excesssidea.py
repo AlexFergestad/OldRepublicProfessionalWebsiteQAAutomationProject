@@ -90,3 +90,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-05: Verify Performance of the public companies excess side a page."""
 @pytest.mark.ui
+@pytest.mark.public_companies_excess_side_a_page
