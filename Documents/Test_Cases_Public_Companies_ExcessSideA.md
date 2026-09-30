@@ -86,3 +86,23 @@
 **Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_download_buttons`)
 
 
+# TC-005: Verify Performance of the public companies excess side a page.
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**: 
+- Have a computer/laptop connected to the internet.
+- Be on a common web browser such as Chrome, Edge, FireFox, Safari.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Hover over "Public Companies" in the nav bar and select the second option called "Excess Side A-Only".
+3. Wait for page to fully load.
+
+### Expected Result:
+- Page loads without any errors.
+- Clicking the "Download Excess Side-A Sell Sheet" button navigates to the correct page.
+- Clicking the "Download Policy Form" button navigates to the correct page.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/test_public_companies_excesssidea.py::test_public_companies_excess_side_a_page_download_buttons`) 
