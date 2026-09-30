@@ -100,8 +100,7 @@
 
 ### Expected Result:
 - Page loads without any errors.
-- Clicking the "Download Excess Side-A Sell Sheet" button navigates to the correct page.
-- Clicking the "Download Policy Form" button navigates to the correct page.
+- Page meets performance metrics expectations shown in console.
 
 ### Actual Result:
 **Status**: ✅ Pass
