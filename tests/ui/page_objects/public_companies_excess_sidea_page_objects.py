@@ -52,7 +52,7 @@ class Public_Company_Excess_Side_A:
 
         self.page.wait_for_timeout(2000)
 
-    def verify_performance(self):
+    def verify_performance_metrics(self):
         # Scroll to trigger LCP finalization
         self.page.evaluate("window.scrollBy(0, 100)")
         self.page.wait_for_timeout(500)
