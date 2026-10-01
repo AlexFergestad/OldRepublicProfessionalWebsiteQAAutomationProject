@@ -15,7 +15,7 @@ from tests.ui.page_objects.public_companies_excess_sidea_page_objects import Pub
 """
 
 Public Companies Excess Side A Page UI Tests
-Test Cases: TC-001, TC-002,
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005,
 
 * This page verifies the Excess Side A page of the Old Republic Professional website loads correctly, 
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
