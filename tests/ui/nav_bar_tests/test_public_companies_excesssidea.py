@@ -107,4 +107,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 """TC-06: Verify Accessibility of the public companies excess side a page."""
 @pytest.mark.ui
 @pytest.mark.public_companies_excess_side_a_page
+def test_public_companies_excess_side_a_page_accessibility(page: Page, base_url: str):
 
