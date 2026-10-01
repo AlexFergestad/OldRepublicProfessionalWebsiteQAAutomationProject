@@ -119,7 +119,7 @@ def test_public_companies_excess_side_a_page_accessibility(page: Page, base_url:
     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
     # Verifies that the page has the correct accessibility metrics
-    excess_liability_page = Public_Company_Excess_Side_A(page, base_url)
+    excess_side_a_page = Public_Company_Excess_Side_A(page, base_url)
     page.wait_for_load_state("networkidle")
     
     # Run axe-core accessibility checks
@@ -130,7 +130,7 @@ def test_public_companies_excess_side_a_page_accessibility(page: Page, base_url:
     incomplete = results.response.get("incomplete", [])
     
     # Print summary
-    print(f"\n♿ Accessibility Results — Public Companies Excess Liability Page")
+    print(f"\n♿ Accessibility Results — Public Companies Excess Side A Page")
     print(f"   Violations:  {len(violations)}")
     print(f"   Passes:      {len(passes)}")
     print(f"   Incomplete:  {len(incomplete)}")
