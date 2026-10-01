@@ -104,4 +104,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has the correct performance metrics
 #     Public_Company_Excess_Side_A(page, base_url).verify_performance_metrics()
 
-"""TC-06: """
+"""TC-06: Verify Accessibility of the public companies excess side a page."""
