@@ -40,70 +40,70 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     # Verifies that the page has loaded correctly by checking the URL and the page title
 #     page.wait_for_load_state("networkidle")
 
-# """TC-002: Verify that the public companies excess side a page has the correct title and headers."""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_excess_side_a_page
-# def test_public_companies_excess_side_a_page_title_and_headers(page: Page, base_url):
+"""TC-002: Verify that the public companies excess side a page has the correct title and headers."""
+@pytest.mark.ui
+@pytest.mark.public_companies_excess_side_a_page
+def test_public_companies_excess_side_a_page_title_and_headers(page: Page, base_url):
 
-#     # Goes to the home page first
-#     page.goto(base_url)
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Public Companies menu item to navigate to the exccess side a page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Excess Side A link to navigate to the excess liability page
-#     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
+    # Clicks on the Excess Side A link to navigate to the excess liability page
+    Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
-#     # Verifies that the page has the correct title and header
-#     Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
+    # Verifies that the page has the correct title and header
+    Public_Company_Excess_Side_A(page, base_url).verify_page_title_and_header()
 
-# """TC-03: Verify Policy features bullet point list, the capactiy, and the eligibility text are correct."""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_excess_side_a_page
-# def test_public_companies_excess_side_a_page_policy_features(page: Page, base_url):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-03: Verify Policy features bullet point list, the capactiy, and the eligibility text are correct."""
+@pytest.mark.ui
+@pytest.mark.public_companies_excess_side_a_page
+def test_public_companies_excess_side_a_page_policy_features(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Public Companies menu item to navigate to the exccess side a page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Excess Side A link to navigate to the excess liability page
-#     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
+    # Clicks on the Excess Side A link to navigate to the excess liability page
+    Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
-#     # Verifies that the page has the correct policy features bullet point list, capacity, and eligibility text
-#     Public_Company_Excess_Side_A(page, base_url).verify_policy_features_bullet_points()
+    # Verifies that the page has the correct policy features bullet point list, capacity, and eligibility text
+    Public_Company_Excess_Side_A(page, base_url).verify_policy_features_bullet_points()
 
-# """TC-04: Verify that the public companies excess side a page has the correct download buttons and that they are functional."""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_excess_side_a_page
-# def test_public_companies_excess_side_a_page_download_buttons(page: Page, base_url: str):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-04: Verify that the public companies excess side a page has the correct download buttons and that they are functional."""
+@pytest.mark.ui
+@pytest.mark.public_companies_excess_side_a_page
+def test_public_companies_excess_side_a_page_download_buttons(page: Page, base_url: str):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Public Companies menu item to navigate to the exccess side a page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Excess Side A link to navigate to the excess liability page
-#     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
+    # Clicks on the Excess Side A link to navigate to the excess liability page
+    Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
-#     # Verifies that the page has the correct download buttons and that they are functional
-#     Public_Company_Excess_Side_A(page, base_url).verify_download_buttons()
+    # Verifies that the page has the correct download buttons and that they are functional
+    Public_Company_Excess_Side_A(page, base_url).verify_download_buttons()
 
-# """TC-05: Verify Performance of the public companies excess side a page."""
-# @pytest.mark.ui
-# @pytest.mark.public_companies_excess_side_a_page
-# def test_public_companies_excess_side_a_page_performance(page: Page, base_url: str):
-#     # Goes to the home page first
-#     page.goto(base_url)
+"""TC-05: Verify Performance of the public companies excess side a page."""
+@pytest.mark.ui
+@pytest.mark.public_companies_excess_side_a_page
+def test_public_companies_excess_side_a_page_performance(page: Page, base_url: str):
+    # Goes to the home page first
+    page.goto(base_url)
 
-#     # Clicks on the Public Companies menu item to navigate to the exccess side a page
-#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+    # Clicks on the Public Companies menu item to navigate to the exccess side a page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-#     # Clicks on the Excess Side A link to navigate to the excess liability page
-#     Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
+    # Clicks on the Excess Side A link to navigate to the excess liability page
+    Public_Company_Excess_Side_A(page, base_url).navigate_to_excess_side_a_page()
 
-#     # Verifies that the page has the correct performance metrics
-#     Public_Company_Excess_Side_A(page, base_url).verify_performance_metrics()
+    # Verifies that the page has the correct performance metrics
+    Public_Company_Excess_Side_A(page, base_url).verify_performance_metrics()
 
 """TC-06: Verify Accessibility of the public companies excess side a page."""
 @pytest.mark.ui
