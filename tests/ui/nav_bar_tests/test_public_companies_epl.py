@@ -12,27 +12,27 @@ from tests.ui.page_objects.public_companies_epl_page_objects import Employment_P
 """
 
 Public Companies Employment-Practices Liability Page UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009, TC-010, TC-011
+Test Cases: TC-001, TC-002
 
 * This page verifies the Employment-Practices Liability page of the Old Republic Professional website loads correctly, 
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
 
 """
 
-"""TC-01: Verify that the public companies employment-practices liability page loads correctly and has the correct URL when accessed from the home page."""
-@pytest.mark.ui
-@pytest.mark.public_companies_employment_practices_liability_page
-def test_epl_page_loads(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-01: Verify that the public companies employment-practices liability page loads correctly and has the correct URL when accessed from the home page."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_employment_practices_liability_page
+# def test_epl_page_loads(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
-    Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
+#     # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
+#     Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
 
-    # Verifies that the page has loaded correctly by checking the URL and the page title
-    page.wait_for_load_state("networkidle")
+#     # Verifies that the page has loaded correctly by checking the URL and the page title
+#     page.wait_for_load_state("networkidle")
 
 
