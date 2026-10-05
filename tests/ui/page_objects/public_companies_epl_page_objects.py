@@ -15,3 +15,5 @@ def navigate_to_epl_page(self):
         self.page.wait_for_load_state("networkidle")
 
 
+
+
