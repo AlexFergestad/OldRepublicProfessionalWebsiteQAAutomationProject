@@ -29,6 +29,6 @@ def test_epl_page_loads(page: Page, base_url):
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
-
+    NavigationMenu(page).navigate_to_nav_bar_item("Employment-Practices Liability")
 
 
