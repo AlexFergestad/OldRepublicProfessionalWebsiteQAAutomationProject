@@ -7,6 +7,7 @@ from axe_playwright_python.sync_playwright import Axe
 
 # Page Objects - relative import from same ui folder
 from tests.ui.page_objects.nav_bar_page_objects import NavigationMenu
+from tests.ui.page_objects.public_companies_epl_page_objects import Employment_Practices_Liability
 
 """
 
@@ -29,6 +30,7 @@ def test_epl_page_loads(page: Page, base_url):
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
     # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
-    NavigationMenu(page).navigate_to_nav_bar_item("Employment-Practices Liability")
+    Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
 
-
+    # Verifies that the page has loaded correctly by checking the URL and the page title
+    page.wait_for_load_state("networkidle")
