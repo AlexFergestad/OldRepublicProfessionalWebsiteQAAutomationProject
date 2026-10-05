@@ -22,4 +22,6 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.ui
 @pytest.mark.public_companies_employment_practices_liability_page
 def test_epl_page_loads(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
 
