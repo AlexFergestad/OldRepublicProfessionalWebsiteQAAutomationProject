@@ -37,6 +37,6 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 
 """TC-002: Verify that the public companies employment-practices liability page has the correct title and headers."""
-
+@pytest.mark.ui
 
 
