@@ -49,4 +49,4 @@ def test_epl_page_title_and_headers(page: Page, base_url):
     # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
     Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
 
-    
+    # Verifies that the page has the correct title and headers
