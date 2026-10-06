@@ -36,4 +36,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     page.wait_for_load_state("networkidle")
 
 
-"""TC-002: Verify """
+"""TC-002: Verify that the public companies employment-practices liability page has the correct title and headers."""
