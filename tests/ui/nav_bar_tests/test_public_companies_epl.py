@@ -43,4 +43,5 @@ def test_epl_page_title_and_headers(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
 
+    # Clicks on the Public Companies menu item to navigate to the public companies page
 
