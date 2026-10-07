@@ -50,7 +50,6 @@ def test_epl_page_title_and_headers(page: Page, base_url):
     Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
 
     # Verifies that the page has the correct title and headers
-
+    Employment_Practices_Liability(page, base_url).verify_page_title_and_headers()
     
 
-    
