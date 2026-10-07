@@ -1,5 +1,5 @@
 
-from playwright.async_api import Page
+from playwright.async_api import Page, expect
 
 
 class Employment_Practices_Liability:
@@ -16,4 +16,6 @@ class Employment_Practices_Liability:
                 self.page.wait_for_load_state("networkidle")
 
         def verify_page_title_and_headers(self):
-                
+                # Verifies that the page has the correct title and headers
+                expect(self.page).to_have_title("Employment Practices Liability Insurance | Old Republic Professional")
+                expect(self.page.locator("h1")).to_have_text("Employment-Practices Liability")     
