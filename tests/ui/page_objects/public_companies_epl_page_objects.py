@@ -18,4 +18,5 @@ class Employment_Practices_Liability:
         def verify_page_title_and_headers(self):
                 # Verifies that the page has the correct title and headers
                 expect(self.page).to_have_title("EPL | Employment-Practices | Old Republic Professional")
-                expect(self.page.locator("h1")).to_have_text("Employment-Practices Liability")     
+                expect(self.page.locator("h1")).to_have_text("Employment-Practices Liability")
+
