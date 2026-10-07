@@ -16,3 +16,4 @@ class Employment_Practices_Liability:
                 self.page.wait_for_load_state("networkidle")
 
         def verify_page_title_and_headers(self):
+                
