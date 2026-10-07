@@ -14,3 +14,5 @@ class Employment_Practices_Liability:
                 self.epl_page.hover()
                 self.epl_page.click()
                 self.page.wait_for_load_state("networkidle")
+
+        verify_page_title_and_headers()
