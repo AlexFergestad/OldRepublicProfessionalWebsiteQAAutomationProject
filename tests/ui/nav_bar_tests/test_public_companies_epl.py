@@ -56,4 +56,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.ui
 @pytest.mark.public_companies_employment_practices_liability_page
 def test_applications_and_forms_title_and_text(page: Page, base_url):
-
+    pass
