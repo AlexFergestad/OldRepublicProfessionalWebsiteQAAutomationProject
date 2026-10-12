@@ -151,3 +151,10 @@ expect(contact_button).to_be_visible()
   │         │              └─ Assertion method (checks a condition)
   │         └─ Element to check
   └─ Function that creates an assertion object
+
+
+## Author
+
+**Alex Fergestad**
+[GitHub](https://github.com/AlexFergestad)
+
