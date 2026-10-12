@@ -13,7 +13,6 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 - **Debugging support:** Playwright traces and screenshots for failed tests
 
 
-
 ## Tech Stack
 
 | Area | Tools |
@@ -37,6 +36,9 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 ├── playwright.config.ts # Playwright configuration
 └── requirements.txt     # Python dependencies
 ```
+
+
+
 
 
 ## Setup Instructions to Run Project
