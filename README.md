@@ -38,6 +38,17 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 ```
 
 
+## Test Coverage
+
+| Category | What it checks |
+| --- | --- |
+| Smoke | Pages load without errors, correct titles, critical navigation works |
+| Links | Navigation and in-page links resolve to the expected destinations |
+| Performance | Page load timing checks for each navigation page |
+| Accessibility | One axe-core scan per navigation page to detect WCAG violations |
+
+Tests are prioritized in tiers, with smoke tests run first to confirm the site is stable enough for deeper testing.
+
 
 
 
