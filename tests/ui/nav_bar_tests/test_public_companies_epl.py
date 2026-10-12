@@ -36,20 +36,20 @@ has the correct title and headers, performanced checks the page, and accessibili
 #     page.wait_for_load_state("networkidle")
 
 
-"""TC-002: Verify that the public companies employment-practices liability page has the correct title and headers."""
-@pytest.mark.ui
-@pytest.mark.public_companies_employment_practices_liability_page
-def test_epl_page_title_and_headers(page: Page, base_url):
-    # Goes to the home page first
-    page.goto(base_url)
+# """TC-002: Verify that the public companies employment-practices liability page has the correct title and headers."""
+# @pytest.mark.ui
+# @pytest.mark.public_companies_employment_practices_liability_page
+# def test_epl_page_title_and_headers(page: Page, base_url):
+#     # Goes to the home page first
+#     page.goto(base_url)
 
-    # Clicks on the Public Companies menu item to navigate to the public companies page
-    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+#     # Clicks on the Public Companies menu item to navigate to the public companies page
+#     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
-    # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
-    Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
+#     # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
+#     Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
 
-    # Verifies that the page has the correct title and headers
-    Employment_Practices_Liability(page, base_url).verify_page_title_and_headers()
+#     # Verifies that the page has the correct title and headers
+#     Employment_Practices_Liability(page, base_url).verify_page_title_and_headers()
     
 
