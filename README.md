@@ -1,29 +1,19 @@
-# Old Republic Professional Website QA Automation Project
-I'm creating a project that will test the Old Republic Professional's main website in different ways by creating test cases and automation scripts in an organized and ordered way.
 
-## Project Overview
-Automated UI testing suite for the Old Republic Professional insurance website (https://www.oldrepublicpro.com/)
+Automated UI test suite for the public [Old Republic Professional](https://www.oldrepublicpro.com/) website, built with **Python, Playwright, and Pytest**. The suite covers link validation, page performance, and accessibility (axe-core) across the site's navigation pages, using the **Page Object Model** for maintainable, reusable tests.
 
-## Order of the Testing
-Tier 1: Smoke Tests (Test FIRST) 🔥
-Goal: Verify the app is stable enough to test further
-Start with the most critical, basic functionality:
+> **Status:** In progress. Navigation bar pages are covered first; additional pages and test types are being added.
 
-1. Page Loads ← You just did this!
+## Highlights
 
-- Does the homepage load?
-- Does it load without errors?
-- Is the title correct?
+- **60+ automated UI tests** across the navigation bar pages
+- **Link validation**, **page performance checks**, and **axe-core accessibility scans** (WCAG)
+- **Page Object Model:** one page object and one test file per page
+- **Cross-browser execution:** Chromium, Firefox, and WebKit
+- **Test documentation:** Markdown files record each test's expected result, actual result, and location in the repository
+- **Debugging support:** Playwright traces and screenshots for failed tests
 
-2. Critical Navigation
 
-- Can users access main pages?
-- Do primary menu items work?
 
-3. Critical Forms/Actions
-
-- Can users submit the contact form?
-- Do essential user actions work?
 
 
 ## Setup Instructions to Run Project
