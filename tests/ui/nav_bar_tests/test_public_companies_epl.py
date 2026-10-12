@@ -54,4 +54,4 @@ has the correct title and headers, performanced checks the page, and accessibili
 
 """TC-003: Verify the "Applications & Forms" title and paragraph text on the public companies employment-practices liability page."""
 @pytest.mark.ui
-
+@pytest.mark.public_companies_employment_practices_liability_page
