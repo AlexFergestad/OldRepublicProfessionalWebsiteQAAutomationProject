@@ -50,8 +50,6 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 Tests are prioritized in tiers, with smoke tests run first to confirm the site is stable enough for deeper testing.
 
 
-
-
 ## Setup Instructions to Run Project
 
 1. Clone the repository
@@ -69,6 +67,10 @@ Tests are prioritized in tiers, with smoke tests run first to confirm the site i
    - python -m pytest --headed --browser webkit
    - python -m pytest --headed --browser chromium
    - python -m pytest --headed --browser chromium --browser firefox --browser webkit (Runs all browsers at once)
+
+
+
+
 
 
 ## Command to debug in a UI
