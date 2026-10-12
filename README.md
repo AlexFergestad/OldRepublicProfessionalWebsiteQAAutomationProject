@@ -70,6 +70,39 @@ Tests are prioritized in tiers, with smoke tests run first to confirm the site i
 
 
 
+## Debugging Failures
+
+Playwright traces let you step through a failed test visually:
+
+```bash
+python -m playwright show-trace trace.zip
+```
+
+Screenshots from test runs are saved in the `screenshots/` folder.
+
+## Test Documentation
+
+Each test is documented in Markdown inside the `Documents/` folder, including:
+
+- The test's purpose
+- Expected result
+- Actual result
+- The location of the test in the repository
+
+This keeps test cases traceable to the automated code that runs them.
+
+## Design Approach
+
+- **Page Object Model:** Each page has a dedicated page object that holds its locators and actions, and a matching test file that holds the assertions. If the page changes, only one page object needs updating.
+- **Shared fixtures:** `conftest.py` provides setup shared across all tests.
+- **Test the live site responsibly:** Tests run against a production website, so they avoid actions that create real data, such as submitting live forms.
+
+## Roadmap
+
+- [ ] Extend coverage beyond the navigation bar pages
+- [ ] Add visual regression testing
+- [ ] Expand accessibility checks
+- [ ] Add test reporting to CI runs
 
 
 
