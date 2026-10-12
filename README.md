@@ -50,35 +50,58 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 Tests are prioritized in tiers, with smoke tests run first to confirm the site is stable enough for deeper testing.
 
 
-## Setup Instructions to Run Project
+### Prerequisites
 
-1. Clone the repository
-2. Create virtual environment: `python -m venv venv`
-3. Activate virtual environment: `.\venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
-4. Install dependencies: `pip install -r requirements.txt`
-5. Install Playwright browsers: `python -m playwright install`
-6. Run tests: 
-   You can do:
-   - python -m pytest
-   - python -m pytest --headed (The UI version)
-   - python -m pytest --headed --slowmo=1000 (Adds a 1-second delay between actions (1000 milliseconds))
-   - python -m pytest --headed --slowmo=500 -s (The -s flag keeps output visible and can help with debugging)
-   - python -m pytest --headed --browser firefox
-   - python -m pytest --headed --browser webkit
-   - python -m pytest --headed --browser chromium
-   - python -m pytest --headed --browser chromium --browser firefox --browser webkit (Runs all browsers at once)
+- Python 3.x
+- Git
 
-
-
-## Debugging Failures
-
-Playwright traces let you step through a failed test visually:
+### Setup
 
 ```bash
-python -m playwright show-trace trace.zip
+# 1. Clone the repository
+git clone https://github.com/AlexFergestad/OldRepublicProfessionalWebsiteQAAutomationProject.git
+cd OldRepublicProfessionalWebsiteQAAutomationProject
+
+# 2. Create a virtual environment
+python -m venv venv
+
+# 3. Activate it
+.\venv\Scripts\activate          # Windows
+source venv/bin/activate         # Mac/Linux
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Install Playwright browsers
+python -m playwright install
 ```
 
-Screenshots from test runs are saved in the `screenshots/` folder.
+## Running the Tests
+
+```bash
+# Run all tests (headless)
+python -m pytest
+
+# Run with the browser visible
+python -m pytest --headed
+
+# Slow down actions for easier viewing (milliseconds)
+python -m pytest --headed --slowmo=500 -s
+
+# Run in a specific browser
+python -m pytest --browser chromium
+python -m pytest --browser firefox
+python -m pytest --browser webkit
+
+# Run all three browsers
+python -m pytest --browser chromium --browser firefox --browser webkit
+
+# Run only UI-marked tests
+python -m pytest -m ui --headed -s
+
+# Run a single test with verbose output
+python -m pytest path/to/test_file.py::test_name -s -v
+```
 
 ## Test Documentation
 
