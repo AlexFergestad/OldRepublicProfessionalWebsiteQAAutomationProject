@@ -7,6 +7,7 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 
 - **60+ automated UI tests** across the navigation bar pages
 - **Link validation**, **page performance checks**, and **axe-core accessibility scans** (WCAG)
+- **Image validation**, **text validation**, and **url validations** (WCAG)
 - **Page Object Model:** one page object and one test file per page
 - **Cross-browser execution:** Chromium, Firefox, and WebKit
 - **Test documentation:** Markdown files record each test's expected result, actual result, and location in the repository
@@ -21,7 +22,7 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 | Automation | Playwright, Pytest |
 | Accessibility | axe-core |
 | Design pattern | Page Object Model |
-| CI | GitHub Actions |
+| CI | GitHub Actions | (Soon)
 
 ## Project Structure
 
