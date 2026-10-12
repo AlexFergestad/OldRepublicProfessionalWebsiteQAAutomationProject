@@ -28,15 +28,32 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 
 ```
 .
-├── .github/workflows/   # CI pipeline
-├── Documents/           # Test documentation (expected vs. actual results, test locations)
-├── screenshots/         # Screenshots captured during test runs
-├── tests/               # Test files and page objects, one per page
-├── conftest.py          # Shared Pytest fixtures
-├── pytest.ini           # Pytest configuration and markers
-├── playwright.config.ts # Playwright configuration
-└── requirements.txt     # Python dependencies
+├── .github/
+│   └── workflows/           # CI pipeline (GitHub Actions)
+├── Documents/               # Test documentation: expected vs. actual results and test locations
+├── screenshots/             # Screenshots captured during test runs
+├── tests/
+│   └── ui/
+│       ├── page_objects/    # Page Object Model classes, one per page (locators and actions)
+│       └── test_*.py        # UI test files, one per page (assertions and test scenarios)
+├── conftest.py              # Shared Pytest fixtures
+├── pytest.ini               # Pytest configuration and markers
+├── playwright.config.ts     # Playwright configuration
+├── package.json             # Node dependencies for Playwright tooling
+└── requirements.txt         # Python dependencies
 ```
+
+### How the pieces fit together
+
+Each page of the website has two matching files:
+
+| Layer | Location | Responsibility |
+| --- | --- | --- |
+| Page object | `tests/ui/page_objects/` | Holds the page's locators and actions (clicking, navigating, reading text) |
+| Test file | `tests/ui/` | Holds the test scenarios and assertions that use the page object |
+
+For example, a page's test file calls its page object to interact with the page, then asserts the result. When the page changes, only that page's page object needs updating, not every test.
+
 
 
 ## Test Coverage
