@@ -29,7 +29,6 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 ```
 .
 ├── .github/
-│   └── workflows/           # CI pipeline (GitHub Actions)
 ├── Documents/               # Test documentation: expected vs. actual results and test locations
 ├── screenshots/             # Screenshots captured during test runs
 ├── tests/
