@@ -14,6 +14,29 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 
 
 
+## Tech Stack
+
+| Area | Tools |
+| --- | --- |
+| Language | Python |
+| Automation | Playwright, Pytest |
+| Accessibility | axe-core |
+| Design pattern | Page Object Model |
+| CI | GitHub Actions |
+
+## Project Structure
+
+```
+.
+├── .github/workflows/   # CI pipeline
+├── Documents/           # Test documentation (expected vs. actual results, test locations)
+├── screenshots/         # Screenshots captured during test runs
+├── tests/               # Test files and page objects, one per page
+├── conftest.py          # Shared Pytest fixtures
+├── pytest.ini           # Pytest configuration and markers
+├── playwright.config.ts # Playwright configuration
+└── requirements.txt     # Python dependencies
+```
 
 
 ## Setup Instructions to Run Project
@@ -34,21 +57,6 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
    - python -m pytest --headed --browser chromium
    - python -m pytest --headed --browser chromium --browser firefox --browser webkit (Runs all browsers at once)
 
-## List of Files and What They Do
-Requirements.txt
-- Lists all Python Packages your project needs.
-- It's a shopping list for your project's dependencies.
-- After you run "pip install -r requirements.txt", pip reads the file and installs all packages listed.
-- Without it, you would have to manually install each package.
-
-Conftest.py
-- Shared pytest configuration and fixtures for all your tests.
-- It's a toolbox that all your tests can access.
-- Pytest automtically finds and loads the conftest.py file. 
-
-__init__.py
-- Marks a folder as a Python package.
-- It's a sign that says "This folder contains Python code".
 
 ## Command to debug in a UI
 
