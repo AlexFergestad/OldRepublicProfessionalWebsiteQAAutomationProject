@@ -58,3 +58,5 @@ has the correct title and headers, performanced checks the page, and accessibili
 def test_applications_and_forms_title_and_text(page: Page, base_url):
     # Goes to the home page first
     page.goto(base_url)
+
+    
