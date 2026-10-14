@@ -67,3 +67,5 @@ def test_applications_and_forms_title_and_text(page: Page, base_url):
 
     # Verifies that the "Applications & Forms" title and paragraph text are present on the page
     Employment_Practices_Liability(page, base_url).verify_applications_and_forms_title_and_text()
+
+    
