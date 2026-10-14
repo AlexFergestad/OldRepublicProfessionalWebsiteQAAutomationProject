@@ -64,3 +64,5 @@ def test_applications_and_forms_title_and_text(page: Page, base_url):
 
     # Clicks on the Employment-Practices Liability card to navigate to the employment-practices liability page
     Employment_Practices_Liability(page, base_url).navigate_to_epl_page()
+
+    
