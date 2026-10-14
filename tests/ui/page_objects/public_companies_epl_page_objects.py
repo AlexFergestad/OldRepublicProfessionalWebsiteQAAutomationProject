@@ -8,6 +8,7 @@ class Employment_Practices_Liability:
                 self.base_url = base_url
                 self.header_nav = page.locator("#hs_menu_wrapper_module_1527184808535133_mjfm_header_main_menu")
                 self.epl_page = self.header_nav.get_by_role("menuitem", name="Employment-Practices Liability")
+                self.epl_applications_title = page.locator("h2", has_text="EPL Applications")
 
         def navigate_to_epl_page(self):
                 self.page.wait_for_timeout(1000)
@@ -21,6 +22,7 @@ class Employment_Practices_Liability:
                 expect(self.page.locator("h1")).to_have_text("Employment-Practices Liability")
 
         def verify_applications_and_forms_title_and_text(self):
+
 
 
 
