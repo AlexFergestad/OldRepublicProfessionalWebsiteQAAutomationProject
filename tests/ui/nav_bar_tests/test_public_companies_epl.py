@@ -61,3 +61,5 @@ def test_applications_and_forms_title_and_text(page: Page, base_url):
 
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
+
+    
