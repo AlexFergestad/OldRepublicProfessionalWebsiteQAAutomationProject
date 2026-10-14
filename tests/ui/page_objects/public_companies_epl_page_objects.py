@@ -24,12 +24,20 @@ class Employment_Practices_Liability:
 
         def verify_applications_and_forms_title_and_text(self):
                 row = self.page.locator("tr").filter(has_text="ORUG-103")
-    
+
                 expect(row).to_contain_text("ORUG-103")
                 expect(row).to_contain_text("New-Business Application")
                 expect(row).to_contain_text("1/2017")
                 expect(row.get_by_role("link", name="Word Processor")).to_be_visible()
                 expect(row.get_by_role("link", name="PDF")).to_be_visible()
 
-
+                # Verifies the links for the Word Processor and PDF versions of the application
+                self.verify_download_link(
+                        row.get_by_role("link", name="Word Processor"),
+                        "https://www.orprofessional.com/hubfs/documents/epl/ORUG-103-APP.docx"
+                )
+                self.verify_download_link(
+                        row.get_by_role("link", name="PDF"),
+                        "https://www.orprofessional.com/hubfs/documents/epl/ORUG-103-APP.pdf"
+                )
 
