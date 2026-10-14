@@ -20,7 +20,7 @@ class Employment_Practices_Liability:
                 expect(self.page).to_have_title("EPL | Employment-Practices Liability | Old Republic Professional")
                 expect(self.page.locator("h1")).to_have_text("Employment-Practices Liability")
 
-        def verify_applications_and_forms_title_and_text():
+        def verify_applications_and_forms_title_and_text(self):
 
 
 
