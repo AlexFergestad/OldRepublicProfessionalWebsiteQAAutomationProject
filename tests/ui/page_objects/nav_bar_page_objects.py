@@ -32,6 +32,8 @@ class NavigationMenu:
             self.financial_institutions_link.click()
         elif item_name == "commercial crime":
             self.commercial_crime_link.click()
+        elif item_name == "who we serve":
+            self.who_we_serve_link.click()
         else:
             raise ValueError(f"Navigation item '{item_name}' not found in the navigation menu.")
         
