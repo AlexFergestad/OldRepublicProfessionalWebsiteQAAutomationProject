@@ -21,4 +21,11 @@ has the correct title and headers, performanced checks the page, and accessibili
 @pytest.mark.ui
 @pytest.mark.who_we_serve_main_page
 def test_who_we_serve_page_loads(page: Page, base_url):
+    # Goes to the home page first
+    page.goto(base_url)
+    
+    # Clicks on the Public Companies menu item to navigate to the public companies page
+    NavigationMenu(page).navigate_to_nav_bar_item("Public Companies")
 
+    # Waits for the public companies page to load
+    page.wait_for_load_state("networkidle")    
