@@ -17,7 +17,7 @@ class NavigationMenu:
         self.commercial_crime_link = page.get_by_role("menuitem", name="Commercial Crime").first
 
         # New Website page object
-        self.who_we_serve_link = 
+        self.who_we_serve_link = page.get_by_role("menuitem", name="Who We Serve").first
     
     def navigate_to_nav_bar_item(self, item_name: str):
         """Navigate to a specific navigation item by name"""
