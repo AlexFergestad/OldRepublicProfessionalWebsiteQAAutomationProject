@@ -9,10 +9,10 @@ from tests.ui.page_objects.
 
 """
 
-Public Companies Directors and Liability Page UI Tests
+Who We Serve Main Page UI Tests
 Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007
 
-* This page verifies the Directors and Liability page of the Old Republic Professional website loads correctly, 
+* This page verifies the Wo We Serve page of the Old Republic Professional website loads correctly, 
 has the correct title and headers, performanced checks the page, and accessibility checks the page.
 
 """
