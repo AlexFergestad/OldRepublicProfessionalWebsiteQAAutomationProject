@@ -7,5 +7,5 @@ class Who_We_Serve:
         self.page = page
         self.base_url = base_url
 
-
+        self.learn_more_public_companies = page.get_by_role("button", name="Learn More")
 
