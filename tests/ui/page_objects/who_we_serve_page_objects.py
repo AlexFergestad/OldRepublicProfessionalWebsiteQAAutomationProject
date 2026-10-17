@@ -9,3 +9,6 @@ class Who_We_Serve:
 
         self.learn_more_public_companies = page.get_by_role("button", name="Learn More")
 
+    def verify_learn_more_button(self, locator):
+
+        
