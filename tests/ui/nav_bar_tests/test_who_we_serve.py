@@ -34,3 +34,4 @@ def test_who_we_serve_page_loads(page: Page, base_url):
 
 """TC-02: Verify the 'Learn More' Button for the Public Companies Section."""
 @pytest.mark.ui
+@pytest.mark.who_we_serve_main_page
