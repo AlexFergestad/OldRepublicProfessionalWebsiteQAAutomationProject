@@ -41,3 +41,7 @@ def test_learn_more_button_for_public_companies(page: Page, base_url):
 
     # Clicks on the Public Companies menu item to navigate to the public companies page
     NavigationMenu(page).navigate_to_nav_bar_item("Who We Serve")
+
+    Who_We_Serve(page).verify_learn_more_button(test_learn_more_button_for_public_companies)
+
+    
