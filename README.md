@@ -22,7 +22,7 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 | Automation | Playwright, Pytest |
 | Accessibility | axe-core |
 | Design pattern | Page Object Model |
-| CI (Coming Soon) | GitHub Actions |
+| CI/CD (Coming Soon) | GitHub Actions |
 
 ## Project Structure
 
