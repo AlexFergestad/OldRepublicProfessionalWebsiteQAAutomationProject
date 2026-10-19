@@ -6,18 +6,22 @@ from playwright.sync_api import Page, expect
 class Who_We_Serve:
     SECTIONS = {
         "Public Companies": {
+            "tab": "tab1",
             "path": "/who-we-serve/public-companies",
             "description": "public companies",
         },
         "Private Companies": {
+            "tab": "tab2",
             "path": "/en/who-we-serve/private-companies",
             "description": "private companies",
         },
         "Financial Institutions": {
+            "tab": "tab3",
             "path": "/who-we-serve/financial-institutions",
             "description": "financial institutions",
         },
         "Not-for-Profit Entities": {
+            "tab": "tab4",
             "path": "/who-we-serve/not-for-profit-entities",
             "description": "not-for-profit organizations",
         },
@@ -39,7 +43,10 @@ class Who_We_Serve:
         if section_name not in self.SECTIONS:
             raise ValueError(f"Unknown Who We Serve section: {section_name}")
 
-        tab = self.page.get_by_role("tab", name=section_name, exact=True)
+        tab = self.page.locator(
+            f'.pwr-tabs__item[role="tab"][rel="{self.SECTIONS[section_name]["tab"]}"]'
+        )
+        expect(tab).to_contain_text(section_name)
         tab.click()
         expect(tab).to_have_attribute("aria-selected", "true")
 
