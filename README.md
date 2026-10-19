@@ -1,7 +1,7 @@
 
 Automated UI test suite for the public [Old Republic Professional](https://www.oldrepublicpro.com/) website, built with **Python, Playwright, and Pytest**. The suite covers link validation, page performance, and accessibility (axe-core) across the site's navigation pages, using the **Page Object Model** for maintainable, reusable tests.
 
-> $\color{red}{\textsf{\textbf{STATUS:}}}$ The website was just changed completely on 10/14/2026. Test files and page objects have to be fixed. Currently in progress. Please run file test_who_we_serve.py since that is the most updated file. All of the other files represent the old website. Work Timeline: Navigation bar pages are covered first; additional pages and test types are being added.
+> $\color{red}{\textsf{\textbf{STATUS:}}}$ The website was just changed completely on 10/14/2026. Test files and page objects have to be fixed. Currently in progress. Please run file **test_who_we_serve.py** since that is the most updated file. All of the other files represent the old website. Work Timeline: Navigation bar pages are covered first; additional pages and test types are being added.
 
 ## Highlights
 
