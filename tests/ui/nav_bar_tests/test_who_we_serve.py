@@ -30,7 +30,7 @@ def open_who_we_serve(page: Page, base_url: str) -> Who_We_Serve:
 
 """TC-01: Verify that the Who We Serve page loads correctly and has the correct URL."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_who_we_serve_page_loads(page: Page, base_url):
     open_who_we_serve(page, base_url)
 
@@ -41,7 +41,7 @@ def test_who_we_serve_page_loads(page: Page, base_url):
 
 """TC-02: Verify the 'Learn More' Button for the Public Companies Section."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_learn_more_button_for_public_companies(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Public Companies")
@@ -50,7 +50,7 @@ def test_learn_more_button_for_public_companies(page: Page, base_url):
 
 """TC-03: Verify the Private Companies Section."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_private_companies_section(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Private Companies")
@@ -59,7 +59,7 @@ def test_private_companies_section(page: Page, base_url):
 
 """TC-04: Verify the Financial Institutions Section."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_financial_institutions_section(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Financial Institutions")
@@ -68,7 +68,7 @@ def test_financial_institutions_section(page: Page, base_url):
 
 """TC-05: Verify the Not-for-Profit Entities Section."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_not_for_profit_entities_section(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Not-for-Profit Entities")
@@ -77,7 +77,7 @@ def test_not_for_profit_entities_section(page: Page, base_url):
 
 """TC-06: Verify the Who We Serve Page Performance Metrics."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_who_we_serve_page_performance_metrics(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     performance_metrics = who_we_serve.get_performance_metrics()
@@ -104,7 +104,7 @@ def test_who_we_serve_page_performance_metrics(page: Page, base_url):
 
 """TC-07: Verify Accessibility Checks on the Who We Serve Page."""
 @pytest.mark.ui
-@pytest.mark.regression
+@pytest.mark.who_we_serve
 def test_who_we_serve_page_accessibility(page: Page, base_url):
     open_who_we_serve(page, base_url)
 
