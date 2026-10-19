@@ -54,6 +54,7 @@ def test_learn_more_button_for_public_companies(page: Page, base_url):
 def test_private_companies_section(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Private Companies")
+    who_we_serve.click_learn_more("Private Companies")
 
 
 """TC-04: Verify the Financial Institutions Section."""
@@ -62,6 +63,7 @@ def test_private_companies_section(page: Page, base_url):
 def test_financial_institutions_section(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Financial Institutions")
+    who_we_serve.click_learn_more("Financial Institutions")
 
 
 """TC-05: Verify the Not-for-Profit Entities Section."""
@@ -70,6 +72,7 @@ def test_financial_institutions_section(page: Page, base_url):
 def test_not_for_profit_entities_section(page: Page, base_url):
     who_we_serve = open_who_we_serve(page, base_url)
     who_we_serve.verify_section("Not-for-Profit Entities")
+    who_we_serve.click_learn_more("Not-for-Profit Entities")
 
 
 """TC-06: Verify the Who We Serve Page Performance Metrics."""
