@@ -4,7 +4,7 @@ Automated UI test suite for the public [Old Republic Professional](https://www.o
 > $\color{red}{\textsf{\textbf{STATUS:}}}$ The website was just changed completely on 10/14/2026. Test files and page objects have to be fixed. Currently in progress. Please run file **test_who_we_serve.py** since that is the most updated file. All of the other files represent the old website.
 >
 >
-Work Timeline: Navigation bar pages are covered first; additional pages and test types are being added.
+Work Timeline: Navigation bar pages are covered first; additional pages and test types will be added.
 
 ## Highlights
 
