@@ -41,3 +41,24 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_learn_more_button_for_public_companies`)
 
+# TC-003: Verify the Private Companies section and "Learn More" button
+**Priority**: High
+**Type**: Functional
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar.
+3. Select the Private Companies tab.
+4. Verify the section heading and description.
+5. Click the "Learn More" button.
+
+### Expected Result:
+- The Private Companies tab is selected and its section heading and description are displayed.
+- The button opens the Private Companies page.
+- The destination URL is `/en/who-we-serve/private-companies` and its H1 is "Private Companies".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_private_companies_section`)
