@@ -19,7 +19,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_who_we_serve.py::test_who_we_serve_page_loads`)
+**Automated**: No (`test_who_we_serve_page_loads` is currently commented out in `tests/ui/nav_bar_tests/test_who_we_serve.py`)
 
 # TC-002: Verify the "Learn More" button for the Public Companies section
 **Priority**: High
