@@ -1,6 +1,6 @@
 # Test Cases Who We Serve File
 
-## TC-001: Homepage Loads Successfully
+## TC-002: Homepage Loads Successfully
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -9,7 +9,7 @@
 
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/.
-2. Click on "Public Companies" in the nav bar.
+2. Click on "Who We Serve" link in the nav bar.
 3. Wait for page to fully load.
 
 ### Expected Result: 
