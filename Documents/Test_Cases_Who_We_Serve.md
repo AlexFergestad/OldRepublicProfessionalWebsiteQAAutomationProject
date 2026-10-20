@@ -84,3 +84,25 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_financial_institutions_section`)
+
+# TC-005: Verify the Not-for-Profit Entities section and "Learn More" button
+**Priority**: High
+**Type**: Functional
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar.
+3. Select the Not-for-Profit Entities tab.
+4. Verify the section heading and description.
+5. Click the "Learn More" button.
+
+### Expected Result:
+- The Not-for-Profit Entities tab is selected and its section heading and description are displayed.
+- The button opens the Not-for-Profit Entities page.
+- The destination URL is `/who-we-serve/not-for-profit-entities` and its H1 is "Not-for-Profit Entities".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_not_for_profit_entities_section`)
