@@ -148,3 +148,25 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_navbar_dropdown_links`)
+
+# TC-008: Verify performance metrics on the Who We Serve page
+**Priority**: Medium
+**Type**: Performance
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+- Performance APIs are available in the browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar and wait for the page to load.
+3. Capture the page load time, First Contentful Paint (FCP), Largest Contentful Paint (LCP), and Cumulative Layout Shift (CLS).
+
+### Expected Result:
+- Page load time is less than 3000 ms.
+- FCP is less than 2000 ms.
+- When LCP is available, it is less than 2500 ms.
+- CLS is less than 0.1.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_page_performance_metrics`)
