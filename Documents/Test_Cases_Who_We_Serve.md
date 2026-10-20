@@ -62,3 +62,25 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_private_companies_section`)
+
+# TC-004: Verify the Financial Institutions section and "Learn More" button
+**Priority**: High
+**Type**: Functional
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar.
+3. Select the Financial Institutions tab.
+4. Verify the section heading and description.
+5. Click the "Learn More" button.
+
+### Expected Result:
+- The Financial Institutions tab is selected and its section heading and description are displayed.
+- The button opens the Financial Institutions page.
+- The destination URL is `/who-we-serve/financial-institutions` and its H1 is "Financial Institutions".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_financial_institutions_section`)
