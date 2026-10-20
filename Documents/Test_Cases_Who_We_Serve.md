@@ -170,3 +170,23 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_page_performance_metrics`)
+
+# TC-009: Verify accessibility on the Who We Serve page
+**Priority**: High
+**Type**: Accessibility
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+- The axe accessibility scanner is installed and available to the test.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar and wait for the page to load.
+3. Run the axe accessibility scan on the page.
+4. Review any violations with a critical or serious impact.
+
+### Expected Result:
+- The scan reports no critical or serious violations other than the known exclusions: `color-contrast`, `input-button-name`, and `link-name`.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_page_accessibility`)
