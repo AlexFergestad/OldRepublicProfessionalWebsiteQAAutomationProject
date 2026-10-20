@@ -126,3 +126,25 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_connect_with_us_heading_and_view_our_team_button`)
+
+# TC-007: Verify links in the Who We Serve navigation dropdown
+**Priority**: High
+**Type**: Functional/Navigation
+**Preconditions**:
+- Have an internet-connected computer and a supported desktop web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/ and open "Who We Serve".
+2. Hover over "Who We Serve" in the navigation bar.
+3. Click "Public Companies" and wait one second.
+4. Return to the page's navigation bar and click "Private Companies".
+5. Return to the navigation bar, click "Financial Institutions", and wait one second.
+6. Return to the navigation bar, click "Not-for-Profit Entities", and wait one second.
+
+### Expected Result:
+- Each dropdown link is visible and points to its corresponding Who We Serve page.
+- Each click navigates to the matching URL in the requested order.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_navbar_dropdown_links`)
