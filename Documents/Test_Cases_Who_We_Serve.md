@@ -19,7 +19,8 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: No (`test_who_we_serve_page_loads` is currently commented out in `tests/ui/nav_bar_tests/test_who_we_serve.py`)
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_page_loads`)
+
 
 # TC-002: Verify the "Learn More" button for the Public Companies section
 **Priority**: High
@@ -40,6 +41,7 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_learn_more_button_for_public_companies`)
+
 
 # TC-003: Verify the Private Companies section and "Learn More" button
 **Priority**: High
@@ -63,6 +65,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_private_companies_section`)
 
+
 # TC-004: Verify the Financial Institutions section and "Learn More" button
 **Priority**: High
 **Type**: Functional
@@ -84,6 +87,7 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_financial_institutions_section`)
+
 
 # TC-005: Verify the Not-for-Profit Entities section and "Learn More" button
 **Priority**: High
@@ -107,6 +111,7 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_not_for_profit_entities_section`)
 
+
 # TC-006: Verify the "Connect With Us" heading and "View Our Team" button
 **Priority**: High
 **Type**: Functional
@@ -126,6 +131,7 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_connect_with_us_heading_and_view_our_team_button`)
+
 
 # TC-007: Verify links in the Who We Serve navigation dropdown
 **Priority**: High
@@ -148,6 +154,7 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_who_we_serve_navbar_dropdown_links`)
+
 
 # TC-008: Verify performance metrics on the Who We Serve page
 **Priority**: Medium
