@@ -28,15 +28,15 @@ def open_who_we_serve(page: Page, base_url: str) -> Who_We_Serve:
     return Who_We_Serve(page, base_url)
 
 
-# """TC-01: Verify that the Who We Serve page loads correctly and has the correct URL."""
-# @pytest.mark.ui
-# @pytest.mark.who_we_serve
-# def test_who_we_serve_page_loads(page: Page, base_url):
-#     open_who_we_serve(page, base_url)
+"""TC-01: Verify that the Who We Serve page loads correctly and has the correct URL."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_who_we_serve_page_loads(page: Page, base_url):
+    open_who_we_serve(page, base_url)
 
-#     expect(page).to_have_url(re.compile(r"/who-we-serve/?$"))
-#     expect(page.locator("h1")).to_have_text("Who We Serve")
-#     expect(page).to_have_title(re.compile(r"Who We Serve", re.IGNORECASE))
+    expect(page).to_have_url(re.compile(r"/who-we-serve/?$"))
+    expect(page.locator("h1")).to_have_text("Who We Serve")
+    expect(page).to_have_title(re.compile(r"Who We Serve", re.IGNORECASE))
 
 
 """TC-02: Verify the 'Learn More' Button for the Public Companies Section."""
