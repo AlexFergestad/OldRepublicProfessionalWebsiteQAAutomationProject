@@ -21,5 +21,23 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/test_who_we_serve.py::test_who_we_serve_page_loads`)
 
+# TC-002: Verify the "Learn More" button for the Public Companies section
+**Priority**: High
+**Type**: Functional
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
 
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar.
+3. Click the "Learn More" button in the Public Companies section.
+
+### Expected Result:
+- The Public Companies section is displayed with its expected heading and description.
+- The button opens the Public Companies page.
+- The destination URL is `/who-we-serve/public-companies` and its H1 is "Public Companies".
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_learn_more_button_for_public_companies`)
 
