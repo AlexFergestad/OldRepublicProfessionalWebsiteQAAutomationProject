@@ -1,6 +1,6 @@
 # Test Cases Who We Serve File
 
-## TC-002: Homepage Loads Successfully
+## TC-001: Verify that the Who We Serve page loads correctly and has the correct URL.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**: 
@@ -18,7 +18,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_who_we_serve.py::test_learn_more_button_for_public_companies`)
+**Automated**: Yes (`tests/test_who_we_serve.py::test_who_we_serve_page_loads`)
 
 
 
