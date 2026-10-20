@@ -84,9 +84,6 @@ def test_connect_with_us_heading_and_view_our_team_button(page: Page, base_url):
     who_we_serve.verify_view_our_team_button()
 
 
-
-
-
 """TC-07: Verify the Who We Serve Page Performance Metrics."""
 @pytest.mark.ui
 @pytest.mark.who_we_serve
