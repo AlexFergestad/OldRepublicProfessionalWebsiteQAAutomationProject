@@ -14,7 +14,8 @@
 
 ### Expected Result: 
 - Page loads without any errors.
-- You are able to navigate and hover on the public companies webpage.
+- Url looks correct and matches: "https://www.orprofessional.com/who-we-serve".
+- You are able to navigate and hover on the who we serve webpage in the nav bar.
 
 ### Actual Result:
 **Status**: ✅ Pass
