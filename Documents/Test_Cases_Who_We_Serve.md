@@ -18,4 +18,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/test_homepage.py::test_public_companies_page_loads`)
+**Automated**: Yes (`tests/test_who_we_serve.py::test_learn_more_button_for_public_companies`)
