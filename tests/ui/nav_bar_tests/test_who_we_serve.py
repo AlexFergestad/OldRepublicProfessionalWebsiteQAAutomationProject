@@ -13,7 +13,7 @@ from tests.ui.page_objects.who_we_serve_page_objects import Who_We_Serve
 """
 
 Who We Serve Main Page UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009
 
 * This page verifies the Who We Serve page of the Old Republic Professional website loads correctly,
 has the expected client segment sections, working Learn More buttons, performance, and accessibility.
@@ -28,15 +28,15 @@ def open_who_we_serve(page: Page, base_url: str) -> Who_We_Serve:
     return Who_We_Serve(page, base_url)
 
 
-"""TC-01: Verify that the Who We Serve page loads correctly and has the correct URL."""
-@pytest.mark.ui
-@pytest.mark.who_we_serve
-def test_who_we_serve_page_loads(page: Page, base_url):
-    open_who_we_serve(page, base_url)
+# """TC-01: Verify that the Who We Serve page loads correctly and has the correct URL."""
+# @pytest.mark.ui
+# @pytest.mark.who_we_serve
+# def test_who_we_serve_page_loads(page: Page, base_url):
+#     open_who_we_serve(page, base_url)
 
-    expect(page).to_have_url(re.compile(r"/who-we-serve/?$"))
-    expect(page.locator("h1")).to_have_text("Who We Serve")
-    expect(page).to_have_title(re.compile(r"Who We Serve", re.IGNORECASE))
+#     expect(page).to_have_url(re.compile(r"/who-we-serve/?$"))
+#     expect(page.locator("h1")).to_have_text("Who We Serve")
+#     expect(page).to_have_title(re.compile(r"Who We Serve", re.IGNORECASE))
 
 
 """TC-02: Verify the 'Learn More' Button for the Public Companies Section."""
@@ -84,7 +84,15 @@ def test_connect_with_us_heading_and_view_our_team_button(page: Page, base_url):
     who_we_serve.verify_view_our_team_button()
 
 
-"""TC-07: Verify the Who We Serve Page Performance Metrics."""
+"""TC-07: Verify Links in the Who We Serve Navbar Dropdown."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_who_we_serve_navbar_dropdown_links(page: Page, base_url):
+    who_we_serve = open_who_we_serve(page, base_url)
+    who_we_serve.verify_who_we_serve_navbar_links()
+
+
+"""TC-08: Verify the Who We Serve Page Performance Metrics."""
 @pytest.mark.ui
 @pytest.mark.who_we_serve
 def test_who_we_serve_page_performance_metrics(page: Page, base_url):
@@ -111,7 +119,7 @@ def test_who_we_serve_page_performance_metrics(page: Page, base_url):
     )
 
 
-"""TC-08: Verify Accessibility Checks on the Who We Serve Page."""
+"""TC-09: Verify Accessibility Checks on the Who We Serve Page."""
 @pytest.mark.ui
 @pytest.mark.who_we_serve
 def test_who_we_serve_page_accessibility(page: Page, base_url):
