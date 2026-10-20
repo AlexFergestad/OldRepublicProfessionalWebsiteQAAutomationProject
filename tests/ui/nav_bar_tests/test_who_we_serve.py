@@ -13,7 +13,7 @@ from tests.ui.page_objects.who_we_serve_page_objects import Who_We_Serve
 """
 
 Who We Serve Main Page UI Tests
-Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008
 
 * This page verifies the Who We Serve page of the Old Republic Professional website loads correctly,
 has the expected client segment sections, working Learn More buttons, performance, and accessibility.
@@ -75,7 +75,16 @@ def test_not_for_profit_entities_section(page: Page, base_url):
     who_we_serve.click_learn_more("Not-for-Profit Entities")
 
 
-"""TC-06: Verify the Who We Serve Page Performance Metrics."""
+"""TC-06: Verify the Connect With Us Heading and View Our Team Button."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_connect_with_us_heading_and_view_our_team_button(page: Page, base_url):
+    who_we_serve = open_who_we_serve(page, base_url)
+    who_we_serve.verify_connect_with_us_heading()
+    who_we_serve.verify_view_our_team_button()
+
+
+"""TC-07: Verify the Who We Serve Page Performance Metrics."""
 @pytest.mark.ui
 @pytest.mark.who_we_serve
 def test_who_we_serve_page_performance_metrics(page: Page, base_url):
@@ -102,7 +111,7 @@ def test_who_we_serve_page_performance_metrics(page: Page, base_url):
     )
 
 
-"""TC-07: Verify Accessibility Checks on the Who We Serve Page."""
+"""TC-08: Verify Accessibility Checks on the Who We Serve Page."""
 @pytest.mark.ui
 @pytest.mark.who_we_serve
 def test_who_we_serve_page_accessibility(page: Page, base_url):

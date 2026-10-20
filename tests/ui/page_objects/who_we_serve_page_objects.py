@@ -30,6 +30,14 @@ class Who_We_Serve:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.base_url = base_url.rstrip("/")
+        self.connect_with_us_heading = page.get_by_role(
+            "heading",
+            name=re.compile(r"^Connect With Us$", re.IGNORECASE),
+            level=2,
+        )
+        self.view_our_team_button = page.get_by_role(
+            "button", name=re.compile(r"^View Our Team$", re.IGNORECASE)
+        )
 
     def section(self, section_name: str):
         if section_name not in self.SECTIONS:
@@ -55,6 +63,23 @@ class Who_We_Serve:
         section = self.section(section_name)
         expect(section.get_by_role("heading", name=section_name, exact=True)).to_be_visible()
         expect(section).to_contain_text(self.SECTIONS[section_name]["description"])
+
+    def verify_connect_with_us_heading(self):
+        expect(self.connect_with_us_heading).to_be_visible()
+        expect(self.connect_with_us_heading).to_have_text(
+            re.compile(r"^Connect With Us$", re.IGNORECASE)
+        )
+
+    def verify_view_our_team_button(self):
+        expect(self.view_our_team_button).to_be_visible()
+        expect(self.view_our_team_button).to_have_attribute(
+            "href", re.compile(r"/team/?\?filter=underwriters(?:&|$)")
+        )
+        self.view_our_team_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(
+            re.compile(r"/team/?\?filter=underwriters(?:&|$)")
+        )
 
     def verify_learn_more_buttons(self):
         for section_name, details in self.SECTIONS.items():
