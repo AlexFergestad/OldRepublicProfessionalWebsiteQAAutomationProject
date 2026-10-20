@@ -106,3 +106,23 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_not_for_profit_entities_section`)
+
+# TC-006: Verify the "Connect With Us" heading and "View Our Team" button
+**Priority**: High
+**Type**: Functional
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/.
+2. Open "Who We Serve" from the navigation bar.
+3. Scroll to the "Connect With Us" section.
+4. Verify the H2 heading and click "View Our Team".
+
+### Expected Result:
+- The H2 heading "Connect With Us" is visible.
+- The "View Our Team" button navigates to `/team?filter=underwriters`.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_who_we_serve.py::test_connect_with_us_heading_and_view_our_team_button`)
