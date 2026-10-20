@@ -38,6 +38,18 @@ class Who_We_Serve:
         self.view_our_team_button = page.get_by_role(
             "button", name=re.compile(r"^View Our Team$", re.IGNORECASE)
         )
+        self.who_we_serve_navbar_menu = page.get_by_role(
+            "menuitem", name="Who We Serve", exact=True
+        ).filter(visible=True).first
+        self.who_we_serve_dropdown = page.locator(
+            ".pwr-header-advanced-mm--is-active"
+        )
+        self.who_we_serve_navbar_links = {
+            section_name: self.who_we_serve_dropdown.get_by_role(
+                "link", name=section_name, exact=True
+            )
+            for section_name in self.SECTIONS
+        }
 
     def section(self, section_name: str):
         if section_name not in self.SECTIONS:
@@ -80,6 +92,36 @@ class Who_We_Serve:
         expect(self.page).to_have_url(
             re.compile(r"/team/?\?filter=underwriters(?:&|$)")
         )
+
+    def verify_who_we_serve_navbar_links(self):
+        section_order = [
+            "Public Companies",
+            "Private Companies",
+            "Financial Institutions",
+            "Not-for-Profit Entities",
+        ]
+
+        for section_name in section_order:
+            self.page.mouse.move(0, 0)
+            self.who_we_serve_navbar_menu.hover()
+            link = self.who_we_serve_navbar_links[section_name]
+            section_path = self.SECTIONS[section_name]["path"]
+            expect(link).to_be_visible()
+            expect(link).to_have_attribute(
+                "href", re.compile(re.escape(section_path) + r"/?$")
+            )
+            link.click()
+            self.page.wait_for_load_state("domcontentloaded")
+            expect(self.page).to_have_url(
+                re.compile(re.escape(section_path) + r"/?$")
+            )
+
+            if section_name in (
+                "Public Companies",
+                "Financial Institutions",
+                "Not-for-Profit Entities",
+            ):
+                self.page.wait_for_timeout(1000)
 
     def verify_learn_more_buttons(self):
         for section_name, details in self.SECTIONS.items():
