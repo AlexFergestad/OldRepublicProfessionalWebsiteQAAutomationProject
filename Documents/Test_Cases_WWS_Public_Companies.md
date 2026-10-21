@@ -34,3 +34,22 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_introductory_paragraphs`)
+
+# TC-003: Verify the "View D&O Coverage Details" button
+**Priority**: High
+**Type**: Functional/Navigation
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to load.
+3. Click "View D&O Coverage Details" in the Directors & Officers Liability section.
+
+### Expected Result:
+- The button is visible and links to `/coverages/directors-and-officers-liability`.
+- Clicking the button navigates to the Directors & Officers Liability coverage page.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_view_d_and_o_coverage_details_button`)

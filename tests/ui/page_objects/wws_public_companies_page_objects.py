@@ -21,6 +21,9 @@ class WWS_Public_Companies:
         self.introductory_paragraph_right = self.introductory_content.locator(
             ".pwr-sec-txt__right"
         )
+        self.d_and_o_coverage_details_button = page.locator(
+            "a.cta_button"
+        ).filter(has_text=re.compile(r"^VIEW D&O COVERAGE DETAILS$", re.IGNORECASE))
 
     def open_page(self):
         self.page.goto(self.page_url)
@@ -46,5 +49,16 @@ class WWS_Public_Companies:
             "leadership against potential financial and reputational exposures."
         )
 
+    def verify_d_and_o_coverage_details_button(self):
+        coverage_path = "/coverages/directors-and-officers-liability"
+        expect(self.d_and_o_coverage_details_button).to_be_visible()
+        expect(self.d_and_o_coverage_details_button).to_have_attribute(
+            "href", re.compile(re.escape(coverage_path) + r"/?$")
+        )
+        self.d_and_o_coverage_details_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(
+            re.compile(re.escape(coverage_path) + r"/?$")
+        )
 
 
