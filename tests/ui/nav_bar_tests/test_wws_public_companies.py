@@ -24,5 +24,21 @@ def test_wws_public_companies_introductory_paragraphs(page: Page, base_url: str)
     public_companies.verify_introductory_paragraphs()
 
 
+"""TC-003: Verify the View D&O Coverage Details button and destination."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_view_d_and_o_coverage_details_button(page: Page, base_url: str):
+    public_companies = WWS_Public_Companies(page, base_url)
+    public_companies.open_page()
+    public_companies.verify_d_and_o_coverage_details_button()
+
+
+"""TC-004: Verify the four Directors & Officers coverage descriptions."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_public_companies_d_and_o_coverage_descriptions(page: Page, base_url: str):
+    public_companies = WWS_Public_Companies(page, base_url)
+    public_companies.open_page()
+    public_companies.verify_d_and_o_coverage_descriptions()
 
 
