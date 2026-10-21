@@ -5,6 +5,12 @@ from playwright.sync_api import Page, expect
 
 class WWS_Public_Companies:
     PAGE_PATH = "/who-we-serve/public-companies"
+    D_AND_O_COVERAGE_DESCRIPTIONS = {
+        "Public Primary D&O": "First-layer D&O coverage for publicly traded companies.",
+        "Lead Side-A": "Dedicated Side-A coverage for non-indemnifiable loss.",
+        "Excess D&O": "Additional capacity above underlying public company D&O.",
+        "Excess Side-A": "Additional Side-A limits for layered public company programs.",
+    }
 
     def __init__(self, page: Page, base_url: str):
         self.page = page
@@ -24,6 +30,10 @@ class WWS_Public_Companies:
         self.d_and_o_coverage_details_button = page.locator(
             "a.cta_button"
         ).filter(has_text=re.compile(r"^VIEW D&O COVERAGE DETAILS$", re.IGNORECASE))
+        self.d_and_o_coverage_cards = {
+            name: page.get_by_role("heading", name=name, exact=True).locator("xpath=..")
+            for name in self.D_AND_O_COVERAGE_DESCRIPTIONS
+        }
 
     def open_page(self):
         self.page.goto(self.page_url)
@@ -61,4 +71,9 @@ class WWS_Public_Companies:
             re.compile(re.escape(coverage_path) + r"/?$")
         )
 
+    def verify_d_and_o_coverage_descriptions(self):
+        for name, description in self.D_AND_O_COVERAGE_DESCRIPTIONS.items():
+            card = self.d_and_o_coverage_cards[name]
+            expect(card.get_by_role("heading", name=name, exact=True)).to_be_visible()
+            expect(card).to_contain_text(description)
 

@@ -53,3 +53,24 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_view_d_and_o_coverage_details_button`)
+
+# TC-004: Verify Public Primary D&O, Lead Side-A, Excess D&O, and Excess Side-A text
+**Priority**: High
+**Type**: Functional/Content
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to load.
+3. Review the four coverage descriptions in the Directors & Officers Liability section.
+
+### Expected Result:
+- "Public Primary D&O" displays "First-layer D&O coverage for publicly traded companies."
+- "Lead Side-A" displays "Dedicated Side-A coverage for non-indemnifiable loss."
+- "Excess D&O" displays "Additional capacity above underlying public company D&O."
+- "Excess Side-A" displays "Additional Side-A limits for layered public company programs."
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_public_companies_d_and_o_coverage_descriptions`)
