@@ -50,3 +50,11 @@ def test_wws_public_companies_epl_coverage_details(page: Page, base_url: str):
     public_companies.open_page()
     public_companies.verify_epl_coverage_details()
 
+
+"""TC-006: Verify Fiduciary Liability and its coverage details button."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_wws_public_companies_fiduciary_coverage_details(page: Page, base_url: str):
+    public_companies = WWS_Public_Companies(page, base_url)
+    public_companies.open_page()
+    public_companies.verify_fiduciary_coverage_details()

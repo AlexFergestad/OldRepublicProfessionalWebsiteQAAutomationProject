@@ -94,3 +94,23 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_epl_coverage_details`)
+
+# TC-006: Verify Fiduciary Liability and its coverage details button
+**Priority**: High
+**Type**: Functional/Navigation
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to load.
+3. Verify the "Fiduciary Liability" section.
+4. Click "View Fiduciary Coverage Details".
+
+### Expected Result:
+- The Fiduciary Liability heading and button are visible.
+- The button navigates to `/coverages/fiduciary-liability`.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_fiduciary_coverage_details`)

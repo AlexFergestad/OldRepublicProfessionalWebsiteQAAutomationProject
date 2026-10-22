@@ -38,6 +38,10 @@ class WWS_Public_Companies:
         self.epl_coverage_details_button = self.epl_coverage_card.locator(
             "a.cta_button"
         )
+        self.fiduciary_coverage_card = self.coverage_card("Fiduciary Liability")
+        self.fiduciary_coverage_details_button = (
+            self.fiduciary_coverage_card.locator("a.cta_button")
+        )
 
     def coverage_card(self, heading: str):
         return self.page.get_by_role(
@@ -103,5 +107,23 @@ class WWS_Public_Companies:
             "href", re.compile(re.escape(coverage_path) + r"/?$")
         )
         self.epl_coverage_details_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
+
+    def verify_fiduciary_coverage_details(self):
+        coverage_path = "/coverages/fiduciary-liability"
+        expect(
+            self.fiduciary_coverage_card.get_by_role(
+                "heading", name="Fiduciary Liability", exact=True
+            )
+        ).to_be_visible()
+        expect(self.fiduciary_coverage_details_button).to_be_visible()
+        expect(self.fiduciary_coverage_details_button).to_have_text(
+            re.compile(r"^VIEW FIDUCIARY COVERAGE DETAILS$", re.IGNORECASE)
+        )
+        expect(self.fiduciary_coverage_details_button).to_have_attribute(
+            "href", re.compile(re.escape(coverage_path) + r"/?$")
+        )
+        self.fiduciary_coverage_details_button.click()
         self.page.wait_for_load_state("domcontentloaded")
         expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
