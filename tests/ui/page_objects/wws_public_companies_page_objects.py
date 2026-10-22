@@ -46,6 +46,10 @@ class WWS_Public_Companies:
         self.excess_coverage_details_button = self.excess_coverage_card.locator(
             "a.cta_button"
         )
+        self.crime_fidelity_coverage_card = self.coverage_card("Crime/Fidelity")
+        self.crime_fidelity_coverage_details_button = (
+            self.crime_fidelity_coverage_card.locator("a.cta_button")
+        )
 
     def coverage_card(self, heading: str):
         return self.page.get_by_role(
@@ -147,5 +151,23 @@ class WWS_Public_Companies:
             "href", re.compile(re.escape(coverage_path) + r"/?$")
         )
         self.excess_coverage_details_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
+
+    def verify_crime_fidelity_coverage_details(self):
+        coverage_path = "/coverages/crime-and-fidelity"
+        expect(
+            self.crime_fidelity_coverage_card.get_by_role(
+                "heading", name="Crime/Fidelity", exact=True
+            )
+        ).to_be_visible()
+        expect(self.crime_fidelity_coverage_details_button).to_be_visible()
+        expect(self.crime_fidelity_coverage_details_button).to_have_text(
+            re.compile(r"^VIEW CRIME/FIDELITY COVERAGE DETAILS$", re.IGNORECASE)
+        )
+        expect(self.crime_fidelity_coverage_details_button).to_have_attribute(
+            "href", re.compile(re.escape(coverage_path) + r"/?$")
+        )
+        self.crime_fidelity_coverage_details_button.click()
         self.page.wait_for_load_state("domcontentloaded")
         expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
