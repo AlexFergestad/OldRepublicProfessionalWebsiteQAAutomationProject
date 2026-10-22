@@ -34,6 +34,21 @@ class WWS_Public_Companies:
             name: page.get_by_role("heading", name=name, exact=True).locator("xpath=..")
             for name in self.D_AND_O_COVERAGE_DESCRIPTIONS
         }
+        self.epl_coverage_card = self.coverage_card("Employment Practices Liability")
+        self.epl_coverage_details_button = self.epl_coverage_card.locator(
+            "a.cta_button"
+        )
+        self.fiduciary_coverage_card = self.coverage_card("Fiduciary Liability")
+        self.fiduciary_coverage_details_button = (
+            self.fiduciary_coverage_card.locator("a.cta_button")
+        )
+
+    def coverage_card(self, heading: str):
+        return self.page.get_by_role(
+            "heading", name=heading, exact=True
+        ).locator(
+            "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
+        )
 
     def open_page(self):
         self.page.goto(self.page_url)
@@ -77,3 +92,38 @@ class WWS_Public_Companies:
             expect(card.get_by_role("heading", name=name, exact=True)).to_be_visible()
             expect(card).to_contain_text(description)
 
+    def verify_epl_coverage_details(self):
+        coverage_path = "/coverages/employment-practices-liability"
+        expect(
+            self.epl_coverage_card.get_by_role(
+                "heading", name="Employment Practices Liability", exact=True
+            )
+        ).to_be_visible()
+        expect(self.epl_coverage_details_button).to_be_visible()
+        expect(self.epl_coverage_details_button).to_have_text(
+            re.compile(r"^VIEW EPL COVERAGE DETAILS$", re.IGNORECASE)
+        )
+        expect(self.epl_coverage_details_button).to_have_attribute(
+            "href", re.compile(re.escape(coverage_path) + r"/?$")
+        )
+        self.epl_coverage_details_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
+
+    def verify_fiduciary_coverage_details(self):
+        coverage_path = "/coverages/fiduciary-liability"
+        expect(
+            self.fiduciary_coverage_card.get_by_role(
+                "heading", name="Fiduciary Liability", exact=True
+            )
+        ).to_be_visible()
+        expect(self.fiduciary_coverage_details_button).to_be_visible()
+        expect(self.fiduciary_coverage_details_button).to_have_text(
+            re.compile(r"^VIEW FIDUCIARY COVERAGE DETAILS$", re.IGNORECASE)
+        )
+        expect(self.fiduciary_coverage_details_button).to_have_attribute(
+            "href", re.compile(re.escape(coverage_path) + r"/?$")
+        )
+        self.fiduciary_coverage_details_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
