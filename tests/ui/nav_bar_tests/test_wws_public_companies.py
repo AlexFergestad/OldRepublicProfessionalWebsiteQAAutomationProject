@@ -78,3 +78,5 @@ def test_wws_public_companies_crime_fidelity_coverage_details(
     public_companies = WWS_Public_Companies(page, base_url)
     public_companies.open_page()
     public_companies.verify_crime_fidelity_coverage_details()
+
+
