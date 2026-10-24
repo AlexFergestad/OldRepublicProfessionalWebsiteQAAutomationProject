@@ -58,3 +58,23 @@ def test_wws_public_companies_fiduciary_coverage_details(page: Page, base_url: s
     public_companies = WWS_Public_Companies(page, base_url)
     public_companies.open_page()
     public_companies.verify_fiduciary_coverage_details()
+
+
+"""TC-007: Verify Excess coverage and its coverage details button."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_wws_public_companies_excess_coverage_details(page: Page, base_url: str):
+    public_companies = WWS_Public_Companies(page, base_url)
+    public_companies.open_page()
+    public_companies.verify_excess_coverage_details()
+
+
+"""TC-008: Verify Crime/Fidelity coverage and its coverage details button."""
+@pytest.mark.ui
+@pytest.mark.who_we_serve
+def test_wws_public_companies_crime_fidelity_coverage_details(
+    page: Page, base_url: str
+):
+    public_companies = WWS_Public_Companies(page, base_url)
+    public_companies.open_page()
+    public_companies.verify_crime_fidelity_coverage_details()
