@@ -94,7 +94,7 @@ def test_wws_public_companies_connect_with_us_underwriters_button(
 @pytest.mark.ui
 @pytest.mark.wws_public_companies
 def test_other_segments_we_serve_and_buttons_underneath(page: Page, base_url: str):
-    pass
+    public_companies = WWS_Public_Companies(page, base_url)
 
 
 
