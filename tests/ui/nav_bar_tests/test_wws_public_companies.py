@@ -91,4 +91,5 @@ def test_wws_public_companies_connect_with_us_underwriters_button(
     public_companies.verify_connect_with_us_underwriters_button()
 
 """TC-10: Verify "Other Segments We Serve" title and buttons underneath: "Public Companies", "Financial Institutions", "Not-for-Profit Entities" """
-
+@pytest.mark.ui
+@pytest.mark.wws_public_companies
