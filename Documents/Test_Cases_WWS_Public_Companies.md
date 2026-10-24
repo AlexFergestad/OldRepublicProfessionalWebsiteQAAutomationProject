@@ -176,5 +176,8 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_connect_with_us_underwriters_button`)
 
 ## TC-010: Verify "Other Segments We Serve" title and buttons underneath: "Public Companies", "Financial Institutions", "Not-for-Profit Entities" 
-
+**Priority**: High
+**Type**: Functional/Navigation
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
 
