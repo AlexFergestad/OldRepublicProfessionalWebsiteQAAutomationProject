@@ -50,6 +50,15 @@ class WWS_Public_Companies:
         self.crime_fidelity_coverage_details_button = (
             self.crime_fidelity_coverage_card.locator("a.cta_button")
         )
+        self.connect_with_us_heading = page.get_by_role(
+            "heading",
+            name=re.compile(r"^Connect with Us$", re.IGNORECASE),
+            level=2,
+        )
+        self.view_public_company_underwriters_button = page.get_by_role(
+            "button",
+            name=re.compile(r"^View public company underwriters$", re.IGNORECASE),
+        )
 
     def coverage_card(self, heading: str):
         return self.page.get_by_role(
@@ -171,3 +180,20 @@ class WWS_Public_Companies:
         self.crime_fidelity_coverage_details_button.click()
         self.page.wait_for_load_state("domcontentloaded")
         expect(self.page).to_have_url(re.compile(re.escape(coverage_path) + r"/?$"))
+
+    def verify_connect_with_us_underwriters_button(self):
+        underwriters_path = r"/team/?\?filter=public-company-underwriters(?:&|$)"
+        expect(self.connect_with_us_heading).to_be_visible()
+        expect(self.connect_with_us_heading).to_have_text(
+            re.compile(r"^Connect with Us$", re.IGNORECASE)
+        )
+        expect(self.view_public_company_underwriters_button).to_be_visible()
+        expect(self.view_public_company_underwriters_button).to_have_text(
+            re.compile(r"^View public company underwriters$", re.IGNORECASE)
+        )
+        expect(self.view_public_company_underwriters_button).to_have_attribute(
+            "href", re.compile(underwriters_path)
+        )
+        self.view_public_company_underwriters_button.click()
+        self.page.wait_for_load_state("domcontentloaded")
+        expect(self.page).to_have_url(re.compile(underwriters_path))

@@ -154,3 +154,23 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_crime_fidelity_coverage_details`)
+
+# TC-009: Verify Connect with Us and the View public company underwriters button
+**Priority**: High
+**Type**: Functional/Navigation
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to load.
+3. Verify the "Connect with Us" heading.
+4. Click "View public company underwriters".
+
+### Expected Result:
+- The "Connect with Us" heading and button are visible.
+- The button navigates to `/team?filter=public-company-underwriters`.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_connect_with_us_underwriters_button`)

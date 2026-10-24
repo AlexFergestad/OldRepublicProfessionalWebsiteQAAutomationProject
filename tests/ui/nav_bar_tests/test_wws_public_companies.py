@@ -80,4 +80,12 @@ def test_wws_public_companies_crime_fidelity_coverage_details(
     public_companies.verify_crime_fidelity_coverage_details()
 
 
-"""TC-009: Verify Connect With Us and "View public company underwriters" button"""
+"""TC-009: Verify Connect with Us and the View public company underwriters button."""
+@pytest.mark.ui
+@pytest.mark.wws_public_companies
+def test_wws_public_companies_connect_with_us_underwriters_button(
+    page: Page, base_url: str
+):
+    public_companies = WWS_Public_Companies(page, base_url)
+    public_companies.open_page()
+    public_companies.verify_connect_with_us_underwriters_button()
