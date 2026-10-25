@@ -235,3 +235,65 @@ class WWS_Public_Companies:
 
             if index < len(self.OTHER_SEGMENTS) - 1:
                 self.open_page()
+
+    def verify_public_companies_page_performance(self):
+        self.page.wait_for_timeout(500)
+        performance_metrics = self.page.evaluate("""() => {
+            const navigation = performance.getEntriesByType('navigation')[0];
+            const paints = performance.getEntriesByType('paint');
+            const firstContentfulPaint = paints.find(
+                entry => entry.name === 'first-contentful-paint'
+            );
+            const largestContentfulPaintEntries = performance.getEntriesByType(
+                'largest-contentful-paint'
+            );
+            const largestContentfulPaint = largestContentfulPaintEntries.length
+                ? largestContentfulPaintEntries[largestContentfulPaintEntries.length - 1]
+                : null;
+            const cumulativeLayoutShift = performance.getEntriesByType('layout-shift')
+                .reduce(
+                    (total, entry) => total + (entry.hadRecentInput ? 0 : entry.value),
+                    0
+                );
+
+            return {
+                load_time: navigation
+                    ? navigation.loadEventEnd - navigation.startTime
+                    : null,
+                first_contentful_paint: firstContentfulPaint
+                    ? firstContentfulPaint.startTime
+                    : null,
+                largest_contentful_paint: largestContentfulPaint
+                    ? largestContentfulPaint.startTime
+                    : null,
+                cumulative_layout_shift: cumulativeLayoutShift
+            };
+        }""")
+
+        load_time = performance_metrics["load_time"]
+        first_contentful_paint = performance_metrics["first_contentful_paint"]
+        largest_contentful_paint = performance_metrics["largest_contentful_paint"]
+        cumulative_layout_shift = performance_metrics["cumulative_layout_shift"]
+
+        assert load_time is not None, "Navigation load time metric was unavailable"
+        assert load_time < 3000, (
+            f"Expected load time < 3000ms, got: {load_time:.0f}ms"
+        )
+        assert first_contentful_paint is not None, (
+            "First contentful paint metric was unavailable"
+        )
+        assert first_contentful_paint < 2000, (
+            "Expected first contentful paint < 2000ms, "
+            f"got: {first_contentful_paint:.0f}ms"
+        )
+        if largest_contentful_paint is not None:
+            assert largest_contentful_paint < 2500, (
+                "Expected largest contentful paint < 2500ms, "
+                f"got: {largest_contentful_paint:.0f}ms"
+            )
+        else:
+            print("Warning: Largest contentful paint metric was unavailable")
+        assert cumulative_layout_shift < 0.1, (
+            "Expected cumulative layout shift < 0.1, "
+            f"got: {cumulative_layout_shift:.3f}"
+        )
