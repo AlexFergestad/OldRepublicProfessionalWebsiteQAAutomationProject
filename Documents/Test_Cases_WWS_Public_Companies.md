@@ -191,5 +191,23 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_other_segments_we_serve_and_buttons_underneath`)
 
+# TC-011: Verify Public Companies page performance metrics
+**Priority**: High
+**Type**: Non-Functional/Performance
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
 
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to finish loading.
+3. Measure the page's navigation and rendering performance metrics.
 
+### Expected Result:
+- Page load time is less than 3,000 ms.
+- First Contentful Paint is less than 2,000 ms.
+- Largest Contentful Paint is less than 2,500 ms when the browser provides the metric.
+- Cumulative Layout Shift is less than 0.1.
+
+### Actual Result:
+**Status**: ❌ Fail — load time was 3,568 ms, exceeding the 3,000 ms threshold during validation.
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_who_we_serve_public_companies_page_performance_metrics`)
