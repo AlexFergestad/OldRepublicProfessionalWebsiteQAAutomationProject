@@ -5,6 +5,11 @@ from playwright.sync_api import Page, expect
 
 class WWS_Public_Companies:
     PAGE_PATH = "/who-we-serve/public-companies"
+    OTHER_SEGMENTS = {
+        "Private Companies": "/en/who-we-serve/private-companies",
+        "Financial Institutions": "/who-we-serve/financial-institutions",
+        "Not-for-Profit Entities": "/who-we-serve/not-for-profit-entities",
+    }
     D_AND_O_COVERAGE_DESCRIPTIONS = {
         "Public Primary D&O": "First-layer D&O coverage for publicly traded companies.",
         "Lead Side-A": "Dedicated Side-A coverage for non-indemnifiable loss.",
@@ -59,6 +64,18 @@ class WWS_Public_Companies:
             "button",
             name=re.compile(r"^View public company underwriters$", re.IGNORECASE),
         )
+        self.other_segments_heading = page.get_by_role(
+            "heading", name="Other Segments We Serve", exact=True
+        )
+        self.other_segment_links = {
+            name: page.get_by_role(
+                "link",
+                name=re.compile(
+                    rf"^{re.escape(name)}.*View Segment$", re.IGNORECASE
+                ),
+            )
+            for name in self.OTHER_SEGMENTS
+        }
 
     def coverage_card(self, heading: str):
         return self.page.get_by_role(
@@ -197,3 +214,24 @@ class WWS_Public_Companies:
         self.view_public_company_underwriters_button.click()
         self.page.wait_for_load_state("domcontentloaded")
         expect(self.page).to_have_url(re.compile(underwriters_path))
+
+    def verify_other_segments_we_serve_and_buttons_underneath(self):
+        expect(self.other_segments_heading).to_be_visible()
+        expect(self.other_segments_heading).to_have_text("Other Segments We Serve")
+
+        for index, (name, path) in enumerate(self.OTHER_SEGMENTS.items()):
+            segment_link = self.other_segment_links[name]
+            segment_path = re.escape(path) + r"/?$"
+
+            expect(segment_link).to_be_visible()
+            expect(segment_link).to_contain_text(name)
+            expect(segment_link).to_contain_text(
+                re.compile(r"View Segment", re.IGNORECASE)
+            )
+            expect(segment_link).to_have_attribute("href", re.compile(segment_path))
+            segment_link.click()
+            self.page.wait_for_load_state("domcontentloaded")
+            expect(self.page).to_have_url(re.compile(segment_path))
+
+            if index < len(self.OTHER_SEGMENTS) - 1:
+                self.open_page()
