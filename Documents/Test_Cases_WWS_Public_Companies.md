@@ -187,3 +187,6 @@
 3. Verify the "Other Segments We Serve" title is correct.
 4. Verify the buttons underneath function correctly and navigate to the correct url.
 
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_connect_with_us_underwriters_button`)
