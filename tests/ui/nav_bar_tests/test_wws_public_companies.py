@@ -105,4 +105,4 @@ def test_other_segments_we_serve_and_buttons_underneath(page: Page, base_url: st
 def test_who_we_serve_public_companies_page_performance_metrics(page: Page, base_url: str):
     public_companies = WWS_Public_Companies(page, base_url)
     public_companies.open_page()
-
+    public_companies.verify_public_companies_page_performance()
