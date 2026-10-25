@@ -181,5 +181,8 @@
 **Preconditions**:
 - Have an internet-connected computer and a supported web browser.
 
-
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to load.
+3. Verify the "Other Segments We Serve" title is correct.
 
