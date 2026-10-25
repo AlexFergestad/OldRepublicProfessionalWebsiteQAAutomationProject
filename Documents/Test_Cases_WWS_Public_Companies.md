@@ -185,4 +185,5 @@
 1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
 2. Wait for the page to load.
 3. Verify the "Other Segments We Serve" title is correct.
+4. Verify the buttons underneath function correctly and navigate to the correct url.
 
