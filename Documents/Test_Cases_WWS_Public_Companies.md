@@ -189,4 +189,4 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_public_companies_connect_with_us_underwriters_button`)
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_other_segments_we_serve_and_buttons_underneath`)
