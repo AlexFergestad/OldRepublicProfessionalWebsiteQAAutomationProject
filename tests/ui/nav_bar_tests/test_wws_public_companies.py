@@ -112,10 +112,10 @@ def test_who_we_serve_public_companies_page_performance_metrics(page: Page, base
 @pytest.mark.ui
 @pytest.mark.wws_public_companies
 def test_who_we_serve_public_companies_accessibility(page: Page, base_url: str):
+    """Run axe and reject new critical or serious accessibility violations."""
     public_companies = WWS_Public_Companies(page, base_url)
     public_companies.open_page()
     public_companies.accessibility_check_public_companies_page()
-
 
 
 
