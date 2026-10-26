@@ -115,3 +115,7 @@ def test_who_we_serve_public_companies_accessibility(page: Page, base_url: str):
     public_companies = WWS_Public_Companies(page, base_url)
     public_companies.open_page()
     public_companies.accessibility_check_public_companies_page()
+
+
+
+
