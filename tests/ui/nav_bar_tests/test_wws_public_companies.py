@@ -113,5 +113,5 @@ def test_who_we_serve_public_companies_page_performance_metrics(page: Page, base
 @pytest.mark.wws_public_companies
 def test_who_we_serve_public_companies_accessibility(page: Page, base_url: str):
     public_companies = WWS_Public_Companies(page, base_url)
-
+    public_companies.open_page()
 
