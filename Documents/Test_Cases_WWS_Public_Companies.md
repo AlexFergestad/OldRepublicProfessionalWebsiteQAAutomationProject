@@ -211,3 +211,23 @@
 ### Actual Result:
 **Status**: ❌ Fail — load time was 3,568 ms, exceeding the 3,000 ms threshold during validation.
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_who_we_serve_public_companies_page_performance_metrics`)
+
+# TC-012: Verify accessibility checks on the Public Companies page
+**Priority**: High
+**Type**: Non-Functional/Accessibility
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/public-companies.
+2. Wait for the page to load.
+3. Run axe accessibility checks on the page.
+
+### Expected Result:
+- The accessibility audit completes successfully.
+- No new critical or serious accessibility violations are reported.
+- Known existing violations (`color-contrast`, `input-button-name`, and `link-name`) are excluded from the failure criteria.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_who_we_serve_public_companies_accessibility`)
