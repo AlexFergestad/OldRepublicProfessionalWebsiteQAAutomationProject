@@ -108,5 +108,5 @@ def test_who_we_serve_public_companies_page_performance_metrics(page: Page, base
     public_companies.verify_public_companies_page_performance()
 
 
-"""TC-012: Verify """
+"""TC-012: Verify Accessibility Checks on the Public Companies Page."""
 
