@@ -11,7 +11,7 @@ Who We Serve Public Companies Page UI Tests
 Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009
 
 * This page verifies the Who We Serve Public Companies page of the Old Republic Professional website loads correctly,
-has the expected client segment sections, working Learn More buttons, performance, and accessibility.
+has the expected coverage areas and details, working Learn More buttons, performance, and accessibility.
 
 """
 
