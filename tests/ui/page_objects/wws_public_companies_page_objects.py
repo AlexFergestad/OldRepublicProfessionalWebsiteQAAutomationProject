@@ -1,5 +1,6 @@
 import re
 
+from axe_playwright_python.sync_playwright import Axe
 from playwright.sync_api import Page, expect
 
 
@@ -296,4 +297,24 @@ class WWS_Public_Companies:
         assert cumulative_layout_shift < 0.1, (
             "Expected cumulative layout shift < 0.1, "
             f"got: {cumulative_layout_shift:.3f}"
+        )
+
+    def accessibility_check_public_companies_page(self):
+        results = Axe().run(self.page)
+        violations = results.response["violations"]
+        known_violations = {"color-contrast", "input-button-name", "link-name"}
+        critical_violations = [
+            violation
+            for violation in violations
+            if violation["impact"] in ("critical", "serious")
+            and violation["id"] not in known_violations
+        ]
+
+        assert not critical_violations, (
+            f"Found {len(critical_violations)} new critical/serious accessibility "
+            "violation(s): "
+            + "\n".join(
+                f"  - {violation['id']}: {violation['description']}"
+                for violation in critical_violations
+            )
         )
