@@ -5,6 +5,15 @@ from tests.ui.page_objects.wws_public_companies_page_objects import (
     WWS_Public_Companies,
 )
 
+"""
+
+Who We Serve Main Page UI Tests
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009
+
+* This page verifies the Who We Serve page of the Old Republic Professional website loads correctly,
+has the expected client segment sections, working Learn More buttons, performance, and accessibility.
+
+"""
 
 """TC-001: Verify the Who We Serve Public Companies page loads correctly."""
 @pytest.mark.ui
