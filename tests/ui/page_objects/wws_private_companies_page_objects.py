@@ -10,5 +10,8 @@ class WWS_Private_Companies:
         self.page = page
         self.page_url = f"{base_url.rstrip('/')}{self.PAGE_PATH}"
         self.page_heading = page.get_by_role(
-            "heading", name="Public Companies", exact=True
+            "heading", name="Private Companies", exact=True
         )
+
+
+
