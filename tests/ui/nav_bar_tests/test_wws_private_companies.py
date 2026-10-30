@@ -26,6 +26,7 @@ def test_wws_public_companies_page_loads(page: Page, base_url: str):
 
 
 """TC-002: the two introductory paragraphs on the Private Companies page. """
+def test_
 private_companies = WWS_Private_Companies(page, base_url)
 
 
