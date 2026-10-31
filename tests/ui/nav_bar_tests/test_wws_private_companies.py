@@ -25,7 +25,7 @@ def test_wws_private_companies_page_loads(page: Page, base_url: str):
     private_companies.verify_page_loaded()
 
 
-"""TC-002: the two introductory paragraphs on the Private Companies page. """
+"""TC-002: Verify the two introductory paragraphs on the Private Companies page. """
 @pytest.mark.ui
 @pytest.mark.wws_private_companies
 def test_wws_private_companies_introductory_paragraphs(page: Page, base_url: str):
