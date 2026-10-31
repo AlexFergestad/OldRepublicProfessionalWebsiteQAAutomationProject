@@ -12,7 +12,7 @@
 
 ### Expected Result:
 - The page loads successfully at `/who-we-serve/private-companies`.
-- The "Public Companies" page heading is visible.
+- The "Private Companies" page heading is visible.
 
 ### Actual Result:
 **Status**: ✅ Pass
