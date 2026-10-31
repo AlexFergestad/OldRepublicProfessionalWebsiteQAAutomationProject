@@ -18,7 +18,7 @@ has the expected , performance, and accessibility.
 
 """TC-001: Verify the Who We Serve Private Companies page loads correctly."""
 @pytest.mark.ui
-@pytest.mark.wws_public_companies
+@pytest.mark.wws_private_companies
 def test_wws_private_companies_page_loads(page: Page, base_url: str):
     private_companies = WWS_Private_Companies(page, base_url)
     private_companies.open_page()
