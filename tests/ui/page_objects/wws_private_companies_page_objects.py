@@ -4,7 +4,7 @@ from axe_playwright_python.sync_playwright import Axe
 from playwright.sync_api import Page, expect
 
 class WWS_Private_Companies:
-    PAGE_PATH = "/who-we-serve/private-companies"
+    PAGE_PATH = "en/who-we-serve/private-companies"
 
     def __init__(self, page: Page, base_url: str):
         self.page = page
