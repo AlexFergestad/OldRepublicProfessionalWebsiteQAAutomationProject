@@ -20,5 +20,7 @@ class WWS_Private_Companies:
 
 
     def verify_page_loaded(self):
-        pass
+        expect(self.page).to_have_url(re.compile(re.escape(self.PAGE_PATH) + r"/?$"))
+        expect(self.page_heading).to_be_visible()
+        
 
