@@ -29,7 +29,7 @@ def test_wws_public_companies_page_loads(page: Page, base_url: str):
 def test_wws_private_companies_introductory_paragraphs(page: Page, base_url: str):
     private_companies = WWS_Private_Companies(page, base_url)
     private_companies.open_page()
-    private_companies.verify_page_loaded()
+    private_companies.verify_introductory_paragraphs()
 
 
 
