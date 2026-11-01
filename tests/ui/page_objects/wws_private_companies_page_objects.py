@@ -25,4 +25,5 @@ class WWS_Private_Companies:
         
     def verify(self):
         pass
+        self.page.wait_for_load_state("networkidle")
     
