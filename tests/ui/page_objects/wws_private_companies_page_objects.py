@@ -24,6 +24,18 @@ class WWS_Private_Companies:
         expect(self.page_heading).to_be_visible()
         
     def verify(self):
-        pass
-        self.page.wait_for_load_state("networkidle")
+        expect(self.introductory_paragraph_left).to_have_text(
+                    "Public companies operate in a complex environment shaped by volatile "
+                    "financial markets, economic uncertainty, evolving regulations, "
+                    "technological disruption, and shifting social expectations."
+                )
+        expect(self.introductory_paragraph_right).to_have_text(
+                    "Executives must navigate heightened scrutiny from shareholders, "
+                    "regulators, customers, employees, and other stakeholders. Even "
+                    "well-managed organizations employing the most robust risk management "
+                    "practices may face allegations resulting in distraction, expense and "
+                    "reputational harm. Aligning with a stable Management Liability "
+                    "insurance provider plays a critical role in helping safeguard "
+                    "leadership against potential financial and reputational exposures."
+                )
     
