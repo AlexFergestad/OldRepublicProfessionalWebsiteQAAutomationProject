@@ -30,12 +30,8 @@ class WWS_Private_Companies:
                     " ownership structures and business needs."
                 )
         expect(self.introductory_paragraph_right).to_have_text(
-                    "Executives must navigate heightened scrutiny from shareholders, "
-                    "regulators, customers, employees, and other stakeholders. Even "
-                    "well-managed organizations employing the most robust risk management "
-                    "practices may face allegations resulting in distraction, expense and "
-                    "reputational harm. Aligning with a stable Management Liability "
-                    "insurance provider plays a critical role in helping safeguard "
-                    "leadership against potential financial and reputational exposures."
+                    "Backed by deep underwriting expertise and claims"
+                     "experience, we provide management liability coverage with the flexibility"
+                       " to structure protection for each organization’s needs."
                 )
     
