@@ -23,7 +23,7 @@ class WWS_Private_Companies:
         expect(self.page).to_have_url(re.compile(re.escape(self.PAGE_PATH) + r"/?$"))
         expect(self.page_heading).to_be_visible()
         
-    def verify(self):
+    def verify_introductory_paragraphs(self):
         expect(self.introductory_paragraph_left).to_have_text(
             "Old Republic Professional’s dedicated private company team focuses on "
             "the management liability exposures facing private companies with different"
