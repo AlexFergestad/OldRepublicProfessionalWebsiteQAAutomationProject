@@ -25,13 +25,13 @@ class WWS_Private_Companies:
         
     def verify(self):
         expect(self.introductory_paragraph_left).to_have_text(
-                    "Old Republic Professional’s dedicated private company team focuses on "
-                    "the management liability exposures facing private companies with different"
-                    " ownership structures and business needs."
-                )
+            "Old Republic Professional’s dedicated private company team focuses on "
+            "the management liability exposures facing private companies with different"
+            " ownership structures and business needs."
+        )
         expect(self.introductory_paragraph_right).to_have_text(
-                    "Backed by deep underwriting expertise and claims"
-                     "experience, we provide management liability coverage with the flexibility"
-                       " to structure protection for each organization’s needs."
-                )
+            "Backed by deep underwriting expertise and claims"
+            "experience, we provide management liability coverage with the flexibility"
+            " to structure protection for each organization’s needs."
+        )
     
