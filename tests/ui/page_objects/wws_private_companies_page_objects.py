@@ -25,9 +25,9 @@ class WWS_Private_Companies:
         
     def verify(self):
         expect(self.introductory_paragraph_left).to_have_text(
-                    "Public companies operate in a complex environment shaped by volatile "
-                    "financial markets, economic uncertainty, evolving regulations, "
-                    "technological disruption, and shifting social expectations."
+                    "Old Republic Professional’s dedicated private company team focuses on "
+                    "the management liability exposures facing private companies with different"
+                    " ownership structures and business needs."
                 )
         expect(self.introductory_paragraph_right).to_have_text(
                     "Executives must navigate heightened scrutiny from shareholders, "
