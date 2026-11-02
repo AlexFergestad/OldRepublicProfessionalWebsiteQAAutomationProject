@@ -12,7 +12,15 @@ class WWS_Private_Companies:
         self.page_heading = page.get_by_role(
             "heading", name="Private Companies", exact=True
         )
-
+        self.introductory_content = page.locator(
+            ".pwr-sec-txt__content--top"
+        ).filter(has_text="Old Republic Professional’s dedicated private company team")
+        self.introductory_paragraph_left = self.introductory_content.locator(
+            ".pwr-sec-txt__left"
+        )
+        self.introductory_paragraph_right = self.introductory_content.locator(
+            ".pwr-sec-txt__right"
+        )
 
     def open_page(self):
         self.page.goto(self.page_url)
@@ -26,12 +34,12 @@ class WWS_Private_Companies:
     def verify_introductory_paragraphs(self):
         expect(self.introductory_paragraph_left).to_have_text(
             "Old Republic Professional’s dedicated private company team focuses on "
-            "the management liability exposures facing private companies with different"
-            " ownership structures and business needs."
+            "the management liability exposures facing private companies with different "
+            "ownership structures and business needs."
         )
         expect(self.introductory_paragraph_right).to_have_text(
-            "Backed by deep underwriting expertise and claims"
-            "experience, we provide management liability coverage with the flexibility"
-            " to structure protection for each organization’s needs."
+            "Backed by deep underwriting expertise and claims "
+            "experience, we provide management liability coverage with the flexibility "
+            "to structure protection for each organization’s needs."
         )
     
