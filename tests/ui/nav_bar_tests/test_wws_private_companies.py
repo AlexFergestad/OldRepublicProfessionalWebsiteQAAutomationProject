@@ -38,5 +38,5 @@ def test_wws_private_companies_introductory_paragraphs(page: Page, base_url: str
 @pytest.mark.ui
 @pytest.mark.wws_private_companies
 def test_wws_private_companies_orprotect_coverage_details(page: Page, base_url: str):
-
+    private_companies = WWS_Private_Companies(page, base_url)
 
