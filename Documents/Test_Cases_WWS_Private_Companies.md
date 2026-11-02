@@ -29,8 +29,7 @@
 2. Wait for the page to load.
 
 ### Expected Result:
-- The page loads successfully at `/en/who-we-serve/private-companies`.
-- The "Private Companies" page heading is visible.
+- The two introductory paragrah text are correct and visible.
 
 ### Actual Result:
 **Status**: ✅ Pass
