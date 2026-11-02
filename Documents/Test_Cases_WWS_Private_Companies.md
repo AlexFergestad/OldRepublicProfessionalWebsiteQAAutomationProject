@@ -18,3 +18,20 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_page_loads`)
 
+# TC-002: Verify
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/who-we-serve/private-companies.
+2. Wait for the page to load.
+
+### Expected Result:
+- The page loads successfully at `/who-we-serve/private-companies`.
+- The "Private Companies" page heading is visible.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_page_loads`)
