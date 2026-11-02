@@ -29,7 +29,7 @@
 2. Wait for the page to load.
 
 ### Expected Result:
-- The page loads successfully at `/who-we-serve/private-companies`.
+- The page loads successfully at `/en/who-we-serve/private-companies`.
 - The "Private Companies" page heading is visible.
 
 ### Actual Result:
