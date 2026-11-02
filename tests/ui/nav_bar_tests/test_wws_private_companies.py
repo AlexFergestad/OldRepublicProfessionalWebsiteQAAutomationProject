@@ -34,5 +34,5 @@ def test_wws_private_companies_introductory_paragraphs(page: Page, base_url: str
     private_companies.verify_introductory_paragraphs()
 
 
-"""TC-003:"""
+"""TC-003: Verify the ORPROtect coverage details button and text tiles beneath. """
 
