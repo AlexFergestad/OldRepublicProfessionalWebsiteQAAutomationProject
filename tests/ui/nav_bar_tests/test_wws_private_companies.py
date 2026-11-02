@@ -36,3 +36,4 @@ def test_wws_private_companies_introductory_paragraphs(page: Page, base_url: str
 
 """TC-003: Verify the ORPROtect coverage details button and text tiles beneath. """
 @pytest.mark.ui
+@pytest.mark.wws_private_companies
