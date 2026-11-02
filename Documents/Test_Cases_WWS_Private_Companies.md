@@ -7,7 +7,7 @@
 - Have an internet-connected computer and a supported web browser.
 
 ### Steps to Reproduce:
-1. Navigate to https://www.oldrepublicpro.com/who-we-serve/private-companies.
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
 
 ### Expected Result:
@@ -25,7 +25,7 @@
 - Have an internet-connected computer and a supported web browser.
 
 ### Steps to Reproduce:
-1. Navigate to https://www.oldrepublicpro.com/who-we-serve/private-companies.
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
 
 ### Expected Result:
