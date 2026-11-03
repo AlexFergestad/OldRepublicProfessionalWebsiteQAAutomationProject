@@ -22,6 +22,8 @@ class WWS_Private_Companies:
             ".pwr-sec-txt__right"
         )
 
+        self.view_orprotect_coverage_details_button = page.get_by_role(
+
     def open_page(self):
         self.page.goto(self.page_url)
         self.page.wait_for_load_state("networkidle")
@@ -46,5 +48,3 @@ class WWS_Private_Companies:
     def verify_orprotect_coverage_details(self):
 
 
-
-        
