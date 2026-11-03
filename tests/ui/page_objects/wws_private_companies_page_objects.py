@@ -25,6 +25,12 @@ class WWS_Private_Companies:
         self.view_orprotect_coverage_details_button = page.get_by_role(
             "button", name="View ORPROtect Coverage Details", exact=True)
 
+        self.directors_and_officers_tile = page.get_by_role(
+            "heading", name="Directors & Officers", exact=True
+        )
+
+        self.
+
     def open_page(self):
         self.page.goto(self.page_url)
         self.page.wait_for_load_state("networkidle")
@@ -52,5 +58,5 @@ class WWS_Private_Companies:
             "View ORPROtect Coverage Details"
         )
 
-        
+
 
