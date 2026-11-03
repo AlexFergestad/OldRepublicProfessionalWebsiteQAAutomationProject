@@ -29,7 +29,9 @@ class WWS_Private_Companies:
             "heading", name="Directors & Officers", exact=True
         )
 
-        self.
+        self.employment_practices_liability_tile = page.get_by_role(
+            "heading", name="Employment Practices Liability", exact=True
+        )
 
     def open_page(self):
         self.page.goto(self.page_url)
