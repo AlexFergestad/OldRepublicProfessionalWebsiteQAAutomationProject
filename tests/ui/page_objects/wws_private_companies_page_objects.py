@@ -25,21 +25,10 @@ class WWS_Private_Companies:
         self.view_orprotect_coverage_details_button = page.get_by_role(
             "button", name="View ORPROtect Coverage Details", exact=True)
 
-        self.directors_and_officers_tile = page.get_by_role(
-            "heading", name="Directors & Officers", exact=True
-        )
-
-        self.employment_practices_liability_tile = page.get_by_role(
-            "heading", name="Employment Practices Liability", exact=True
-        )
-
-        self.fiduciary_liability_tile = page.get_by_role(
-            "heading", name="Fiduciary Liability", exact=True
-        )
-
-        self.crime_tile = page.get_by_role(
-            "heading", name="Crime", exact=True
-        )
+        self.directors_and_officers_tile = page.get_by_role("heading", name="Directors & Officers Liability")
+        self.employment_practices_liability_tile = page.get_by_role("heading", name="Employment Practices Liability")
+        self.fiduciary_liability_tile = page.get_by_role("heading", name="Fiduciary Liability", exact=True)
+        self.crime_tile = page.get_by_role("heading", name="Crime", exact=True)
 
     def open_page(self):
         self.page.goto(self.page_url)
