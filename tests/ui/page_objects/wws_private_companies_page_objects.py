@@ -23,6 +23,7 @@ class WWS_Private_Companies:
         )
 
         self.view_orprotect_coverage_details_button = page.get_by_role(
+            "button", name="View ORPROtect Coverage Details", exact=True)
 
     def open_page(self):
         self.page.goto(self.page_url)
