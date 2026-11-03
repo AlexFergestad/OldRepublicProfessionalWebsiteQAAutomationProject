@@ -33,6 +33,11 @@ class WWS_Private_Companies:
             "heading", name="Employment Practices Liability", exact=True
         )
 
+        self.fiduciary_liability_tile = page.get_by_role(
+            "heading", name="Fiduciary Liability", exact=True
+        )
+
+        
     def open_page(self):
         self.page.goto(self.page_url)
         self.page.wait_for_load_state("networkidle")
