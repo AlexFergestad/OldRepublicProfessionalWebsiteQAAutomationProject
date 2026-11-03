@@ -43,3 +43,4 @@ class WWS_Private_Companies:
             "to structure protection for each organization’s needs."
         )
     
+    def 
