@@ -43,4 +43,4 @@ class WWS_Private_Companies:
             "to structure protection for each organization’s needs."
         )
     
-    def 
+    def verify_orprotect_coverage_details(self):
