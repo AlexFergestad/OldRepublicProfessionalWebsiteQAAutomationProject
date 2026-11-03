@@ -47,5 +47,10 @@ class WWS_Private_Companies:
         )
     
     def verify_orprotect_coverage_details(self):
+        expect(self.view_orprotect_coverage_details_button).to_be_visible()
+        expect(self.view_orprotect_coverage_details_button).to_have_text(
+            "View ORPROtect Coverage Details"
+        )
 
+        
 
