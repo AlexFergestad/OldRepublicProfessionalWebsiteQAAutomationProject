@@ -37,7 +37,10 @@ class WWS_Private_Companies:
             "heading", name="Fiduciary Liability", exact=True
         )
 
-        
+        self.crime_tile = page.get_by_role(
+            "heading", name="Crime", exact=True
+        )
+
     def open_page(self):
         self.page.goto(self.page_url)
         self.page.wait_for_load_state("networkidle")
