@@ -56,6 +56,7 @@ class WWS_Private_Companies:
 
         self.view_orprotect_coverage_details_button.click()
 
+        expect(self.page).to_have_url("https://www.orprofessional.com/coverages/solutions/orprotect")
         self.page.wait_for_timeout(4000)
 
         self.page.go_back()
