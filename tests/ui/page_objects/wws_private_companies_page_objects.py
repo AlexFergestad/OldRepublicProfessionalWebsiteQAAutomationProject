@@ -55,6 +55,9 @@ class WWS_Private_Companies:
         expect(self.view_orprotect_coverage_details_button).to_be_visible()
 
         self.view_orprotect_coverage_details_button.click()
+
+        self.page.wait_for_timeout(4000)
+
         self.page.go_back()
 
         expect(self.view_orprotect_coverage_details_button).to_have_text(
