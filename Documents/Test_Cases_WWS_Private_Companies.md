@@ -36,7 +36,7 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_introductory_paragraphs`)
 
 
-# TC-003:
+# TC-003: Verify the ORPROtect coverage details button and text tiles beneath. 
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**:
