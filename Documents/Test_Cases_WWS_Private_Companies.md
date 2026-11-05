@@ -50,7 +50,6 @@
 - The four sub titles in the tiles are correct.
 - The "View Orprotect Coverage Details" button navigates to the correct url.
 
-
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_orprotect_coverage_details`)
