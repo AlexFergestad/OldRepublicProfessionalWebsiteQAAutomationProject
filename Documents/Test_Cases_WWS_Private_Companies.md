@@ -47,7 +47,8 @@
 2. Wait for the page to load.
 
 ### Expected Result:
-- The two introductory paragrah text are correct and visible.
+- The four sub titles in the tiles are correct.
+
 
 ### Actual Result:
 **Status**: ✅ Pass
