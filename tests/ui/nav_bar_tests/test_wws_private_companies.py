@@ -43,7 +43,6 @@ def test_wws_private_companies_orprotect_coverage_details(page: Page, base_url: 
     private_companies.verify_orprotect_coverage_details()
 
 
-
 """TC-004: Verify Side-A DIC Tile"""
 @pytest.mark.ui
 @pytest.mark.wws_private_companies
@@ -51,7 +50,6 @@ def test_wws_private_companies_side_a_dic_tile(page: Page, base_url: str):
     private_companies = WWS_Private_Companies(page, base_url)
     private_companies.open_page()
     private_companies.verify_side_a_dic_tile()
-
 
 
 
