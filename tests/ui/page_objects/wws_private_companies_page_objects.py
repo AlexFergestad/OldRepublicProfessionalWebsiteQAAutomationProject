@@ -29,6 +29,19 @@ class WWS_Private_Companies:
         self.employment_practices_liability_tile = page.get_by_role("heading", name="Employment Practices Liability")
         self.fiduciary_liability_tile = page.get_by_role("heading", name="Fiduciary Liability", exact=True)
         self.crime_tile = page.get_by_role("heading", name="Crime", exact=True)
+        self.side_a_dic_tile = page.get_by_role(
+            "heading", name="Side-A DIC", exact=True
+        )
+        self.side_a_dic_tile_content = self.side_a_dic_tile.locator("xpath=..")
+        self.side_a_dic_coverage_details_button = self.side_a_dic_tile.locator(
+            "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
+        ).get_by_role("button", name="View Side-A Coverage Details", exact=True)
+        self.lead_side_a_dic_tile = page.get_by_role(
+            "heading", name="Lead Side-A DIC", exact=True
+        )
+        self.excess_side_a_dic_tile = page.get_by_role(
+            "heading", name="Excess Side-A DIC", exact=True
+        )
 
     def open_page(self):
         self.page.goto(self.page_url)
@@ -70,7 +83,40 @@ class WWS_Private_Companies:
         expect(self.fiduciary_liability_tile).to_be_visible()
         expect(self.crime_tile).to_be_visible()
 
-    def verify_side_a_dic_tile():
-        pass
+    def verify_side_a_dic_tile(self):
+        expect(self.side_a_dic_tile).to_be_visible()
+        expect(self.side_a_dic_tile_content).to_contain_text(
+            "Designed to respond for loss incurred by individual directors and "
+            "officers that is not indemnified by the company, Side-A-only protection "
+            "is typically placed excess over a traditional ABC D&O program."
+        )
+
+        expect(self.side_a_dic_coverage_details_button).to_be_visible()
+
+        self.side_a_dic_coverage_details_button.click()
+        #hello
+
+        expect(self.side_a_dic_coverage_details_button).to_have_attribute(
+            "href",
+            re.compile(
+                r"/coverages/directors-and-officers-liability"
+                r"\?accordion=lead-side-a#products/?$"
+            ),
+        )
+
+        expect(self.lead_side_a_dic_tile).to_be_visible()
+        expect(self.lead_side_a_dic_tile.locator("xpath=..")).to_contain_text(
+            "Our A-Sure policy provides Lead Side-A limits and broad Difference in "
+            "Conditions coverage when the traditional ABC D&O program fails or "
+            "refuses to respond."
+        )
+        expect(self.excess_side_a_dic_tile).to_be_visible()
+        expect(self.excess_side_a_dic_tile.locator("xpath=..")).to_contain_text(
+            "Our dedicated excess Side-A form is designed to follow another "
+            "carrier’s lead Side-A policy."
+        )
+
+
+
 
 
