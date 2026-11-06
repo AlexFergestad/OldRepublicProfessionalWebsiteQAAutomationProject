@@ -94,9 +94,10 @@ class WWS_Private_Companies:
         expect(self.side_a_dic_coverage_details_button).to_be_visible()
 
         self.side_a_dic_coverage_details_button.click()
+        expect(self.page).to_have_url("https://www.orprofessional.com/coverages/directors-and-officers-liability?accordion=lead-side-a#products")
         self.page.wait_for_timeout(4000)
         self.page.go_back()
-        
+
 
         expect(self.side_a_dic_coverage_details_button).to_have_attribute(
             "href",
