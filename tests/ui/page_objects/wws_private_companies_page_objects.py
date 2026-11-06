@@ -43,6 +43,9 @@ class WWS_Private_Companies:
             "heading", name="Excess Side-A DIC", exact=True
         )
         self.excess_tile = page.get_by_role("heading", name="Excess", exact=True)
+        self.view_excess_coverage_details_button = self.excess_tile.locator(
+            "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
+        ).get_by_role("button", name="View Excess Coverage Details", exact=True)    
 
     def open_page(self):
         self.page.goto(self.page_url)
