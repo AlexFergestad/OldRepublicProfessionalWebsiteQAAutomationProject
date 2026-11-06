@@ -121,6 +121,9 @@ class WWS_Private_Companies:
         )
 
     def verify_excess_tile(self):
-
+        expect(self.excess_tile).to_be_visible()
+        expect(self.excess_tile.locator("xpath=..")).to_contain_text(
+            "Old Republic Professional’s excess products are designed as streamlined follow-form contracts utilizing market leading erosion language for underlying policy limits and sub-limits."
+        )
 
 
