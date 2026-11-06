@@ -55,4 +55,5 @@ def test_wws_private_companies_side_a_dic_tile(page: Page, base_url: str):
 """TC-005: Verify Excess Tile"""
 @pytest.mark.ui
 @pytest.mark.wws_private_companies
-def test_
+def test_wws_private_companies_excess_tile(page: Page, base_url: str):
+    
