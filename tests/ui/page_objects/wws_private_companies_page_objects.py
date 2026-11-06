@@ -70,4 +70,5 @@ class WWS_Private_Companies:
         expect(self.fiduciary_liability_tile).to_be_visible()
         expect(self.crime_tile).to_be_visible()
 
-
+    def verify_side_a_dic_tile():
+        pass
