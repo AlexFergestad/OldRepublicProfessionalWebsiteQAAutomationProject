@@ -54,4 +54,4 @@ def test_wws_private_companies_side_a_dic_tile(page: Page, base_url: str):
 
 """TC-005: Verify """
 @pytest.mark.ui
-
+@pytest.mark.wws_private_companies
