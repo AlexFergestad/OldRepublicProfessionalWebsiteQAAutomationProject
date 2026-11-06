@@ -45,3 +45,4 @@ def test_wws_private_companies_orprotect_coverage_details(page: Page, base_url: 
 
 
 """TC-004: Verify Side-A DIC Tile"""
+@pytest.mark.ui
