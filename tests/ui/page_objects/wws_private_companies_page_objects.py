@@ -129,4 +129,5 @@ class WWS_Private_Companies:
             "Old Republic Professional’s excess products are designed as streamlined follow-form contracts utilizing market leading erosion language for underlying policy limits and sub-limits."
         )
 
-
+        expect(self.view_excess_coverage_details_button).to_be_visible()
+        self.view_excess_coverage_details_button.click()
