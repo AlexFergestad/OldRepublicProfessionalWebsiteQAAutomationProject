@@ -42,6 +42,7 @@ class WWS_Private_Companies:
         self.excess_side_a_dic_tile = page.get_by_role(
             "heading", name="Excess Side-A DIC", exact=True
         )
+        self.excess_tile = page.get_by_role("heading", name="Excess", exact=True)
 
     def open_page(self):
         self.page.goto(self.page_url)
