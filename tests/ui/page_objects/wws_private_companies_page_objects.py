@@ -131,3 +131,7 @@ class WWS_Private_Companies:
 
         expect(self.view_excess_coverage_details_button).to_be_visible()
         self.view_excess_coverage_details_button.click()
+
+
+
+        
