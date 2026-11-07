@@ -89,7 +89,7 @@
 
 ### Expected Result:
 - The Text in the Excess title is correct.
-- The "View Side-A Coverage Details" button navigates to the correct url.
+- The "View Excess Coverage Details" button navigates to the correct url.
 
 ### Actual Result:
 **Status**: ✅ Pass
