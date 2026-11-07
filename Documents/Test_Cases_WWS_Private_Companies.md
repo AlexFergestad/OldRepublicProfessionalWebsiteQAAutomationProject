@@ -56,5 +56,21 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_orprotect_coverage_details`)
 
 
+# TC-004: 
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
 
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
+2. Wait for the page to load.
+
+### Expected Result:
+- The four sub titles in the tiles are correct.
+- The "View Orprotect Coverage Details" button navigates to the correct url.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_orprotect_coverage_details`)
 
