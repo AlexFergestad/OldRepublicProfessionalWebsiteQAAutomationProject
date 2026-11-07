@@ -85,7 +85,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
-3. Test the Side-A DIC Tile and click on the tile's corresponding button.
+3. Test the Excess Tile and click on the tile's corresponding button.
 
 ### Expected Result:
 - The Text in the Side-A title is correct.
