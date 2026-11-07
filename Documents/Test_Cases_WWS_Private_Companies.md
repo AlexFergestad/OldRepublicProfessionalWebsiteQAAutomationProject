@@ -88,8 +88,7 @@
 3. Test the Excess Tile and click on the tile's corresponding button.
 
 ### Expected Result:
-- The Text in the Side-A title is correct.
-- The "Lead Side-A" and "Excess Side-A" paragraphs are correct.
+- The Text in the Excess title is correct.
 - The "View Side-A Coverage Details" button navigates to the correct url.
 
 ### Actual Result:
