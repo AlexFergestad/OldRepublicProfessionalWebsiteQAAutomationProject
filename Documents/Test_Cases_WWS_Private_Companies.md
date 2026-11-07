@@ -68,7 +68,8 @@
 3. Test the Side-A DIC Tile and click on the tile's corresponding button.
 
 ### Expected Result:
-- The four sub titles in the tiles are correct.
+- The Text in the Side-A title is correct.
+- The 
 - The "View Orprotect Coverage Details" button navigates to the correct url.
 
 ### Actual Result:
