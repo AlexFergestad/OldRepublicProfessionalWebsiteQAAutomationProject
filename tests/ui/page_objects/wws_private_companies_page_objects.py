@@ -132,6 +132,6 @@ class WWS_Private_Companies:
         expect(self.view_excess_coverage_details_button).to_be_visible()
         self.view_excess_coverage_details_button.click()
         expect(self.page).to_have_url("https://www.orprofessional.com/coverages/solutions/excess")
-
+        self.page.wait_for_timeout(2000)
 
 
