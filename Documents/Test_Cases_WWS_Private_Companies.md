@@ -69,7 +69,7 @@
 
 ### Expected Result:
 - The Text in the Side-A title is correct.
-- The 
+- The "Lead Side-A" and "Excess Side-A" paragraphs are correct.
 - The "View Orprotect Coverage Details" button navigates to the correct url.
 
 ### Actual Result:
