@@ -64,3 +64,4 @@ def test_wws_private_companies_excess_tile(page: Page, base_url: str):
 """TC-006: Verify Connect With Us Section"""
 @pytest.mark.ui
 @pytest.mark.wws_private_companies
+def test_
