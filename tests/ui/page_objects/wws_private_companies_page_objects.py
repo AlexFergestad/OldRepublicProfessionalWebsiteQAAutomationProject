@@ -46,7 +46,8 @@ class WWS_Private_Companies:
         self.view_excess_coverage_details_button = self.excess_tile.locator(
             "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
         ).get_by_role("button", name="View Excess Coverage Details", exact=True)
-        self.view_private_company_underwriters_btn = 
+        self.view_private_company_underwriters_btn = page.get_by_role(
+            "button", name="View Private Company Underwriters", exact=True)
 
 
 
