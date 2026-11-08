@@ -67,4 +67,6 @@ def test_wws_private_companies_excess_tile(page: Page, base_url: str):
 def test_connect_with_us_section(page: Page, base_url: str):
     private_companies = WWS_Private_Companies(page, base_url)
     private_companies.open_page()
-    private_companies.verify_excess_tile()
+    private_companies.verify_connect_with_section()
+
+    
