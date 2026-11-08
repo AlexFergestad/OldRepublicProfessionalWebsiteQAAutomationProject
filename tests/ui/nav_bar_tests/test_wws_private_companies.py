@@ -61,4 +61,4 @@ def test_wws_private_companies_excess_tile(page: Page, base_url: str):
     private_companies.verify_excess_tile()
 
 
-"""TC-006: """
+"""TC-006: Verify """
