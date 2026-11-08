@@ -136,3 +136,4 @@ class WWS_Private_Companies:
         self.page.go_back()
 
 
+    def verify_connect_with_section()
