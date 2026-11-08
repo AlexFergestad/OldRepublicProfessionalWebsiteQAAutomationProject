@@ -65,4 +65,5 @@ def test_wws_private_companies_excess_tile(page: Page, base_url: str):
 @pytest.mark.ui
 @pytest.mark.wws_private_companies
 def test_connect_with_us_section(page: Page, base_url: str):
+    private_companies = WWS_Private_Companies(page, base_url)
     
