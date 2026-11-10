@@ -32,6 +32,7 @@ class WWS_Private_Companies:
         self.side_a_dic_tile = page.get_by_role(
             "heading", name="Side-A DIC", exact=True
         )
+        
         self.side_a_dic_tile_content = self.side_a_dic_tile.locator("xpath=..")
         self.side_a_dic_coverage_details_button = self.side_a_dic_tile.locator(
             "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
@@ -46,6 +47,8 @@ class WWS_Private_Companies:
         self.view_excess_coverage_details_button = self.excess_tile.locator(
             "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
         ).get_by_role("button", name="View Excess Coverage Details", exact=True)
+
+        self.underwriter_paragraph = page.locator("span.pwr-sec__desc p").filter(has_text="Have a submission or question?")
         self.view_private_company_underwriters_btn = page.get_by_role(
             "button", name="View Private Company Underwriters", exact=True)
 
