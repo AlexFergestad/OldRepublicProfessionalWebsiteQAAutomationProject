@@ -143,7 +143,7 @@ class WWS_Private_Companies:
 
 
     def verify_connect_with_section(self):
-        expect(self.page.locator("h2", name="Connect With Us")).to_be_visible()
+        expect(self.page.get_by_role("heading", name="Connect With Us")).to_be_visible()
         expect(self.underwriter_paragraph).to_contain_text("Have a submission or question?")
         expect(self.underwriter_paragraph).to_contain_text("New to Old Republic Professional?")
         expect(self.view_private_company_underwriters_btn).to_be_visible()
