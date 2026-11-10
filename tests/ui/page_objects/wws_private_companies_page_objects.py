@@ -142,4 +142,4 @@ class WWS_Private_Companies:
     def verify_connect_with_section(self):
         expect(self.view_private_company_underwriters_btn).to_be_visible()
         self.view_private_company_underwriters_btn.click()
-        expect(self.page).to_have_url("https://www.orprofessional.com/coverages/solutions/excess")
+        expect(self.page).to_have_url("https://www.orprofessional.com/team?filter=private-company-underwriters")
