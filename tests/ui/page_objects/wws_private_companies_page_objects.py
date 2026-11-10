@@ -144,5 +144,5 @@ class WWS_Private_Companies:
         self.view_private_company_underwriters_btn.click()
         expect(self.page).to_have_url("https://www.orprofessional.com/team?filter=private-company-underwriters")
         
-        
+        # Waits for the page to load and the animation to end
         self.page.wait_for_timeout(2000)
