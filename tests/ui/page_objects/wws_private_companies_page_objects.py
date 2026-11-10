@@ -141,5 +141,5 @@ class WWS_Private_Companies:
 
     def verify_connect_with_section(self):
         expect(self.view_private_company_underwriters_btn).to_be_visible()
-
+        self.view_private_company_underwriters_btn.click()
 
