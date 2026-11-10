@@ -142,6 +142,6 @@ class WWS_Private_Companies:
 
 
     def verify_connect_with_section(self):
-
+        expect
 
 
