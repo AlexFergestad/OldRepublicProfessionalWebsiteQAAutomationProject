@@ -32,7 +32,7 @@ class WWS_Private_Companies:
         self.side_a_dic_tile = page.get_by_role(
             "heading", name="Side-A DIC", exact=True
         )
-        
+
         self.side_a_dic_tile_content = self.side_a_dic_tile.locator("xpath=..")
         self.side_a_dic_coverage_details_button = self.side_a_dic_tile.locator(
             "xpath=ancestor::div[contains(@class, 'pwr-adc__content-wrapper')][1]"
@@ -144,6 +144,8 @@ class WWS_Private_Companies:
 
     def verify_connect_with_section(self):
         expect(self.page.locator("h2", name="Connect With Us")).to_be_visible()
+        expect(self.underwriter_paragraph).to_contain_text("Have a submission or question?")
+        expect(self.underwriter_paragraph).to_contain_text("New to Old Republic Professional?")
         expect(self.view_private_company_underwriters_btn).to_be_visible()
         self.view_private_company_underwriters_btn.click()
         expect(self.page).to_have_url("https://www.orprofessional.com/team?filter=private-company-underwriters")
