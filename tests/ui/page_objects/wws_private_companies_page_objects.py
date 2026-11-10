@@ -146,3 +146,5 @@ class WWS_Private_Companies:
         
         # Waits for the page to load and the animation to end
         self.page.wait_for_timeout(2000)
+
+        self.page.go_back()
