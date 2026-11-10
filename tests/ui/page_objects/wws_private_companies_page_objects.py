@@ -50,8 +50,6 @@ class WWS_Private_Companies:
             "button", name="View Private Company Underwriters", exact=True)
 
 
-
-
     def open_page(self):
         self.page.goto(self.page_url)
         self.page.wait_for_load_state("networkidle")
@@ -142,6 +140,6 @@ class WWS_Private_Companies:
 
 
     def verify_connect_with_section(self):
-        expect
+        expect(self.view_private_company_underwriters_btn).to_be_visible()
 
 
