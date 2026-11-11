@@ -76,3 +76,4 @@ def test_connect_with_us_section(page: Page, base_url: str):
 def test_other_segments_we_serve_section(page: Page, base_url: str):
     private_companies = WWS_Private_Companies(page, base_url)
     private_companies.open_page()
+
