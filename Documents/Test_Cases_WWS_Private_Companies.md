@@ -104,10 +104,11 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
-3. The Connect With Us Header and Paragraph are correct.
-4. The "View Private Company Underwriters" button correctly navigfates to the expected url and functions properly.
+3. 
 
 ### Expected Result:
+- The Connect With Us Header and Paragraph are correct.
+- The "View Private Company Underwriters" button correctly navigfates to the expected url and functions properly.
 - The Text in the Excess title is correct.
 - The "View Excess Coverage Details" button navigates to the correct url.
 
