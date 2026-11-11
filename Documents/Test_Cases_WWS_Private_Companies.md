@@ -95,5 +95,23 @@
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_excess_tile`)
 
+# TC-006:
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
+2. Wait for the page to load.
+3. Test the Excess Tile and click on the tile's corresponding button.
+
+### Expected Result:
+- The Text in the Excess title is correct.
+- The "View Excess Coverage Details" button navigates to the correct url.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_excess_tile`)
 
 
