@@ -109,8 +109,7 @@
 ### Expected Result:
 - The Connect With Us Header and Paragraph are correct.
 - The "View Private Company Underwriters" button correctly navigfates to the expected url and functions properly.
-- The Text in the Excess title is correct.
-- The "View Excess Coverage Details" button navigates to the correct url.
+
 
 ### Actual Result:
 **Status**: ✅ Pass
