@@ -69,4 +69,5 @@ def test_connect_with_us_section(page: Page, base_url: str):
     private_companies.open_page()
     private_companies.verify_connect_with_section()
 
-    
+
+"""TC-007: Verify the Other Segments We Serve Section"""  
