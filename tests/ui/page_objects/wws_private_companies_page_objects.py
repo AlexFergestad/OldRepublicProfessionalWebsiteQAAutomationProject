@@ -155,6 +155,6 @@ class WWS_Private_Companies:
 
         self.page.go_back()
 
-    def 
+    def verify_other_segments_we_serve_section()
 
 
