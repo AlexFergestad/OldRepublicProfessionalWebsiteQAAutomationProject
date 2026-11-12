@@ -164,5 +164,6 @@ class WWS_Private_Companies:
 
         expect(self.public_companies_title).to_be_visible()
         self.public_companies_title.click()
+        expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/public-companies")
 
 
