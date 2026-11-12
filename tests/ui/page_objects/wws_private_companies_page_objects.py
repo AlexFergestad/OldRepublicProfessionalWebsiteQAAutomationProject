@@ -165,6 +165,12 @@ class WWS_Private_Companies:
         expect(self.other_segments_we_serve_section).to_be_visible()
         expect(self.other_segments_we_serve_section).to_have_text("Other Segments We Serve")
 
+        self.other_segment_tiles = [
+            (self.public_companies_tile, "https://www.orprofessional.com/who-we-serve/public-companies"),
+            (self.financial_institutions_tile, "https://www.orprofessional.com/who-we-serve/financial-institutions"),
+            (self.not_for_profit_entities_tile, "https://www.orprofessional.com/who-we-serve/not-for-profit-entities"),
+        ]
+
         for tile, expected_url in self.other_segment_tiles:
             expect(tile).to_be_visible()
             tile.click()
