@@ -52,7 +52,7 @@ class WWS_Private_Companies:
         self.view_private_company_underwriters_btn = page.get_by_role(
             "button", name="View Private Company Underwriters", exact=True)
         
-        self.other_segments_we_serve_section = page.get_by_role("heading", name="Other Segments We Serve", exact=True)
+        self.other_segments_we_serve_section = page.locator("span, div, p").filter(has_text="Other Segments We Serve").last
         self.public_companies_tile = page.locator("span.pwr-image-box__title").filter(has_text="Public Companies")
         self.financial_institutions_tile = page.locator("span.pwr-image-box__title").filter(has_text="Financial Institutions")
         self.not_for_profit_entities_tile = page.locator("span.pwr-image-box__title").filter(has_text="Not-for-Profit Entities")
