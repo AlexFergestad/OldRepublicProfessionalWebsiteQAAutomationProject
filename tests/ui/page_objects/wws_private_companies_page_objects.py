@@ -52,9 +52,11 @@ class WWS_Private_Companies:
         self.view_private_company_underwriters_btn = page.get_by_role(
             "button", name="View Private Company Underwriters", exact=True)
         self.other_segments_we_serve_section = page.get_by_role("heading", name="Other Segments We Serve", exact=True)
-        self.public_companies_tile = page.locator("span.pwr-image-box__title").filter(has_text="Public Companies")
-        self.financial_institutions_tile = page.locator("span.pwr-image-box__title").filter(has_text="Financial Institutions")
-        self.not_for_profit_entities_tile = page.locator("span.pwr-image-box__title").filter(has_text="Not-for-Profit Entities")
+        self.other_segment_tiles = [
+            (self.public_companies_tile, "https://www.orprofessional.com/who-we-serve/public-companies"),
+            (self.financial_institutions_tile, "https://www.orprofessional.com/who-we-serve/financial-institutions"),
+            (self.not_for_profit_entities_tile, "https://www.orprofessional.com/who-we-serve/not-for-profit-entities"),
+        ]
 
 
     def open_page(self):
@@ -161,21 +163,13 @@ class WWS_Private_Companies:
 
     def verify_other_segments_we_serve_section(self):
         expect(self.other_segments_we_serve_section).to_be_visible()
-        expect(self.other_segments_we_serve_section.to_have_text("Other Segments We Serve"))
+        expect(self.other_segments_we_serve_section).to_have_text("Other Segments We Serve")
 
-        expect(self.public_companies_tile).to_be_visible()
-        self.public_companies_tile.click()
-        expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/public-companies")
-        self.page.go_back()
-
-        expect(self.financial_institutions_tile).to_be_visible()
-        self.financial_institutions_tile.click()
-        expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/financial-institutions")
-        self.page.go_back()
-
-        expect(self.not_for_profit_entities_tile).to_be_visible()
-        self.not_for_profit_entities_tile.click()
-        expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/not-for-profit-entities")
-        self.page.go_back()
+        for tile, expected_url in self.other_segment_tiles:
+            expect(tile).to_be_visible()
+            tile.click()
+            expect(self.page).to_have_url(expected_url)
+            self.page.go_back()
+            self.page.wait_for_load_state("domcontentloaded")
 
 
