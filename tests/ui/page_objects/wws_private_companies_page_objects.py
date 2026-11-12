@@ -168,3 +168,4 @@ class WWS_Private_Companies:
         self.page.go_back()
 
         expect(self.financial_institutions_tile).to_be_visible()
+        self.financial_institutions_tile.click()
