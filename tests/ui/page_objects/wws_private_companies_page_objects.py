@@ -174,5 +174,6 @@ class WWS_Private_Companies:
         self.page.go_back()
 
         expect(self.not_for_profit_entities_tile).to_be_visible()
+        self.not_for_profit_entities_tile.click()
 
 
