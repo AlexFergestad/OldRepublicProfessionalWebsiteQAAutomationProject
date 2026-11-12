@@ -163,5 +163,6 @@ class WWS_Private_Companies:
         expect(self.other_segments_we_serve_section.to_have_text("Other Segments We Serve"))
 
         expect(self.public_companies_title).to_be_visible()
+        self.public_companies_title.click()
 
 
