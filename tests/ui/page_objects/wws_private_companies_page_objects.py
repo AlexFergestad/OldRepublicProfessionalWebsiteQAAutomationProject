@@ -173,6 +173,6 @@ class WWS_Private_Companies:
         expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/financial-institutions")
         self.page.go_back()
 
-
+        expect(self.not_for_profit_entities_tile).to_be_visible()
 
 
