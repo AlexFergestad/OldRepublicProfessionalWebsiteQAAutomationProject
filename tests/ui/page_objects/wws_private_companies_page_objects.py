@@ -167,4 +167,4 @@ class WWS_Private_Companies:
         expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/public-companies")
         self.page.go_back()
 
-        
+        expect(self.financial_institutions_tile).to_be_visible()
