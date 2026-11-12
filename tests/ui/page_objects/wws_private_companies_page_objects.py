@@ -162,8 +162,8 @@ class WWS_Private_Companies:
         expect(self.other_segments_we_serve_section).to_be_visible()
         expect(self.other_segments_we_serve_section.to_have_text("Other Segments We Serve"))
 
-        expect(self.public_companies_title).to_be_visible()
-        self.public_companies_title.click()
+        expect(self.public_companies_tile).to_be_visible()
+        self.public_companies_tile.click()
         expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/public-companies")
         self.page.go_back()
 
