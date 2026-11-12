@@ -53,7 +53,7 @@ class WWS_Private_Companies:
             "button", name="View Private Company Underwriters", exact=True)
         self.other_segments_we_serve_section = page.get_by_role("heading", name="Other Segments We Serve", exact=True)
         self.public_companies_title = page.locator("span.pwr-image-box__title").filter(has_text="Public Companies")
-
+        self.financial_institutions_title = page.locator("span.pwr-image-box__title").filter(has_text="Financial Institutions")
 
 
     def open_page(self):
@@ -167,4 +167,4 @@ class WWS_Private_Companies:
         expect(self.page).to_have_url("https://www.orprofessional.com/who-we-serve/public-companies")
         self.page.go_back()
 
-
+        
