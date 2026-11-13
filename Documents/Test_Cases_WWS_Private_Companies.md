@@ -128,4 +128,5 @@
 3. Scroll Down to the "Other Segments We Serve" section.
 
 ### Expected Result:
-- The 
+- The "Other Segments We Serve" text is correct.
+- 
