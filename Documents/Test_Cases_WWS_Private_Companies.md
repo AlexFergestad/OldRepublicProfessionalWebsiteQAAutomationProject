@@ -132,3 +132,9 @@
 - The "Public Companies" tile is correct and navigates to the correct page/url.
 - The "Financial Institutions" tile is correct and navigates to the correct page/url.
 - The "Not-For-Profit Entities" tile is correct and navigates to the correct page/url.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_connect_with_us_section`)
+
+
