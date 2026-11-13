@@ -121,3 +121,9 @@
 **Type**: Functional/Smoke
 **Preconditions**:
 - Have an internet-connected computer and a supported web browser.
+
+
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
+2. Wait for the page to load.
+3. Scroll Down to the "Connect With Us" section.
