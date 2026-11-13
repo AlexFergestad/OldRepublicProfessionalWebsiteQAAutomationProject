@@ -116,4 +116,4 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_connect_with_us_section`)
 
 
-# TC-007:
+# TC-007: Verify the Other Segments We Serve Section
