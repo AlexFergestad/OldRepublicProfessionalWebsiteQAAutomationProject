@@ -117,3 +117,7 @@
 
 
 # TC-007: Verify the Other Segments We Serve Section
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
