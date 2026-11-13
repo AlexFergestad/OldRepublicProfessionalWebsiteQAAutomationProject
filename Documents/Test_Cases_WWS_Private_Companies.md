@@ -130,5 +130,5 @@
 ### Expected Result:
 - The "Other Segments We Serve" text is correct.
 - The "Public Companies" tile is correct and navigates to the correct page/url.
-- The "Public Companies" tile is correct and navigates to the correct page/url.
+- The "Financial Institutions" tile is correct and navigates to the correct page/url.
 - The "Public Companies" tile is correct and navigates to the correct page/url.
