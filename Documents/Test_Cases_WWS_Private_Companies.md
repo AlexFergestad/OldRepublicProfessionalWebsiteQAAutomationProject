@@ -125,4 +125,4 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
-3. Scroll Down to the "Connect With Us" section.
+3. Scroll Down to the "Other Segments We Serve" section.
