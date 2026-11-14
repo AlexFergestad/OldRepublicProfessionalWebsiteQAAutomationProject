@@ -81,4 +81,4 @@ def test_other_segments_we_serve_section(page: Page, base_url: str):
 
 """"TC-008: Verify Performance of the Private Companies Page"""
 @pytest.mark.ui
-
+@pytest.mark.wws_private_companies
