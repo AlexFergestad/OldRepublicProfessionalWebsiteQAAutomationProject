@@ -147,6 +147,7 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
+3. Measure the page's navigation and rendering performance metrics.
 
 ### Expected Result:
 - Page load time is less than 3,000 ms.
