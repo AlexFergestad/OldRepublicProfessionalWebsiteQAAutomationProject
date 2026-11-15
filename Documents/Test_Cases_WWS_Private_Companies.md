@@ -147,7 +147,6 @@
 ### Steps to Reproduce:
 1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
 2. Wait for the page to load.
-3. Scroll Down to the "Other Segments We Serve" section.
 
 ### Expected Result:
 - The "Other Segments We Serve" text is correct.
