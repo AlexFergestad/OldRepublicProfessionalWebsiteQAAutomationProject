@@ -139,4 +139,22 @@
 
 
 # TC-008: Verify Performance of the Private Companies Page
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
 
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
+2. Wait for the page to load.
+3. Scroll Down to the "Other Segments We Serve" section.
+
+### Expected Result:
+- The "Other Segments We Serve" text is correct.
+- The "Public Companies" tile is correct and navigates to the correct page/url.
+- The "Financial Institutions" tile is correct and navigates to the correct page/url.
+- The "Not-For-Profit Entities" tile is correct and navigates to the correct page/url.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_other_segments_we_serve_section`)
