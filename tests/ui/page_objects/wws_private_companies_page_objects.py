@@ -180,4 +180,6 @@ class WWS_Private_Companies:
             self.page.go_back()
             self.page.wait_for_load_state("domcontentloaded")
 
+    def verify
+
 
