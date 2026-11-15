@@ -149,10 +149,10 @@
 2. Wait for the page to load.
 
 ### Expected Result:
-- The "Other Segments We Serve" text is correct.
-- The "Public Companies" tile is correct and navigates to the correct page/url.
-- The "Financial Institutions" tile is correct and navigates to the correct page/url.
-- The "Not-For-Profit Entities" tile is correct and navigates to the correct page/url.
+- Page load time is less than 3,000 ms.
+- First Contentful Paint is less than 2,000 ms.
+- Largest Contentful Paint is less than 2,500 ms when the browser provides the metric.
+- Cumulative Layout Shift is less than 0.1.
 
 ### Actual Result:
 **Status**: ✅ Pass
