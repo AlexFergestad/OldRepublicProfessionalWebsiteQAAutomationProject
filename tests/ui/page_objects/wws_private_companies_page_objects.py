@@ -202,7 +202,7 @@ class WWS_Private_Companies:
 
             return {
                 load_time: navigation
-                    ? navigation.loadEventEnd - navigation.startTime
+                    ? navigation.loadEventEnd - navigation.fetchStart
                     : null,
                 first_contentful_paint: firstContentfulPaint
                     ? firstContentfulPaint.startTime
