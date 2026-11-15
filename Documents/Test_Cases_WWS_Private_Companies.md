@@ -138,5 +138,5 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_other_segments_we_serve_section`)
 
 
-# TC-008:
+# TC-008: Verify Performance of the Private Companies Page
 
