@@ -242,5 +242,4 @@ class WWS_Private_Companies:
             f"got: {cumulative_layout_shift:.3f}"
         )
 
-
-        
+    def verify_page_accessibility(self):
