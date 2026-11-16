@@ -88,5 +88,5 @@ def test_wws_private_companies_page_performance(page: Page, base_url: str):
     private_companies.verify_page_performance()
 
 
-"""TC-009: Verify"""
+"""TC-009: Verify Accessibility of the Private Companies Page"""
 
