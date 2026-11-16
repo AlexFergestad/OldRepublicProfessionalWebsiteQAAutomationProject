@@ -93,4 +93,4 @@ def test_wws_private_companies_page_performance(page: Page, base_url: str):
 @pytest.mark.wws_private_companies
 def test_wws_private_companies_page_accessibility(page: Page, base_url: str):
     private_companies = WWS_Private_Companies(page, base_url)
-
+    private_companies.open_page()
