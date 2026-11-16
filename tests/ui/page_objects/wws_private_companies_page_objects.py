@@ -241,3 +241,6 @@ class WWS_Private_Companies:
             "Expected cumulative layout shift < 0.1, "
             f"got: {cumulative_layout_shift:.3f}"
         )
+
+
+        
