@@ -243,7 +243,24 @@ class WWS_Private_Companies:
         )
 
     def verify_page_accessibility(self):
-
+        results = Axe().run(self.page)
+        violations = results.response["violations"]
+        known_violations = {"color-contrast", "input-button-name", "link-name"}
+        critical_violations = [
+            violation
+            for violation in violations
+            if violation["impact"] in ("critical", "serious")
+            and violation["id"] not in known_violations
+            ]
+        
+        assert not critical_violations, (
+            f"Found {len(critical_violations)} new critical/serious accessibility "
+            "violation(s): "
+            + "\n".join(
+                f"  - {violation['id']}: {violation['description']}"
+                for violation in critical_violations
+            )
+        )
 
 
 
