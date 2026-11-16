@@ -89,4 +89,4 @@ def test_wws_private_companies_page_performance(page: Page, base_url: str):
 
 
 """TC-009: Verify Accessibility of the Private Companies Page"""
-
+@pytest.mark.ui
