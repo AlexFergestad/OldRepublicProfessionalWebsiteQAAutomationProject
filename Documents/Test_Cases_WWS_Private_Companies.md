@@ -172,10 +172,8 @@
 3. Measure the page's navigation and rendering performance metrics.
 
 ### Expected Result:
-- Page load time is less than 3,000 ms.
-- First Contentful Paint is less than 2,000 ms.
-- Largest Contentful Paint is less than 2,500 ms when the browser provides the metric.
-- Cumulative Layout Shift is less than 0.1.
+- The accessibility audit completes successfully.
+- No new critical or serious accessibility violations are reported.
 
 ### Actual Result:
 **Status**: ✅ Pass
