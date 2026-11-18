@@ -10,3 +10,5 @@ class WWS_Financial_Institutions:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.page_url = f"{base_url.rstrip('/')}{self.PAGE_PATH}"
+
+
