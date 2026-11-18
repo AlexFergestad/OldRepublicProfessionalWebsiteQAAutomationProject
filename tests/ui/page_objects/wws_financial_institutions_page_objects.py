@@ -14,3 +14,6 @@ class WWS_Financial_Institutions:
                     "heading", name="Financial Institutions", exact=True
                 )
 
+    def open_page(self):
+        self.page.goto(self.page_url)
+        self.page.wait_for_load_state("networkidle")
