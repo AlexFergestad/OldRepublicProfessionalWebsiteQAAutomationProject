@@ -19,4 +19,6 @@ class WWS_Financial_Institutions:
         self.page.wait_for_load_state("networkidle")
 
 
-
+    def verify_page_loaded(self):
+        expect(self.page).to_have_url(re.compile(re.escape(self.PAGE_PATH) + r"/?$"))
+        expect(self.page_heading).to_be_visible()
