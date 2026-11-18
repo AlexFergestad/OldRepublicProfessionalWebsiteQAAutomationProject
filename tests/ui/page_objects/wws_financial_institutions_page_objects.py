@@ -13,3 +13,4 @@ class WWS_Financial_Institutions:
         self.page_heading = page.get_by_role(
                     "heading", name="Financial Institutions", exact=True
                 )
+
