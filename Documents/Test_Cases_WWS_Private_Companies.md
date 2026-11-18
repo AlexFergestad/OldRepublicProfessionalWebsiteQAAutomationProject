@@ -161,6 +161,24 @@
 
 
 # TC-009: Verify Accessibility of the Private Companies Page
+**Priority**: High
+**Type**: Functional/Smoke
+**Preconditions**:
+- Have an internet-connected computer and a supported web browser.
 
+### Steps to Reproduce:
+1. Navigate to https://www.oldrepublicpro.com/en/who-we-serve/private-companies.
+2. Wait for the page to load.
+3. Measure the page's navigation and rendering performance metrics.
+
+### Expected Result:
+- Page load time is less than 3,000 ms.
+- First Contentful Paint is less than 2,000 ms.
+- Largest Contentful Paint is less than 2,500 ms when the browser provides the metric.
+- Cumulative Layout Shift is less than 0.1.
+
+### Actual Result:
+**Status**: ✅ Pass
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_private_companies.py::test_wws_private_companies_page_performance`)
 
 
