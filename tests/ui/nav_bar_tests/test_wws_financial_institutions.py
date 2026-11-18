@@ -5,4 +5,12 @@ from tests.ui.page_objects.wws_financial_institutions_page_objects import (
     WWS_Financial_Institutions,
 )
 
+"""
 
+Who We Serve Private Companies Page UI Tests
+Test Cases: TC-001, TC-002, TC-003, TC-004, TC-005, TC-006, TC-007, TC-008, TC-009
+
+* This page verifies the Who We Serve Public Companies page of the Old Republic Professional website loads correctly,
+has the expected , performance, and accessibility.
+
+"""
