@@ -19,8 +19,7 @@ has the expected , performance, and accessibility.
 @pytest.mark.ui
 @pytest.mark.wws_financial_institutions
 def test_wws_financial_institutions_page_loads(page: Page, base_url: str):
+    financial_institutions = WWS_Financial_Institutions(page, base_url)
 
 
 
-
-    
