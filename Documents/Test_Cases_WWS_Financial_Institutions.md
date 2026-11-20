@@ -10,7 +10,7 @@
 
 ### Expected Result:
 - The page loads successfully at `who-we-serve/financial-institutions`.
-- The "Public Companies" page heading is visible.
+- The "Financial Institutions" page heading is visible.
 
 ### Actual Result:
 **Status**: ✅ Pass
