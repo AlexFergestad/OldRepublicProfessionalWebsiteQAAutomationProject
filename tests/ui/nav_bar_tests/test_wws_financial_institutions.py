@@ -16,5 +16,5 @@ has the expected , performance, and accessibility.
 """
 
 """TC-001: Verify the Who We Serve Financial Institutions page loads correctly."""
-
+@pytest.mark.ui
 
