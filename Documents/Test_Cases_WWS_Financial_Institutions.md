@@ -1,4 +1,4 @@
-# TC-001: Verify the Who We Serve Public Companies page loads correctly
+# TC-001: Verify the Who We Serve Financial Institutions page loads correctly.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**:
