@@ -18,3 +18,4 @@ has the expected , performance, and accessibility.
 """TC-001: Verify the Who We Serve Financial Institutions page loads correctly."""
 @pytest.mark.ui
 @pytest.mark.wws_financial_institutions
+def test_wws_financial_institutions_page_loads(page: Page, base_url: str):
