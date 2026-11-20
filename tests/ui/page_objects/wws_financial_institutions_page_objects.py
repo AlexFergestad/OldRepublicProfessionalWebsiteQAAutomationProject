@@ -5,7 +5,7 @@ from playwright.sync_api import Page, expect
 
 
 class WWS_Financial_Institutions:
-    PAGE_PATH = "/en/who-we-serve/financial-institutions"
+    PAGE_PATH = "/who-we-serve/financial-institutions"
 
     def __init__(self, page: Page, base_url: str):
         self.page = page
