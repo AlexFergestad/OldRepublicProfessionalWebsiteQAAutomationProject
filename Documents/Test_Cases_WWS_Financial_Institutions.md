@@ -9,7 +9,7 @@
 2. Wait for the page to load.
 
 ### Expected Result:
-- The page loads successfully at `/who-we-serve/public-companies`.
+- The page loads successfully at `who-we-serve/financial-institutions`.
 - The "Public Companies" page heading is visible.
 
 ### Actual Result:
