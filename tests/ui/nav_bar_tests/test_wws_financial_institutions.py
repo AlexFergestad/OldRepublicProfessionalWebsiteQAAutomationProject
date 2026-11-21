@@ -39,3 +39,4 @@ def test_wws_financial_institutions_page_title(page: Page, base_url: str):
 def test_wws_financial_institutions_page_heading(page: Page, base_url: str):
     financial_institutions = WWS_Financial_Institutions(page, base_url)
     financial_institutions.open_page()
+    financial_institutions.verify_page_heading_and_subheading()
