@@ -23,3 +23,5 @@ def test_wws_financial_institutions_page_loads(page: Page, base_url: str):
     financial_institutions.open_page()
     financial_institutions.verify_page_loaded()
 
+
+
