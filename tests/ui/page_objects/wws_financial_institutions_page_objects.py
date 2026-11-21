@@ -26,4 +26,4 @@ class WWS_Financial_Institutions:
     def verify_page_title(self):
         expect(self.page).to_have_title("Financial Institutions | Old Republic Professional")
 
-
+    def verify_
