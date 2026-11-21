@@ -27,4 +27,5 @@ def test_wws_financial_institutions_page_loads(page: Page, base_url: str):
 """"TC-002: Verify the Who We Serve Financial Institutions page has the expected title."""
 @pytest.mark.ui
 @pytest.mark.wws_financial_institutions
-def test_
+def test_wws_financial_institutions_page_title(page: Page, base_url: str):
+    
