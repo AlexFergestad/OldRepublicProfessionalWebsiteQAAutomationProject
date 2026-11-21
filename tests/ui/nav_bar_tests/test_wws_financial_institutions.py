@@ -34,3 +34,4 @@ def test_wws_financial_institutions_page_title(page: Page, base_url: str):
 
 
 """TC-003: Verify the Who We Serve Financial Institutions page heading and sub-heading."""
+@pytest.mark.ui
