@@ -17,7 +17,7 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_financial_institutions_page_loads`)
 
 
-# TC-002: 
+# TC-002: Verify the Who We Serve Financial Institutions page has the expected title.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**:
