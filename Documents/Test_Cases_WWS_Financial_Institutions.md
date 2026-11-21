@@ -29,7 +29,8 @@
 
 ### Expected Result:
 - The page loads successfully at `who-we-serve/financial-institutions`.
-- The "Financial Institutions" page heading is visible.
+- The browser tab title says "Financial Institutions | Old Republic Professional".
+
 
 ### Actual Result:
 **Status**: ✅ Pass
