@@ -10,9 +10,7 @@ class WWS_Financial_Institutions:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.page_url = f"{base_url.rstrip('/')}{self.PAGE_PATH}"
-        self.page_heading = page.get_by_role(
-            "heading", name="Financial Institutions", exact=True
-            )
+        self.page_heading = page.get_by_role("heading", name="Financial Institutions", level=1)
         self.page_subheading = self.page.get_by_role(
             "heading", name="Protecting the financial institutions that protect our economy.", exact=True
             )
