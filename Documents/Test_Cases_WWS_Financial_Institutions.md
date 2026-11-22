@@ -37,7 +37,7 @@
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_financial_institutions_page_title`)
 
 
-# TC-003: 
+# TC-003: Verify the Who We Serve Financial Institutions page heading and sub-heading.
 **Priority**: High
 **Type**: Functional/Smoke
 **Preconditions**:
