@@ -32,4 +32,4 @@ class WWS_Financial_Institutions:
     def verify_page_heading_and_subheading(self):
         expect(self.page_heading).to_be_visible()
         expect(self.page_heading).to_have_text("Financial Institutions")
-
+        expect(self.page_subheading).to_be_visible()
