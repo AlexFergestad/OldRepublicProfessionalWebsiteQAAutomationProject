@@ -11,9 +11,7 @@ class WWS_Financial_Institutions:
         self.page = page
         self.page_url = f"{base_url.rstrip('/')}{self.PAGE_PATH}"
         self.page_heading = page.get_by_role("heading", name="Financial Institutions", level=1)
-        self.page_subheading = self.page.get_by_role(
-            "heading", name="Protecting the financial institutions that protect our economy.", exact=True
-            )
+        self.page_subheading = page.locator("strong").filter(has_text="Specialized underwriting for financial institutions")
 
     def open_page(self):
         self.page.goto(self.page_url)
