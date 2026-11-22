@@ -13,7 +13,7 @@ class WWS_Financial_Institutions:
         self.page_heading = page.get_by_role(
             "heading", name="Financial Institutions", exact=True
             )
-        page_subheading = self.page.get_by_role(
+        self.page_subheading = self.page.get_by_role(
             "heading", name="Protecting the financial institutions that protect our economy.", exact=True
             )
 
