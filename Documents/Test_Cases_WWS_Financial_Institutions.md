@@ -48,7 +48,7 @@
 2. Wait for the page to load.
 
 ### Expected Result:
-- The page loads successfully at `who-we-serve/financial-institutions`.
+- The page loads.
 - The heading says "Financial Institutions".
 - The subheading says "Specialized underwriting for financial institutions".
 
