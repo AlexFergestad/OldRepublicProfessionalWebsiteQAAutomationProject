@@ -14,7 +14,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_financial_institutions_page_loads`)
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_financial_institutions::test_wws_financial_institutions_page_loads`)
 
 
 # TC-002: Verify the Who We Serve Financial Institutions page has the expected title.
@@ -34,7 +34,7 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_financial_institutions_page_title`)
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_financial_institutions.py::test_wws_financial_institutions_page_title`)
 
 
 # TC-003: Verify the Who We Serve Financial Institutions page heading and sub-heading.
@@ -55,5 +55,5 @@
 
 ### Actual Result:
 **Status**: ✅ Pass
-**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_public_companies.py::test_wws_financial_institutions_page_heading`)
+**Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_financial_institutions.py::test_wws_financial_institutions_page_heading`)
 
