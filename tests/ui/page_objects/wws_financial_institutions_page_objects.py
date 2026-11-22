@@ -27,5 +27,6 @@ class WWS_Financial_Institutions:
         expect(self.page).to_have_title("Financial Institutions | Old Republic Professional")
 
     def verify_page_heading_and_subheading(self):
-
+        expect(self.page_heading).to_be_visible()
+        expect(self.page_heading).to_have_text("Financial Institutions")
 
