@@ -49,7 +49,7 @@
 
 ### Expected Result:
 - The page loads successfully at `who-we-serve/financial-institutions`.
-- The browser tab title says "Financial Institutions | Old Republic Professional".
+- The heading says "Financial Institutions".
 
 
 ### Actual Result:
