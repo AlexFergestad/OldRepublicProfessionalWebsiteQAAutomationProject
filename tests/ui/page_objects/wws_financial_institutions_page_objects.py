@@ -33,6 +33,5 @@ class WWS_Financial_Institutions:
         expect(self.page_subheading).to_be_visible()
 
     def verify_intro_paragraphs(self):
-
-
-
+        expect(self.intro_paragraph_left).to_be_visible()
+        expect(self.intro_paragraph_right).to_be_visible()
