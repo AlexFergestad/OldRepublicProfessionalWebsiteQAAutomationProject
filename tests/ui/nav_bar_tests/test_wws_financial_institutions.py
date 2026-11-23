@@ -46,4 +46,4 @@ def test_wws_financial_institutions_page_heading(page: Page, base_url: str):
 """TC-004: Verify top introductory paragraph content on the Who We Serve Financial Institutions page."""
 @pytest.mark.ui
 @pytest.mark.wws_financial_institutions
-def test_
+def test_wws_financial_institutions_page_intro_paragraphs(page: Page, base_url: str):
