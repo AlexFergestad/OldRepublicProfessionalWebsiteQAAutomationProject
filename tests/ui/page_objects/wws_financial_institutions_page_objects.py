@@ -13,6 +13,7 @@ class WWS_Financial_Institutions:
         self.page_heading = page.get_by_role("heading", name="Financial Institutions", level=1)
         self.page_subheading = page.locator("strong").filter(has_text="Specialized underwriting for financial institutions")
         self.intro_paragraph_left = page.locator("p").filter(has_text="Old Republic Professional's dedicated Financial Institutions team focuses exclusively on the management and professional liability exposures facing financial services organizations.")
+        self.intro_paragraph_right = page.locator("p").filter(has_text="Backed by decades of underwriting expertise and claims experience, we provide customized insurance and risk transfer solutions for asset managers, lending institutions, insurance companies, and other financial institutions navigating an increasingly complex risk environment.")
 
     def open_page(self):
         self.page.goto(self.page_url)
