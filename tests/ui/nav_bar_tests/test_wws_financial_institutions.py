@@ -48,6 +48,6 @@ def test_wws_financial_institutions_page_heading(page: Page, base_url: str):
 @pytest.mark.wws_financial_institutions
 def test_wws_financial_institutions_page_intro_paragraphs(page: Page, base_url: str):
     financial_institutions = WWS_Financial_Institutions(page, base_url)
-
+    financial_institutions.open_page()
 
     
