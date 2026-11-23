@@ -43,4 +43,4 @@ def test_wws_financial_institutions_page_heading(page: Page, base_url: str):
 
 
 
-"""TC-004:"""
+"""TC-004: Verify top introductory paragraph content on the Who We Serve Financial Institutions page."""
