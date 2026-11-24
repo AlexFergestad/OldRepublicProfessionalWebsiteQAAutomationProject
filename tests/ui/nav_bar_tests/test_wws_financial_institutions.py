@@ -53,6 +53,6 @@ def test_wws_financial_institutions_page_intro_paragraphs(page: Page, base_url: 
 
 
 """TC-005: Verify the Coverage Area Tiles in the Who We Serve Financial Institutions page."""
-
+@pytest.mark.ui
 
 
