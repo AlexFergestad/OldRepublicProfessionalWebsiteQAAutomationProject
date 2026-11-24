@@ -77,5 +77,3 @@
 ### Actual Result:
 **Status**: ✅ Pass
 **Automated**: Yes (`tests/ui/nav_bar_tests/test_wws_financial_institutions.py::test_wws_financial_institutions_page_heading`)
-
-Verify top introductory paragraph content on the Who We Serve Financial Institutions page.
