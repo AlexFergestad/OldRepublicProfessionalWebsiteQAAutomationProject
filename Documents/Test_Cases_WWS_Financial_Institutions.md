@@ -70,7 +70,7 @@
 
 ### Expected Result:
 - The page loads.
-- The heading says "Financial Institutions".
+- The left paragraph says "Old Republic Professional's dedicated Financial Institutions team".
 - The subheading says "Specialized underwriting for financial institutions".
 
 
