@@ -18,6 +18,9 @@ class WWS_Financial_Institutions:
 
         self.intro_paragraph_right = page.locator("div.pwr-sec-txt__right").filter(
             has_text="Backed by decades of underwriting expertise"
+
+        # Tile locators
+        self.investpro_paragraph = page.get_by_role("heading", name="InvestPRO", exact=True).locator("xpath=following-sibling::p[1]")
 )
     def open_page(self):
         self.page.goto(self.page_url)
@@ -45,4 +48,4 @@ class WWS_Financial_Institutions:
 
 
 
-        
+
