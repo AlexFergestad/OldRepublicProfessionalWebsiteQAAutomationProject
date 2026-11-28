@@ -61,3 +61,6 @@ class WWS_Financial_Institutions:
         expect(self.page).to_have_url("https://www.orprofessional.com/coverages/solutions/investpro")
         self.page.go_back()
 
+
+        
+
