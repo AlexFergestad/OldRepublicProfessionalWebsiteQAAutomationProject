@@ -21,6 +21,7 @@ class WWS_Financial_Institutions:
 
         # Tile locators
         self.investpro_paragraph = page.get_by_role("heading", name="InvestPRO", exact=True).locator("xpath=following-sibling::p[1]")
+        self.view_investpro_coverage_details_button = page.get_by_role("button", name="View InvestPro Coverage Details", exact=True)
 )
     def open_page(self):
         self.page.goto(self.page_url)
