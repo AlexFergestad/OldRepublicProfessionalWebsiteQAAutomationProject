@@ -41,4 +41,8 @@ class WWS_Financial_Institutions:
         expect(self.intro_paragraph_right).to_be_visible()
 
 
-    def verify_coverage_area_tiles()
+    def verify_coverage_area_tiles(self):
+
+
+
+        
