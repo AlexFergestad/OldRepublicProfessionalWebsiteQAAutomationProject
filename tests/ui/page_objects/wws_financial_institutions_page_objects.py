@@ -68,5 +68,13 @@ class WWS_Financial_Institutions:
         expect(self.do_paragraph).to_contain_text("provides D&O coverage for financial institutions on a primary and excess basis")
         expect(self.do_paragraph).to_contain_text("admitted and non-admitted paper")
         expect(self.do_paragraph).to_contain_text("standalone management liability placement")
+        expect(self.view_do_coverage_details_button).to_be_visible()
+        expect(self.view_do_coverage_details_button).to_have_text("View D&O Coverage Details")
+        expect(self.view_do_coverage_details_button).to_have_attribute(
+            "href", "https://www.orprofessional.com/coverages/directors-and-officers-liability"
+        )
 
+        self.view_do_coverage_details_button.click()
+        expect(self.page).to_have_url("https://www.orprofessional.com/coverages/directors-and-officers-liability")
+        self.page.go_back()
 
