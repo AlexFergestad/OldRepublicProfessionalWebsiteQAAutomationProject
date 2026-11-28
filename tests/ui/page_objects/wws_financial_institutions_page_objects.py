@@ -50,3 +50,9 @@ class WWS_Financial_Institutions:
         expect(self.investpro_paragraph).to_contain_text("InvestPRO is a comprehensive management and professional liability solution")
         expect(self.investpro_paragraph).to_contain_text("InvestPRO serves investment advisers, asset managers, hedge funds")
 
+        expect(self.view_investpro_coverage_details_button).to_be_visible()
+        expect(self.view_investpro_coverage_details_button).to_have_text("View InvestPro Coverage Details")
+        expect(self.view_investpro_coverage_details_button).to_have_attribute(
+            "href", "https://www.orprofessional.com/coverages/solutions/investpro"
+        )
+
