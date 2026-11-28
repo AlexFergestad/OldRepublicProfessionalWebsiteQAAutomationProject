@@ -46,6 +46,6 @@ class WWS_Financial_Institutions:
 
     def verify_coverage_area_tiles(self):
         expect(self.investpro_paragraph).to_be_visible()
-
+        expect(self.investpro_paragraph).to_contain_text("InvestPRO is a comprehensive management and professional liability solution")
 
 
