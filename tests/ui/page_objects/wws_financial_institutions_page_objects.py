@@ -41,4 +41,4 @@ class WWS_Financial_Institutions:
         expect(self.intro_paragraph_right).to_be_visible()
 
 
-
+    def 
