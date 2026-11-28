@@ -55,4 +55,7 @@ class WWS_Financial_Institutions:
         expect(self.view_investpro_coverage_details_button).to_have_attribute(
             "href", "https://www.orprofessional.com/coverages/solutions/investpro"
         )
+        self.view_investpro_coverage_details_button.click()
+        expect(self.page).to_have_url("https://www.orprofessional.com/coverages/solutions/investpro")
+        self.page.go_back()
 
